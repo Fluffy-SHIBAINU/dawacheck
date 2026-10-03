@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "generatedAt": "2026-10-03T19:04:22.089Z",
+  "packs": {
+    "register": {
+      "version": "2026-10-03",
+      "file": "register.json",
+      "sha256": "20dcfc4af7b0c47984b0e98d9e50ce34bbd3b65d6873dbe9adec410df90fe53c",
+      "count": 8922,
+      "bytes": 4848642
+    },
+    "alerts": {
+      "version": "2026-10-03",
+      "file": "alerts.json",
+      "sha256": "bdd9d578c8432092c4e93bf29a6e0c7f913a245e032305ac142e43ab829c0644",
+      "count": 84,
+      "bytes": 64441
+    }
+  },
+  "thresholds": {
+    "nameMatch": 0.8,
+    "nameMismatch": 0.5,
+    "flagWatchReports": 3,
+    "flagWatchDevices": 2,
+    "flagWarnReports": 5,
+    "flagWarnDevices": 3
+  }
+}

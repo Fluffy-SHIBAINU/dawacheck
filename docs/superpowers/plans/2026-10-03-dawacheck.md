@@ -80,7 +80,7 @@ Work strictly in this order. A task is done when every checkbox in its section i
 - [x] Task 2: Core types and text utilities
 - [x] Task 3: Register normalization and `data:register` (real NAFDAC data)
 - [x] Task 4: Alerts fetch and extraction, `data:alerts` (WP API, BrightData, Claude)
-- [ ] Task 5: sha256, manifest builder and version compare
+- [x] Task 5: sha256, manifest builder and version compare
 
 **Phase 2: Verdict engine** (`2026-10-03-dawacheck/p2-engine.md`)
 - [ ] Task 6: NRN candidates from OCR text

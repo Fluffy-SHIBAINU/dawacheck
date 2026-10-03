@@ -12,7 +12,9 @@
     "typecheck": "tsc --noEmit",
     "test:watch": "vitest",
     "data:register": "tsx scripts/fetch-register.ts",
-    "data:alerts": "tsx scripts/fetch-alerts.ts"
+    "data:alerts": "tsx scripts/fetch-alerts.ts",
+    "data:manifest": "tsx scripts/build-manifest.ts",
+    "data": "npm run data:register && npm run data:alerts && npm run data:manifest"
   },
   "keywords": [],
   "author": "",

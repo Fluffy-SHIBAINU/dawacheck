@@ -1371,7 +1371,7 @@ git commit -m "feat: fetch NAFDAC public alerts and extract them with Claude int
 - Consumes: `Manifest`, `PackEntry`, `DEFAULT_THRESHOLDS`, `RegisterPack`, `AlertsPack` (Task 2).
 - Produces: `sha256Hex(data: string | ArrayBuffer | Uint8Array): Promise<string>`; `compareVersions(a: string, b: string): number` (<0, 0, >0); `validateManifest(x: unknown): Manifest` (throws `Error('invalid manifest')`); `public/packs/manifest.json`.
 
-- [ ] **Step 1: Write the failing tests**
+- [x] **Step 1: Write the failing tests**
 
 `tests/unit/core/sha.test.ts`:
 ```ts
@@ -1413,12 +1413,12 @@ test('validateManifest rejects bad input', () => {
 });
 ```
 
-- [ ] **Step 2: Run to verify failure**
+- [x] **Step 2: Run to verify failure**
 
 Run: `npx vitest run tests/unit/core/sha.test.ts tests/unit/core/manifest.test.ts`
 Expected: FAIL, modules not found.
 
-- [ ] **Step 3: Implement**
+- [x] **Step 3: Implement**
 
 `src/core/sha.ts`:
 ```ts
@@ -1477,7 +1477,7 @@ await writeFile('public/packs/manifest.json', JSON.stringify(manifest, null, 2))
 console.log(`manifest.json: register ${manifest.packs.register.count} (${manifest.packs.register.version}), alerts ${manifest.packs.alerts.count}`);
 ```
 
-- [ ] **Step 4: Add scripts, generate, test**
+- [x] **Step 4: Add scripts, generate, test**
 
 ```bash
 npm pkg set scripts.data:manifest="tsx scripts/build-manifest.ts" scripts.data="npm run data:register && npm run data:alerts && npm run data:manifest"
@@ -1486,7 +1486,7 @@ npm test && npm run typecheck
 ```
 Expected: manifest written, all tests PASS.
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 git add -A
