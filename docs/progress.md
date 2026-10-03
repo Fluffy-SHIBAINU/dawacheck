@@ -48,3 +48,4 @@
 - 17:26 · deploy · Task 32 live (bundle index-CkA1yhRy.js has the rotation retry)
 - 17:32 · Task 33 · done · Yoruba and Igbo drafts now cover all 147 strings (still marked draft; need native review); new test: every language has every key with the same placeholders; the English-fallback test now removes one Yoruba string temporarily instead of relying on a missing one; gates green (202 unit, 20 e2e, OCR)
 - 17:32 · deploy · Task 33 live (bundle index-C7SzVXuQ.js has the full Yoruba and Igbo strings)
+- 17:36 · Task 34 · done · README: screenshots, 'What works today' table, new features, updated diagram and test counts, clean-clone note (verified: fresh clone, npm ci && npm run build pass with no keys); pitch slide 4 and video script updated (0:35 voice, 1:50 and 2:15 need the backend or show example data); deck slides how and data republished (voice card now accurate, 202/20 tests); verify green

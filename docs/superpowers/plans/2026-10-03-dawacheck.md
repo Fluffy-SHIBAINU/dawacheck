@@ -121,7 +121,7 @@ Work strictly in this order. A task is done when every checkbox in its section i
 - [x] Task 31: Accessibility pass with an automated axe check
 - [x] Task 32: OCR tries other angles when a photo is sideways
 - [x] Task 33: Finish the Yoruba and Igbo drafts and guard placeholders
-- [ ] Task 34: Docs for judges (README, pitch, video script, deck)
+- [x] Task 34: Docs for judges (README, pitch, video script, deck)
 - [ ] Task 35: Rate limits against report spam
 
 ## User-provided inputs (tasks that need them)

@@ -586,15 +586,15 @@ test.each([['ha', ha], ['pcm', pcm], ['yo', yo], ['ig', ig]] as const)('%s has e
 **Files:**
 - Modify: `README.md`, `docs/pitch.md`, `docs/video-script.md`; the deck artifact https://claude.ai/artifact/VFmE5yFdgihQEJL9oXrimJ (slides `how` and `data`)
 
-- [ ] **Step 1: README.**
+- [x] **Step 1: README.**
   - A row of 4 screenshots near the top (`deck/img/01-home-hausa.png`, `02-green.png`, `03-amber.png`, `04-red-pidgin.png`, each `width="200"`).
   - A Mermaid diagram: phone (camera, OCR, parse, verdict engine, IndexedDB packs, report queue) to sync (Supabase REST, views) to packs (Storage, manifest) back to phone.
   - "What works today" table: works with no keys (offline checks, OCR, find by name, alerts list, report queue, English and Pidgin speech on the phone, example dashboard) versus needs keys (ElevenLabs Hausa clips, live sync and dashboard, Claude alert extraction, BrightData fetching).
   - Update the feature list for Tasks 26 to 32.
-- [ ] **Step 2: Quickstart check.** In the scratchpad: `git clone /Users/grey/Desktop/dev/hacknation qs && cd qs && npm ci && npm run build`. Fix README steps until this works from a clean clone (note any step that needs network).
-- [ ] **Step 3: Pitch and video script.** Add find by name and the alerts list to `docs/pitch.md` slide 4. In `docs/video-script.md` 0:35, Hausa audio plays only once clips exist; otherwise show Listen in English or Pidgin.
-- [ ] **Step 4: Deck.** Follow the Slides type's "Revising a deck" rules: `read` `project/slides/how.html` and `project/slides/data.html` from the artifact, edit them in one scratchpad root, publish only those two files. `how`: the band text becomes "Every step before the upload works in airplane mode, including find by name and the NAFDAC alert list." `data`: the voice card becomes "Spoken verdicts: the phone's own voice for English and Pidgin today; ElevenLabs Hausa clips once generated." Do not verify the deck visually.
-- [ ] **Step 5:** `npm run verify`. Commit `docs: judges' README, pitch and deck updates`.
+- [x] **Step 2: Quickstart check.** In the scratchpad: `git clone /Users/grey/Desktop/dev/hacknation qs && cd qs && npm ci && npm run build`. Fix README steps until this works from a clean clone (note any step that needs network).
+- [x] **Step 3: Pitch and video script.** Add find by name and the alerts list to `docs/pitch.md` slide 4. In `docs/video-script.md` 0:35, Hausa audio plays only once clips exist; otherwise show Listen in English or Pidgin.
+- [x] **Step 4: Deck.** Follow the Slides type's "Revising a deck" rules: `read` `project/slides/how.html` and `project/slides/data.html` from the artifact, edit them in one scratchpad root, publish only those two files. `how`: the band text becomes "Every step before the upload works in airplane mode, including find by name and the NAFDAC alert list." `data`: the voice card becomes "Spoken verdicts: the phone's own voice for English and Pidgin today; ElevenLabs Hausa clips once generated." Do not verify the deck visually.
+- [x] **Step 5:** `npm run verify`. Commit `docs: judges' README, pitch and deck updates`.
 
 ---
 

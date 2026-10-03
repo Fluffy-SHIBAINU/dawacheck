@@ -4,9 +4,16 @@ Check a medicine against Nigeria's NAFDAC register with no internet. Photograph 
 
 World Bank "Small AI for Development" hackathon, Health track.
 
+<p>
+  <img src="deck/img/01-home-hausa.png" width="200" alt="Home screen in Hausa">
+  <img src="deck/img/02-green.png" width="200" alt="Green verdict: Registered with NAFDAC, with NAFDAC's description of the tablet">
+  <img src="deck/img/03-amber.png" width="200" alt="Amber verdict: the name and strength on the box do not match its NAFDAC number">
+  <img src="deck/img/04-red-pidgin.png" width="200" alt="Red verdict in Pidgin: the product is named in a NAFDAC alert">
+</p>
+
 - **Live app:** https://dawacheck-smoky.vercel.app (install it from Safari or Chrome with "Add to Home Screen", then it works in airplane mode)
 - **Demo cartons to scan:** https://dawacheck-smoky.vercel.app/#/demo-packs
-- **Regulator dashboard:** https://dawacheck-smoky.vercel.app/#/dashboard (needs the Supabase backend; see below)
+- **Regulator dashboard:** https://dawacheck-smoky.vercel.app/#/dashboard (shows labelled example data until the Supabase backend is set up; see below)
 - **Design:** https://claude.ai/artifact/Q392hGkC2QW5h8SNR8HHpv
 - **Pitch deck:** https://claude.ai/artifact/VFmE5yFdgihQEJL9oXrimJ (exports to .pptx or PDF; source text in `docs/pitch.md`)
 - **Demo video script:** `docs/video-script.md`
@@ -20,19 +27,31 @@ World Bank "Small AI for Development" hackathon, Health track.
 
 ## What it does
 
-1. **Read the box on the phone.** Take a photo, or type the number. Tesseract OCR runs in the browser with no server, and pulls out the NAFDAC number, batch, expiry date, name and strength.
-2. **Check it offline** against the NAFDAC Greenbook register (8,922 products) and 84 NAFDAC public alerts, all stored on the phone.
+1. **Read the box on the phone.** Take a photo, or type the number. Tesseract OCR runs in the browser with no server, and pulls out the NAFDAC number, batch, expiry date, name and strength. A sideways photo is turned and read again.
+2. **Check it offline** against the NAFDAC Greenbook register (8,922 products) and 84 NAFDAC public alerts, all stored on the phone. When the number is unreadable, **find the medicine by name** (brand, ingredient or part of the number) and compare the box with what NAFDAC registered. Vendors and health workers can **browse and search every NAFDAC alert** offline.
 3. **Verdict:**
-   - **Registered with NAFDAC** (green). The app also shows NAFDAC's own description of the genuine tablet and pack so the user can compare.
+   - **Registered with NAFDAC** (green). The app also shows NAFDAC's own description of the registered tablet and pack so the user can compare.
    - **Check carefully** (amber). Covers a copied number, the wrong strength, a lapsed registration, a NAFDAC warning about the brand, or reports from other users.
    - **Do not take this medicine** (red). Covers a number not in the register, a product or batch named in a NAFDAC alert, or an expired pack.
-4. **Local languages.** Screen text is in Hausa, English and Nigerian Pidgin. Yoruba and Igbo cover the core screens as drafts. Pre-recorded voice clips (Hausa, English, Pidgin) play with no internet once generated (`npm run voice`).
+4. **Local languages and voice.** Screen text is in Hausa, English and Nigerian Pidgin, with full Yoruba and Igbo drafts. Recorded voice clips (Hausa, English, Pidgin) play with no internet once generated (`npm run voice`). Until then, English and Pidgin verdicts are read aloud by the phone's own offline voice.
 5. **Report and sync.** Reports and opt-in anonymous usage events wait on the phone. They upload when any connection appears: on app start, when the network returns, or every 5 minutes. An optional "Send by SMS" button works on a weak signal.
 6. **It learns.**
    - When several phones report the same number, it becomes a community flag on every phone.
    - User corrections of misread numbers tune the matcher.
    - Numbers that keep appearing but aren't in the register are exported for NAFDAC.
    - New register and alert packs download automatically, with sha256 checks.
+7. **Built for the people who use it.** Every verdict uses colour, an icon, a short title and voice, for people who read little. The page language follows the app language for screen readers, tap targets are at least 48 px, and an automated accessibility check (axe) runs on the main screens. The app asks the browser to keep its offline data, and shows iPhone users how to add it to the home screen.
+
+## What works today
+
+| Works now, with no keys | Needs a key or a backend |
+|---|---|
+| Offline checks against 8,922 products and 84 NAFDAC alerts | Hausa voice clips: `ELEVENLABS_API_KEY`, then `npm run voice` |
+| On-device OCR, including sideways photos | Live sync, community flags across phones and the live dashboard: a Supabase project and keys |
+| Find by name and the NAFDAC alerts list | Claude extraction of brands and batches from alert pages: `ANTHROPIC_API_KEY`, then `npm run data:alerts` (the live build matches alerts on their titles) |
+| Reports saved offline, with an SMS backup | BrightData fetching, only needed if NAFDAC blocks direct requests |
+| English and Pidgin verdicts spoken by the phone's own voice | |
+| Regulator dashboard with labelled example data | |
 
 ## Small AI in numbers
 
@@ -55,7 +74,7 @@ Measured with `npm run sizes`. Reading a demo carton takes about 1.5 s in the br
 ```mermaid
 flowchart LR
   subgraph Phone["Phone, works offline"]
-    UI["Screens, 5 languages"] --> OCR["Tesseract.js (WASM)"] --> V["Verdict engine"]
+    UI["Screens in 5 languages: check, find by name, alerts"] --> OCR["Tesseract.js (WASM)"] --> V["Verdict engine"]
     V --- DB[("IndexedDB: register, alerts, flags, history, reports, events")]
     SW["Service worker caches app, packs, OCR, voice"]
   end
@@ -72,9 +91,11 @@ flowchart LR
 ```bash
 npm install
 npm run dev          # http://localhost:5173
-npm run verify       # typecheck + 172 unit tests + build + 14 end-to-end tests (Chromium + iPhone WebKit)
+npm run verify       # typecheck + 202 unit tests + build + 20 end-to-end tests (Chromium + iPhone WebKit: offline, accessibility, sideways photo)
 npm run test:ocr     # real OCR on the demo carton images
 ```
+
+A clean clone builds with no keys: `npm ci && npm run build` (the data packs are committed; OCR files are copied from `node_modules`).
 
 Data and assets:
 - `npm run data` (register, alerts, manifest)
