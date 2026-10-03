@@ -40,6 +40,11 @@ export function Result() {
             {row.verdict.level !== 'green' && (
               <Link to={`/report/${row.id}`} className="btn btn-outline" data-testid="report-link">{t('report')}</Link>
             )}
+            {row.verdict.alert && (
+              <Link to={`/alerts/${encodeURIComponent(row.verdict.alert.id)}`} className="btn btn-plain" data-testid="alert-link">
+                {t('alert_read')}
+              </Link>
+            )}
             {(row.verdict.level === 'unknown' || row.verdict.reasons.includes('not_in_register')) && (
               <Link to={row.verdict.boxName ? `/find?q=${encodeURIComponent(row.verdict.boxName)}` : '/find'} className="btn btn-plain" data-testid="find-link">
                 {t('result_find')}

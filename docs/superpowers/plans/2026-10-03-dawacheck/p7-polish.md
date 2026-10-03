@@ -383,7 +383,7 @@ Vendors and health workers can browse and search all NAFDAC alerts stored on the
 
 Rules: sort by `date` descending, then `id` descending. A query under 2 characters returns all alerts. Otherwise every query token must be a substring of the normalized haystack: title, summary, and every product's brand, ingredient, manufacturer and batches.
 
-- [ ] **Step 1: Failing tests** `tests/unit/core/alertSearch.test.ts`
+- [x] **Step 1: Failing tests** `tests/unit/core/alertSearch.test.ts`
 
 ```ts
 import { filterAlerts } from '../../../src/core/alertSearch';
@@ -408,10 +408,10 @@ test('no match', () => {
 ```
 (If `ALERTS` has more entries than these three, filter the expected lists to the fixture's actual ids and dates.)
 
-- [ ] **Step 2: Run.** Expected: FAIL.
-- [ ] **Step 3: Implement** `src/core/alertSearch.ts` (pure).
-- [ ] **Step 4: Run.** Expected: PASS.
-- [ ] **Step 5: Screens.**
+- [x] **Step 2: Run.** Expected: FAIL.
+- [x] **Step 3: Implement** `src/core/alertSearch.ts` (pure).
+- [x] **Step 4: Run.** Expected: PASS.
+- [x] **Step 5: Screens.**
   - `Alerts` (`/alerts`): heading `t('alerts_title')`, `<input type="search" data-testid="alerts-input">` with placeholder `t('alerts_search')`, then a list of links to `/alerts/<encodeURIComponent(id)>`, each with the date (`code`), `t('alert_kind_<kind>')`, the title, and batches (`code`). Empty: `t('alerts_none')`.
   - `AlertDetail` (`/alerts/:id`, `decodeURIComponent`): title as `<h2>`, date, kind, summary, a table of products (brand, strength, manufacturer, batches in `code`), and `<a href={alert.url} target="_blank" rel="noopener noreferrer">{t('alert_open')}</a>`.
   - Home: `<Link to="/alerts" className="btn btn-outline">{t('home_alerts', { n: packs?.alerts.alerts.length ?? 0 })}</Link>`.
@@ -429,7 +429,7 @@ test('no match', () => {
     - `alert_kind_unregistered`: en "Not registered" · pcm "No register" · ha "Ba a yi rajista ba"
     - `alert_kind_watchlist`: en "Warning" · pcm "Warning" · ha "Gargaɗi"
     - `alert_kind_other`: en "Notice" · pcm "Notice" · ha "Sanarwa"
-- [ ] **Step 6: E2E** `tests/e2e/alerts.spec.ts`
+- [x] **Step 6: E2E** `tests/e2e/alerts.spec.ts`
 
 ```ts
 import { expect, test } from '@playwright/test';
@@ -448,7 +448,7 @@ test('browse and search NAFDAC alerts offline', async ({ page, context }) => {
 ```
 If no real alert in `public/packs/alerts.json` mentions Menofix, pick one that exists (`grep -o '"title":"[^"]*"' public/packs/alerts.json | head`), update this test, and note it in `docs/progress.md`.
 
-- [ ] **Step 7: Verify and ship.** Commit `feat: browse and search NAFDAC alerts offline`.
+- [x] **Step 7: Verify and ship.** Commit `feat: browse and search NAFDAC alerts offline`.
 
 ---
 

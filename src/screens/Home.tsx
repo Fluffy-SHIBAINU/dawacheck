@@ -77,6 +77,7 @@ export function Home() {
       </label>
       <Link to="/type" className="btn btn-outline">{t('home_type')}</Link>
       <Link to="/find" className="btn btn-outline">{t('home_find')}</Link>
+      <Link to="/alerts" className="btn btn-outline">{t('home_alerts', { n: packs?.alerts.alerts.length ?? 0 })}</Link>
       <ListenButton clip="howto" label={t('home_listen')} />
       <span className="label">{t('home_recent')}</span>
       {recent.length === 0 ? (
