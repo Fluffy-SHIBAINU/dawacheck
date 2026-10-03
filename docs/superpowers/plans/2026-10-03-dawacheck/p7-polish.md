@@ -283,7 +283,7 @@ Rules:
 - Rank: score (high first), then `status === 'Active'` first, then name A to Z, then NRN. Apply `limit` last.
 - Build per-product token lists once per `RegisterIndex` (memoize in a `WeakMap`).
 
-- [ ] **Step 1: Failing tests** `tests/unit/core/search.test.ts`
+- [x] **Step 1: Failing tests** `tests/unit/core/search.test.ts`
 
 ```ts
 import { buildRegisterIndex } from '../../../src/core/registerIndex';
@@ -329,10 +329,10 @@ test('limit', () => {
 });
 ```
 
-- [ ] **Step 2: Run.** Expected: FAIL.
-- [ ] **Step 3: Implement** `src/core/search.ts` to the rules above. Keep it pure (no DOM, no Dexie).
-- [ ] **Step 4: Run.** Expected: PASS.
-- [ ] **Step 5: Screens.**
+- [x] **Step 2: Run.** Expected: FAIL.
+- [x] **Step 3: Implement** `src/core/search.ts` to the rules above. Keep it pure (no DOM, no Dexie).
+- [x] **Step 4: Run.** Expected: PASS.
+- [x] **Step 5: Screens.**
   - `FindByName` (`/find`, reads `?q=` with `useSearchParams` as the initial value): `<input type="search" data-testid="find-input" autoFocus>` with placeholder `t('find_placeholder')`; under 3 characters show `t('find_hint')`; no results show `t('find_none')`; otherwise `t('find_count', { n })` and a list of links to `/product/<nrn>`, each with the name, strength and form, the NRN in `<span className="code">`, and `t('status_active')` or `t('status_inactive')`.
   - `ProductDetail` (`/product/:nrn`): every product under that NRN with name as `<h2>`, strength, form, ingredient, applicant, NAFDAC description, pack size, registration expiry (`code`), status, then `t('product_note')`. Reuse existing field-label keys from `VerdictView` where they exist.
   - Home: `<Link to="/find" className="btn btn-outline">{t('home_find')}</Link>` under "Type the number".
@@ -348,7 +348,7 @@ test('limit', () => {
     - `status_inactive`: en "Not active" · pcm "No active" · ha "Ba ya aiki"
     - `product_note`: en "This is what NAFDAC registered. Compare it with your box. DawaCheck cannot test what is inside." · pcm "Na wetin NAFDAC register be dis. Compare am with your box. DawaCheck no fit test wetin dey inside." · ha "Wannan shi ne abin da NAFDAC ta yi wa rajista. Kwatanta shi da kwalinka. DawaCheck ba ta iya gwada abin da ke ciki ba."
     - `result_find`: en "Find this medicine by name" · pcm "Find this medicine by name" · ha "Nemo wannan magani da suna"
-- [ ] **Step 6: E2E** `tests/e2e/find.spec.ts`
+- [x] **Step 6: E2E** `tests/e2e/find.spec.ts`
 
 ```ts
 import { expect, test } from '@playwright/test';
@@ -365,7 +365,7 @@ test('find a medicine by name and read what NAFDAC registered', async ({ page })
 });
 ```
 
-- [ ] **Step 7: Verify and ship.** Commit `feat: find a medicine by name offline`.
+- [x] **Step 7: Verify and ship.** Commit `feat: find a medicine by name offline`.
 
 ---
 

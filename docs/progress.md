@@ -38,3 +38,4 @@
 - 17:10 · deploy · Task 27 live: /#/dashboard shows the example notice, 140 checks, Kano 9 (after the service worker swapped in the new build)
 - 17:11 · Task 28 · done · navigator.storage.persist() after packs load (Settings shows the result); iPhone-only 'Add to Home Screen' hint on Home, closable and remembered; gates green (183 unit, 16 e2e incl. webkit hint test, OCR)
 - 17:12 · deploy · Task 28 live (bundle index-DGWZjCM6.js has the hint and persistence code; a fresh desktop browser reports persisted=false, expected until installed)
+- 17:16 · Task 29 · done · offline search by brand, ingredient or partial NRN (pure src/core/search.ts, 7 tests); /find and /product/:nrn screens; Home button; unknown and not-in-register results link to the search prefilled with the box name; gates green (190 unit, 17 e2e, OCR)

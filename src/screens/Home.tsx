@@ -76,6 +76,7 @@ export function Home() {
         <input className="visually-hidden" type="file" accept="image/*" capture="environment" onChange={onFile} data-testid="photo-input" />
       </label>
       <Link to="/type" className="btn btn-outline">{t('home_type')}</Link>
+      <Link to="/find" className="btn btn-outline">{t('home_find')}</Link>
       <ListenButton clip="howto" label={t('home_listen')} />
       <span className="label">{t('home_recent')}</span>
       {recent.length === 0 ? (

@@ -40,6 +40,11 @@ export function Result() {
             {row.verdict.level !== 'green' && (
               <Link to={`/report/${row.id}`} className="btn btn-outline" data-testid="report-link">{t('report')}</Link>
             )}
+            {(row.verdict.level === 'unknown' || row.verdict.reasons.includes('not_in_register')) && (
+              <Link to={row.verdict.boxName ? `/find?q=${encodeURIComponent(row.verdict.boxName)}` : '/find'} className="btn btn-plain" data-testid="find-link">
+                {t('result_find')}
+              </Link>
+            )}
             {row.input.source === 'ocr' && (
               <Link to="/type" state={{ read: row.verdict.nrn, text: row.input.text }} className="btn btn-plain">{t('scan_type')}</Link>
             )}
