@@ -112,6 +112,18 @@ Work strictly in this order. A task is done when every checkbox in its section i
 - [ ] Task 24: Production config, Supabase hookup, Vercel deploy, iPhone checklist · BLOCKED (partial): deployed offline-only to https://dawacheck-smoky.vercel.app; needs Supabase project + keys in .env, then `npm run check:backend`, `npm run holdback -- --n=12`, `npm run publish-packs -- --dir=data/packs`, set VITE_SYNC_MODE=supabase, `npm run deploy`
 - [x] Task 25: README, pitch deck content, deck file, video script
 
+**Phase 7: Polish backlog, no API keys needed** (`2026-10-03-dawacheck/p7-polish.md`)
+- [ ] Task 26: Speak verdicts with the phone's own voice when clips are missing (English, Pidgin)
+- [ ] Task 27: Dashboard shows labelled example data when the backend is off
+- [ ] Task 28: Keep offline data (storage persistence) and iPhone install hint
+- [ ] Task 29: Find a medicine by name, offline
+- [ ] Task 30: NAFDAC alerts list, offline
+- [ ] Task 31: Accessibility pass with an automated axe check
+- [ ] Task 32: OCR tries other angles when a photo is sideways
+- [ ] Task 33: Finish the Yoruba and Igbo drafts and guard placeholders
+- [ ] Task 34: Docs for judges (README, pitch, video script, deck)
+- [ ] Task 35: Rate limits against report spam
+
 ## User-provided inputs (tasks that need them)
 
 | Needed | Used in | Without it |
