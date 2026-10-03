@@ -1168,7 +1168,7 @@ git commit -m "feat: community-flag learning loop, pack publishing and coverage-
 
 The dashboard is for NAFDAC staff, so its copy is English-only constants (not i18n).
 
-- [ ] **Step 1: Write the failing unit test** `tests/unit/dashboard.test.ts`
+- [x] **Step 1: Write the failing unit test** `tests/unit/dashboard.test.ts`
 
 ```ts
 import { barWidths } from '../../src/screens/Dashboard';
@@ -1179,7 +1179,7 @@ test('bar widths scale to the largest value', () => {
 });
 ```
 
-- [ ] **Step 2: Implement**
+- [x] **Step 2: Implement**
 
 `src/sync/api.ts`:
 ```ts
@@ -1302,7 +1302,7 @@ export function Dashboard() {
 
 Modify `src/App.tsx`: import `Dashboard` and add `<Route path="/dashboard" element={<Dashboard />} />` before `*`. The Gate already lets `/dashboard` through (Task 16).
 
-- [ ] **Step 3: E2E** `tests/e2e/dashboard.spec.ts`
+- [x] **Step 3: E2E** `tests/e2e/dashboard.spec.ts`
 
 ```ts
 import { expect, test } from '@playwright/test';
@@ -1321,12 +1321,12 @@ test('dashboard shows reports by state from the backend', async ({ page, request
 });
 ```
 
-- [ ] **Step 4: Phase gate**
+- [x] **Step 4: Phase gate**
 
 Run: `npm run verify && npm run test:ocr`
 Expected: all PASS.
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 git add -A

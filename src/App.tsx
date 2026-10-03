@@ -11,6 +11,7 @@ import { History } from './screens/History';
 import { Settings } from './screens/Settings';
 import { DemoPacks } from './screens/DemoPacks';
 import { Scan } from './screens/Scan';
+import { Dashboard } from './screens/Dashboard';
 
 function Gate({ children }: { children: ReactNode }) {
   const { status, error, settings, t } = useApp();
@@ -49,6 +50,7 @@ export function App({ loader }: { loader?: () => Promise<LoadedPacks> }) {
             <Route path="/history" element={<History />} />
             <Route path="/settings" element={<Settings />} />
             <Route path="/demo-packs" element={<DemoPacks />} />
+            <Route path="/dashboard" element={<Dashboard />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </Gate>

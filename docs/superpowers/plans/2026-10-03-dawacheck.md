@@ -106,7 +106,7 @@ Work strictly in this order. A task is done when every checkbox in its section i
 - [x] Task 20: Supabase schema, aggregation mirror and mock server
 - [x] Task 21: Sync client, triggers and sync UI
 - [x] Task 22: Learning loop E2E, `publish-packs` and `gaps`
-- [ ] Task 23: Regulator dashboard + phase gate
+- [x] Task 23: Regulator dashboard + phase gate
 
 **Phase 6: Ship** (`2026-10-03-dawacheck/p6-ship.md`)
 - [ ] Task 24: Production config, Supabase hookup, Vercel deploy, iPhone checklist
