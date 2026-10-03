@@ -13,3 +13,5 @@
 - 15:14 · Task 12 · done · checks/reports/events stores + states + SMS helpers; added 5ms gap in checks-order test so createdAt differs
 - 15:15 · Task 13 · done · i18n en/ha/pcm complete, yo/ig core drafts; placeholder + copy-rule tests green
 - 15:18 · Task 14 · done · app shell + onboarding + home + typed check + verdict screen; 3 E2E green; fixed ambiguous getByText('Artheget EZ') -> heading role (manual verdict lists the name twice), plan patched
+- 15:19 · Task 15 · done · report/history/settings; verify gate green (137 unit, 4 e2e)
+- 15:19 · MVP checkpoint reached

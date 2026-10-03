@@ -6,6 +6,9 @@ import { Welcome } from './screens/Welcome';
 import { Home } from './screens/Home';
 import { TypeNumber } from './screens/TypeNumber';
 import { Result } from './screens/Result';
+import { Report } from './screens/Report';
+import { History } from './screens/History';
+import { Settings } from './screens/Settings';
 
 function Gate({ children }: { children: ReactNode }) {
   const { status, error, settings, t } = useApp();
@@ -38,6 +41,9 @@ export function App({ loader }: { loader?: () => Promise<LoadedPacks> }) {
             <Route path="/" element={<Home />} />
             <Route path="/type" element={<TypeNumber />} />
             <Route path="/result/:id" element={<Result />} />
+            <Route path="/report/:id" element={<Report />} />
+            <Route path="/history" element={<History />} />
+            <Route path="/settings" element={<Settings />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </Gate>

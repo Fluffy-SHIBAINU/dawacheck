@@ -94,7 +94,7 @@ Work strictly in this order. A task is done when every checkbox in its section i
 - [x] Task 12: Checks, reports, events, states and SMS helpers
 - [x] Task 13: i18n (5 languages) and voice clip texts
 - [x] Task 14: App shell, onboarding, Home, Type number, Result (MVP) + first E2E
-- [ ] Task 15: Report, History, Settings screens + phase gate (**MVP checkpoint**)
+- [x] Task 15: Report, History, Settings screens + phase gate (**MVP checkpoint**)
 
 **Phase 4: OCR, voice, offline** (`2026-10-03-dawacheck/p4-ocr-voice-pwa.md`)
 - [ ] Task 16: Demo cartons page and OCR fixture images

@@ -2231,7 +2231,7 @@ git commit -m "feat: app shell with onboarding, home, typed check and verdict sc
 - Consumes: Tasks 11–14.
 - Produces: `blobToDataUrl(b: Blob): Promise<string>`; routes `/report/:id`, `/history`, `/settings`; the report screen element `data-testid="report-saved"` after saving.
 
-- [ ] **Step 1: Write the failing component test** `tests/unit/ui/report.test.tsx`
+- [x] **Step 1: Write the failing component test** `tests/unit/ui/report.test.tsx`
 
 ```tsx
 import { render, screen, fireEvent, waitFor } from '@testing-library/react';
@@ -2271,12 +2271,12 @@ test('saving a report queues it and shows SMS backup and hotline', async () => {
 });
 ```
 
-- [ ] **Step 2: Run to verify failure**
+- [x] **Step 2: Run to verify failure**
 
 Run: `npx vitest run tests/unit/ui/report.test.tsx`
 Expected: FAIL, module not found.
 
-- [ ] **Step 3: Implement**
+- [x] **Step 3: Implement**
 
 `src/lib/blob.ts`:
 ```ts
@@ -2522,7 +2522,7 @@ import { Settings } from './screens/Settings';
 <Route path="/settings" element={<Settings />} />
 ```
 
-- [ ] **Step 4: Write E2E** `tests/e2e/report.spec.ts`
+- [x] **Step 4: Write E2E** `tests/e2e/report.spec.ts`
 
 ```ts
 import { expect, test } from '@playwright/test';
@@ -2542,14 +2542,14 @@ test('report a red box offline-style and see the queue', async ({ page }) => {
 });
 ```
 
-- [ ] **Step 5: Phase gate**
+- [x] **Step 5: Phase gate**
 
 Run: `npm run verify`
 Expected: typecheck, all unit tests, build and all E2E specs PASS.
 
 **MVP checkpoint:** typed checks, verdicts, reports, history, settings and 5 languages now work. Append `- HH:MM · MVP checkpoint reached` to `docs/progress.md`.
 
-- [ ] **Step 6: Commit**
+- [x] **Step 6: Commit**
 
 ```bash
 git add -A
