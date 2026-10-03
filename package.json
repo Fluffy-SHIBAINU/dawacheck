@@ -24,7 +24,10 @@
     "test:ocr": "vitest run --config vitest.ocr.config.ts",
     "voice": "tsx scripts/make-voice.ts",
     "icons": "tsx scripts/make-icons.ts",
-    "mock": "tsx scripts/mock-supabase.ts"
+    "mock": "tsx scripts/mock-supabase.ts",
+    "holdback": "tsx scripts/make-holdback.ts",
+    "publish-packs": "tsx scripts/publish-packs.ts",
+    "gaps": "tsx scripts/gaps.ts"
   },
   "keywords": [],
   "author": "",

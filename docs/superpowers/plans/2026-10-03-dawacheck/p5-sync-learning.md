@@ -981,7 +981,7 @@ git commit -m "feat: opportunistic sync of reports, opt-in usage events and lear
   - `npm run gaps`: writes `data/coverage-gaps.csv`.
   - `publishPacks(opts: { dir: string; url: string; serviceKey: string; fetchImpl?: typeof fetch }): Promise<string[]>` exported from `scripts/publish-packs.ts`.
 
-- [ ] **Step 1: Generalize the manifest builder**
+- [x] **Step 1: Generalize the manifest builder**
 
 In `scripts/build-manifest.ts`, read the directory from the arguments:
 ```ts
@@ -989,7 +989,7 @@ const dir = process.argv.find((a) => a.startsWith('--dir='))?.split('=')[1] ?? '
 ```
 Replace every `public/packs/` path in that file with `${dir}/`.
 
-- [ ] **Step 2: Write `scripts/make-holdback.ts`**
+- [x] **Step 2: Write `scripts/make-holdback.ts`**
 
 ```ts
 import { mkdirSync, readFileSync, writeFileSync, copyFileSync } from 'node:fs';
@@ -1015,7 +1015,7 @@ console.log(`bundled register: ${held.products.length} products (${yesterday}); 
 
 Only run it once, right before the final production build (Task 24). Running it twice would shrink the pack again. The script refuses nothing, so check `docs/progress.md` before running it.
 
-- [ ] **Step 3: Write `scripts/publish-packs.ts` and its test**
+- [x] **Step 3: Write `scripts/publish-packs.ts` and its test**
 
 `scripts/publish-packs.ts`:
 ```ts
@@ -1093,7 +1093,7 @@ npx vitest run tests/scripts/publish.test.ts
 ```
 Expected: PASS.
 
-- [ ] **Step 4: Learning E2E** `tests/e2e/learning.spec.ts`
+- [x] **Step 4: Learning E2E** `tests/e2e/learning.spec.ts`
 
 ```ts
 import { createHash } from 'node:crypto';
@@ -1146,7 +1146,7 @@ test('a newer register published to storage is downloaded on sync', async ({ pag
 Run: `npm run e2e`
 Expected: PASS.
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 git add -A
