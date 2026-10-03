@@ -1,8 +1,47 @@
-export function App() {
+import { HashRouter, Navigate, Route, Routes, useLocation } from 'react-router-dom';
+import type { ReactNode } from 'react';
+import { AppProvider, useApp } from './state/AppContext';
+import type { LoadedPacks } from './data/packs';
+import { Welcome } from './screens/Welcome';
+import { Home } from './screens/Home';
+import { TypeNumber } from './screens/TypeNumber';
+import { Result } from './screens/Result';
+
+function Gate({ children }: { children: ReactNode }) {
+  const { status, error, settings, t } = useApp();
+  const location = useLocation();
+  if (status === 'loading') {
+    return (
+      <div className="app">
+        <main className="main"><span className="brand">DawaCheck</span><div className="progress"><i style={{ width: '60%' }} /></div></main>
+      </div>
+    );
+  }
+  if (status === 'error') {
+    return (
+      <div className="app">
+        <main className="main"><span className="brand">DawaCheck</span><p className="error">{t('load_failed')}</p><p className="small muted">{error}</p></main>
+      </div>
+    );
+  }
+  if (!settings.onboarded && location.pathname !== '/welcome') return <Navigate to="/welcome" replace />;
+  return <>{children}</>;
+}
+
+export function App({ loader }: { loader?: () => Promise<LoadedPacks> }) {
   return (
-    <div className="app">
-      <header className="topbar"><span className="brand">DawaCheck</span></header>
-      <main className="main"><p>Offline medicine checker</p></main>
-    </div>
+    <AppProvider loader={loader}>
+      <HashRouter>
+        <Gate>
+          <Routes>
+            <Route path="/welcome" element={<Welcome />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/type" element={<TypeNumber />} />
+            <Route path="/result/:id" element={<Result />} />
+            <Route path="*" element={<Navigate to="/" replace />} />
+          </Routes>
+        </Gate>
+      </HashRouter>
+    </AppProvider>
   );
 }

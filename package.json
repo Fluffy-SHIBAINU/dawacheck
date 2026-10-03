@@ -14,7 +14,11 @@
     "data:register": "tsx scripts/fetch-register.ts",
     "data:alerts": "tsx scripts/fetch-alerts.ts",
     "data:manifest": "tsx scripts/build-manifest.ts",
-    "data": "npm run data:register && npm run data:alerts && npm run data:manifest"
+    "data": "npm run data:register && npm run data:alerts && npm run data:manifest",
+    "build:e2e": "vite build --mode e2e --outDir dist-e2e",
+    "preview:e2e": "vite preview --outDir dist-e2e --port 4173 --strictPort",
+    "e2e": "playwright test",
+    "verify": "npm run typecheck && npm run test && npm run build && npm run e2e"
   },
   "keywords": [],
   "author": "",
@@ -33,6 +37,7 @@
   },
   "devDependencies": {
     "@anthropic-ai/sdk": "^0.131.0",
+    "@playwright/test": "^1.63.0",
     "@testing-library/dom": "^10.4.2",
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.3",

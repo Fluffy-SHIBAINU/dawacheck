@@ -1385,7 +1385,7 @@ git commit -m "feat: add Hausa, Pidgin, English UI text with Yoruba and Igbo dra
   - `VerdictView` props `{ verdict: Verdict; t: AppApi['t']; onPickSuggestion?: (nrn: string) => void; actions?: ReactNode }`. It renders `data-testid="verdict"` with `data-level={verdict.level}`.
   - Routes after this task: `/welcome`, `/`, `/type`, `/result/:id`, and `*` redirects to `/`.
 
-- [ ] **Step 1: Write the failing unit tests**
+- [x] **Step 1: Write the failing unit tests**
 
 `tests/unit/time.test.ts`:
 ```ts
@@ -1468,12 +1468,12 @@ test('app boots to the language picker on first run', async () => {
 });
 ```
 
-- [ ] **Step 2: Run to verify failure**
+- [x] **Step 2: Run to verify failure**
 
 Run: `npx vitest run tests/unit/time.test.ts tests/unit/ui tests/unit/smoke.test.tsx`
 Expected: FAIL, modules not found.
 
-- [ ] **Step 3: Implement helpers**
+- [x] **Step 3: Implement helpers**
 
 `src/lib/time.ts`:
 ```ts
@@ -1517,7 +1517,7 @@ export const pendingScan = {
 };
 ```
 
-- [ ] **Step 4: Implement state**
+- [x] **Step 4: Implement state**
 
 `src/state/AppContext.tsx`:
 ```tsx
@@ -1649,7 +1649,7 @@ export function useApp(): AppApi {
 }
 ```
 
-- [ ] **Step 5: Implement components**
+- [x] **Step 5: Implement components**
 
 `src/components/Layout.tsx`:
 ```tsx
@@ -1831,7 +1831,7 @@ export function VerdictView({
 }
 ```
 
-- [ ] **Step 6: Implement screens and routing**
+- [x] **Step 6: Implement screens and routing**
 
 `src/screens/Welcome.tsx`:
 ```tsx
@@ -2124,12 +2124,12 @@ export function App({ loader }: { loader?: () => Promise<LoadedPacks> }) {
 }
 ```
 
-- [ ] **Step 7: Run unit tests**
+- [x] **Step 7: Run unit tests**
 
 Run: `npx vitest run tests/unit && npm run typecheck`
 Expected: PASS.
 
-- [ ] **Step 8: Add Playwright and the first E2E**
+- [x] **Step 8: Add Playwright and the first E2E**
 
 ```bash
 npm i -D @playwright/test
@@ -2190,7 +2190,7 @@ test('first run, then a registered number is green', async ({ page }) => {
   await typeNumber(page, 'A4-6238');
   await expect(page.getByTestId('verdict')).toHaveAttribute('data-level', 'green');
   await expect(page.getByText('Registered with NAFDAC')).toBeVisible();
-  await expect(page.getByText('Artheget EZ')).toBeVisible();
+  await expect(page.getByRole('heading', { name: 'Artheget EZ' })).toBeVisible();
 });
 
 test('a number missing from the register is red', async ({ page }) => {
@@ -2206,12 +2206,12 @@ test('Hausa interface', async ({ page }) => {
 });
 ```
 
-- [ ] **Step 9: Run E2E**
+- [x] **Step 9: Run E2E**
 
 Run: `npm run e2e`
 Expected: 3 passed. If `onboard` cannot find the Continue button in Hausa, the consent screen is already translated. Match `Ci gaba` (the regex already includes it).
 
-- [ ] **Step 10: Commit**
+- [x] **Step 10: Commit**
 
 ```bash
 git add -A

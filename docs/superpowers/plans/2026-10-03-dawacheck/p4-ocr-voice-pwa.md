@@ -654,7 +654,7 @@ test('photo of carton 1 reads on the device and shows green', async ({ page }) =
   await onboard(page);
   await page.getByTestId('photo-input').setInputFiles('tests/fixtures/labels/1.png');
   await expect(page.getByTestId('verdict')).toHaveAttribute('data-level', 'green', { timeout: 90_000 });
-  await expect(page.getByText('Artheget EZ')).toBeVisible();
+  await expect(page.getByRole('heading', { name: 'Artheget EZ' })).toBeVisible();
 });
 
 test('photo of carton 2 is amber', async ({ page }) => {
