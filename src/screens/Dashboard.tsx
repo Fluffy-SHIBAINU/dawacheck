@@ -3,12 +3,13 @@ import { Link } from 'react-router-dom';
 import { getView } from '../sync/api';
 import { syncConfig } from '../sync/config';
 import { stateName } from '../core/states';
+import { EXAMPLE_DASHBOARD } from '../demo/dashboardExample';
 
-interface Activity { checks: number; red: number; devices: number; reports: number }
-interface ByState { state: string; reports: number }
-interface ByReason { reason: string; reports: number }
-interface Unknown { nrn: string; reports: number; devices: number }
-interface Flag { nrn: string; reports: number; devices: number; level: string; states: string[] }
+export interface Activity { checks: number; red: number; devices: number; reports: number }
+export interface ByState { state: string; reports: number }
+export interface ByReason { reason: string; reports: number }
+export interface Unknown { nrn: string; reports: number; devices: number }
+export interface Flag { nrn: string; reports: number; devices: number; level: string; states: string[] }
 
 const REASONS: Record<string, string> = {
   not_in_register: 'Not in register', name_mismatch: 'Box does not match number', strength_mismatch: 'Strength does not match',
@@ -23,10 +24,13 @@ export function barWidths(rows: { reports: number }[]): number[] {
 
 export function Dashboard() {
   const cfg = syncConfig();
-  const [data, setData] = useState<{ a: Activity | null; s: ByState[]; r: ByReason[]; u: Unknown[]; f: Flag[] } | null>(null);
+  // No backend configured (production before Supabase keys exist): show labelled example data, fetch nothing.
+  const example = !cfg.enabled;
+  const [data, setData] = useState<{ a: Activity | null; s: ByState[]; r: ByReason[]; u: Unknown[]; f: Flag[] } | null>(example ? EXAMPLE_DASHBOARD : null);
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
+    if (example) return;
     let alive = true;
     const load = async () => {
       try {
@@ -48,16 +52,21 @@ export function Dashboard() {
       alive = false;
       window.clearInterval(timer);
     };
-  }, []);
+  }, [example]);
 
   const widths = barWidths(data?.s ?? []);
   return (
     <div className="app wide">
       <header className="topbar">
         <Link to="/" className="brand">DawaCheck · NAFDAC view</Link>
-        <span className="pill">Last 7 days{cfg.mode === 'mock' ? ' · Example data' : ''}</span>
+        <span className="pill">Last 7 days{cfg.mode === 'mock' || example ? ' · Example data' : ''}</span>
       </header>
       <main className="main">
+        {example && (
+          <p className="card small" data-testid="example-notice">
+            Live reports need the DawaCheck backend. This page shows example data.
+          </p>
+        )}
         {error && <p className="error" role="alert">{error}</p>}
         <div className="dash-grid" data-testid="dashboard">
           <section className="card">

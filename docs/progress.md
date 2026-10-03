@@ -33,3 +33,5 @@
   - Optional (alerts): add `ANTHROPIC_API_KEY`, run `npm run data:alerts` for Claude-extracted brands and batches (now title matching); add `BRIGHTDATA_API_KEY` and use `--via=brightdata` if NAFDAC blocks direct fetches.
   - iPhone hands-on check: follow `docs/iphone-checklist.md`.
 - 17:05 · Task 26 · done · ListenButton falls back to the phone's offline voice (English, Pidgin) when clips are missing; 'voice unavailable' note otherwise; gates green (178 unit, 14 e2e, OCR)
+- 17:07 · deploy · Task 26 live on https://dawacheck-smoky.vercel.app (new bundle has the voice fallback; service worker in control)
+- 17:09 · Task 27 · done · dashboard shows labelled example data (fictional NRNs, test checks they are not in the register) whenever no backend is configured; used `!cfg.enabled` instead of the plan's `mode === 'off'` so a half-configured backend also gets the example; gates green (180 unit, 14 e2e, OCR)

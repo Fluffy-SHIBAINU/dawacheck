@@ -157,17 +157,17 @@ Production has sync off until Supabase keys exist, so `/#/dashboard` is empty. T
 - Consumes: `syncConfig()` (`src/sync/config.ts`), the `Activity/ByState/ByReason/Unknown/Flag` shapes in `Dashboard.tsx` (export them)
 - Produces: `EXAMPLE_DASHBOARD: { a: Activity; s: ByState[]; r: ByReason[]; u: Unknown[]; f: Flag[] }`
 
-- [ ] **Step 1: Failing tests** in `tests/unit/dashboardExample.test.tsx`:
+- [x] **Step 1: Failing tests** in `tests/unit/dashboardExample.test.tsx`:
   - `vi.mock('../../src/sync/config', ...)` so `syncConfig()` returns `{ mode: 'off', ... }` and `vi.mock('../../src/sync/api', () => ({ getView: vi.fn() }))`. Render `<MemoryRouter><Dashboard /></MemoryRouter>`. Expect `screen.getByTestId('example-notice')` to contain "example data", the pill to contain "Example data", the checks KPI to show `EXAMPLE_DASHBOARD.a.checks`, and `getView` not called.
   - Every NRN in `EXAMPLE_DASHBOARD.u` and `EXAMPLE_DASHBOARD.f` is absent from `public/packs/register.json` (read it with `node:fs`; build a `Set` of `products[].nrn`). This guards against showing a real product as reported.
 
-- [ ] **Step 2: Run** them. Expected: FAIL.
+- [x] **Step 2: Run** them. Expected: FAIL.
 
-- [ ] **Step 3: Implement.** `src/demo/dashboardExample.ts` copies the numbers that `scripts/mock-supabase.ts` seeds for the dashboard (same fictional NRNs, the ones shown in `deck/img/06-dashboard.png`). In `Dashboard.tsx`: when `cfg.mode === 'off'`, skip fetching, set data to `EXAMPLE_DASHBOARD`, and render above the grid `<p className="card small" data-testid="example-notice">Live reports need the DawaCheck backend. This page shows example data.</p>`. The pill reads `Last 7 days · Example data` for both `mock` and `off`.
+- [x] **Step 3: Implement.** `src/demo/dashboardExample.ts` copies the numbers that `scripts/mock-supabase.ts` seeds for the dashboard (same fictional NRNs, the ones shown in `deck/img/06-dashboard.png`). In `Dashboard.tsx`: when `cfg.mode === 'off'`, skip fetching, set data to `EXAMPLE_DASHBOARD`, and render above the grid `<p className="card small" data-testid="example-notice">Live reports need the DawaCheck backend. This page shows example data.</p>`. The pill reads `Last 7 days · Example data` for both `mock` and `off`.
 
-- [ ] **Step 4: Run** tests. Expected: PASS.
+- [x] **Step 4: Run** tests. Expected: PASS.
 
-- [ ] **Step 5: Verify and ship.** Gates, deploy, then open `https://dawacheck-smoky.vercel.app/#/dashboard` in the browser pane and confirm the notice shows. Commit `feat: labelled example data on the dashboard when the backend is off`.
+- [x] **Step 5: Verify and ship.** Gates, deploy, then open `https://dawacheck-smoky.vercel.app/#/dashboard` in the browser pane and confirm the notice shows. Commit `feat: labelled example data on the dashboard when the backend is off`.
 
 ---
 
