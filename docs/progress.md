@@ -53,3 +53,4 @@
 - 17:44 · deploy · Task 35 live (bundle index-CDI-xHf_.js: plain inserts, rate_limited handling). Phase 7 backlog done; next: review pass (LOOP step 10)
 - 17:49 · Task 36 · done · review fix: unlockSpeech() runs inside the tap so iOS allows the later fallback speech; an utterance cut off by a newer tap counts as spoken (no false 'voice not available'); not testable on a real iPhone here, covered by unit tests
 - 17:49 · Task 37 · done · review fix: the crop read resets the 'Trying another angle' label; gates green (211 unit, 20 e2e, OCR)
+- 17:50 · deploy · Tasks 36-37 live (bundle index-nCiHuc9H.js)
