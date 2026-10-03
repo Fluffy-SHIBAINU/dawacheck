@@ -30,7 +30,8 @@
     "gaps": "tsx scripts/gaps.ts",
     "check:env": "tsx scripts/check-env.ts",
     "check:backend": "tsx scripts/check-backend.ts",
-    "deploy": "npm run build && rm -rf .vercel-deploy && mkdir -p .vercel-deploy && cp -R dist .vercel-deploy/dawacheck && npx --yes vercel@latest deploy .vercel-deploy/dawacheck --prod --yes"
+    "deploy": "npm run build && rm -rf .vercel-deploy && mkdir -p .vercel-deploy && cp -R dist .vercel-deploy/dawacheck && npx --yes vercel@latest deploy .vercel-deploy/dawacheck --prod --yes",
+    "sizes": "tsx scripts/sizes.ts"
   },
   "keywords": [],
   "author": "",
