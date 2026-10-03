@@ -104,7 +104,7 @@ Work strictly in this order. A task is done when every checkbox in its section i
 
 **Phase 5: Sync, learning, dashboard** (`2026-10-03-dawacheck/p5-sync-learning.md`)
 - [x] Task 20: Supabase schema, aggregation mirror and mock server
-- [ ] Task 21: Sync client, triggers and sync UI
+- [x] Task 21: Sync client, triggers and sync UI
 - [ ] Task 22: Learning loop E2E, `publish-packs` and `gaps`
 - [ ] Task 23: Regulator dashboard + phase gate
 

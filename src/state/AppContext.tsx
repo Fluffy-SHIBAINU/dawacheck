@@ -1,6 +1,8 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
 import { loadPacks, type LoadedPacks } from '../data/packs';
-import { getSettings, saveSettings, DEFAULT_SETTINGS, type Settings } from '../data/meta';
+import { getSettings, saveSettings, DEFAULT_SETTINGS, getDeviceId, getMeta, type Settings } from '../data/meta';
+import { syncNow, type SyncSummary } from '../sync/sync';
+import { syncConfig } from '../sync/config';
 import { saveCheck } from '../data/checks';
 import { countPendingReports } from '../data/reports';
 import type { CheckRow } from '../data/db';
@@ -24,6 +26,10 @@ export interface AppApi {
   reloadPacks: () => Promise<void>;
   refreshCounts: () => Promise<void>;
   check: (input: ScanInput, thumb?: Blob | null) => Promise<CheckRow>;
+  syncing: boolean;
+  lastSync: SyncSummary | null;
+  syncEnabled: boolean;
+  runSync: () => Promise<void>;
 }
 
 const AppCtx = createContext<AppApi | null>(null);
@@ -115,7 +121,63 @@ export function AppProvider({ children, loader = loadPacks, now = () => new Date
     [ctx],
   );
 
-  const api: AppApi = { status, error, settings, packs, ctx, online, pendingReports, t, updateSettings, reloadPacks, refreshCounts, check };
+  const cfg = useMemo(() => syncConfig(), []);
+  const [syncing, setSyncing] = useState(false);
+  const [lastSync, setLastSync] = useState<SyncSummary | null>(null);
+  const latest = useRef({ packs, settings });
+  latest.current = { packs, settings };
+
+  const runSync = useCallback(async () => {
+    const { packs: p, settings: s } = latest.current;
+    if (!cfg.enabled || !p || !navigator.onLine) return;
+    setSyncing(true);
+    try {
+      const summary = await syncNow({
+        consent: s.consent,
+        deviceId: await getDeviceId(),
+        localVersions: { register: p.register.version, alerts: p.alerts.version, registerCount: p.register.products.length },
+      });
+      setLastSync(summary);
+      void logEvent(
+        summary.ok ? 'sync_ok' : 'sync_failed',
+        summary.ok
+          ? { reports: summary.sentReports, events: summary.sentEvents, packs: summary.registerTo !== null || summary.alertsUpdated }
+          : { stage: summary.errors[0]?.split(':')[0] ?? 'unknown', error: (summary.errors[0] ?? '').slice(0, 60) },
+      );
+      await reloadPacks();
+      await refreshCounts();
+    } finally {
+      setSyncing(false);
+    }
+  }, [cfg.enabled, reloadPacks, refreshCounts]);
+
+  useEffect(() => {
+    void getMeta<SyncSummary>('lastSync').then((s) => {
+      if (s) setLastSync(s);
+    });
+  }, []);
+
+  useEffect(() => {
+    if (status !== 'ready') return;
+    void runSync();
+    const onOnline = () => void runSync();
+    const onVisible = () => {
+      if (document.visibilityState === 'visible') void runSync();
+    };
+    window.addEventListener('online', onOnline);
+    document.addEventListener('visibilitychange', onVisible);
+    const timer = window.setInterval(() => void runSync(), 5 * 60_000);
+    return () => {
+      window.removeEventListener('online', onOnline);
+      document.removeEventListener('visibilitychange', onVisible);
+      window.clearInterval(timer);
+    };
+  }, [status, runSync]);
+
+  const api: AppApi = {
+    status, error, settings, packs, ctx, online, pendingReports, t, updateSettings, reloadPacks, refreshCounts, check,
+    syncing, lastSync, syncEnabled: cfg.enabled, runSync,
+  };
   return <AppCtx.Provider value={api}>{children}</AppCtx.Provider>;
 }
 

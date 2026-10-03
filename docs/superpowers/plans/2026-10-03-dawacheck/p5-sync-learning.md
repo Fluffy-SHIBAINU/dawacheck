@@ -452,7 +452,7 @@ git commit -m "feat: Supabase schema with learning views, plus a local mock for 
   - `AppApi` gains `syncing: boolean`, `lastSync: SyncSummary | null`, `syncEnabled: boolean`, `runSync(): Promise<void>`.
   - e2e helper `onboard(page, lang?, consent?)`.
 
-- [ ] **Step 1: Write the failing unit test** `tests/unit/sync/sync.test.ts`
+- [x] **Step 1: Write the failing unit test** `tests/unit/sync/sync.test.ts`
 
 ```ts
 // @vitest-environment node
@@ -584,12 +584,12 @@ test('syncConfig is disabled without url or key', () => {
 });
 ```
 
-- [ ] **Step 2: Run to verify failure**
+- [x] **Step 2: Run to verify failure**
 
 Run: `npx vitest run tests/unit/sync/sync.test.ts`
 Expected: FAIL, modules not found.
 
-- [ ] **Step 3: Implement**
+- [x] **Step 3: Implement**
 
 `src/sync/config.ts`:
 ```ts
@@ -815,12 +815,12 @@ export function syncNow(deps: SyncDeps): Promise<SyncSummary> {
 }
 ```
 
-- [ ] **Step 4: Run unit tests**
+- [x] **Step 4: Run unit tests**
 
 Run: `npx vitest run tests/unit/sync/sync.test.ts && npm run typecheck`
 Expected: PASS.
 
-- [ ] **Step 5: Wire sync into the app**
+- [x] **Step 5: Wire sync into the app**
 
 Modify `src/state/AppContext.tsx`:
 1. Imports: `import { syncNow, type SyncSummary } from '../sync/sync'; import { syncConfig } from '../sync/config'; import { getDeviceId, getMeta } from '../data/meta';`
@@ -920,7 +920,7 @@ export async function onboard(page: Page, lang = 'English', consent = false) {
 export const MOCK = 'http://localhost:54321';
 ```
 
-- [ ] **Step 6: E2E** `tests/e2e/sync.spec.ts`
+- [x] **Step 6: E2E** `tests/e2e/sync.spec.ts`
 
 ```ts
 import { expect, test } from '@playwright/test';
@@ -957,7 +957,7 @@ test('Sync now in settings uploads immediately', async ({ page, request }) => {
 Run: `npm run e2e`
 Expected: all specs PASS. The second test proves events stay local without consent.
 
-- [ ] **Step 7: Commit**
+- [x] **Step 7: Commit**
 
 ```bash
 git add -A

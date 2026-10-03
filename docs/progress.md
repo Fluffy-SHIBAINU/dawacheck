@@ -20,3 +20,4 @@
 - 15:25 · Task 18 · blocked (code done) · voice player + verdict→clip map + ListenButton wired into result/home/welcome/report; tests green. npm run voice exits 2: ELEVENLABS_API_KEY missing. App falls back to text until clips exist.
 - 15:27 · Task 19 · done · PWA (vite-plugin-pwa 2.0, precache 60 files / 16.3 MB), icons, offline e2e + webkit smoke; phase 4 gate green (156 unit, 9 e2e, OCR). Extractor mis-wrote playwright.config from a partial snippet; restored from git and hardened
 - 15:29 · Task 20 · done · schema.sql (insert-only RLS, learning + dashboard views, packs bucket), aggregate mirror, mock server (+playwright webServer)
+- 15:31 · Task 21 · done · sync client (reports, opt-in events, flags, corrections, sha-checked packs) + triggers (start/online/visible/5min) + Settings sync UI + Home summary; 7 sync unit + 2 sync e2e green (11 e2e total)

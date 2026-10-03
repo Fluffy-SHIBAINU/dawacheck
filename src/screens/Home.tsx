@@ -10,7 +10,7 @@ import { logEvent } from '../telemetry/events';
 import { ListenButton } from '../components/ListenButton';
 
 export function Home() {
-  const { t } = useApp();
+  const { t, lastSync, packs } = useApp();
   const navigate = useNavigate();
   const [recent, setRecent] = useState<CheckRow[]>([]);
 
@@ -29,6 +29,16 @@ export function Home() {
   return (
     <Layout>
       <StatusPill />
+      {lastSync && lastSync.ok && Date.now() - new Date(lastSync.at).getTime() < 120_000 && (
+        <div className="card small" data-testid="sync-summary">
+          <strong>{t('sync_sent', { reports: lastSync.sentReports, events: lastSync.sentEvents })}</strong>
+          {lastSync.registerTo !== null && (
+            <span>{t('sync_register', { from: (lastSync.registerFrom ?? 0).toLocaleString('en'), to: lastSync.registerTo.toLocaleString('en') })}</span>
+          )}
+          {lastSync.alertsUpdated && <span>{t('sync_alerts', { n: packs?.alerts.alerts.length ?? 0 })}</span>}
+          <span>{t('sync_flags', { n: lastSync.flags })}</span>
+        </div>
+      )}
       <label className="btn btn-primary btn-hero" data-testid="check-button">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
           <path d="M4 8h3l2-3h6l2 3h3v11H4z" />
