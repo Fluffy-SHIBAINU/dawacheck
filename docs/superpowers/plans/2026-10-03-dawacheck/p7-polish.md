@@ -509,7 +509,7 @@ test('main screens have no serious accessibility violations', async ({ page }) =
 **Interfaces:**
 - Produces: `recognizeWithRotation(recognize: (deg: Rotation) => Promise<string>, hasNrn: (text: string) => boolean): Promise<{ text: string; rotation: Rotation }>` with `type Rotation = 0 | 90 | 180 | 270`; `rotatedSize(w: number, h: number, deg: Rotation): { w: number; h: number }`
 
-- [ ] **Step 1: Failing tests** `tests/unit/ocrRetry.test.ts`
+- [x] **Step 1: Failing tests** `tests/unit/ocrRetry.test.ts`
 
 ```ts
 import { recognizeWithRotation } from '../../src/ocr/retry';
@@ -542,11 +542,11 @@ test('rotatedSize swaps width and height for quarter turns', () => {
 ```
 (If `preprocess.ts` imports browser-only APIs at module load, put `rotatedSize` in `src/ocr/retry.ts` and re-export it from `preprocess.ts`.)
 
-- [ ] **Step 2: Run.** Expected: FAIL.
-- [ ] **Step 3: Implement** `src/ocr/retry.ts` (order `[0, 90, 270, 180]`, stop at the first text where `hasNrn` is true, else return pass 0) and `rotatedSize` plus a canvas `rotateCanvas(src, deg)` in `preprocess.ts`. In `scan.ts`, run recognition through `recognizeWithRotation` with `hasNrn = (t) => findNrnCandidates(t).length > 0`, rotating the preprocessed canvas for each angle. Report progress `t('scan_rotate')` when it moves past pass 0.
+- [x] **Step 2: Run.** Expected: FAIL.
+- [x] **Step 3: Implement** `src/ocr/retry.ts` (order `[0, 90, 270, 180]`, stop at the first text where `hasNrn` is true, else return pass 0) and `rotatedSize` plus a canvas `rotateCanvas(src, deg)` in `preprocess.ts`. In `scan.ts`, run recognition through `recognizeWithRotation` with `hasNrn = (t) => findNrnCandidates(t).length > 0`, rotating the preprocessed canvas for each angle. Report progress `t('scan_rotate')` when it moves past pass 0.
   - `scan_rotate`: en "Trying another angle…" · pcm "We dey try another side…" · ha "Ana gwada wani gefe…"
-- [ ] **Step 4: Fixture and E2E.** `scripts/make-fixtures.ts` also writes `tests/fixtures/labels/1-rot90.png` (label 1 rotated 90° clockwise, for example via a CSS `transform: rotate(90deg)` wrapper in the page it screenshots). Run `npm run fixtures`. In `tests/e2e/scan.spec.ts` add a test that uploads `1-rot90.png` through `photo-input` and expects the same verdict level as label 1. Allow 60 s for this test.
-- [ ] **Step 5: Verify and ship.** `npm run verify && npm run test:ocr`. Commit `feat: OCR retries sideways photos`.
+- [x] **Step 4: Fixture and E2E.** `scripts/make-fixtures.ts` also writes `tests/fixtures/labels/1-rot90.png` (label 1 rotated 90° clockwise, for example via a CSS `transform: rotate(90deg)` wrapper in the page it screenshots). Run `npm run fixtures`. In `tests/e2e/scan.spec.ts` add a test that uploads `1-rot90.png` through `photo-input` and expects the same verdict level as label 1. Allow 60 s for this test.
+- [x] **Step 5: Verify and ship.** `npm run verify && npm run test:ocr`. Commit `feat: OCR retries sideways photos`.
 
 ---
 

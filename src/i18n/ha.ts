@@ -29,6 +29,7 @@ export const ha: Record<MessageKey, string> = {
   type_check: 'Duba',
   type_invalid: 'Wannan ba ya kama da lambar NAFDAC. Misali: A4-1234',
   scan_reading: 'Ana karanta lakabin a wannan wayar…',
+  scan_rotate: 'Ana gwada wani gefe…',
   scan_found: 'An samu',
   scan_none: 'Ba a samu lambar NAFDAC ba',
   scan_crop: 'Lambar ba ta fito sosai ba? Zana akwati a kanta',

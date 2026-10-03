@@ -29,6 +29,7 @@ export const pcm: Record<MessageKey, string> = {
   type_check: 'Check am',
   type_invalid: 'This one no be NAFDAC number. Example: A4-1234',
   scan_reading: 'We dey read the label for this phone…',
+  scan_rotate: 'We dey try another side…',
   scan_found: 'We see',
   scan_none: 'We no see NAFDAC number',
   scan_crop: 'Number no clear? Draw box round am',

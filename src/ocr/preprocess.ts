@@ -1,3 +1,5 @@
+import type { Rotation } from './retry';
+
 export interface Crop {
   x: number;
   y: number;
@@ -111,4 +113,22 @@ export function binarizeOtsu(src: HTMLCanvasElement): HTMLCanvasElement {
 export function thumbnail(src: Source, max = 480): Promise<Blob | null> {
   const c = toCanvas(src, max);
   return new Promise((resolve) => c.toBlob((b) => resolve(b), 'image/jpeg', 0.6));
+}
+
+export function rotatedSize(w: number, h: number, deg: Rotation): { w: number; h: number } {
+  return deg === 90 || deg === 270 ? { w: h, h: w } : { w, h };
+}
+
+/** Turns a canvas clockwise by a quarter-turn multiple. */
+export function rotateCanvas(src: HTMLCanvasElement, deg: Rotation): HTMLCanvasElement {
+  if (deg === 0) return src;
+  const { w, h } = rotatedSize(src.width, src.height, deg);
+  const c = document.createElement('canvas');
+  c.width = w;
+  c.height = h;
+  const ctx = c.getContext('2d')!;
+  ctx.translate(w / 2, h / 2);
+  ctx.rotate((deg * Math.PI) / 180);
+  ctx.drawImage(src, -src.width / 2, -src.height / 2);
+  return c;
 }

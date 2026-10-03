@@ -14,6 +14,7 @@ export function Scan() {
   const fileRef = useRef<File | null>(pendingScan.take());
   const url = useMemo(() => (fileRef.current ? URL.createObjectURL(fileRef.current) : ''), []);
   const [progress, setProgress] = useState(0);
+  const [rotating, setRotating] = useState(false);
   const [phase, setPhase] = useState<'reading' | 'none' | 'crop' | 'failed'>('reading');
   const [result, setResult] = useState<ScanResult | null>(null);
   const [crop, setCrop] = useState<Crop | null>(null);
@@ -30,11 +31,11 @@ export function Scan() {
       return;
     }
     let cancelled = false;
-    runScan(file, { onProgress: setProgress })
+    runScan(file, { onProgress: setProgress, onStage: () => setRotating(true) })
       .then(async (r) => {
         if (cancelled) return;
         setResult(r);
-        void logEvent('ocr_done', { ms: r.ms, pass: r.pass, foundNrn: r.input.nrnCandidates.length > 0, conf: Math.round(r.confidence) });
+        void logEvent('ocr_done', { ms: r.ms, pass: r.pass, rotation: r.rotation, foundNrn: r.input.nrnCandidates.length > 0, conf: Math.round(r.confidence) });
         if (r.input.nrnCandidates.length) await finish(r);
         else setPhase('none');
       })
@@ -77,7 +78,7 @@ export function Scan() {
       )}
       {phase === 'reading' && (
         <>
-          <span className="label">{t('scan_reading')}</span>
+          <span className="label" data-testid="ocr-stage">{rotating ? t('scan_rotate') : t('scan_reading')}</span>
           <div className="progress" data-testid="ocr-progress"><i style={{ width: `${Math.round(progress * 100)}%` }} /></div>
           <p className="small muted">{t('scan_private')}</p>
         </>

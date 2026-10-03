@@ -27,6 +27,7 @@ export const en = {
   type_check: 'Check',
   type_invalid: 'That does not look like a NAFDAC number. Example: A4-1234',
   scan_reading: 'Reading the label on this phone…',
+  scan_rotate: 'Trying another angle…',
   scan_found: 'Found',
   scan_none: 'No NAFDAC number found',
   scan_crop: 'Number unclear? Draw a box around it',
