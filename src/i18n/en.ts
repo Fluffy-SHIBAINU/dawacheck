@@ -67,6 +67,7 @@ export const en = {
   ingredient_note: 'NAFDAC has alerts about some {ingredient} products. Compare your batch number with NAFDAC alerts.',
   did_you_mean: 'Did you mean',
   listen: 'Listen',
+  voice_unavailable: 'Voice is not available on this phone. Read the text above.',
   report: 'Report this box',
   done: 'Done',
   report_title: 'Report this box',

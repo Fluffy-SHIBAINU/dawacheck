@@ -113,7 +113,7 @@ Work strictly in this order. A task is done when every checkbox in its section i
 - [x] Task 25: README, pitch deck content, deck file, video script
 
 **Phase 7: Polish backlog, no API keys needed** (`2026-10-03-dawacheck/p7-polish.md`)
-- [ ] Task 26: Speak verdicts with the phone's own voice when clips are missing (English, Pidgin)
+- [x] Task 26: Speak verdicts with the phone's own voice when clips are missing (English, Pidgin)
 - [ ] Task 27: Dashboard shows labelled example data when the backend is off
 - [ ] Task 28: Keep offline data (storage persistence) and iPhone install hint
 - [ ] Task 29: Find a medicine by name, offline

@@ -22,7 +22,7 @@ ElevenLabs clips are blocked on a key. iPhones and Android phones ship offline E
 - Consumes: `playClip(key, lang)` (`src/voice/player.ts`), `CLIPS`, `voiceLangFor` (`src/voice/clips.ts`)
 - Produces: `pickVoice(voices: SpeechSynthesisVoice[], lang: Lang): SpeechSynthesisVoice | null`, `speak(text: string, lang: Lang, synth?: SynthLike, Utterance?: UtteranceCtor): Promise<boolean>`
 
-- [ ] **Step 1: Write the failing tests** `tests/unit/speech.test.ts`
+- [x] **Step 1: Write the failing tests** `tests/unit/speech.test.ts`
 
 ```ts
 import { pickVoice, speak } from '../../src/voice/speech';
@@ -73,9 +73,9 @@ test('speak resolves false on error, for Hausa, and when speech is unsupported',
 });
 ```
 
-- [ ] **Step 2: Run** `npx vitest run tests/unit/speech.test.ts`. Expected: FAIL (module not found).
+- [x] **Step 2: Run** `npx vitest run tests/unit/speech.test.ts`. Expected: FAIL (module not found).
 
-- [ ] **Step 3: Implement** `src/voice/speech.ts`
+- [x] **Step 3: Implement** `src/voice/speech.ts`
 
 ```ts
 import type { Lang } from '../core/types';
@@ -134,14 +134,14 @@ export async function speak(
 }
 ```
 
-- [ ] **Step 4: Run** the test again. Expected: PASS.
+- [x] **Step 4: Run** the test again. Expected: PASS.
 
-- [ ] **Step 5: Wire ListenButton.** On click: `const ok = await playClip(clip, lang)`; if `!ok`, `const spoke = await speak(CLIPS[clip][voiceLangFor(lang)], lang)`; if neither worked, show `<span className="small muted" role="status" data-testid="voice-unavailable">{t('voice_unavailable')}</span>` under the button. Log `voice_played` with `{ key, lang, ok, fallback: spoke }`. Leave `autoPlay` on clips only (browsers block speech without a tap). New keys:
+- [x] **Step 5: Wire ListenButton.** On click: `const ok = await playClip(clip, lang)`; if `!ok`, `const spoke = await speak(CLIPS[clip][voiceLangFor(lang)], lang)`; if neither worked, show `<span className="small muted" role="status" data-testid="voice-unavailable">{t('voice_unavailable')}</span>` under the button. Log `voice_played` with `{ key, lang, ok, fallback: spoke }`. Leave `autoPlay` on clips only (browsers block speech without a tap). New keys:
   - `voice_unavailable`: en "Voice is not available on this phone. Read the text above." · pcm "Voice no dey for this phone. Read the writing for top." · ha "Babu murya a wannan wayar. Karanta rubutun da ke sama."
 
-- [ ] **Step 6: ListenButton test** in `tests/unit/ui/listen.test.tsx`: `vi.mock('../../../src/voice/player', () => ({ playClip: vi.fn(async () => false) }))` and `vi.mock('../../../src/voice/speech', () => ({ speak: vi.fn(async () => true) }))`; render `<ListenButton clip="v_green" />` inside `AppProvider` (loader as in `tests/unit/ui/report.test.tsx`, language English), click "Listen", expect `speak` called with `CLIPS.v_green.en` and `'en'`, and no `voice-unavailable`. Second case: `speak` resolves false, expect `voice-unavailable` visible.
+- [x] **Step 6: ListenButton test** in `tests/unit/ui/listen.test.tsx`: `vi.mock('../../../src/voice/player', () => ({ playClip: vi.fn(async () => false) }))` and `vi.mock('../../../src/voice/speech', () => ({ speak: vi.fn(async () => true) }))`; render `<ListenButton clip="v_green" />` inside `AppProvider` (loader as in `tests/unit/ui/report.test.tsx`, language English), click "Listen", expect `speak` called with `CLIPS.v_green.en` and `'en'`, and no `voice-unavailable`. Second case: `speak` resolves false, expect `voice-unavailable` visible.
 
-- [ ] **Step 7: Verify and ship.** `npm run verify && npm run test:ocr`, then deploy (LOOP.md). Commit `feat: speak English and Pidgin verdicts with the phone's own voice when clips are missing`.
+- [x] **Step 7: Verify and ship.** `npm run verify && npm run test:ocr`, then deploy (LOOP.md). Commit `feat: speak English and Pidgin verdicts with the phone's own voice when clips are missing`.
 
 ---
 

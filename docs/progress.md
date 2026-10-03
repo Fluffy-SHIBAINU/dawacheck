@@ -32,3 +32,4 @@
   - Task 24 (sync): create a Supabase project, run `supabase/schema.sql` in its SQL editor, add `VITE_SUPABASE_URL`, `VITE_SUPABASE_ANON_KEY`, `SUPABASE_SERVICE_ROLE_KEY` to `.env`, then `npm run check:backend`, `npm run holdback -- --n=12`, `npm run publish-packs -- --dir=data/packs`, set `VITE_SYNC_MODE=supabase`, `npm run deploy`.
   - Optional (alerts): add `ANTHROPIC_API_KEY`, run `npm run data:alerts` for Claude-extracted brands and batches (now title matching); add `BRIGHTDATA_API_KEY` and use `--via=brightdata` if NAFDAC blocks direct fetches.
   - iPhone hands-on check: follow `docs/iphone-checklist.md`.
+- 17:05 · Task 26 · done · ListenButton falls back to the phone's offline voice (English, Pidgin) when clips are missing; 'voice unavailable' note otherwise; gates green (178 unit, 14 e2e, OCR)

@@ -69,6 +69,7 @@ export const pcm: Record<MessageKey, string> = {
   ingredient_note: 'NAFDAC get alerts about some {ingredient} medicines. Compare your batch number with NAFDAC alerts.',
   did_you_mean: 'You mean',
   listen: 'Listen',
+  voice_unavailable: 'Voice no dey for this phone. Read the writing for top.',
   report: 'Report this box',
   done: 'Finish',
   report_title: 'Report this box',

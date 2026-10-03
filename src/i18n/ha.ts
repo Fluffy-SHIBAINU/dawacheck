@@ -69,6 +69,7 @@ export const ha: Record<MessageKey, string> = {
   ingredient_note: 'NAFDAC tana da gargaɗi game da wasu magungunan {ingredient}. Kwatanta lambar batch ɗinka da gargaɗin NAFDAC.',
   did_you_mean: 'Kana nufin',
   listen: 'Saurara',
+  voice_unavailable: 'Babu murya a wannan wayar. Karanta rubutun da ke sama.',
   report: 'Kai rahoton wannan kwalin',
   done: 'Shi ke nan',
   report_title: 'Kai rahoton wannan kwalin',
