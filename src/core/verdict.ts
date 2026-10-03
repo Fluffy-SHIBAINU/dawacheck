@@ -84,7 +84,11 @@ export function decide(input: ScanInput, ctx: DecideContext): Verdict {
     const first = input.nrnCandidates[0];
     const variants = nrnVariants(first, ctx.register, ctx.confusion);
     const asProducts = (xs: { nrn: string }[]) => xs.slice(0, 3).map((x) => pickRecord(ctx.register.byNrn.get(x.nrn)!, input, boxTokens));
-    v.suggestions = asProducts(variants);
+    // Typed numbers: offer typo neighbours. Photos: only neighbours whose brand partly resembles the box.
+    v.suggestions =
+      input.source === 'manual'
+        ? asProducts(variants)
+        : asProducts(variants.filter((x) => ctx.register.byNrn.get(x.nrn)!.some((p) => brandScore(p, boxTokens) >= t.nameMismatch)));
     if (input.source === 'ocr') {
       const named = variants.filter((x) => ctx.register.byNrn.get(x.nrn)!.some((p) => brandScore(p, boxTokens) >= t.nameMatch));
       if (named.length === 1 || (named.length > 1 && named[0].weight >= 2 * named[1].weight)) {
@@ -117,6 +121,7 @@ export function decide(input: ScanInput, ctx: DecideContext): Verdict {
   v.ingredientAlertNote = am.ingredientNote;
   if (am.match) {
     v.alert = am.match.alert;
+    v.suggestions = [];
     if (am.match.batchMatch) reasons.push('batch_on_alert');
     else if (am.match.alert.kind === 'unregistered') reasons.push('on_alert');
     else reasons.push('alert_product');

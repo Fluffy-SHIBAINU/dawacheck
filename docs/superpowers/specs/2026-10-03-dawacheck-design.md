@@ -201,6 +201,7 @@ Rules are evaluated in this order. The final level is the most severe one (red >
 7. **Box vs register** (OCR input only):
    - Name: best similarity of any product-name token (≥ 4 chars) against OCR tokens. ≥ `nameMatch` (0.8) counts as a match. A score below `nameMatch` gives `amber` + `name_mismatch` only when the OCR has ≥ 3 name tokens **and** the first *distinctive* box token (one not similar to an ingredient or applicant word) scores below `nameMismatch` (0.5) against the product name. Otherwise the reason is `name_unconfirmed` (info).
    - Fuzzy NRN correction (rule 2) is accepted only when the corrected product's brand words (name tokens minus ingredient words) match the box at ≥ `nameMatch`.
+   - Suggestions: typed numbers get up to 3 typo neighbours. Photos only get neighbours whose brand words score ≥ `nameMismatch` against the box. Any alert match clears suggestions.
    - Strength: if the box shows strengths in mg and none of them occur in the registered strength values: `amber` + `strength_mismatch`.
 8. **Community flag** on the NRN: `amber` + `community_flag`.
 9. Otherwise `green` + `registered`. Manual input always adds `name_unconfirmed` and the screen asks the user to check that the box name equals `product.name`.

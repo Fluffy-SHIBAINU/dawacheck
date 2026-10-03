@@ -90,7 +90,20 @@ describe('decision table', () => {
     expect(v.level).toBe('red');
     expect(v.reasons).toContain('not_in_register');
     expect(v.reasons).not.toContain('corrected_number');
-    expect(v.suggestions.map((p) => p.nrn)).toContain('A4-6298');
+    // OCR: a neighbour whose brand does not resemble the box is not offered as a suggestion.
+    expect(v.suggestions).toEqual([]);
+  });
+
+  test('OCR suggests a neighbour only when its brand partly matches the box', () => {
+    const v = ocr('ZENTEL PLUS\nNAFDAC REG. NO. A4-6299');
+    expect(v.reasons).toContain('corrected_number');
+    expect(v.nrn).toBe('A4-6298');
+  });
+
+  test('alert matches never come with number suggestions', () => {
+    const v = ocr('MENOFIX COMPOSITION\nNAFDAC REG. NO. A4-6239');
+    expect(v.reasons).toContain('on_alert');
+    expect(v.suggestions).toEqual([]);
   });
 
   test('duplicate numbers pick the record matching name and strength', () => {
