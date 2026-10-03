@@ -7,3 +7,4 @@
 - 15:06 · Task 6 · done · NRN candidates + manual readings, all cases green first try
 - 15:07 · Task 7 · done · expiry/batch/strength/name parsers, 20 cases green
 - 15:08 · Task 8 · done · parseScan, register index (+generic ingredient vocabulary), confusion variants; 64 core tests green
+- 15:10 · Task 9 · done · alert matching ignores register/product ingredient words (title-only alerts no longer flag every artemether box)

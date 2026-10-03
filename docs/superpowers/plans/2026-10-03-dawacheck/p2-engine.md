@@ -753,11 +753,11 @@ git commit -m "feat: add scan parsing, register index and learned confusion vari
 
 **Interfaces:**
 - Consumes: `nameTokens`, `productTokens`, `bestTokenSimilarity` (Task 7); `Alert`, `AlertProduct`, `Product` (Task 2).
-- Produces: `interface AlertMatch { alert: Alert; product: AlertProduct; batchMatch: boolean }`; `matchAlerts(args: { alerts: Alert[]; boxTokens: string[]; product: Product | null; nrn: string | null; batch: string | null; threshold: number }): { match: AlertMatch | null; ingredientNote: string | null }`.
+- Produces: `interface AlertMatch { alert: Alert; product: AlertProduct; batchMatch: boolean }`; `matchAlerts(args: { alerts: Alert[]; boxTokens: string[]; product: Product | null; nrn: string | null; batch: string | null; threshold: number; generic?: Set<string> }): { match: AlertMatch | null; ingredientNote: string | null }`. (`generic` was added during the build: brand words found in the register's ingredient vocabulary or the scanned product's ingredient never count as brand matches.)
 
 Rules (spec §8.4): brand match = at least half of the brand's distinctive tokens (brand tokens minus ingredient words) match box or product-name tokens at ≥ threshold, and at least one does; or the alert product's `nrn` equals the resolved NRN. Ingredient-only matches only set `ingredientNote`. Alerts with `appliesToNigeria === false` are ignored. Ranking: batch match > `unregistered` > other kinds; ties go to the newer date.
 
-- [ ] **Step 1: Write the failing test** `tests/unit/core/alerts.test.ts`
+- [x] **Step 1: Write the failing test** `tests/unit/core/alerts.test.ts`
 
 ```ts
 import { matchAlerts } from '../../../src/core/alerts';
@@ -805,12 +805,12 @@ test('nrn stated in an alert matches directly', () => {
 });
 ```
 
-- [ ] **Step 2: Run to verify failure**
+- [x] **Step 2: Run to verify failure**
 
 Run: `npx vitest run tests/unit/core/alerts.test.ts`
 Expected: FAIL, module not found.
 
-- [ ] **Step 3: Implement** `src/core/alerts.ts`
+- [x] **Step 3: Implement** `src/core/alerts.ts`
 
 ```ts
 import type { Alert, AlertProduct, Product } from './types';
@@ -866,12 +866,12 @@ export function matchAlerts(args: {
 }
 ```
 
-- [ ] **Step 4: Run tests**
+- [x] **Step 4: Run tests**
 
 Run: `npx vitest run tests/unit/core/alerts.test.ts && npm run typecheck`
 Expected: PASS.
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 git add -A
