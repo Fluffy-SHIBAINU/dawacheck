@@ -1,0 +1,23 @@
+:root {
+  --bg: #F6F9F7;
+  --surface: #FFFFFF;
+  --sunk: #EAF0ED;
+  --ink: #10201A;
+  --muted: #5A6A63;
+  --line: #DAE3DE;
+  --accent: #0B6E4F;
+  --accent-ink: #FFFFFF;
+  --accent-soft: #DDEFE7;
+  --ok: #1D8752;
+  --ok-bg: #E1F3E8;
+  --warn: #9A6300;
+  --warn-bg: #FBEFD6;
+  --bad: #BF3129;
+  --bad-bg: #FBE3E0;
+  --stamp: #2F45B5;
+  --font-display: 'Archivo', 'Arial Narrow', system-ui, sans-serif;
+  --font-body: 'Atkinson Hyperlegible', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, Menlo, monospace;
+  --radius: 14px;
+  --tap: 48px;
+}

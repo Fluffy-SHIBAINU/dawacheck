@@ -1,0 +1,11 @@
+node_modules
+dist
+dist-e2e
+.env
+.env.local
+data/raw
+public/tesseract
+test-results
+playwright-report
+coverage
+.DS_Store
