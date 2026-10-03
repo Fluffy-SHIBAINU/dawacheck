@@ -628,7 +628,7 @@ git commit -m "feat: add core domain types and text utilities"
 - Consumes: `collapseWs`, `decodeEntities` (Task 2), `Product`, `RegisterPack` (Task 2).
 - Produces: `NRN_RE: RegExp`, `normalizeNrn(raw: string | null | undefined): string | null`; `GreenbookRow` type; `normalizeRecord(r: GreenbookRow): Product | null`; `normalizeAll(rows: GreenbookRow[]): { products: Product[]; dropped: string[] }`; `env(name: string): string | undefined`; `sleep(ms: number): Promise<void>`; the file `public/packs/register.json` (`RegisterPack`).
 
-- [ ] **Step 1: Write the failing tests**
+- [x] **Step 1: Write the failing tests**
 
 `tests/unit/core/nrn-normalize.test.ts`:
 ```ts
@@ -728,12 +728,12 @@ test('real register pack has NAFDAC products including A4-6238', () => {
 });
 ```
 
-- [ ] **Step 2: Run to verify failure**
+- [x] **Step 2: Run to verify failure**
 
 Run: `npx vitest run tests/unit/core/nrn-normalize.test.ts tests/scripts/normalizeRegister.test.ts`
 Expected: FAIL, modules not found.
 
-- [ ] **Step 3: Implement**
+- [x] **Step 3: Implement**
 
 `src/core/parse/nrn.ts`:
 ```ts
@@ -888,7 +888,7 @@ main().catch((e) => {
 });
 ```
 
-- [ ] **Step 4: Add the script and fetch real data**
+- [x] **Step 4: Add the script and fetch real data**
 
 ```bash
 npm pkg set scripts.data:register="tsx scripts/fetch-register.ts"
@@ -896,12 +896,12 @@ npm run data:register
 ```
 Expected output ends with `register.json: ~8,9xx products, dropped <20`. If Greenbook is unreachable, retry once after 60 s. If it is still down, note it in `docs/progress.md` and mark the task `BLOCKED: Greenbook unreachable`.
 
-- [ ] **Step 5: Run all tests and typecheck**
+- [x] **Step 5: Run all tests and typecheck**
 
 Run: `npm test && npm run typecheck`
 Expected: PASS (including `registerPack.test.ts` against the real file).
 
-- [ ] **Step 6: Commit**
+- [x] **Step 6: Commit**
 
 ```bash
 git add -A

@@ -10,7 +10,8 @@
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview --port 4173 --strictPort",
     "typecheck": "tsc --noEmit",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "data:register": "tsx scripts/fetch-register.ts"
   },
   "keywords": [],
   "author": "",

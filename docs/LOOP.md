@@ -16,7 +16,7 @@ Start it from a Claude Code session opened in this folder, with the model set to
 5. If a step needs something only the user can provide (API key, login, device), finish every other step, mark the index entry `BLOCKED: <exact thing needed>`, and move on next iteration.
 6. Commit with `git add -A && git commit -m "<type>: <summary>"`, tick the task in the Task Index, and append one line to `docs/progress.md`: `- HH:MM · Task N · done|blocked · notes`.
 7. Phase-end tasks (10, 15, 19, 23) must end with `npm run verify` green. That includes e2e once Playwright exists.
-8. Do one task per iteration, then schedule the next wakeup in 60 seconds.
+8. Do one task per iteration. When tasks are small and the deadline is close, two or three tasks per iteration are fine, with one commit per task. Then schedule the next wakeup in 60 seconds.
 9. When every task is ticked or `BLOCKED`, print the BLOCKED list with what the user must do, then stop the loop.
 
 ## Guardrails
