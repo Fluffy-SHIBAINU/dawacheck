@@ -11,7 +11,8 @@
     "preview": "vite preview --port 4173 --strictPort",
     "typecheck": "tsc --noEmit",
     "test:watch": "vitest",
-    "data:register": "tsx scripts/fetch-register.ts"
+    "data:register": "tsx scripts/fetch-register.ts",
+    "data:alerts": "tsx scripts/fetch-alerts.ts"
   },
   "keywords": [],
   "author": "",
@@ -29,6 +30,7 @@
     "react-router-dom": "^7.18.4"
   },
   "devDependencies": {
+    "@anthropic-ai/sdk": "^0.131.0",
     "@testing-library/dom": "^10.4.2",
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.3",
@@ -43,6 +45,7 @@
     "tsx": "^4.23.15",
     "typescript": "^7.0.2",
     "vite": "^8.3.2",
-    "vitest": "^4.1.11"
+    "vitest": "^4.1.11",
+    "zod": "^4.6.5"
   }
 }

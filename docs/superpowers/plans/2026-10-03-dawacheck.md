@@ -79,7 +79,7 @@ Work strictly in this order. A task is done when every checkbox in its section i
 - [x] Task 1: Scaffold the app, tooling, styles and smoke test
 - [x] Task 2: Core types and text utilities
 - [x] Task 3: Register normalization and `data:register` (real NAFDAC data)
-- [ ] Task 4: Alerts fetch and extraction, `data:alerts` (WP API, BrightData, Claude)
+- [x] Task 4: Alerts fetch and extraction, `data:alerts` (WP API, BrightData, Claude)
 - [ ] Task 5: sha256, manifest builder and version compare
 
 **Phase 2: Verdict engine** (`2026-10-03-dawacheck/p2-engine.md`)

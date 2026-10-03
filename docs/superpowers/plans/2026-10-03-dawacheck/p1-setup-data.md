@@ -912,7 +912,7 @@ git commit -m "feat: fetch and normalize the NAFDAC register into an offline pac
 
 ### Task 4: Alerts fetch and extraction, `data:alerts` (WP API, BrightData, Claude)
 
-Before writing `extractAlert.ts`, invoke the `claude-api` skill to confirm current Anthropic SDK usage and the model id `claude-haiku-4-5-20251001`.
+Before writing `extractAlert.ts`, invoke the `claude-api` skill to confirm current Anthropic SDK usage. (Implemented with `claude-opus-5` plus structured outputs via `messages.parse` and `zodOutputFormat`, per the skill. A forced tool call conflicts with Opus 5's default thinking.)
 
 **Files:**
 - Create: `scripts/lib/alerts.ts`, `scripts/lib/brightdata.ts`, `scripts/lib/extractAlert.ts`, `scripts/fetch-alerts.ts`
@@ -923,14 +923,14 @@ Before writing `extractAlert.ts`, invoke the `claude-api` skill to confirm curre
 - Consumes: `Alert`, `AlertKind`, `ALERT_KINDS`, `AlertsPack` (Task 2); `normalizeNrn` (Task 3); `decodeEntities` (Task 2); `env`, `sleep` (Task 3).
 - Produces: `alertIdFromTitle(title: string): string | null`; `htmlToText(html: string): string`; `kindFromText(t: string): AlertKind`; `brandFromTitle(title: string): string | null`; `appliesToNigeriaFromTitle(title: string): boolean`; `interface AlertMeta { wpId: number; url: string; date: string; title: string }`; `interface ExtractedAlert`; `normalizeAlert(x: ExtractedAlert, m: AlertMeta): Alert`; `fallbackAlertFromTitle(m: AlertMeta): Alert`; `fetchViaBrightData(url: string): Promise<string>`; `extractAlert(text: string, title: string): Promise<ExtractedAlert>`; the file `public/packs/alerts.json` (`AlertsPack`).
 
-- [ ] **Step 1: Install the SDK**
+- [x] **Step 1: Install the SDK**
 
 ```bash
 npm i -D @anthropic-ai/sdk
 npm pkg set scripts.data:alerts="tsx scripts/fetch-alerts.ts"
 ```
 
-- [ ] **Step 2: Write the failing test** `tests/scripts/alerts.test.ts`
+- [x] **Step 2: Write the failing test** `tests/scripts/alerts.test.ts`
 
 ```ts
 import {
@@ -1008,12 +1008,12 @@ test('normalizeAlert falls back to the title brand when no products were extract
 });
 ```
 
-- [ ] **Step 3: Run to verify failure**
+- [x] **Step 3: Run to verify failure**
 
 Run: `npx vitest run tests/scripts/alerts.test.ts`
 Expected: FAIL, module not found.
 
-- [ ] **Step 4: Implement**
+- [x] **Step 4: Implement**
 
 `scripts/lib/alerts.ts`:
 ```ts
@@ -1317,19 +1317,19 @@ main().catch((e) => {
 });
 ```
 
-- [ ] **Step 5: Run unit tests**
+- [x] **Step 5: Run unit tests**
 
 Run: `npx vitest run tests/scripts/alerts.test.ts`
 Expected: PASS. If a `brandFromTitle` case fails, adjust `LEADING` (not the expected values).
 
-- [ ] **Step 6: Generate the real alerts pack**
+- [x] **Step 6: Generate the real alerts pack**
 
 Run: `npm run data:alerts`
 - With `ANTHROPIC_API_KEY` set: Claude extraction (about 60–120 alerts, under $1).
 - Without it: title fallback. Log in `docs/progress.md`: "alerts used title fallback; rerun `npm run data:alerts` after adding ANTHROPIC_API_KEY". Do **not** mark the task blocked.
 - To use the BrightData credits as well: when `BRIGHTDATA_API_KEY` is set, delete five cache files and refetch them through BrightData: `ls data/alerts-cache/*.json | head -5 | xargs rm -f && npm run data:alerts -- --via=brightdata --limit=200`. Only uncached alerts go through BrightData.
 
-- [ ] **Step 7: Write `tests/scripts/alertsPack.test.ts`**
+- [x] **Step 7: Write `tests/scripts/alertsPack.test.ts`**
 
 ```ts
 import { readFileSync } from 'node:fs';
@@ -1351,7 +1351,7 @@ test('real alerts pack is well formed and includes the Menofix unregistered aler
 Run: `npm test && npm run typecheck`
 Expected: PASS. If the Menofix alert is missing because NAFDAC removed it, change the test to the newest `unregistered` alert and update the demo carton 5 brand in Task 16 to that alert's brand. Note the change in `docs/progress.md`.
 
-- [ ] **Step 8: Commit**
+- [x] **Step 8: Commit**
 
 ```bash
 git add -A
