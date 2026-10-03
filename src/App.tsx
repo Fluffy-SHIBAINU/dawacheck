@@ -9,6 +9,7 @@ import { Result } from './screens/Result';
 import { Report } from './screens/Report';
 import { History } from './screens/History';
 import { Settings } from './screens/Settings';
+import { DemoPacks } from './screens/DemoPacks';
 
 function Gate({ children }: { children: ReactNode }) {
   const { status, error, settings, t } = useApp();
@@ -27,7 +28,8 @@ function Gate({ children }: { children: ReactNode }) {
       </div>
     );
   }
-  if (!settings.onboarded && location.pathname !== '/welcome') return <Navigate to="/welcome" replace />;
+  const open = location.pathname.startsWith('/demo-packs') || location.pathname.startsWith('/dashboard');
+  if (!settings.onboarded && !open && location.pathname !== '/welcome') return <Navigate to="/welcome" replace />;
   return <>{children}</>;
 }
 
@@ -44,6 +46,7 @@ export function App({ loader }: { loader?: () => Promise<LoadedPacks> }) {
             <Route path="/report/:id" element={<Report />} />
             <Route path="/history" element={<History />} />
             <Route path="/settings" element={<Settings />} />
+            <Route path="/demo-packs" element={<DemoPacks />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </Gate>

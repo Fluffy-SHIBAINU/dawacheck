@@ -15,3 +15,4 @@
 - 15:18 · Task 14 · done · app shell + onboarding + home + typed check + verdict screen; 3 E2E green; fixed ambiguous getByText('Artheget EZ') -> heading role (manual verdict lists the name twice), plan patched
 - 15:19 · Task 15 · done · report/history/settings; verify gate green (137 unit, 4 e2e)
 - 15:19 · MVP checkpoint reached
+- 15:21 · Task 16 · done · 5 demo cartons + fixture PNGs; gate lets /demo-packs and /dashboard skip onboarding

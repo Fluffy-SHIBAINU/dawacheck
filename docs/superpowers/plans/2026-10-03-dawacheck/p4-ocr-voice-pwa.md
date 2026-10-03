@@ -16,7 +16,7 @@ Read the plan index Global Constraints first. Spec reference: §7 (scan pipeline
 - Consumes: `parseScan`, `decide` (Phase 2), fixtures `DEMO_TEXT` (Task 6).
 - Produces: `interface Carton { n: number; key: 'green' | 'mismatch' | 'notfound' | 'expired' | 'alert'; brand: string; lines: string[]; nrn: string; batch: string; exp: string; expected: Level; accent: string }`, `CARTONS: Carton[]`, `cartonText(c: Carton): string`, `cartonHtml(c: Carton): string`; route `/demo-packs` (all cartons) and `/demo-packs?fixture=N` (one carton).
 
-- [ ] **Step 1: Write the failing test** `tests/unit/demo.test.ts`
+- [x] **Step 1: Write the failing test** `tests/unit/demo.test.ts`
 
 ```ts
 import { CARTONS, cartonHtml, cartonText } from '../../src/demo/cartons';
@@ -45,12 +45,12 @@ test('carton html carries the number and a demo marker', () => {
 });
 ```
 
-- [ ] **Step 2: Run to verify failure**
+- [x] **Step 2: Run to verify failure**
 
 Run: `npx vitest run tests/unit/demo.test.ts`
 Expected: FAIL, module not found.
 
-- [ ] **Step 3: Implement**
+- [x] **Step 3: Implement**
 
 `src/demo/cartons.ts`:
 ```ts
@@ -142,7 +142,7 @@ await writeFile(`${out}/expected.json`, JSON.stringify(CARTONS.map((c) => ({ fil
 console.log(`wrote ${CARTONS.length} fixtures to ${out}`);
 ```
 
-- [ ] **Step 4: Generate fixtures and test**
+- [x] **Step 4: Generate fixtures and test**
 
 ```bash
 npm pkg set scripts.fixtures="tsx scripts/make-fixtures.ts"
@@ -151,7 +151,7 @@ npx vitest run tests/unit/demo.test.ts && npm run typecheck
 ```
 Expected: 5 PNGs plus expected.json, tests PASS.
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 git add -A

@@ -1,0 +1,32 @@
+[
+  {
+    "file": "1.png",
+    "nrn": "A4-6238",
+    "level": "green",
+    "key": "green"
+  },
+  {
+    "file": "2.png",
+    "nrn": "A4-6238",
+    "level": "amber",
+    "key": "mismatch"
+  },
+  {
+    "file": "3.png",
+    "nrn": "A4-99231",
+    "level": "red",
+    "key": "notfound"
+  },
+  {
+    "file": "4.png",
+    "nrn": "A4-6238",
+    "level": "red",
+    "key": "expired"
+  },
+  {
+    "file": "5.png",
+    "nrn": "A4-0999",
+    "level": "red",
+    "key": "alert"
+  }
+]
