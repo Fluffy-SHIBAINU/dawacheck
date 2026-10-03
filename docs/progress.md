@@ -25,3 +25,4 @@
 - 15:34 · Task 23 · done · NAFDAC dashboard over aggregate views; phase 5 gate green (170 unit, 14 e2e incl. learning + dashboard, OCR)
 - 15:36 · Task 24 · blocked (partial) · LIVE: https://dawacheck-smoky.vercel.app (Vercel CLI already logged in; project dawacheck). Prod check: SW controls, offline typed check green, offline OCR carton 2 amber. Sync off until Supabase keys exist; holdback/publish/check:backend waiting on Supabase.
 - 15:41 · fix · suggestions: photos only offer brand-similar neighbours; alert matches clear suggestions (seen in deck screenshot: herbal alert box offered eye drops)
+- 15:41 · Task 25 · in progress · README (measured 16.7 MB offline app), docs/pitch.md, docs/video-script.md, deck screenshots in deck/img; prod redeployed with suggestion fix; deck next (Artifact Slides)

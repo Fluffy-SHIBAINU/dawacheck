@@ -132,7 +132,7 @@ git commit -m "chore: production backend checks, demo pack publishing and deploy
 - Consumes: everything.
 - Produces: the submission documents. `npm run sizes` prints the offline footprint used in the pitch.
 
-- [ ] **Step 1: Measure the footprint**
+- [x] **Step 1: Measure the footprint**
 
 `scripts/sizes.ts`:
 ```ts
@@ -164,7 +164,7 @@ npm run build && npm run sizes
 ```
 Use these real numbers in README and pitch. Never invent them.
 
-- [ ] **Step 2: Write `README.md`**
+- [x] **Step 2: Write `README.md`**
 
 Use exactly these sections, filling the bracketed values with real measured data:
 
@@ -216,7 +216,7 @@ DawaCheck checks NAFDAC records and what is printed on the box. It cannot test w
 - Next: native Android app, Kenya PPB and Ghana FDA registers, a NAFDAC SMS shortcode, pharmacist-reviewed "how to take" cards.
 ```
 
-- [ ] **Step 3: Write `docs/pitch.md`** (10 slides; this is the deck source)
+- [x] **Step 3: Write `docs/pitch.md`** (10 slides; this is the deck source)
 
 ```markdown
 # DawaCheck pitch (10 slides)
@@ -237,7 +237,7 @@ DawaCheck checks NAFDAC records and what is printed on the box. It cannot test w
 
 Invoke the `anthropic-skills:pptx` skill and create `deck/DawaCheck.pptx` from `docs/pitch.md`: 10 slides, 16:9, palette `#0B6E4F` / `#F6F9F7` / `#10201A` with verdict colors `#1D8752`, `#9A6300`, `#BF3129`. Use screenshots captured with Playwright from `#/demo-packs` and from the result screens for cartons 1–3 (`page.screenshot` at device `iPhone 14`), saved to `deck/img/`. If the skill is unavailable, mark this step `BLOCKED: deck file` and keep `docs/pitch.md` as the source. The main session can build the deck instead.
 
-- [ ] **Step 5: Write `docs/video-script.md`**
+- [x] **Step 5: Write `docs/video-script.md`**
 
 ```markdown
 # DawaCheck demo video (3:00)
