@@ -8,7 +8,7 @@ import type { Lang } from '../core/types';
 import { timeAgo } from '../lib/time';
 
 export function Settings() {
-  const { t, settings, updateSettings, packs, pendingReports, online, syncing, lastSync, syncEnabled, runSync } = useApp();
+  const { t, settings, updateSettings, packs, pendingReports, online, syncing, lastSync, syncEnabled, runSync, storagePersisted } = useApp();
   const [pendingEvents, setPendingEvents] = useState(0);
   const lang = LANGS.find((l) => l.code === settings.lang);
 
@@ -63,6 +63,9 @@ export function Settings() {
         <span>{t('settings_flags', { count: packs?.flags.length ?? 0 })}</span>
         <span>{t('settings_pending', { reports: pendingReports, events: pendingEvents })}</span>
         <span className="small muted">Register version: <span className="code" data-testid="register-version">{packs?.register.version}</span></span>
+        <span data-testid="storage-status">
+          <strong>{t('storage_title')}:</strong> {storagePersisted === 'granted' ? t('storage_kept') : t('storage_maybe')}
+        </span>
       </div>
       {syncEnabled ? (
         <>

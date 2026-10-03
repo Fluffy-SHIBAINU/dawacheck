@@ -115,7 +115,7 @@ Work strictly in this order. A task is done when every checkbox in its section i
 **Phase 7: Polish backlog, no API keys needed** (`2026-10-03-dawacheck/p7-polish.md`)
 - [x] Task 26: Speak verdicts with the phone's own voice when clips are missing (English, Pidgin)
 - [x] Task 27: Dashboard shows labelled example data when the backend is off
-- [ ] Task 28: Keep offline data (storage persistence) and iPhone install hint
+- [x] Task 28: Keep offline data (storage persistence) and iPhone install hint
 - [ ] Task 29: Find a medicine by name, offline
 - [ ] Task 30: NAFDAC alerts list, offline
 - [ ] Task 31: Accessibility pass with an automated axe check

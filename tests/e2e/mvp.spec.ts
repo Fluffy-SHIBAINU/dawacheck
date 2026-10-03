@@ -7,6 +7,8 @@ test('first run, then a registered number is green', async ({ page }) => {
   await expect(page.getByTestId('verdict')).toHaveAttribute('data-level', 'green');
   await expect(page.getByText('Registered with NAFDAC')).toBeVisible();
   await expect(page.getByRole('heading', { name: 'Artheget EZ' })).toBeVisible();
+  await page.goto('/#/');
+  await expect(page.getByTestId('install-hint')).toHaveCount(0);
 });
 
 test('a number missing from the register is red', async ({ page }) => {

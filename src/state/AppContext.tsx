@@ -12,6 +12,7 @@ import { buildConfusion } from '../core/confusion';
 import { decide, type DecideContext } from '../core/verdict';
 import { DEFAULT_THRESHOLDS, type ScanInput } from '../core/types';
 import { translate, type MessageKey } from '../i18n';
+import { requestPersistence } from '../lib/install';
 
 export interface AppApi {
   status: 'loading' | 'ready' | 'error';
@@ -30,6 +31,8 @@ export interface AppApi {
   lastSync: SyncSummary | null;
   syncEnabled: boolean;
   runSync: () => Promise<void>;
+  /** Whether the browser agreed to keep the offline data (null until asked). */
+  storagePersisted: 'granted' | 'denied' | 'unsupported' | null;
 }
 
 const AppCtx = createContext<AppApi | null>(null);
@@ -52,6 +55,7 @@ export function AppProvider({ children, loader = loadPacks, now = () => new Date
   const [packs, setPacks] = useState<LoadedPacks | null>(null);
   const [online, setOnline] = useState<boolean>(typeof navigator === 'undefined' ? true : navigator.onLine);
   const [pendingReports, setPending] = useState(0);
+  const [storagePersisted, setStoragePersisted] = useState<AppApi['storagePersisted']>(null);
 
   const refreshCounts = useCallback(async () => {
     setPending(await countPendingReports());
@@ -74,6 +78,10 @@ export function AppProvider({ children, loader = loadPacks, now = () => new Date
         await reloadPacks();
         await refreshCounts();
         if (!cancelled) setStatus('ready');
+        // Ask the browser not to evict the 16 MB of offline data under storage pressure.
+        void requestPersistence().then((r) => {
+          if (!cancelled) setStoragePersisted(r);
+        });
         void logEvent('app_open', { online: navigator.onLine });
       } catch (e) {
         if (!cancelled) {
@@ -176,7 +184,7 @@ export function AppProvider({ children, loader = loadPacks, now = () => new Date
 
   const api: AppApi = {
     status, error, settings, packs, ctx, online, pendingReports, t, updateSettings, reloadPacks, refreshCounts, check,
-    syncing, lastSync, syncEnabled: cfg.enabled, runSync,
+    syncing, lastSync, syncEnabled: cfg.enabled, runSync, storagePersisted,
   };
   return <AppCtx.Provider value={api}>{children}</AppCtx.Provider>;
 }

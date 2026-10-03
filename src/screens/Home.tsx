@@ -8,11 +8,32 @@ import type { CheckRow } from '../data/db';
 import { pendingScan } from '../lib/pendingScan';
 import { logEvent } from '../telemetry/events';
 import { ListenButton } from '../components/ListenButton';
+import { INSTALL_HINT_KEY, isIos, isStandalone } from '../lib/install';
+
+function hintDismissed(): boolean {
+  try {
+    return localStorage.getItem(INSTALL_HINT_KEY) === '1';
+  } catch {
+    return false;
+  }
+}
 
 export function Home() {
   const { t, lastSync, packs } = useApp();
   const navigate = useNavigate();
   const [recent, setRecent] = useState<CheckRow[]>([]);
+  const [showInstall, setShowInstall] = useState(
+    () => isIos(navigator.userAgent, navigator.maxTouchPoints ?? 0) && !isStandalone() && !hintDismissed(),
+  );
+
+  function dismissInstall() {
+    try {
+      localStorage.setItem(INSTALL_HINT_KEY, '1');
+    } catch {
+      /* private mode: hide for this visit only */
+    }
+    setShowInstall(false);
+  }
 
   useEffect(() => {
     void listChecks(5).then(setRecent);
@@ -29,6 +50,12 @@ export function Home() {
   return (
     <Layout>
       <StatusPill />
+      {showInstall && (
+        <div className="card small" data-testid="install-hint">
+          <span>{t('install_ios')}</span>
+          <button type="button" className="btn btn-outline" onClick={dismissInstall}>{t('dismiss')}</button>
+        </div>
+      )}
       {lastSync && lastSync.ok && Date.now() - new Date(lastSync.at).getTime() < 120_000 && (
         <div className="card small" data-testid="sync-summary">
           <strong>{t('sync_sent', { reports: lastSync.sentReports, events: lastSync.sentEvents })}</strong>

@@ -182,7 +182,7 @@ Browsers can evict the 16.7 MB offline data under storage pressure. `navigator.s
 **Interfaces:**
 - Produces: `isIos(ua: string, maxTouchPoints: number): boolean`, `isStandalone(w?: Window): boolean`, `requestPersistence(storage?): Promise<'granted' | 'denied' | 'unsupported'>`, `INSTALL_HINT_KEY = 'dc_install_hint_dismissed'`; `AppApi.storagePersisted: 'granted' | 'denied' | 'unsupported' | null`
 
-- [ ] **Step 1: Failing tests** `tests/unit/install.test.ts`
+- [x] **Step 1: Failing tests** `tests/unit/install.test.ts`
 
 ```ts
 import { isIos, isStandalone, requestPersistence } from '../../src/lib/install';
@@ -215,9 +215,9 @@ test('persistence: already kept, granted, denied, unsupported', async () => {
 });
 ```
 
-- [ ] **Step 2: Run.** Expected: FAIL.
+- [x] **Step 2: Run.** Expected: FAIL.
 
-- [ ] **Step 3: Implement** `src/lib/install.ts`
+- [x] **Step 3: Implement** `src/lib/install.ts`
 
 ```ts
 export const INSTALL_HINT_KEY = 'dc_install_hint_dismissed';
@@ -245,9 +245,9 @@ export async function requestPersistence(storage: Persist | null | undefined = g
 }
 ```
 
-- [ ] **Step 4: Run.** Expected: PASS.
+- [x] **Step 4: Run.** Expected: PASS.
 
-- [ ] **Step 5: Wire it.**
+- [x] **Step 5: Wire it.**
   - `AppContext`: once packs are ready, call `requestPersistence()` once and keep the result in `storagePersisted`.
   - `Settings`: a row `t('storage_title')` showing `t('storage_kept')` when granted, else `t('storage_maybe')`.
   - `Home`: when `isIos(navigator.userAgent, navigator.maxTouchPoints) && !isStandalone()` and `localStorage[INSTALL_HINT_KEY] !== '1'` (wrap storage access in try/catch), show `<div className="card small" data-testid="install-hint">` with `t('install_ios')` and a button `t('dismiss')` that sets the key and hides the card.
@@ -258,9 +258,9 @@ export async function requestPersistence(storage: Persist | null | undefined = g
     - `storage_kept`: en "Kept on this phone." · pcm "E go stay for this phone." · ha "An ajiye su a wannan wayar."
     - `storage_maybe`: en "The browser may clear it if the phone runs low on space. Install the app to keep it." · pcm "Browser fit clear am if phone space no reach. Install the app make e stay." · ha "Mai bincike zai iya share su idan wayar ta cika. Saka manhajar don a ajiye su."
 
-- [ ] **Step 6: E2E.** `tests/e2e/smoke.spec.ts` (webkit, iPhone 14): after onboarding, `install-hint` is visible; click "Close"; it is hidden; reload; still hidden. `tests/e2e/mvp.spec.ts` first test (Chromium, Pixel 7): `await expect(page.getByTestId('install-hint')).toHaveCount(0)`.
+- [x] **Step 6: E2E.** `tests/e2e/smoke.spec.ts` (webkit, iPhone 14): after onboarding, `install-hint` is visible; click "Close"; it is hidden; reload; still hidden. `tests/e2e/mvp.spec.ts` first test (Chromium, Pixel 7): `await expect(page.getByTestId('install-hint')).toHaveCount(0)`.
 
-- [ ] **Step 7: Verify and ship.** Commit `feat: keep offline data and show an iPhone install hint`.
+- [x] **Step 7: Verify and ship.** Commit `feat: keep offline data and show an iPhone install hint`.
 
 ---
 
