@@ -37,3 +37,4 @@
 - 17:09 · Task 27 · done · dashboard shows labelled example data (fictional NRNs, test checks they are not in the register) whenever no backend is configured; used `!cfg.enabled` instead of the plan's `mode === 'off'` so a half-configured backend also gets the example; gates green (180 unit, 14 e2e, OCR)
 - 17:10 · deploy · Task 27 live: /#/dashboard shows the example notice, 140 checks, Kano 9 (after the service worker swapped in the new build)
 - 17:11 · Task 28 · done · navigator.storage.persist() after packs load (Settings shows the result); iPhone-only 'Add to Home Screen' hint on Home, closable and remembered; gates green (183 unit, 16 e2e incl. webkit hint test, OCR)
+- 17:12 · deploy · Task 28 live (bundle index-DGWZjCM6.js has the hint and persistence code; a fresh desktop browser reports persisted=false, expected until installed)
