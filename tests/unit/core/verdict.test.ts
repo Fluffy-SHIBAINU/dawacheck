@@ -3,7 +3,7 @@ import { manualInput, parseScan } from '../../../src/core/parse';
 import { buildRegisterIndex } from '../../../src/core/registerIndex';
 import { buildConfusion } from '../../../src/core/confusion';
 import { DEFAULT_THRESHOLDS, type CommunityFlag } from '../../../src/core/types';
-import { ALERTS, DEMO_TEXT, REGISTER, TODAY } from '../../helpers/fixtures';
+import { ALERTS, DEMO_TEXT, REGISTER, TODAY, product } from '../../helpers/fixtures';
 
 function ctx(flags: CommunityFlag[] = []): DecideContext {
   return {
@@ -149,4 +149,15 @@ test('levelFor orders severity', () => {
   expect(levelFor(['registered', 'community_flag'])).toBe('amber');
   expect(levelFor(['registered', 'name_unconfirmed'])).toBe('green');
   expect(levelFor(['no_number_found'])).toBe('unknown');
+});
+
+test('two equally likely real numbers with the box brand stay unresolved, and both are offered', () => {
+  const twin = product({ nrn: 'A4-5230', name: 'Artheget EZ', ingredient: 'Artemether + Lumefantrine', strength: '20 mg; 120 mg' });
+  const c = { ...ctx(), register: buildRegisterIndex({ ...REGISTER, products: [...REGISTER.products, twin] }) };
+  // A4-6230 is one OCR slip from A4-6238 (0 read for 8) and from A4-5230 (6 read for 5): equal weights.
+  const v = ocr('ARTHEGET EZ\nNAFDAC REG. NO. A4-6230\nArtemether 80 mg', c);
+  expect(v.reasons).toContain('ambiguous_number');
+  expect(v.level).toBe('unknown');
+  expect(v.suggestions.map((s) => s.nrn).sort()).toEqual(['A4-5230', 'A4-6238']);
+  expect(v.product).toBeNull();
 });

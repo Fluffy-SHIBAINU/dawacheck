@@ -54,3 +54,4 @@
 - 17:49 · Task 36 · done · review fix: unlockSpeech() runs inside the tap so iOS allows the later fallback speech; an utterance cut off by a newer tap counts as spoken (no false 'voice not available'); not testable on a real iPhone here, covered by unit tests
 - 17:49 · Task 37 · done · review fix: the crop read resets the 'Trying another angle' label; gates green (211 unit, 20 e2e, OCR)
 - 17:50 · deploy · Tasks 36-37 live (bundle index-nCiHuc9H.js)
+- 17:55 · Task 38 · done · coverage review: 9 new tests (ambiguous OCR number, stale-pack fallback on network and HTTP failure, alerts pack update, fetch retry/give-up/no-retry-4xx/timeout); all passed against the existing code, no fixes needed; added @vitest/coverage-v8 dev dependency; verify green (220 unit, 20 e2e)

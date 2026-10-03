@@ -631,3 +631,13 @@ Found in the review. After a rotated scan finds nothing, the user draws a box; t
 - [x] **Step 1: Failing test.** Mock `runScan` (first call reports the `rotate` stage and finds no number; second call never resolves) and `CropBox` (reports a crop at once); render `Scan` with a pending photo; after "Number unclear?" then "Read this area", `ocr-stage` shows "Reading the label on this phone…".
 - [x] **Step 2: Implement:** reset `rotating` when a crop read starts.
 - [x] **Step 3: Verify and ship.** Commit `fix: scan label resets for the crop read`.
+
+### Task 38: Tests for untested branches found by coverage (review pass)
+
+`vitest --coverage` showed these branches with no test: the OCR "ambiguous number" path in `decide()`, the stale-pack fallback in `loadPacks()` when a newer bundled pack cannot be downloaded, the alerts-pack update in `syncNow()`, and the retry, timeout and give-up paths in `fetchWithRetry()`. All four matter offline or on weak networks.
+
+**Files:** Modify `tests/unit/core/verdict.test.ts`, `tests/unit/data/packs.test.ts`, `tests/unit/sync/sync.test.ts`; create `tests/unit/sync/http.test.ts`. Fix the code if a test exposes a bug.
+
+- [x] **Step 1: Write the tests.** Two real numbers equally likely from one misread, both with the box's brand, give `ambiguous_number`, level `unknown`, both offered, no product. A newer bundled register that fails to download (network error or HTTP 503) falls back to the stored older pack; with nothing stored, the error says `could not load register pack (HTTP 503)`. A newer alerts pack in storage is downloaded, sha-checked and saved (`alertsUpdated`). `fetchWithRetry` retries 5xx then returns the good response, gives up after the last try with the last error, returns 4xx at once without retrying, and aborts a hanging request after `timeoutMs` and retries.
+- [x] **Step 2: Run.** Fix any code a test proves wrong (note it in `docs/progress.md`).
+- [x] **Step 3:** `npm run verify`. Commit `test: cover ambiguous OCR numbers, stale-pack fallback, alerts pack updates and fetch retries`.

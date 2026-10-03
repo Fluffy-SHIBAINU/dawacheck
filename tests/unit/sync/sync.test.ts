@@ -170,3 +170,24 @@ test('a batch the server already stored (lost response) is recognised, so the qu
     await m.close();
   }
 });
+
+test('a newer alerts pack in storage is downloaded, sha-checked and saved', async () => {
+  const { m, d, deps } = await setup(false);
+  try {
+    const alerts = JSON.stringify({ version: '2026-10-04', fetchedAt: 'x', alerts: [] });
+    m.state.storage['alerts-2026-10-04.json'] = alerts;
+    m.state.storage['manifest.json'] = JSON.stringify({
+      schema: 1,
+      generatedAt: 'x',
+      packs: {
+        register: { version: '2026-10-03', file: 'register.json', sha256: 'a'.repeat(64), count: 7, bytes: 1 },
+        alerts: { version: '2026-10-04', file: 'alerts-2026-10-04.json', sha256: createHash('sha256').update(alerts).digest('hex'), count: 0, bytes: alerts.length },
+      },
+    });
+    const s = await syncNow(deps);
+    expect(s).toMatchObject({ ok: true, alertsUpdated: true, registerTo: null });
+    expect((await d.packs.get('alerts'))?.version).toBe('2026-10-04');
+  } finally {
+    await m.close();
+  }
+});

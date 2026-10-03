@@ -125,6 +125,7 @@ Work strictly in this order. A task is done when every checkbox in its section i
 - [x] Task 35: Rate limits against report spam
 - [x] Task 36: Fix: phone voice on iPhone and on a double tap (review pass)
 - [x] Task 37: Fix: Scan keeps "Trying another angle" during a crop read (review pass)
+- [x] Task 38: Tests for untested branches found by coverage (review pass)
 
 ## User-provided inputs (tasks that need them)
 

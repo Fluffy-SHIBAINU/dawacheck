@@ -71,3 +71,28 @@ test('offline with no manifest still uses stored packs', async () => {
   expect(p.register.products).toHaveLength(7);
   expect(p.manifest).toBeNull();
 });
+
+test('a newer bundled pack that fails to download falls back to the stored older one', async () => {
+  for (const failure of ['network', 'http'] as const) {
+    const d = fresh();
+    await savePack('register', '2026-09-01', JSON.stringify({ ...REGISTER, version: '2026-09-01' }), d);
+    const files = bundled('2026-10-03') as Record<string, unknown>;
+    const f = (async (url: string) => {
+      if (url.endsWith('register.json')) {
+        if (failure === 'network') throw new TypeError('Failed to fetch');
+        return new Response('busy', { status: 503 });
+      }
+      return new Response(JSON.stringify(files[url.replace(/^\//, '')]), { status: 200 });
+    }) as unknown as typeof fetch;
+    const p = await loadPacks({ fetchImpl: f, d, base: '/' });
+    expect(p.register.version, failure).toBe('2026-09-01');
+  }
+});
+
+test('with nothing stored, a failed pack download is an error the app can show', async () => {
+  const d = fresh();
+  const files = bundled() as Record<string, unknown>;
+  const f = (async (url: string) =>
+    url.endsWith('register.json') ? new Response('busy', { status: 503 }) : new Response(JSON.stringify(files[url.replace(/^\//, '')]), { status: 200 })) as unknown as typeof fetch;
+  await expect(loadPacks({ fetchImpl: f, d, base: '/' })).rejects.toThrow('could not load register pack (HTTP 503)');
+});
