@@ -569,7 +569,7 @@ git commit -m "feat: parse expiry, batch, strength and name tokens from label te
   - `interface RegisterIndex { byNrn: Map<string, Product[]>; size: number; version: string }`; `buildRegisterIndex(pack: RegisterPack): RegisterIndex`; `lookup(idx: RegisterIndex, nrn: string): Product[]`.
   - `type ConfusionTable = Map<string, number>` (key `"from>to"`); `buildConfusion(corrections: Correction[]): ConfusionTable`; `nrnVariants(nrn: string, idx: RegisterIndex, table: ConfusionTable): { nrn: string; weight: number }[]` (sorted by weight, highest first).
 
-- [ ] **Step 1: Write the failing test** `tests/unit/core/scan.test.ts`
+- [x] **Step 1: Write the failing test** `tests/unit/core/scan.test.ts`
 
 ```ts
 import { manualInput, parseScan } from '../../../src/core/parse';
@@ -620,12 +620,12 @@ test('nrnVariants finds registered neighbours one edit away, best first', () => 
 });
 ```
 
-- [ ] **Step 2: Run to verify failure**
+- [x] **Step 2: Run to verify failure**
 
 Run: `npx vitest run tests/unit/core/scan.test.ts`
 Expected: FAIL, modules not found.
 
-- [ ] **Step 3: Implement**
+- [x] **Step 3: Implement**
 
 `src/core/parse/index.ts`:
 ```ts
@@ -731,12 +731,12 @@ export function nrnVariants(nrn: string, idx: RegisterIndex, table: ConfusionTab
 }
 ```
 
-- [ ] **Step 4: Run tests**
+- [x] **Step 4: Run tests**
 
 Run: `npx vitest run tests/unit/core && npm run typecheck`
 Expected: PASS.
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 git add -A

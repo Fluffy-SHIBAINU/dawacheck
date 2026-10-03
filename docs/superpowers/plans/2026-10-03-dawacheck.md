@@ -85,7 +85,7 @@ Work strictly in this order. A task is done when every checkbox in its section i
 **Phase 2: Verdict engine** (`2026-10-03-dawacheck/p2-engine.md`)
 - [x] Task 6: NRN candidates from OCR text
 - [x] Task 7: Expiry, batch, strength and name parsers
-- [ ] Task 8: `parseScan`, register index and confusion variants
+- [x] Task 8: `parseScan`, register index and confusion variants
 - [ ] Task 9: Alert matching
 - [ ] Task 10: `decide()` verdict engine (decision table) + phase gate
 
