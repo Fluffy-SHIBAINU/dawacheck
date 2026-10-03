@@ -125,3 +125,48 @@ test('syncConfig is disabled without url or key', () => {
   expect(syncConfig({ VITE_SYNC_MODE: 'off', VITE_SUPABASE_URL: 'u', VITE_SUPABASE_ANON_KEY: 'k' }).enabled).toBe(false);
   expect(syncConfig({ VITE_SYNC_MODE: 'mock', VITE_SUPABASE_URL: 'http://x/', VITE_SUPABASE_ANON_KEY: 'k' })).toEqual({ mode: 'mock', url: 'http://x', anonKey: 'k', enabled: true });
 });
+
+test('a rate-limited device keeps its reports queued and sync does not throw', async () => {
+  const { m, d, deps } = await setup(false);
+  try {
+    await saveReport(report('A4-6238'), d);
+    const f: typeof fetch = async (url, init) =>
+      String(url).includes('/rest/v1/reports') && init?.method === 'POST' ? new Response('{"message":"rate limited"}', { status: 429 }) : fetch(url, init);
+    const s = await syncNow({ ...deps, fetchImpl: f });
+    expect(s.ok).toBe(false);
+    expect(s.errors.join(' ')).toContain('rate_limited');
+    expect(await pendingReports(d)).toHaveLength(1);
+  } finally {
+    await m.close();
+  }
+});
+
+test('reports go up in batches of 10, so a busy device sends up to its daily cap and keeps the rest', async () => {
+  const { m, d, deps } = await setup(false);
+  try {
+    for (let i = 0; i < 25; i++) await saveReport(report('A4-6238'), d);
+    const s = await syncNow(deps);
+    expect(s.sentReports).toBe(20);
+    expect(s.errors.join(' ')).toContain('rate_limited');
+    expect(m.state.reports).toHaveLength(20);
+    expect(await pendingReports(d)).toHaveLength(5);
+  } finally {
+    await m.close();
+  }
+});
+
+test('a batch the server already stored (lost response) is recognised, so the queue keeps moving', async () => {
+  const { m, d, deps } = await setup(false);
+  try {
+    await saveReport(report('A4-6238'), d);
+    await saveReport(report('A4-6298'), d);
+    const [first] = await pendingReports(d);
+    m.state.reports.push({ id: first.id, device_id: deps.deviceId, created_at: first.createdAt, nrn: first.nrn, reason: first.reason, verdict: first.verdict, state: first.state });
+    const s = await syncNow(deps);
+    expect(s.ok).toBe(true);
+    expect(m.state.reports).toHaveLength(2);
+    expect(await pendingReports(d)).toEqual([]);
+  } finally {
+    await m.close();
+  }
+});

@@ -125,6 +125,7 @@ DawaCheck checks NAFDAC records and what is printed on the box. It cannot test w
 ## Limits and next steps
 
 - Registration checks catch unregistered, expired, recalled and mismatched boxes. A perfect copy with a real number needs community reports and lab follow-up.
+- Device ids are random and made on the phone, so they are not identities. The backend caps each device at 20 reports and 2,000 usage events a day, which slows spam but cannot stop a determined attacker. Community flags need reports from several devices, and NAFDAC should review them before acting.
 - Hausa, Pidgin, Yoruba and Igbo text are drafts for native-speaker review.
 - Next steps:
   - Native Android app with ML Kit OCR.

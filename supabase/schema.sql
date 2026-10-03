@@ -39,6 +39,38 @@ create policy "anon inserts reports" on public.reports for insert to anon with c
 drop policy if exists "anon inserts events" on public.events;
 create policy "anon inserts events" on public.events for insert to anon with check (true);
 
+-- Per-device daily caps: 20 reports and 2,000 usage events per 24 hours, by server receive time.
+-- Device ids come from the phone, so this slows spam; it cannot stop a determined attacker.
+-- SECURITY DEFINER lets the count see rows that anon cannot read. A retried id passes so that
+-- ON CONFLICT DO NOTHING can ignore it. PostgREST turns SQLSTATE PT429 into HTTP 429, and the app
+-- keeps those rows queued for a later sync.
+create index if not exists reports_device_idx on public.reports (device_id, received_at);
+create index if not exists events_device_idx on public.events (device_id, received_at);
+
+create or replace function public.enforce_daily_cap() returns trigger
+language plpgsql security definer set search_path = public as $$
+declare
+  cap int := case tg_table_name when 'reports' then 20 else 2000 end;
+  n int;
+begin
+  if tg_table_name = 'reports' then
+    if exists (select 1 from public.reports where id = new.id) then return new; end if;
+    select count(*) into n from public.reports where device_id = new.device_id and received_at > now() - interval '24 hours';
+  else
+    if exists (select 1 from public.events where id = new.id) then return new; end if;
+    select count(*) into n from public.events where device_id = new.device_id and received_at > now() - interval '24 hours';
+  end if;
+  if n >= cap then
+    raise sqlstate 'PT429' using message = format('rate limited: %s %s per device per day', cap, tg_table_name);
+  end if;
+  return new;
+end $$;
+
+drop trigger if exists reports_daily_cap on public.reports;
+create trigger reports_daily_cap before insert on public.reports for each row execute function public.enforce_daily_cap();
+drop trigger if exists events_daily_cap on public.events;
+create trigger events_daily_cap before insert on public.events for each row execute function public.enforce_daily_cap();
+
 -- Learning: numbers reported by several phones become community flags.
 create or replace view public.community_flags as
 select nrn,

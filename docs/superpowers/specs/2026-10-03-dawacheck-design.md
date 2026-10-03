@@ -246,7 +246,7 @@ No PII: no free text, no photos, no coordinates. Events are always written local
 ### 11.2 Sync client (`src/sync/sync.ts`)
 - Triggers: app start (after packs load), the `online` event, `visibilitychange` to visible, "Sync now", and every 5 min while online. Single-flight.
 - Steps (each isolated; a failure in one step does not stop the others; errors are recorded in `meta`):
-  1. `pushReports`: unsynced reports in batches of 50. `POST {SUPABASE_URL}/rest/v1/reports?on_conflict=id` with headers `apikey`, `Authorization: Bearer {anon}`, `Content-Type: application/json`, `Prefer: resolution=ignore-duplicates,return=minimal`. On 2xx, set `syncedAt`. On 409, retry one by one and treat 409 as synced.
+  1. `pushReports`: unsynced reports in batches of 10. `POST {SUPABASE_URL}/rest/v1/reports` (a plain insert: under the insert-only RLS policies Postgres rejects `on_conflict` on an already stored id with 42501, verified on Postgres 14) with headers `apikey`, `Authorization: Bearer {anon}`, `Content-Type: application/json`, `Prefer: return=minimal`. On 2xx, set `syncedAt`. On 409, retry one by one and treat 409 as synced. On 429 (daily cap of 20 reports per device), keep them queued for a later sync.
   2. `pushEvents`: only if consent; batches of 500, same pattern on `/rest/v1/events`.
   3. `pullFlags`: `GET /rest/v1/community_flags?select=*` replaces `packs.flags`.
   4. `pullCorrections`: `GET /rest/v1/nrn_corrections?select=*` replaces `packs.corrections`.

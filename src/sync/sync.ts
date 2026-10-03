@@ -43,21 +43,28 @@ const toServerEvent = (e: EventRow, deviceId: string) => ({
   id: e.id, device_id: deviceId, ts: e.ts, type: e.type, props: e.props, lang: e.lang, app_version: e.appVersion, pack_version: e.packVersion,
 });
 
+const REPORT_BATCH = 10;
+
+function insertError(table: string, status: number): Error {
+  // The backend caps rows per device per day. Keep them queued; a later sync sends them.
+  return new Error(status === 429 ? `${table} rate_limited` : `${table} HTTP ${status}`);
+}
+
+/**
+ * Plain INSERTs, not `on_conflict=id`: under the insert-only RLS policies anon cannot see stored rows,
+ * so Postgres rejects ON CONFLICT on a retried id (42501) and the queue would stick. A plain insert of a
+ * stored id is a unique violation (409), which means "already stored": retry row by row and skip those.
+ */
 async function postRows(f: typeof fetch, cfg: SyncConfig, table: string, rows: object[], retry: RetryOpts): Promise<void> {
-  const res = await fetchWithRetry(f, `${cfg.url}/rest/v1/${table}?on_conflict=id`, {
-    method: 'POST',
-    headers: authHeaders(cfg, { Prefer: 'resolution=ignore-duplicates,return=minimal' }),
-    body: JSON.stringify(rows),
-  }, retry);
+  const post = (body: object) =>
+    fetchWithRetry(f, `${cfg.url}/rest/v1/${table}`, { method: 'POST', headers: authHeaders(cfg, { Prefer: 'return=minimal' }), body: JSON.stringify(body) }, retry);
+  const res = await post(rows);
   if (res.ok) return;
-  if (res.status === 409) {
-    for (const row of rows) {
-      const one = await fetchWithRetry(f, `${cfg.url}/rest/v1/${table}`, { method: 'POST', headers: authHeaders(cfg, { Prefer: 'return=minimal' }), body: JSON.stringify(row) }, retry);
-      if (!one.ok && one.status !== 409) throw new Error(`${table} HTTP ${one.status}`);
-    }
-    return;
+  if (res.status !== 409) throw insertError(table, res.status);
+  for (const row of rows) {
+    const one = await post(row);
+    if (!one.ok && one.status !== 409) throw insertError(table, one.status);
   }
-  throw new Error(`${table} HTTP ${res.status}`);
 }
 
 async function getJson<T>(f: typeof fetch, cfg: SyncConfig, path: string, retry: RetryOpts): Promise<T> {
@@ -97,8 +104,10 @@ async function run(deps: SyncDeps): Promise<SyncSummary> {
 
   await step('reports', async () => {
     const pending = await pendingReports(d);
-    for (let i = 0; i < pending.length; i += 50) {
-      const batch = pending.slice(i, i + 50);
+    // Batches of 10 divide the server's cap of 20 reports per device per day, so a busy phone
+    // sends up to the cap and keeps the rest instead of failing a whole oversized batch.
+    for (let i = 0; i < pending.length; i += REPORT_BATCH) {
+      const batch = pending.slice(i, i + REPORT_BATCH);
       await postRows(f, cfg, 'reports', batch.map((r) => toServerReport(r, deps.deviceId)), retry);
       await markReportsSynced(batch.map((r) => r.id), s.at, d);
       s.sentReports += batch.length;
