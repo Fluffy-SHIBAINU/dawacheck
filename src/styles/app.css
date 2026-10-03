@@ -8,7 +8,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
 .brand { font-family: var(--font-display); font-weight: 800; font-size: 22px; color: var(--accent); text-decoration: none; }
 .main { flex: 1; padding: 16px; display: flex; flex-direction: column; gap: 14px; }
 .nav { display: flex; justify-content: space-around; gap: 6px; border-top: 1px solid var(--line); background: var(--surface); padding: 6px 8px calc(6px + env(safe-area-inset-bottom)); position: sticky; bottom: 0; }
-.nav a { flex: 1; text-align: center; padding: 10px 4px; color: var(--muted); text-decoration: none; font-weight: 700; font-size: 14px; border-radius: 10px; }
+.nav a { flex: 1; min-height: var(--tap); display: flex; align-items: center; justify-content: center; text-align: center; padding: 10px 4px; color: var(--muted); text-decoration: none; font-weight: 700; font-size: 14px; border-radius: 10px; }
 .nav a.active { color: var(--accent); background: var(--accent-soft); }
 h1, h2, h3 { font-family: var(--font-display); margin: 0; line-height: 1.1; text-wrap: balance; }
 h1 { font-size: 26px; font-weight: 800; }
@@ -34,6 +34,7 @@ p { margin: 0; }
 .btn svg { width: 22px; height: 22px; flex: none; }
 .btn-hero svg { width: 40px; height: 40px; }
 .visually-hidden { position: absolute !important; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.topbar a { min-height: var(--tap); display: inline-flex; align-items: center; }
 .pill { align-self: flex-start; display: inline-flex; gap: 6px; align-items: center; font-size: 13px; background: var(--surface); border: 1px solid var(--line); color: var(--muted); border-radius: 999px; padding: 4px 10px; }
 .dot { width: 10px; height: 10px; border-radius: 50%; flex: none; display: inline-block; }
 .dot-green, .dot-online { background: var(--ok); }
@@ -42,9 +43,10 @@ p { margin: 0; }
 .dot-unknown, .dot-offline { background: var(--muted); }
 .card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 12px 14px; display: flex; flex-direction: column; gap: 4px; }
 .list { display: flex; flex-direction: column; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); }
-.list > * { padding: 12px 14px; border-bottom: 1px solid var(--line); display: flex; align-items: center; gap: 10px; text-decoration: none; color: inherit; }
+.list > * { min-height: var(--tap); padding: 12px 14px; border-bottom: 1px solid var(--line); display: flex; align-items: center; gap: 10px; text-decoration: none; color: inherit; }
 .list > *:last-child { border-bottom: 0; }
 .band { margin: -16px -16px 0; padding: 18px 16px; display: flex; align-items: center; gap: 12px; font-family: var(--font-display); font-weight: 800; font-size: 24px; line-height: 1.1; }
+.band:focus:not(:focus-visible) { outline: none; }
 .band svg { width: 34px; height: 34px; flex: none; }
 .band-green { background: var(--ok); color: #FFFFFF; }
 .band-amber { background: var(--warn-bg); color: var(--warn); border-bottom: 4px solid var(--warn); }
@@ -62,7 +64,7 @@ p { margin: 0; }
 .progress { height: 8px; background: var(--line); border-radius: 999px; overflow: hidden; }
 .progress > i { display: block; height: 100%; background: var(--accent); transition: width 0.2s; }
 .field { display: flex; flex-direction: column; gap: 6px; }
-.field input[type=text], .field select, .field textarea { min-height: var(--tap); border: 1.5px solid var(--line); border-radius: 12px; padding: 10px 12px; background: var(--surface); }
+.field input[type=text], .field input[type=search], .field select, .field textarea { min-height: var(--tap); border: 1.5px solid var(--line); border-radius: 12px; padding: 10px 12px; background: var(--surface); }
 .field input.code { font-size: 22px; letter-spacing: 0.04em; text-transform: uppercase; }
 .check { display: flex; align-items: center; gap: 10px; min-height: var(--tap); }
 .check input { width: 22px; height: 22px; accent-color: var(--accent); }

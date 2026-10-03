@@ -42,3 +42,4 @@
 - 17:16 · deploy · Task 29 live: /#/find 'artheget' lists Artheget EZ, A4-6238, Active
 - 17:18 · Task 30 · done · offline NAFDAC alerts list and detail (pure filterAlerts, newest first, search by brand/batch/company); Home button with count; alert verdicts link to their alert. Plan tweaks: fixture has 4 alerts (test lists all 4); real alert 035/2026 title has no brand in the heading match, so the e2e checks the title id and the product card instead; gates green (193 unit, 18 e2e incl. offline alerts, OCR)
 - 17:19 · deploy · Task 30 live: /#/alerts search 'menofix' shows Menofix Composition, Not registered, 18 Jul 2026
+- 17:23 · Task 31 · done · axe (wcag2a/aa) clean on welcome, home, type, history, settings, find, alerts, green and red results; html lang follows the chosen language; focus moves to the verdict; nav, topbar and list targets now 48 px; search inputs get field styling (were unstyled); gates green (194 unit, 19 e2e, OCR)

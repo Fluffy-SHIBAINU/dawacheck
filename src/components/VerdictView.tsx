@@ -1,4 +1,4 @@
-import type { ReactNode } from 'react';
+import { useEffect, useRef, type ReactNode } from 'react';
 import type { Reason, Verdict } from '../core/types';
 import type { AppApi } from '../state/AppContext';
 import { formatDate, formatExpiry } from '../lib/time';
@@ -51,9 +51,14 @@ export function VerdictView({
   const shown = v.reasons.filter((r) => !(INFO_ONLY.includes(r) && v.level !== 'green'));
   const mismatch = v.reasons.includes('name_mismatch') || v.reasons.includes('strength_mismatch');
   const boxStrength = v.boxStrengths.filter((s) => s.unit === 'MG').map((s) => s.value).join(' / ');
+  // Move focus to the verdict so screen readers announce it before anything else on the page.
+  const band = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    band.current?.focus();
+  }, [v]);
   return (
     <section className="stack" data-testid="verdict" data-level={v.level}>
-      <div className={`band band-${v.level}`} role="status">
+      <div className={`band band-${v.level}`} role="status" tabIndex={-1} ref={band}>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2.6} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
           {ICONS[v.level]}
         </svg>

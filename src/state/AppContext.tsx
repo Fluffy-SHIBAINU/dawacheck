@@ -112,6 +112,11 @@ export function AppProvider({ children, loader = loadPacks, now = () => new Date
 
   const t = useCallback<AppApi['t']>((key, vars) => translate(settings.lang, key, vars), [settings.lang]);
 
+  // Screen readers pick their voice and pronunciation from the page language.
+  useEffect(() => {
+    document.documentElement.lang = settings.lang;
+  }, [settings.lang]);
+
   const updateSettings = useCallback(async (patch: Partial<Settings>) => {
     const next = await saveSettings(patch);
     setSettings(next);

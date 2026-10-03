@@ -458,9 +458,9 @@ If no real alert in `public/packs/alerts.json` mentions Menofix, pick one that e
 - Create: `tests/e2e/a11y.spec.ts`
 - Modify: `package.json` (devDependency `@axe-core/playwright`), `src/state/AppContext.tsx`, `src/screens/Result.tsx` or `src/components/VerdictView.tsx`, `src/styles/app.css`, `tests/unit/i18n.test.ts`
 
-- [ ] **Step 1:** `npm i -D @axe-core/playwright`.
-- [ ] **Step 2: Failing unit test** (in `tests/unit/i18n.test.ts` or a new UI test): render `AppProvider` with a test loader, change the language through the context API to `ha`, and expect `document.documentElement.lang` to be `'ha'`.
-- [ ] **Step 3: Failing E2E** `tests/e2e/a11y.spec.ts` (Chromium only):
+- [x] **Step 1:** `npm i -D @axe-core/playwright`.
+- [x] **Step 2: Failing unit test** (in `tests/unit/i18n.test.ts` or a new UI test): render `AppProvider` with a test loader, change the language through the context API to `ha`, and expect `document.documentElement.lang` to be `'ha'`.
+- [x] **Step 3: Failing E2E** `tests/e2e/a11y.spec.ts` (Chromium only):
 
 ```ts
 import AxeBuilder from '@axe-core/playwright';
@@ -491,12 +491,12 @@ test('main screens have no serious accessibility violations', async ({ page }) =
 });
 ```
 
-- [ ] **Step 4: Fix** until both pass:
+- [x] **Step 4: Fix** until both pass:
   - `AppContext`: `useEffect(() => { document.documentElement.lang = settings.lang; }, [settings.lang])`.
   - The verdict container gets `role="status"`; the verdict title gets `tabIndex={-1}` and focus on mount.
   - Buttons, nav links, the language pill and list links are at least 48 px tall (`min-height: 48px` in `app.css`).
   - Fix every serious or critical axe finding (labels, contrast, landmark names). Use only `tokens.css` colors.
-- [ ] **Step 5: Verify and ship.** Commit `fix: accessibility pass (lang attribute, focus, target sizes, axe clean)`.
+- [x] **Step 5: Verify and ship.** Commit `fix: accessibility pass (lang attribute, focus, target sizes, axe clean)`.
 
 ---
 
