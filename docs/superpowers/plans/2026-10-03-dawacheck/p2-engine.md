@@ -15,7 +15,7 @@ Read the plan index Global Constraints first. All code in this phase is pure Typ
 - Consumes: `normalizeText` (Task 2), `NRN_RE`, `normalizeNrn` (Task 3), `Product`, `RegisterPack`, `Alert` (Task 2).
 - Produces: `interface NrnCandidate { nrn: string; score: number; raw: string }`; `findNrnCandidates(text: string): NrnCandidate[]` (sorted best first); `manualCandidates(raw: string): string[]`; test fixtures `product()`, `ARTHEGET`, `LAPSED`, `EXPIRED_REG`, `DUP_A`, `DUP_B`, `FORX`, `NEIGHBOR`, `REGISTER`, `ALERTS`, `TODAY`, `DEMO_TEXT` from `tests/helpers/fixtures.ts`.
 
-- [ ] **Step 1: Write the shared test fixtures** `tests/helpers/fixtures.ts`
+- [x] **Step 1: Write the shared test fixtures** `tests/helpers/fixtures.ts`
 
 ```ts
 import type { Alert, Product, RegisterPack } from '../../src/core/types';
@@ -96,7 +96,7 @@ export const DEMO_TEXT = {
 };
 ```
 
-- [ ] **Step 2: Write the failing test** `tests/unit/core/nrn.test.ts`
+- [x] **Step 2: Write the failing test** `tests/unit/core/nrn.test.ts`
 
 ```ts
 import { findNrnCandidates, manualCandidates } from '../../../src/core/parse/nrn';
@@ -151,12 +151,12 @@ describe('manualCandidates', () => {
 });
 ```
 
-- [ ] **Step 3: Run to verify failure**
+- [x] **Step 3: Run to verify failure**
 
 Run: `npx vitest run tests/unit/core/nrn.test.ts`
 Expected: FAIL, `findNrnCandidates` is not exported.
 
-- [ ] **Step 4: Implement** (replace `src/core/parse/nrn.ts` completely)
+- [x] **Step 4: Implement** (replace `src/core/parse/nrn.ts` completely)
 
 ```ts
 import { normalizeText } from '../text';
@@ -266,12 +266,12 @@ export function manualCandidates(raw: string): string[] {
 }
 ```
 
-- [ ] **Step 5: Run tests**
+- [x] **Step 5: Run tests**
 
 Run: `npx vitest run tests/unit/core && npm run typecheck`
 Expected: PASS (nrn, nrn-normalize, text, sha, manifest).
 
-- [ ] **Step 6: Commit**
+- [x] **Step 6: Commit**
 
 ```bash
 git add -A

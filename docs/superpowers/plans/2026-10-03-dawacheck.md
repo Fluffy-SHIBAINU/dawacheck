@@ -83,7 +83,7 @@ Work strictly in this order. A task is done when every checkbox in its section i
 - [x] Task 5: sha256, manifest builder and version compare
 
 **Phase 2: Verdict engine** (`2026-10-03-dawacheck/p2-engine.md`)
-- [ ] Task 6: NRN candidates from OCR text
+- [x] Task 6: NRN candidates from OCR text
 - [ ] Task 7: Expiry, batch, strength and name parsers
 - [ ] Task 8: `parseScan`, register index and confusion variants
 - [ ] Task 9: Alert matching
