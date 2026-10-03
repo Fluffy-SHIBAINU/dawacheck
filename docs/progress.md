@@ -16,3 +16,4 @@
 - 15:19 · Task 15 · done · report/history/settings; verify gate green (137 unit, 4 e2e)
 - 15:19 · MVP checkpoint reached
 - 15:21 · Task 16 · done · 5 demo cartons + fixture PNGs; gate lets /demo-packs and /dashboard skip onboarding
+- 15:23 · Task 17 · done · on-device OCR: node fixtures pass (>=4/5), browser scan e2e green (1.4-1.8 s/scan). tesseract.js 7: ship only simd-lstm + lstm .wasm.js (corePath = single file chosen by SIMD probe) = 10 MB; OCR vitest config needed globals:true

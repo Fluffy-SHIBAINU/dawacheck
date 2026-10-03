@@ -1,5 +1,5 @@
 import { useState, type FormEvent } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { useApp } from '../state/AppContext';
 import { Layout } from '../components/Layout';
 import { manualInput } from '../core/parse';
@@ -8,6 +8,7 @@ import { logEvent } from '../telemetry/events';
 export function TypeNumber() {
   const { t, check } = useApp();
   const navigate = useNavigate();
+  const state = (useLocation().state ?? {}) as { read?: string | null; text?: string };
   const [value, setValue] = useState('');
   const [error, setError] = useState(false);
 
@@ -19,6 +20,7 @@ export function TypeNumber() {
       return;
     }
     void logEvent('manual_entry', {});
+    if (state.read && state.read !== input.nrnCandidates[0]) void logEvent('nrn_corrected', { read: state.read, corrected: input.nrnCandidates[0] });
     const row = await check(input);
     navigate(`/result/${row.id}`);
   }

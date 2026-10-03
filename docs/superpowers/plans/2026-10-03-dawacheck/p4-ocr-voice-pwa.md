@@ -171,7 +171,7 @@ git commit -m "feat: demo cartons page and OCR fixture images"
 - Consumes: `parseScan` (Task 8), `pendingScan` (Task 14), `useApp().check` (Task 14), fixtures (Task 16).
 - Produces: `recognize(image: HTMLCanvasElement | Blob | string, mode: 'sparse' | 'line', onProgress?: (p: number) => void): Promise<{ text: string; confidence: number; ms: number }>`; `interface Crop { x: number; y: number; w: number; h: number }` (fractions 0..1); `runScan(file: Blob, opts?: { onProgress?: (p: number) => void; crop?: Crop; previousText?: string }): Promise<ScanResult>` where `ScanResult = { input: ScanInput; text: string; ms: number; pass: 1 | 2 | 3; thumb: Blob | null; confidence: number }`; route `/scan`; TypeNumber accepts router state `{ read?: string }`.
 
-- [ ] **Step 1: Install and copy OCR assets**
+- [x] **Step 1: Install and copy OCR assets**
 
 ```bash
 npm i tesseract.js
@@ -191,7 +191,8 @@ if (!existsSync(worker)) throw new Error(`missing ${worker}`);
 cpSync(worker, `${dest}/worker.min.js`);
 
 const coreDir = 'node_modules/tesseract.js-core';
-const cores = readdirSync(coreDir).filter((f) => /^tesseract-core.*lstm.*\.(js|wasm)$/.test(f));
+// Implemented: only tesseract-core-simd-lstm.wasm.js and tesseract-core-lstm.wasm.js (engine.ts picks one via a SIMD probe).
+const cores = readdirSync(coreDir).filter((f) => f === 'tesseract-core-simd-lstm.wasm.js' || f === 'tesseract-core-lstm.wasm.js');
 if (!cores.length) throw new Error('no LSTM core files found in tesseract.js-core');
 for (const f of cores) cpSync(join(coreDir, f), join(dest, f));
 
@@ -220,14 +221,14 @@ npm run assets
 ```
 Expected: a size line. The total under `public/tesseract` should be about 10 MB or less. If `tesseract.js-core` sits nested under `node_modules/tesseract.js/node_modules/`, update `coreDir`.
 
-- [ ] **Step 2: Write the failing OCR integration test**
+- [x] **Step 2: Write the failing OCR integration test**
 
 `vitest.ocr.config.ts`:
 ```ts
 import { defineConfig } from 'vitest/config';
 
 export default defineConfig({
-  test: { environment: 'node', include: ['tests/ocr/**/*.test.ts'], testTimeout: 120_000 },
+  test: { environment: 'node', globals: true, include: ['tests/ocr/**/*.test.ts'], testTimeout: 120_000 },
 });
 ```
 
@@ -270,7 +271,7 @@ npm run test:ocr
 ```
 Expected: PASS. If it fails, read the printed OCR text and fix the parsers in `src/core/parse/*` with a new unit test for each fix. Do not lower the 4-of-5 bar.
 
-- [ ] **Step 3: Implement the browser OCR modules**
+- [x] **Step 3: Implement the browser OCR modules**
 
 `src/ocr/engine.ts`:
 ```ts
@@ -643,7 +644,7 @@ Modify `src/screens/Result.tsx`: inside the `actions` stack, before the Done lin
 
 Modify `src/App.tsx`: import `Scan` and add `<Route path="/scan" element={<Scan />} />`.
 
-- [ ] **Step 4: E2E photo upload** `tests/e2e/scan.spec.ts`
+- [x] **Step 4: E2E photo upload** `tests/e2e/scan.spec.ts`
 
 ```ts
 import { expect, test } from '@playwright/test';
@@ -665,12 +666,12 @@ test('photo of carton 2 is amber', async ({ page }) => {
 });
 ```
 
-- [ ] **Step 5: Run checks**
+- [x] **Step 5: Run checks**
 
 Run: `npm run typecheck && npm test && npm run test:ocr && npm run e2e`
 Expected: all PASS. If the browser OCR cannot load the worker or core, open DevTools on `npm run build:e2e && npm run preview:e2e` and check the network panel for 404s under `/tesseract/`. Fix the paths in `engine.ts` (corePath must be the directory URL ending in `/`).
 
-- [ ] **Step 6: Commit**
+- [x] **Step 6: Commit**
 
 ```bash
 git add -A

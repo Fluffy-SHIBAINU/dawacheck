@@ -37,6 +37,9 @@ export function Result() {
             {row.verdict.level !== 'green' && (
               <Link to={`/report/${row.id}`} className="btn btn-outline" data-testid="report-link">{t('report')}</Link>
             )}
+            {row.input.source === 'ocr' && (
+              <Link to="/type" state={{ read: row.verdict.nrn, text: row.input.text }} className="btn btn-plain">{t('scan_type')}</Link>
+            )}
             <Link to="/" className="btn btn-plain">{t('done')}</Link>
           </div>
         }

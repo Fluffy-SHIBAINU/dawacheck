@@ -10,6 +10,7 @@ import { Report } from './screens/Report';
 import { History } from './screens/History';
 import { Settings } from './screens/Settings';
 import { DemoPacks } from './screens/DemoPacks';
+import { Scan } from './screens/Scan';
 
 function Gate({ children }: { children: ReactNode }) {
   const { status, error, settings, t } = useApp();
@@ -42,6 +43,7 @@ export function App({ loader }: { loader?: () => Promise<LoadedPacks> }) {
             <Route path="/welcome" element={<Welcome />} />
             <Route path="/" element={<Home />} />
             <Route path="/type" element={<TypeNumber />} />
+            <Route path="/scan" element={<Scan />} />
             <Route path="/result/:id" element={<Result />} />
             <Route path="/report/:id" element={<Report />} />
             <Route path="/history" element={<History />} />

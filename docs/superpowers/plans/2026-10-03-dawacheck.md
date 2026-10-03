@@ -98,7 +98,7 @@ Work strictly in this order. A task is done when every checkbox in its section i
 
 **Phase 4: OCR, voice, offline** (`2026-10-03-dawacheck/p4-ocr-voice-pwa.md`)
 - [x] Task 16: Demo cartons page and OCR fixture images
-- [ ] Task 17: On-device OCR and the Scan screen
+- [x] Task 17: On-device OCR and the Scan screen
 - [ ] Task 18: Voice clips (ElevenLabs) and player
 - [ ] Task 19: PWA (service worker, manifest, icons) + offline E2E + phase gate
 
