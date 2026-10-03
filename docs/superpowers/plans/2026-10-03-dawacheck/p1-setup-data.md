@@ -322,7 +322,7 @@ git commit -m "chore: scaffold DawaCheck web app with tooling and design tokens"
 - Produces (types, used everywhere): `Level`, `Reason`, `RED_REASONS`, `AMBER_REASONS`, `Product`, `RegisterPack`, `AlertKind`, `ALERT_KINDS`, `AlertProduct`, `Alert`, `AlertsPack`, `CommunityFlag`, `Correction`, `Thresholds`, `DEFAULT_THRESHOLDS`, `PackEntry`, `Manifest`, `Strength`, `Expiry`, `ScanInput`, `Verdict`, `ReportReason`, `REPORT_REASONS`.
 - Produces (functions): `normalizeText(s: string): string`, `collapseWs(s: string): string`, `decodeEntities(s: string): string`, `levenshtein(a: string, b: string): number`, `similarity(a: string, b: string): number` (0..1).
 
-- [ ] **Step 1: Write `src/core/types.ts`**
+- [x] **Step 1: Write `src/core/types.ts`**
 
 ```ts
 export type Level = 'green' | 'amber' | 'red' | 'unknown';
@@ -503,7 +503,7 @@ export const REPORT_REASONS: readonly ReportReason[] = [
 ];
 ```
 
-- [ ] **Step 2: Write the failing test** `tests/unit/core/text.test.ts`
+- [x] **Step 2: Write the failing test** `tests/unit/core/text.test.ts`
 
 ```ts
 import { collapseWs, decodeEntities, levenshtein, normalizeText, similarity } from '../../../src/core/text';
@@ -545,12 +545,12 @@ describe('levenshtein and similarity', () => {
 });
 ```
 
-- [ ] **Step 3: Run it to verify it fails**
+- [x] **Step 3: Run it to verify it fails**
 
 Run: `npx vitest run tests/unit/core/text.test.ts`
 Expected: FAIL, cannot resolve `src/core/text`.
 
-- [ ] **Step 4: Implement `src/core/text.ts`**
+- [x] **Step 4: Implement `src/core/text.ts`**
 
 ```ts
 export function normalizeText(s: string): string {
@@ -602,12 +602,12 @@ export function similarity(a: string, b: string): number {
 }
 ```
 
-- [ ] **Step 5: Run tests and typecheck**
+- [x] **Step 5: Run tests and typecheck**
 
 Run: `npx vitest run tests/unit/core/text.test.ts && npm run typecheck`
 Expected: PASS, no type errors.
 
-- [ ] **Step 6: Commit**
+- [x] **Step 6: Commit**
 
 ```bash
 git add -A
