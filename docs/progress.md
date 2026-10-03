@@ -8,3 +8,4 @@
 - 15:07 · Task 7 · done · expiry/batch/strength/name parsers, 20 cases green
 - 15:08 · Task 8 · done · parseScan, register index (+generic ingredient vocabulary), confusion variants; 64 core tests green
 - 15:10 · Task 9 · done · alert matching ignores register/product ingredient words (title-only alerts no longer flag every artemether box)
+- 15:11 · Task 10 · done · verdict engine: 18 decision-table cases + 5 demo cartons vs REAL register/alerts all green; phase 2 gate: 109 tests, typecheck clean

@@ -897,7 +897,7 @@ Rules (spec §8, with this refinement of rule 7). Name mismatch requires all of:
 
 A distinctive token is one that is not similar (≥ `nameMatch`) to an ingredient or applicant word. Otherwise the verdict carries `name_unconfirmed` (info only). OCR fuzzy correction (rule 2) is accepted **only** when the corrected product's *brand* words (its name tokens minus ingredient words) match the box (≥ `nameMatch`). Otherwise the verdict stays red `not_in_register` and shows suggestions. This blocks fake numbers being "corrected" into real neighbours, including neighbours whose name is just a generic like "Paracetamol".
 
-- [ ] **Step 1: Write the failing test** `tests/unit/core/verdict.test.ts`
+- [x] **Step 1: Write the failing test** `tests/unit/core/verdict.test.ts`
 
 ```ts
 import { decide, levelFor, type DecideContext } from '../../../src/core/verdict';
@@ -1041,12 +1041,12 @@ test('levelFor orders severity', () => {
 });
 ```
 
-- [ ] **Step 2: Run to verify failure**
+- [x] **Step 2: Run to verify failure**
 
 Run: `npx vitest run tests/unit/core/verdict.test.ts`
 Expected: FAIL, module not found.
 
-- [ ] **Step 3: Implement** `src/core/verdict.ts`
+- [x] **Step 3: Implement** `src/core/verdict.ts`
 
 ```ts
 import {
@@ -1221,12 +1221,12 @@ export function decide(input: ScanInput, ctx: DecideContext): Verdict {
 
 Note: `registered` is always added when the number resolves. `levelFor` lets red and amber reasons win, so a lapsed or mismatched product still shows its warning while the screen can say the number exists.
 
-- [ ] **Step 4: Run tests**
+- [x] **Step 4: Run tests**
 
 Run: `npx vitest run tests/unit/core/verdict.test.ts`
 Expected: PASS. If a demo case fails, debug with `console.log(parseScan(DEMO_TEXT.x))` and fix the parser or rule, **not** the expected outcome. The five demo expectations are the product's acceptance criteria.
 
-- [ ] **Step 5: Real-register smoke test** `tests/unit/core/verdict-real.test.ts`
+- [x] **Step 5: Real-register smoke test** `tests/unit/core/verdict-real.test.ts`
 
 ```ts
 import { readFileSync } from 'node:fs';
@@ -1262,12 +1262,12 @@ test.each([
 Run: `npx vitest run tests/unit/core/verdict-real.test.ts`
 Expected: PASS. If `green` comes out amber because a real alert brand-matches "Artheget", inspect `alerts.json`. If an alert genuinely names Artheget EZ, pick another registered antimalarial for demo carton 1 and record the change in `docs/progress.md`. If it is a false brand match, tighten `brandHit`.
 
-- [ ] **Step 6: Phase gate**
+- [x] **Step 6: Phase gate**
 
 Run: `npm test && npm run typecheck`
 Expected: all PASS.
 
-- [ ] **Step 7: Commit**
+- [x] **Step 7: Commit**
 
 ```bash
 git add -A
