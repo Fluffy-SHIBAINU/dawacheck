@@ -4,6 +4,7 @@ import { useApp } from '../state/AppContext';
 import { LANGS } from '../i18n';
 import { NG_STATES } from '../core/states';
 import { logEvent } from '../telemetry/events';
+import { playClip } from '../voice/player';
 import type { Lang } from '../core/types';
 
 export function Welcome() {
@@ -14,6 +15,7 @@ export function Welcome() {
   const [state, setState] = useState<string>('');
 
   async function pick(lang: Lang) {
+    void playClip('welcome', lang);
     await updateSettings({ lang });
     void logEvent('lang_selected', { lang });
     setStep('consent');

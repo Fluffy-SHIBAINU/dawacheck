@@ -6,6 +6,8 @@ import { VerdictView } from '../components/VerdictView';
 import { getCheck } from '../data/checks';
 import type { CheckRow } from '../data/db';
 import { logEvent } from '../telemetry/events';
+import { ListenButton } from '../components/ListenButton';
+import { clipForVerdict } from '../voice/forVerdict';
 
 export function Result() {
   const { id = '' } = useParams();
@@ -34,6 +36,7 @@ export function Result() {
         onPickSuggestion={pick}
         actions={
           <div className="stack">
+            <ListenButton clip={clipForVerdict(row.verdict)} autoPlay />
             {row.verdict.level !== 'green' && (
               <Link to={`/report/${row.id}`} className="btn btn-outline" data-testid="report-link">{t('report')}</Link>
             )}

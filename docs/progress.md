@@ -17,3 +17,4 @@
 - 15:19 · MVP checkpoint reached
 - 15:21 · Task 16 · done · 5 demo cartons + fixture PNGs; gate lets /demo-packs and /dashboard skip onboarding
 - 15:23 · Task 17 · done · on-device OCR: node fixtures pass (>=4/5), browser scan e2e green (1.4-1.8 s/scan). tesseract.js 7: ship only simd-lstm + lstm .wasm.js (corePath = single file chosen by SIMD probe) = 10 MB; OCR vitest config needed globals:true
+- 15:25 · Task 18 · blocked (code done) · voice player + verdict→clip map + ListenButton wired into result/home/welcome/report; tests green. npm run voice exits 2: ELEVENLABS_API_KEY missing. App falls back to text until clips exist.

@@ -692,7 +692,7 @@ git commit -m "feat: on-device OCR with crop fallback and scan screen"
 - Consumes: `CLIPS`, `CLIP_KEYS`, `ClipKey`, `voiceLangFor` (Task 13); `Verdict`, `Lang`.
 - Produces: `clipForVerdict(v: Verdict): ClipKey`; `clipUrl(key: ClipKey, lang: 'en' | 'ha' | 'pcm'): string`; `playClip(key: ClipKey, lang: Lang, audioFactory?: () => HTMLAudioElement): Promise<boolean>`; `ListenButton` props `{ clip: ClipKey; label?: string; autoPlay?: boolean }`.
 
-- [ ] **Step 1: Write the failing test** `tests/unit/voice.test.ts`
+- [x] **Step 1: Write the failing test** `tests/unit/voice.test.ts`
 
 ```ts
 import { clipForVerdict } from '../../src/voice/forVerdict';
@@ -733,12 +733,12 @@ test('player falls back to English, then gives up quietly', async () => {
 });
 ```
 
-- [ ] **Step 2: Run to verify failure**
+- [x] **Step 2: Run to verify failure**
 
 Run: `npx vitest run tests/unit/voice.test.ts`
 Expected: FAIL, modules not found.
 
-- [ ] **Step 3: Implement**
+- [x] **Step 3: Implement**
 
 `src/voice/forVerdict.ts`:
 ```ts

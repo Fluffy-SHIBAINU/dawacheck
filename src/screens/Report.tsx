@@ -10,6 +10,7 @@ import { NAFDAC_HOTLINE, reportReasonFor, smsBody, smsHref } from '../core/sms';
 import { REPORT_REASONS, type ReportReason } from '../core/types';
 import { blobToDataUrl } from '../lib/blob';
 import { logEvent } from '../telemetry/events';
+import { ListenButton } from '../components/ListenButton';
 import type { MessageKey } from '../i18n';
 
 export function Report() {
@@ -57,6 +58,7 @@ export function Report() {
     return (
       <Layout>
         <h1 data-testid="report-saved">{t('report_saved')}</h1>
+        <ListenButton clip="report_saved" autoPlay />
         <div className="queue"><strong>{t('report_waiting', { n: saved })}</strong></div>
         <a className="btn btn-plain" href={smsHref(body)} onClick={() => void logEvent('report_sms_opened', {})}>{t('report_sms')}</a>
         <p className="small muted">{t('report_sms_note')}</p>

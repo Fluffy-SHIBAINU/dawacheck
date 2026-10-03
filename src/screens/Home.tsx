@@ -7,6 +7,7 @@ import { listChecks } from '../data/checks';
 import type { CheckRow } from '../data/db';
 import { pendingScan } from '../lib/pendingScan';
 import { logEvent } from '../telemetry/events';
+import { ListenButton } from '../components/ListenButton';
 
 export function Home() {
   const { t } = useApp();
@@ -38,6 +39,7 @@ export function Home() {
         <input className="visually-hidden" type="file" accept="image/*" capture="environment" onChange={onFile} data-testid="photo-input" />
       </label>
       <Link to="/type" className="btn btn-outline">{t('home_type')}</Link>
+      <ListenButton clip="howto" label={t('home_listen')} />
       <span className="label">{t('home_recent')}</span>
       {recent.length === 0 ? (
         <p className="muted">{t('home_no_recent')}</p>
