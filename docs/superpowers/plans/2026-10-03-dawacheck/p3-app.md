@@ -378,7 +378,7 @@ git commit -m "feat: add IndexedDB storage, settings and offline pack loading"
   - `NG_STATES: { code: string; name: string }[]` (37 entries), `stateName(code: string | null): string | null`.
   - `smsBody(r: { nrn: string | null; reason: ReportReason; state: string | null }): string`, `smsHref(body: string, to?: string): string`, `reportReasonFor(v: Verdict): ReportReason`, `NAFDAC_HOTLINE = '0800-162-3322'`.
 
-- [ ] **Step 1: Write the failing tests**
+- [x] **Step 1: Write the failing tests**
 
 `tests/unit/data/stores.test.ts`:
 ```ts
@@ -468,12 +468,12 @@ test('37 Nigerian states including FCT', () => {
 });
 ```
 
-- [ ] **Step 2: Run to verify failure**
+- [x] **Step 2: Run to verify failure**
 
 Run: `npx vitest run tests/unit/data/stores.test.ts tests/unit/core/sms.test.ts`
 Expected: FAIL, modules not found.
 
-- [ ] **Step 3: Implement**
+- [x] **Step 3: Implement**
 
 `src/data/checks.ts`:
 ```ts
@@ -711,12 +711,12 @@ export function reportReasonFor(v: Verdict): ReportReason {
 }
 ```
 
-- [ ] **Step 4: Run tests**
+- [x] **Step 4: Run tests**
 
 Run: `npx vitest run tests/unit && npm run typecheck`
 Expected: PASS.
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 git add -A
