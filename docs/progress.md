@@ -23,3 +23,4 @@
 - 15:31 · Task 21 · done · sync client (reports, opt-in events, flags, corrections, sha-checked packs) + triggers (start/online/visible/5min) + Settings sync UI + Home summary; 7 sync unit + 2 sync e2e green (11 e2e total)
 - 15:33 · Task 22 · done · learning e2e (community flag -> amber; newer register pack downloaded), publish-packs (+test vs mock), gaps export, holdback script (not run yet - Task 24)
 - 15:34 · Task 23 · done · NAFDAC dashboard over aggregate views; phase 5 gate green (170 unit, 14 e2e incl. learning + dashboard, OCR)
+- 15:36 · Task 24 · blocked (partial) · LIVE: https://dawacheck-smoky.vercel.app (Vercel CLI already logged in; project dawacheck). Prod check: SW controls, offline typed check green, offline OCR carton 2 amber. Sync off until Supabase keys exist; holdback/publish/check:backend waiting on Supabase.

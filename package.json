@@ -27,7 +27,10 @@
     "mock": "tsx scripts/mock-supabase.ts",
     "holdback": "tsx scripts/make-holdback.ts",
     "publish-packs": "tsx scripts/publish-packs.ts",
-    "gaps": "tsx scripts/gaps.ts"
+    "gaps": "tsx scripts/gaps.ts",
+    "check:env": "tsx scripts/check-env.ts",
+    "check:backend": "tsx scripts/check-backend.ts",
+    "deploy": "npm run build && rm -rf .vercel-deploy && mkdir -p .vercel-deploy && cp -R dist .vercel-deploy/dawacheck && npx --yes vercel@latest deploy .vercel-deploy/dawacheck --prod --yes"
   },
   "keywords": [],
   "author": "",

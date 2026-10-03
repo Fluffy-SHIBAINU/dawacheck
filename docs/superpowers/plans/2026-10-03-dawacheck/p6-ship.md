@@ -16,7 +16,7 @@ Read the plan index Global Constraints first. Spec reference: §17 (deployment),
 
 Steps that only the user can do are marked **USER**. Do every other step. If a USER step is missing, mark the task `BLOCKED: <step>` and continue with Task 25.
 
-- [ ] **Step 1: Environment check script**
+- [x] **Step 1: Environment check script**
 
 `scripts/check-env.ts`:
 ```ts
@@ -81,7 +81,7 @@ echo "- $(date +%H:%M) · holdback done (bundled pack 12 products behind; full p
 ```
 Expected: tests still pass (the register test needs more than 8,000 products), and 3 files are published. Phones built from this bundle will show "Register updated: 8,9xx → 8,9xx products" on their first online sync.
 
-- [ ] **Step 5: USER: Vercel login, then deploy**
+- [x] **Step 5: USER: Vercel login, then deploy**
 
 USER (once): `npx vercel login`.
 
@@ -96,7 +96,7 @@ curl -s <URL>/packs/manifest.json | head -c 200
 ```
 Expected: `HTTP/2 200` and the manifest JSON.
 
-- [ ] **Step 6: Write `docs/iphone-checklist.md`** (USER performs it; you write it)
+- [x] **Step 6: Write `docs/iphone-checklist.md`** (USER performs it; you write it)
 
 ```markdown
 # iPhone demo checklist
@@ -113,7 +113,7 @@ Expected: `HTTP/2 200` and the manifest JSON.
 10. If a photo does not read, use "Number unclear? Draw a box around it", or type the number.
 ```
 
-- [ ] **Step 7: Commit**
+- [x] **Step 7: Commit**
 
 ```bash
 git add -A
