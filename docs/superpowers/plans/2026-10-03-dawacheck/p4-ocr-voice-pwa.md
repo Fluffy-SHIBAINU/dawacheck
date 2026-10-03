@@ -897,7 +897,7 @@ git commit -m "feat: pre-rendered Hausa, English and Pidgin voice verdicts with 
 - Consumes: everything so far.
 - Produces: a service worker that precaches the app shell, `packs/*.json`, `tesseract/**`, `voice/**` and fonts; the web manifest; icons; the `webkit-smoke` Playwright project.
 
-- [ ] **Step 1: Icons**
+- [x] **Step 1: Icons**
 
 ```bash
 npm i -D vite-plugin-pwa
@@ -940,7 +940,7 @@ npm pkg set scripts.icons="tsx scripts/make-icons.ts"
 npm run icons
 ```
 
-- [ ] **Step 2: Configure the PWA** (replace `vite.config.ts`)
+- [x] **Step 2: Configure the PWA** (replace `vite.config.ts`)
 
 ```ts
 import { defineConfig } from 'vitest/config';
@@ -989,7 +989,7 @@ Add `"vite-plugin-pwa/client"` to `tsconfig.json` `types` only if TypeScript com
 
 Run: `npm run build` and confirm that `dist/sw.js` and `dist/manifest.webmanifest` exist. Check that the build log's precache entry list includes `packs/register.json`, `tesseract/lang/eng.traineddata.gz` and the voice files. If total precache is above 25 MB, drop the non-SIMD core from `copy-ocr-assets.ts` only if it is a duplicate format.
 
-- [ ] **Step 3: Offline and WebKit E2E**
+- [x] **Step 3: Offline and WebKit E2E**
 
 `tests/e2e/offline.spec.ts`:
 ```ts
@@ -1043,12 +1043,12 @@ projects: [
 npx playwright install webkit
 ```
 
-- [ ] **Step 4: Phase gate**
+- [x] **Step 4: Phase gate**
 
 Run: `npm run verify && npm run test:ocr`
 Expected: all PASS (chromium specs plus webkit smoke).
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 git add -A

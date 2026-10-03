@@ -7,7 +7,10 @@ export default defineConfig({
   workers: 1,
   retries: 0,
   use: { baseURL: 'http://localhost:4173', trace: 'retain-on-failure', serviceWorkers: 'allow' },
-  projects: [{ name: 'chromium', use: { ...devices['Pixel 7'] } }],
+  projects: [
+    { name: 'chromium', use: { ...devices['Pixel 7'] } },
+    { name: 'webkit-smoke', use: { ...devices['iPhone 14'] }, testMatch: /smoke\.spec\.ts/ },
+  ],
   webServer: [
     {
       command: 'npm run build:e2e && npm run preview:e2e',

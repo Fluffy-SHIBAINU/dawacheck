@@ -100,7 +100,7 @@ Work strictly in this order. A task is done when every checkbox in its section i
 - [x] Task 16: Demo cartons page and OCR fixture images
 - [x] Task 17: On-device OCR and the Scan screen
 - [ ] Task 18: Voice clips (ElevenLabs) and player · BLOCKED: ELEVENLABS_API_KEY in .env, then run `npm run voice` (code done, app falls back to text)
-- [ ] Task 19: PWA (service worker, manifest, icons) + offline E2E + phase gate
+- [x] Task 19: PWA (service worker, manifest, icons) + offline E2E + phase gate
 
 **Phase 5: Sync, learning, dashboard** (`2026-10-03-dawacheck/p5-sync-learning.md`)
 - [ ] Task 20: Supabase schema, aggregation mirror and mock server

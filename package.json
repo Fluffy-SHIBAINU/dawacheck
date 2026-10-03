@@ -22,7 +22,8 @@
     "fixtures": "tsx scripts/make-fixtures.ts",
     "assets": "tsx scripts/copy-ocr-assets.ts",
     "test:ocr": "vitest run --config vitest.ocr.config.ts",
-    "voice": "tsx scripts/make-voice.ts"
+    "voice": "tsx scripts/make-voice.ts",
+    "icons": "tsx scripts/make-icons.ts"
   },
   "keywords": [],
   "author": "",
@@ -58,6 +59,7 @@
     "tsx": "^4.23.15",
     "typescript": "^7.0.2",
     "vite": "^8.3.2",
+    "vite-plugin-pwa": "^2.0.0",
     "vitest": "^4.1.11",
     "zod": "^4.6.5"
   }
