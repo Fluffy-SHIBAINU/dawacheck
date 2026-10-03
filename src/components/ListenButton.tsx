@@ -2,13 +2,14 @@ import { useEffect, useState } from 'react';
 import { useApp } from '../state/AppContext';
 import { playClip } from '../voice/player';
 import { CLIPS, voiceLangFor, type ClipKey } from '../voice/clips';
-import { speak } from '../voice/speech';
+import { speak, unlockSpeech } from '../voice/speech';
 import { logEvent } from '../telemetry/events';
 
 export function ListenButton({ clip, label, autoPlay = false }: { clip: ClipKey; label?: string; autoPlay?: boolean }) {
   const { t, settings } = useApp();
   const [unavailable, setUnavailable] = useState(false);
   const play = async () => {
+    unlockSpeech(); // must run inside the tap, before any await (iOS)
     setUnavailable(false);
     const ok = await playClip(clip, settings.lang);
     // No recorded clip: use the phone's own offline voice (English and Pidgin only).

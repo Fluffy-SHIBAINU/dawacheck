@@ -609,3 +609,25 @@ Device ids are generated on the phone, so one person can fake several phones. Ca
 - [x] **Step 2: Implement** the mock limit and the sync handling. Run tests. Expected: PASS.
 - [x] **Step 3: SQL.** In `schema.sql`, a `before insert` trigger on `reports` raising an exception when the device already has 20 reports in the last 24 h, and one on `events` at 2,000 per day. Validate against local Postgres in the scratchpad: `initdb -D <scratch>/pg && pg_ctl -D <scratch>/pg -o "-p 54329" -l <scratch>/pg.log start`; create the stub roles and schemas the file expects (`anon`, `authenticated`, `service_role`, schema `storage` with a `buckets` table) before `psql -p 54329 -d postgres -f supabase/schema.sql`; insert 21 reports for one device and confirm the 21st fails; `pg_ctl -D <scratch>/pg stop`. If the file cannot run outside Supabase, validate only the new trigger SQL and note it in `docs/progress.md`.
 - [x] **Step 4:** README "Limitations": device ids are not identities; limits slow spam but do not stop a determined attacker; flags need several devices and NAFDAC review. `npm run verify`. Commit `feat: per-device rate limits for reports and events`.
+
+---
+
+### Task 36: Fix: phone voice on iPhone and on a double tap (review pass)
+
+Found in the review of Tasks 26 to 35. (1) iOS Safari only lets speech start inside a user gesture, but `ListenButton` calls `speak()` after awaiting `playClip()`, so on an iPhone without recorded clips the fallback can stay silent. (2) A second tap cancels the first utterance; its `onerror` ("interrupted" or "canceled") resolves `false` and shows "Voice is not available" while speech plays.
+
+**Files:** Modify `src/voice/speech.ts`, `src/components/ListenButton.tsx`, `tests/unit/speech.test.ts`, `tests/unit/ui/listen.test.tsx`
+
+- [x] **Step 1: Failing tests.** `unlockSpeech(synth, Utterance)` speaks one silent empty utterance (volume 0) the first time and does nothing after that or without speech support. `speak()` resolves `true` when its utterance errors with `interrupted` or `canceled`, and `false` for other errors. `ListenButton` calls `unlockSpeech` synchronously in the click handler, before `playClip` settles (mock `playClip` with a promise that never resolves).
+- [x] **Step 2: Implement** `unlockSpeech` and the error rule; call `unlockSpeech()` first thing in the click handler.
+- [x] **Step 3: Verify and ship.** Commit `fix: phone voice starts on iPhone and survives a double tap`.
+
+### Task 37: Fix: Scan keeps "Trying another angle" during a crop read (review pass)
+
+Found in the review. After a rotated scan finds nothing, the user draws a box; the label still says "Trying another angle…" while the box is read.
+
+**Files:** Modify `src/screens/Scan.tsx`; create `tests/unit/ui/scan.test.tsx`
+
+- [ ] **Step 1: Failing test.** Mock `runScan` (first call reports the `rotate` stage and finds no number; second call never resolves) and `CropBox` (reports a crop at once); render `Scan` with a pending photo; after "Number unclear?" then "Read this area", `ocr-stage` shows "Reading the label on this phone…".
+- [ ] **Step 2: Implement:** reset `rotating` when a crop read starts.
+- [ ] **Step 3: Verify and ship.** Commit `fix: scan label resets for the crop read`.

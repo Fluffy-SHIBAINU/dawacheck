@@ -32,6 +32,24 @@ function voices(synth: SynthLike): Promise<SpeechSynthesisVoice[]> {
   });
 }
 
+let unlocked = false;
+
+/**
+ * iOS Safari only lets speech start inside a user gesture. Speaking one silent, empty utterance
+ * synchronously in the tap handler unlocks speech for the page, so the later `speak()` (after the
+ * recorded-clip attempt) is allowed.
+ */
+export function unlockSpeech(
+  synth: SynthLike | undefined = globalThis.speechSynthesis,
+  Utterance: UtteranceCtor | undefined = globalThis.SpeechSynthesisUtterance,
+): void {
+  if (unlocked || !synth || !Utterance) return;
+  unlocked = true;
+  const u = new Utterance('');
+  u.volume = 0;
+  synth.speak(u);
+}
+
 export async function speak(
   text: string,
   lang: Lang,
@@ -47,7 +65,8 @@ export async function speak(
     u.lang = voice.lang;
     u.rate = 0.95;
     u.onend = () => resolve(true);
-    u.onerror = () => resolve(false);
+    // A newer tap cancels this utterance; it did start, so do not report the voice as missing.
+    u.onerror = (e) => resolve(e.error === 'interrupted' || e.error === 'canceled');
     synth.cancel();
     synth.speak(u);
   });
