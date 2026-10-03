@@ -737,7 +737,7 @@ git commit -m "feat: store checks, reports and usage events offline; add SMS and
 
 Hausa and Pidgin are complete. Yoruba and Igbo are partial drafts covering `CORE_KEYS`; everything else falls back to English. All non-English text is a draft for native-speaker review (README lists this).
 
-- [ ] **Step 1: Write the failing test** `tests/unit/i18n.test.ts`
+- [x] **Step 1: Write the failing test** `tests/unit/i18n.test.ts`
 
 ```ts
 import { CORE_KEYS, LANGS, translate, type MessageKey } from '../../src/i18n';
@@ -796,12 +796,12 @@ test('voice clips exist in en, ha and pcm for every key', () => {
 });
 ```
 
-- [ ] **Step 2: Run to verify failure**
+- [x] **Step 2: Run to verify failure**
 
 Run: `npx vitest run tests/unit/i18n.test.ts`
 Expected: FAIL, modules not found.
 
-- [ ] **Step 3: Implement dictionaries**
+- [x] **Step 3: Implement dictionaries**
 
 `src/i18n/en.ts`:
 ```ts
@@ -1354,12 +1354,12 @@ export const CLIPS: Record<ClipKey, Record<VoiceLang, string>> = {
 };
 ```
 
-- [ ] **Step 4: Run tests**
+- [x] **Step 4: Run tests**
 
 Run: `npx vitest run tests/unit/i18n.test.ts && npm run typecheck`
 Expected: PASS. A circular type import (`ha.ts` imports `MessageKey` from `index.ts`) is fine because it is type-only.
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 git add -A

@@ -11,3 +11,4 @@
 - 15:11 · Task 10 · done · verdict engine: 18 decision-table cases + 5 demo cartons vs REAL register/alerts all green; phase 2 gate: 109 tests, typecheck clean
 - 15:13 · Task 11 · done · Dexie db, settings, offline pack loading (8 tests)
 - 15:14 · Task 12 · done · checks/reports/events stores + states + SMS helpers; added 5ms gap in checks-order test so createdAt differs
+- 15:15 · Task 13 · done · i18n en/ha/pcm complete, yo/ig core drafts; placeholder + copy-rule tests green

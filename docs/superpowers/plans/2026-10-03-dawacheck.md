@@ -92,7 +92,7 @@ Work strictly in this order. A task is done when every checkbox in its section i
 **Phase 3: Storage and screens** (`2026-10-03-dawacheck/p3-app.md`)
 - [x] Task 11: Dexie database, settings and pack loading
 - [x] Task 12: Checks, reports, events, states and SMS helpers
-- [ ] Task 13: i18n (5 languages) and voice clip texts
+- [x] Task 13: i18n (5 languages) and voice clip texts
 - [ ] Task 14: App shell, onboarding, Home, Type number, Result (MVP) + first E2E
 - [ ] Task 15: Report, History, Settings screens + phase gate (**MVP checkpoint**)
 
