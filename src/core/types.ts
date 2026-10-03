@@ -174,3 +174,6 @@ export const REPORT_REASONS: readonly ReportReason[] = [
   'not_in_register', 'name_mismatch', 'strength_mismatch', 'pack_expired', 'reg_lapsed',
   'on_alert', 'batch_on_alert', 'alert_product', 'community_flag', 'looks_different', 'other',
 ];
+
+export type Lang = 'en' | 'ha' | 'pcm' | 'yo' | 'ig';
+export const LANG_CODES: readonly Lang[] = ['en', 'ha', 'pcm', 'yo', 'ig'];

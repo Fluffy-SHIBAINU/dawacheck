@@ -20,7 +20,7 @@ Read the plan index Global Constraints first. Spec reference: §9 (screens), §1
   - `interface Settings { lang: Lang; state: string | null; consent: boolean; onboarded: boolean }`, `DEFAULT_SETTINGS`, `getMeta<T>(key, d?)`, `setMeta(key, value, d?)`, `getSettings(d?)`, `saveSettings(patch, d?): Promise<Settings>`, `uuid(): string`, `getDeviceId(d?): Promise<string>`.
   - `interface LoadedPacks { register: RegisterPack; alerts: AlertsPack; flags: CommunityFlag[]; corrections: Correction[]; manifest: Manifest | null }`, `loadPacks(opts?: { fetchImpl?: typeof fetch; d?: DawaDB; base?: string }): Promise<LoadedPacks>`, `savePack(name: PackName, version: string, json: string, d?): Promise<void>`.
 
-- [ ] **Step 1: Append to `src/core/types.ts`**
+- [x] **Step 1: Append to `src/core/types.ts`**
 
 ```ts
 export type Lang = 'en' | 'ha' | 'pcm' | 'yo' | 'ig';
@@ -32,7 +32,7 @@ export const LANG_CODES: readonly Lang[] = ['en', 'ha', 'pcm', 'yo', 'ig'];
 export const APP_VERSION = '0.1.0';
 ```
 
-- [ ] **Step 2: Write the failing tests**
+- [x] **Step 2: Write the failing tests**
 
 `tests/unit/data/meta.test.ts`:
 ```ts
@@ -138,12 +138,12 @@ test('offline with no manifest still uses stored packs', async () => {
 });
 ```
 
-- [ ] **Step 3: Run to verify failure**
+- [x] **Step 3: Run to verify failure**
 
 Run: `npx vitest run tests/unit/data`
 Expected: FAIL, modules not found.
 
-- [ ] **Step 4: Implement**
+- [x] **Step 4: Implement**
 
 `src/data/db.ts`:
 ```ts
@@ -349,12 +349,12 @@ export async function loadPacks(opts: LoadOptions = {}): Promise<LoadedPacks> {
 }
 ```
 
-- [ ] **Step 5: Run tests**
+- [x] **Step 5: Run tests**
 
 Run: `npx vitest run tests/unit/data && npm run typecheck`
 Expected: PASS.
 
-- [ ] **Step 6: Commit**
+- [x] **Step 6: Commit**
 
 ```bash
 git add -A
