@@ -53,6 +53,7 @@ export function Scan() {
 
   async function readCrop() {
     if (!crop || !fileRef.current) return;
+    setRotating(false);
     setPhase('reading');
     void logEvent('crop_used', {});
     try {

@@ -628,6 +628,6 @@ Found in the review. After a rotated scan finds nothing, the user draws a box; t
 
 **Files:** Modify `src/screens/Scan.tsx`; create `tests/unit/ui/scan.test.tsx`
 
-- [ ] **Step 1: Failing test.** Mock `runScan` (first call reports the `rotate` stage and finds no number; second call never resolves) and `CropBox` (reports a crop at once); render `Scan` with a pending photo; after "Number unclear?" then "Read this area", `ocr-stage` shows "Reading the label on this phone…".
-- [ ] **Step 2: Implement:** reset `rotating` when a crop read starts.
-- [ ] **Step 3: Verify and ship.** Commit `fix: scan label resets for the crop read`.
+- [x] **Step 1: Failing test.** Mock `runScan` (first call reports the `rotate` stage and finds no number; second call never resolves) and `CropBox` (reports a crop at once); render `Scan` with a pending photo; after "Number unclear?" then "Read this area", `ocr-stage` shows "Reading the label on this phone…".
+- [x] **Step 2: Implement:** reset `rotating` when a crop read starts.
+- [x] **Step 3: Verify and ship.** Commit `fix: scan label resets for the crop read`.
