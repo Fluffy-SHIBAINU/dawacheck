@@ -8,6 +8,8 @@ World Bank "Small AI for Development" hackathon, Health track.
 - **Demo cartons to scan:** https://dawacheck-smoky.vercel.app/#/demo-packs
 - **Regulator dashboard:** https://dawacheck-smoky.vercel.app/#/dashboard (needs the Supabase backend; see below)
 - **Design:** https://claude.ai/artifact/Q392hGkC2QW5h8SNR8HHpv
+- **Pitch deck:** https://claude.ai/artifact/VFmE5yFdgihQEJL9oXrimJ (exports to .pptx or PDF; source text in `docs/pitch.md`)
+- **Demo video script:** `docs/video-script.md`
 
 ## Why
 
@@ -70,7 +72,7 @@ flowchart LR
 ```bash
 npm install
 npm run dev          # http://localhost:5173
-npm run verify       # typecheck + 170 unit tests + build + 14 end-to-end tests (Chromium + iPhone WebKit)
+npm run verify       # typecheck + 172 unit tests + build + 14 end-to-end tests (Chromium + iPhone WebKit)
 npm run test:ocr     # real OCR on the demo carton images
 ```
 

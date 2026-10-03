@@ -26,3 +26,9 @@
 - 15:36 · Task 24 · blocked (partial) · LIVE: https://dawacheck-smoky.vercel.app (Vercel CLI already logged in; project dawacheck). Prod check: SW controls, offline typed check green, offline OCR carton 2 amber. Sync off until Supabase keys exist; holdback/publish/check:backend waiting on Supabase.
 - 15:41 · fix · suggestions: photos only offer brand-similar neighbours; alert matches clear suggestions (seen in deck screenshot: herbal alert box offered eye drops)
 - 15:41 · Task 25 · in progress · README (measured 16.7 MB offline app), docs/pitch.md, docs/video-script.md, deck screenshots in deck/img; prod redeployed with suggestion fix; deck next (Artifact Slides)
+- 15:52 · Task 25 · done · 10-slide pitch deck published as a Slides artifact (https://claude.ai/artifact/VFmE5yFdgihQEJL9oXrimJ, exports to .pptx/PDF); README links it; final gate green (172 unit, 14 e2e, OCR 1/1)
+- 15:52 · FINAL · all buildable tasks done. Remaining BLOCKED items need the user:
+  - Task 18 (voice): add `ELEVENLABS_API_KEY` to `.env`, run `npm run voice`, then `npm run deploy`. Until then the Listen button falls back to text.
+  - Task 24 (sync): create a Supabase project, run `supabase/schema.sql` in its SQL editor, add `VITE_SUPABASE_URL`, `VITE_SUPABASE_ANON_KEY`, `SUPABASE_SERVICE_ROLE_KEY` to `.env`, then `npm run check:backend`, `npm run holdback -- --n=12`, `npm run publish-packs -- --dir=data/packs`, set `VITE_SYNC_MODE=supabase`, `npm run deploy`.
+  - Optional (alerts): add `ANTHROPIC_API_KEY`, run `npm run data:alerts` for Claude-extracted brands and batches (now title matching); add `BRIGHTDATA_API_KEY` and use `--via=brightdata` if NAFDAC blocks direct fetches.
+  - iPhone hands-on check: follow `docs/iphone-checklist.md`.

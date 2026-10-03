@@ -233,7 +233,7 @@ DawaCheck checks NAFDAC records and what is printed on the box. It cannot test w
 10. **Ask.** Introductions to NAFDAC and two state health ministries. A 3-month pilot with 50 vendors. Native-speaker reviewers for Hausa, Yoruba and Igbo.
 ```
 
-- [ ] **Step 4: Build the deck file**
+- [x] **Step 4: Build the deck file** (built as a Slides artifact instead of a local .pptx: https://claude.ai/artifact/VFmE5yFdgihQEJL9oXrimJ; it exports to .pptx or PDF)
 
 Invoke the `anthropic-skills:pptx` skill and create `deck/DawaCheck.pptx` from `docs/pitch.md`: 10 slides, 16:9, palette `#0B6E4F` / `#F6F9F7` / `#10201A` with verdict colors `#1D8752`, `#9A6300`, `#BF3129`. Use screenshots captured with Playwright from `#/demo-packs` and from the result screens for cartons 1–3 (`page.screenshot` at device `iPhone 14`), saved to `deck/img/`. If the skill is unavailable, mark this step `BLOCKED: deck file` and keep `docs/pitch.md` as the source. The main session can build the deck instead.
 
@@ -257,7 +257,7 @@ Record the iPhone screen (Control Centre → Screen Recording) plus a laptop scr
 | 2:55 | End card: URL and repo | "DawaCheck. Check before you take." |
 ```
 
-- [ ] **Step 6: Final gate and commit**
+- [x] **Step 6: Final gate and commit**
 
 ```bash
 npm run verify && npm run test:ocr
