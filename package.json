@@ -23,7 +23,8 @@
     "assets": "tsx scripts/copy-ocr-assets.ts",
     "test:ocr": "vitest run --config vitest.ocr.config.ts",
     "voice": "tsx scripts/make-voice.ts",
-    "icons": "tsx scripts/make-icons.ts"
+    "icons": "tsx scripts/make-icons.ts",
+    "mock": "tsx scripts/mock-supabase.ts"
   },
   "keywords": [],
   "author": "",

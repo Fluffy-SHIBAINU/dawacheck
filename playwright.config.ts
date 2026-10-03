@@ -18,5 +18,6 @@ export default defineConfig({
       reuseExistingServer: !process.env.CI,
       timeout: 240_000,
     },
+    { command: 'npm run mock', url: 'http://localhost:54321/__health', reuseExistingServer: !process.env.CI, timeout: 30_000 },
   ],
 });

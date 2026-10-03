@@ -19,7 +19,7 @@ Read the plan index Global Constraints first. Spec reference: §11 (events, sync
   - `communityFlags(reports, now): CommunityFlag[]`, `nrnCorrections(events, now): Correction[]`, `dashActivity(events, reports, now): { checks: number; red: number; devices: number; reports: number }[]`, `dashByState(reports, now): { state: string; reports: number }[]`, `dashByReason(reports, now): { reason: string; reports: number }[]`, `dashUnknown(reports): { nrn: string; reports: number; devices: number; last_report_at: string }[]`.
   - `startMock(port?: number): Promise<{ url: string; state: MockState; close: () => Promise<void> }>` with routes `POST/GET /rest/v1/*`, `GET /storage/v1/object/public/packs/:file`, `POST|PUT /storage/v1/object/packs/:file`, and test routes `GET /__health`, `POST /__reset`, `POST /__seed`, `GET /__state`.
 
-- [ ] **Step 1: Write `supabase/schema.sql`**
+- [x] **Step 1: Write `supabase/schema.sql`**
 
 ```sql
 -- DawaCheck backend. Paste into the Supabase SQL editor once (safe to re-run).
@@ -114,7 +114,7 @@ grant select on public.community_flags, public.nrn_corrections, public.dash_acti
 insert into storage.buckets (id, name, public) values ('packs', 'packs', true) on conflict (id) do nothing;
 ```
 
-- [ ] **Step 2: Write the failing tests**
+- [x] **Step 2: Write the failing tests**
 
 `tests/scripts/aggregate.test.ts`:
 ```ts
@@ -188,12 +188,12 @@ test('mock accepts inserts, dedupes ids, computes views and serves storage', asy
 });
 ```
 
-- [ ] **Step 3: Run to verify failure**
+- [x] **Step 3: Run to verify failure**
 
 Run: `npx vitest run tests/scripts/aggregate.test.ts tests/scripts/mock.test.ts`
 Expected: FAIL, modules not found.
 
-- [ ] **Step 4: Implement**
+- [x] **Step 4: Implement**
 
 `scripts/lib/aggregate.ts`:
 ```ts
@@ -422,12 +422,12 @@ In `playwright.config.ts`, add a second `webServer` entry:
 { command: 'npm run mock', url: 'http://localhost:54321/__health', reuseExistingServer: !process.env.CI, timeout: 30_000 },
 ```
 
-- [ ] **Step 5: Run tests**
+- [x] **Step 5: Run tests**
 
 Run: `npx vitest run tests/scripts/aggregate.test.ts tests/scripts/mock.test.ts && npm run typecheck`
 Expected: PASS.
 
-- [ ] **Step 6: Commit**
+- [x] **Step 6: Commit**
 
 ```bash
 git add -A
