@@ -290,7 +290,7 @@ git commit -m "feat: find NAFDAC number candidates in OCR text with confusion fi
 - Consumes: `normalizeText`, `similarity` (Task 2), `Expiry`, `Strength` (Task 2).
 - Produces: `findExpiry(text: string): Expiry | null`; `parseDateToken(s: string): Expiry | null`; `isExpired(e: Expiry, today: Date): boolean`; `findBatch(text: string): string | null`; `findStrengths(text: string): Strength[]`; `strengthsConflict(box: Strength[], registered: Strength[]): boolean`; `strengthsOverlap(box: Strength[], registered: Strength[]): boolean`; `nameTokens(text: string): string[]`; `productTokens(name: string): string[]`; `bestTokenSimilarity(needles: string[], hay: string[]): number`.
 
-- [ ] **Step 1: Write the failing test** `tests/unit/core/parsers.test.ts`
+- [x] **Step 1: Write the failing test** `tests/unit/core/parsers.test.ts`
 
 ```ts
 import { findExpiry, isExpired, parseDateToken } from '../../../src/core/parse/expiry';
@@ -386,12 +386,12 @@ describe('name tokens', () => {
 });
 ```
 
-- [ ] **Step 2: Run to verify failure**
+- [x] **Step 2: Run to verify failure**
 
 Run: `npx vitest run tests/unit/core/parsers.test.ts`
 Expected: FAIL, modules not found.
 
-- [ ] **Step 3: Implement**
+- [x] **Step 3: Implement**
 
 `src/core/parse/expiry.ts`:
 ```ts
@@ -542,12 +542,12 @@ export function bestTokenSimilarity(needles: string[], hay: string[]): number {
 }
 ```
 
-- [ ] **Step 4: Run tests**
+- [x] **Step 4: Run tests**
 
 Run: `npx vitest run tests/unit/core/parsers.test.ts && npm run typecheck`
 Expected: PASS.
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 git add -A
