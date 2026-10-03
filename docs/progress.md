@@ -41,3 +41,4 @@
 - 17:16 · Task 29 · done · offline search by brand, ingredient or partial NRN (pure src/core/search.ts, 7 tests); /find and /product/:nrn screens; Home button; unknown and not-in-register results link to the search prefilled with the box name; gates green (190 unit, 17 e2e, OCR)
 - 17:16 · deploy · Task 29 live: /#/find 'artheget' lists Artheget EZ, A4-6238, Active
 - 17:18 · Task 30 · done · offline NAFDAC alerts list and detail (pure filterAlerts, newest first, search by brand/batch/company); Home button with count; alert verdicts link to their alert. Plan tweaks: fixture has 4 alerts (test lists all 4); real alert 035/2026 title has no brand in the heading match, so the e2e checks the title id and the product card instead; gates green (193 unit, 18 e2e incl. offline alerts, OCR)
+- 17:19 · deploy · Task 30 live: /#/alerts search 'menofix' shows Menofix Composition, Not registered, 18 Jul 2026
