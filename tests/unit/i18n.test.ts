@@ -30,7 +30,12 @@ test('placeholders are preserved in every translation', () => {
 
 test('translate interpolates and falls back to English', () => {
   expect(translate('en', 'status_pending', { n: 3 })).toBe('Reports waiting: 3');
+  // Fallback: remove one Yoruba string for a moment; English shows instead.
+  const dict = yo as Record<string, string | undefined>;
+  const saved = dict.settings_title;
+  delete dict.settings_title;
   expect(translate('yo', 'settings_title')).toBe(en.settings_title);
+  dict.settings_title = saved;
   expect(translate('ha', 'v_green_title')).toBe('An yi rajista da NAFDAC');
 });
 
@@ -51,4 +56,14 @@ test('voice clips exist in en, ha and pcm for every key', () => {
   for (const k of CLIP_KEYS) for (const l of ['en', 'ha', 'pcm'] as const) expect(CLIPS[k][l].length, `${k}/${l}`).toBeGreaterThan(10);
   expect(voiceLangFor('yo')).toBe('en');
   expect(voiceLangFor('ha')).toBe('ha');
+});
+
+const vars = (s: string) => [...s.matchAll(/\{(\w+)\}/g)].map((m) => m[1]).sort();
+
+test.each([['ha', ha], ['pcm', pcm], ['yo', yo], ['ig', ig]] as const)('%s has every key with the same placeholders', (lang, m) => {
+  for (const k of Object.keys(en) as (keyof typeof en)[]) {
+    const s = (m as Partial<Record<keyof typeof en, string>>)[k];
+    expect(s, `${lang}.${k}`).toBeTruthy();
+    expect(vars(s!), `${lang}.${k}`).toEqual(vars(en[k]));
+  }
 });

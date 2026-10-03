@@ -555,7 +555,7 @@ test('rotatedSize swaps width and height for quarter turns', () => {
 **Files:**
 - Modify: `src/i18n/yo.ts`, `src/i18n/ig.ts`, `tests/unit/i18n.test.ts`
 
-- [ ] **Step 1: Failing test** in `tests/unit/i18n.test.ts`
+- [x] **Step 1: Failing test** in `tests/unit/i18n.test.ts`
 
 ```ts
 import { en } from '../../src/i18n/en';
@@ -575,9 +575,9 @@ test.each([['ha', ha], ['pcm', pcm], ['yo', yo], ['ig', ig]] as const)('%s has e
 });
 ```
 
-- [ ] **Step 2: Run.** Expected: FAIL for `yo` and `ig` (and for `ha` or `pcm` if an earlier task missed a key: fix those too).
-- [ ] **Step 3: Translate** every missing key into Yoruba (with tone marks) and Igbo (with dots), keeping meaning plain and short, keeping `{placeholders}`, keeping copy rules (no word meaning "safe", "genuine" or "authentic"; the green title means "Registered with NAFDAC"). They stay marked as drafts in `LANGS`.
-- [ ] **Step 4: Run.** Expected: PASS. Then `npm run verify` and deploy. Commit `feat: complete Yoruba and Igbo draft translations`.
+- [x] **Step 2: Run.** Expected: FAIL for `yo` and `ig` (and for `ha` or `pcm` if an earlier task missed a key: fix those too).
+- [x] **Step 3: Translate** every missing key into Yoruba (with tone marks) and Igbo (with dots), keeping meaning plain and short, keeping `{placeholders}`, keeping copy rules (no word meaning "safe", "genuine" or "authentic"; the green title means "Registered with NAFDAC"). They stay marked as drafts in `LANGS`.
+- [x] **Step 4: Run.** Expected: PASS. Then `npm run verify` and deploy. Commit `feat: complete Yoruba and Igbo draft translations`.
 
 ---
 
