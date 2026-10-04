@@ -1,0 +1,25 @@
+{
+  "id": "017/2025",
+  "wpId": 18658,
+  "url": "https://nafdac.gov.ng/public-alert-no-17-2025-alert-on-falsified-batches-of-healmoxy-capsules-500mg-found-in-cameroon-and-central-african-republic-car/",
+  "date": "2025-06-01",
+  "title": "Public Alert No. 17/2025 – Alert on Falsified Batches of Healmoxy Capsules 500mg found in Cameroon and Central African Republic (CAR)",
+  "kind": "counterfeit",
+  "products": [
+    {
+      "brand": "Healmoxy Capsules",
+      "ingredient": "Amoxicillin (Amoxicillin Trihydrate)",
+      "strength": "500mg",
+      "manufacturer": "Maxheal Pharmaceuticals (India)",
+      "nrn": null,
+      "batches": [
+        "HO26051",
+        "023011",
+        "H02605",
+        "H026051"
+      ]
+    }
+  ],
+  "summary": "NAFDAC warns of falsified Healmoxy Capsules 500mg (Amoxicillin) by Maxheal Pharmaceuticals India, found in Cameroon and CAR. WHO testing showed no active ingredient and inconsistent date formats. Investigation found the batches were never imported into Nigeria.",
+  "appliesToNigeria": false
+}

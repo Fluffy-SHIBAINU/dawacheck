@@ -1,0 +1,28 @@
+{
+  "id": "041/2026",
+  "wpId": 22011,
+  "url": "https://nafdac.gov.ng/public-alert-no-041-2026-alert-on-suspected-counterfeit-oracire-toothpaste/",
+  "date": "2026-08-19",
+  "title": "Public Alert No. 041/2026 – Alert on Suspected Counterfeit ORACIRE+ Toothpaste",
+  "kind": "counterfeit",
+  "products": [
+    {
+      "brand": "ORACIRE+ Toothpaste",
+      "ingredient": null,
+      "strength": null,
+      "manufacturer": null,
+      "nrn": null,
+      "batches": []
+    },
+    {
+      "brand": "ORACARE+ Toothpaste",
+      "ingredient": null,
+      "strength": null,
+      "manufacturer": "Aspira Nigeria Limited",
+      "nrn": null,
+      "batches": []
+    }
+  ],
+  "summary": "NAFDAC warns that counterfeit \"ORACIRE+ Toothpaste\" is circulating in Nigeria, mimicking the registered ORACARE+ Toothpaste by Aspira Nigeria Limited. Found at Ojuwoye Market, Mushin, Lagos. Buy only from authorized outlets and check packaging.",
+  "appliesToNigeria": true
+}

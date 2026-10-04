@@ -1,0 +1,42 @@
+{
+  "id": "036/2025",
+  "wpId": 19633,
+  "url": "https://nafdac.gov.ng/public-alert-no-36-2025-who-alert-on-3-substandard-contaminated-oral-liquid-medicines-identified-in-india/",
+  "date": "2025-10-28",
+  "title": "Public Alert No. 36/2025 – WHO Alert on 3 Substandard (contaminated) oral liquid medicines identified in India",
+  "kind": "substandard",
+  "products": [
+    {
+      "brand": "COLDRIF",
+      "ingredient": "Paracetamol, chlorpheniramine maleate, phenylephrine, sodium citrate",
+      "strength": null,
+      "manufacturer": "Sresan Pharmaceutical manufacturer, No. 787, Bangalore Highways, Sunguvarchatraam (Mathura) Kancheepuram, Dist. 602106",
+      "nrn": null,
+      "batches": [
+        "SR-13"
+      ]
+    },
+    {
+      "brand": "Respifresh TR",
+      "ingredient": "Bromhexine hydrochloride, terbutaline sulphate, guaiphenesin, menthol",
+      "strength": null,
+      "manufacturer": "Rednex Pharmaceutical Pvt Ltd. Survey No. 586 & 231, NR. SKF Bearing Bavla Bagodra N.H. 8A Kerala, Tal, Bavla, Dist. Ahmedabad-383220 Gujarat",
+      "nrn": null,
+      "batches": [
+        "R01GL2523"
+      ]
+    },
+    {
+      "brand": "ReLife",
+      "ingredient": "Ambroxol HCL, guaiphenesin, terbutaline sulphate, menthol",
+      "strength": null,
+      "manufacturer": "Shape Pharma Pvt. Ltd. Plot No. 4, Surendranagar Rajkot Highway Rd. Shekhpur 363510 Gujarat",
+      "nrn": null,
+      "batches": [
+        "LSL25160"
+      ]
+    }
+  ],
+  "summary": "NAFDAC relays a WHO alert on three DEG-contaminated oral liquid medicines found in India: COLDRIF, Respifresh TR and ReLife. Diethylene glycol can cause kidney injury and death, especially in children. NAFDAC zonal offices are to carry out surveillance and mop-up.",
+  "appliesToNigeria": true
+}

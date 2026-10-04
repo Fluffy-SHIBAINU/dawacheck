@@ -1,0 +1,156 @@
+{
+  "id": "008/2026",
+  "wpId": 20143,
+  "url": "https://nafdac.gov.ng/public-alert-no-08-2026-danone-nutricia-recalls-several-batches-of-aptamil-and-cow-and-gate-first-infant-milk-and-follow-on-milk-formula-products-due-to-potential-contamination-with-cereulide-toxin/",
+  "date": "2026-02-13",
+  "title": "Public Alert No. 08/2026 – Danone Nutricia Recalls Several Batches of Aptamil and Cow and Gate First Infant Milk and Follow-on Milk Formula Products Due To Potential Contamination with Cereulide Toxin",
+  "kind": "recall",
+  "products": [
+    {
+      "brand": "Aptamil 1 From Birth First infant milk",
+      "ingredient": null,
+      "strength": "800g",
+      "manufacturer": "Danone Nutricia Ltd, Ireland",
+      "nrn": null,
+      "batches": []
+    },
+    {
+      "brand": "Aptamil 1 First Infant Milk",
+      "ingredient": null,
+      "strength": "700g",
+      "manufacturer": "Danone Nutricia",
+      "nrn": null,
+      "batches": []
+    },
+    {
+      "brand": "Cow & Gate 1 First Infant Milk",
+      "ingredient": null,
+      "strength": "700g",
+      "manufacturer": "Danone Nutricia",
+      "nrn": null,
+      "batches": []
+    },
+    {
+      "brand": "Cow & Gate 1 First Infant Milk Big Pack",
+      "ingredient": null,
+      "strength": "1.2kg",
+      "manufacturer": "Danone Nutricia",
+      "nrn": null,
+      "batches": []
+    },
+    {
+      "brand": "Cow & Gate 1 First Infant Milk Hungry",
+      "ingredient": null,
+      "strength": "800g",
+      "manufacturer": "Danone Nutricia",
+      "nrn": null,
+      "batches": []
+    },
+    {
+      "brand": "Cow & Gate 1 First Infant Milk",
+      "ingredient": null,
+      "strength": "600g",
+      "manufacturer": "Danone Nutricia",
+      "nrn": null,
+      "batches": []
+    },
+    {
+      "brand": "Cow & Gate Anti-Reflux",
+      "ingredient": null,
+      "strength": "800g",
+      "manufacturer": "Danone Nutricia",
+      "nrn": null,
+      "batches": []
+    },
+    {
+      "brand": "Aptamil 1 First Infant Milk Big Pack",
+      "ingredient": null,
+      "strength": "1.2kg",
+      "manufacturer": "Danone Nutricia",
+      "nrn": null,
+      "batches": []
+    },
+    {
+      "brand": "Aptamil 1 First Infant Milk Hungry",
+      "ingredient": null,
+      "strength": "800g",
+      "manufacturer": "Danone Nutricia",
+      "nrn": null,
+      "batches": []
+    },
+    {
+      "brand": "Aptamil 1 First Infant Milk Pre-Measured Tabs",
+      "ingredient": null,
+      "strength": null,
+      "manufacturer": "Danone Nutricia",
+      "nrn": null,
+      "batches": []
+    },
+    {
+      "brand": "Aptamil 2 Follow-On Milk",
+      "ingredient": null,
+      "strength": "800g",
+      "manufacturer": "Danone Nutricia",
+      "nrn": null,
+      "batches": []
+    },
+    {
+      "brand": "Aptamil 2 Follow-On Milk",
+      "ingredient": null,
+      "strength": "700g",
+      "manufacturer": "Danone Nutricia",
+      "nrn": null,
+      "batches": []
+    },
+    {
+      "brand": "Aptamil 2 Follow-On Milk Big Pack",
+      "ingredient": null,
+      "strength": "1.2kg",
+      "manufacturer": "Danone Nutricia",
+      "nrn": null,
+      "batches": []
+    },
+    {
+      "brand": "Aptamil 2 Follow-On Milk Pre-Measured Tabs",
+      "ingredient": null,
+      "strength": null,
+      "manufacturer": "Danone Nutricia",
+      "nrn": null,
+      "batches": []
+    },
+    {
+      "brand": "Cow & Gate 1 First Infant Milk",
+      "ingredient": null,
+      "strength": "800g",
+      "manufacturer": "Danone Nutricia",
+      "nrn": null,
+      "batches": []
+    },
+    {
+      "brand": "Aptamil Nutribiotik 1 (Aptamil first infant milk)",
+      "ingredient": null,
+      "strength": "800g, 400g",
+      "manufacturer": null,
+      "nrn": null,
+      "batches": []
+    },
+    {
+      "brand": "Aptamil Nutribiotik 2 (Aptamil follow on milk 2)",
+      "ingredient": null,
+      "strength": "800g, 400g",
+      "manufacturer": null,
+      "nrn": null,
+      "batches": []
+    },
+    {
+      "brand": "AptaJunior Nutribiotik 3 (Aptamil growing up milk 3)",
+      "ingredient": null,
+      "strength": "800g, 400g",
+      "manufacturer": null,
+      "nrn": null,
+      "batches": []
+    }
+  ],
+  "summary": "Danone Nutricia is recalling batches of Aptamil and Cow & Gate first infant and follow-on milk formulas made in Ireland and Hungary over possible cereulide toxin contamination. NAFDAC says Aptamil made for Nigeria is unaffected; stock was blocked at the Nigerian warehouse as a pr",
+  "appliesToNigeria": false
+}

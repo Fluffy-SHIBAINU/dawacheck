@@ -1,0 +1,22 @@
+{
+  "id": "021/2026",
+  "wpId": 20673,
+  "url": "https://nafdac.gov.ng/public-alert-no-021-2026-alert-on-the-recall-of-zetol-antiseptic-product-in-pakistan/",
+  "date": "2026-03-25",
+  "title": "Public Alert No. 021/2026 -Alert on the Recall of Zetol Antiseptic Product in Pakistan",
+  "kind": "unregistered",
+  "products": [
+    {
+      "brand": "Zetol Antiseptic",
+      "ingredient": "Chloroxylenol",
+      "strength": null,
+      "manufacturer": "UNCUS BROTHERS Address: 23 KM Multan Road, Lahore",
+      "nrn": null,
+      "batches": [
+        "BOOO1"
+      ]
+    }
+  ],
+  "summary": "NAFDAC relays Pakistan's DRAP recall of unregistered Zetol Antiseptic (Chloroxylenol) liquid, sold without approval and packaged to resemble Dettol. Quality, safety and efficacy unverified. Zonal directors told to conduct surveillance in Nigeria.",
+  "appliesToNigeria": true
+}

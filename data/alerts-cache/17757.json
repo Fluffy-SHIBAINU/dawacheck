@@ -1,0 +1,20 @@
+{
+  "id": "002/2025",
+  "wpId": 17757,
+  "url": "https://nafdac.gov.ng/public-alert-no-02-2025-illegal-distribution-and-sale-of-substandard-and-falsified-sf-knowit-insulin-syringe-40-iu-29g-x-1-2/",
+  "date": "2025-02-28",
+  "title": "Public Alert No. 02/2025 – Illegal Distribution and Sale of Substandard and Falsified (SF) Knowit Insulin Syringe 40 IU 29g X 1/2",
+  "kind": "counterfeit",
+  "products": [
+    {
+      "brand": "Knowit Insulin Syringe",
+      "ingredient": "Insulin Syringe 40IU 29G x 1/2",
+      "strength": "40 IU 29G x 1/2",
+      "manufacturer": "Unknown",
+      "nrn": "03-2933",
+      "batches": []
+    }
+  ],
+  "summary": "NAFDAC warns of illegal sale of substandard and falsified Knowit Insulin Syringe 40 IU 29G x 1/2 in Nigeria. The 40 IU/ml syringe is no longer registered and can cause life-threatening insulin dosing errors. Its NAFDAC number 03-2933 is falsified; licence expired in 2019.",
+  "appliesToNigeria": true
+}

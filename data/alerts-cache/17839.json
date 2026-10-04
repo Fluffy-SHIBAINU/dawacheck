@@ -1,0 +1,22 @@
+{
+  "id": "007/2025",
+  "wpId": 17839,
+  "url": "https://nafdac.gov.ng/public-alert-no-07-2025-alert-on-falsified-oxycontin-80mg-identified-in-the-who-european-region/",
+  "date": "2025-03-20",
+  "title": "Public Alert No. 07/2025 – Alert on Falsified OXYCONTIN 80mg identified in the WHO European Region",
+  "kind": "counterfeit",
+  "products": [
+    {
+      "brand": "OxyContin",
+      "ingredient": "oxycodone hydrochloride",
+      "strength": "80mg",
+      "manufacturer": "Mundipharma A/S",
+      "nrn": null,
+      "batches": [
+        "262174"
+      ]
+    }
+  ],
+  "summary": "NAFDAC alerts on falsified OxyContin 80mg (batch 262174, exp 12/2025) found in Switzerland, imitating Mundipharma's Polish product. Tablets contained no oxycodone but a nitazene synthetic opioid, risking overdose and death. Surveillance ordered in Nigeria.",
+  "appliesToNigeria": true
+}

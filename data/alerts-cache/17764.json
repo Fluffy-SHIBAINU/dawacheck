@@ -1,0 +1,40 @@
+{
+  "id": "003/2025",
+  "wpId": 17764,
+  "url": "https://nafdac.gov.ng/public-alert-no-03-2025-alert-on-the-sale-of-counterfeit-falsified-petsow-starnicillin-ampicillin-500mg-found-in-cameroon-and-central-african-republic/",
+  "date": "2025-02-28",
+  "title": "Public Alert No. 03/2025 – Alert on the Sale of Counterfeit/Falsified Petsow Starnicillin (Ampicillin) 500mg found in Cameroon and Central African Republic",
+  "kind": "counterfeit",
+  "products": [
+    {
+      "brand": "PETSOW STARNICILLIN",
+      "ingredient": "Ampicillin",
+      "strength": "500mg",
+      "manufacturer": "Petsow Laboratories Limited",
+      "nrn": null,
+      "batches": [
+        "023612"
+      ]
+    },
+    {
+      "brand": "STARNICILLIN",
+      "ingredient": "Ampicillin",
+      "strength": "500mg",
+      "manufacturer": "Petsow Laboratories Limited",
+      "nrn": "04-7790",
+      "batches": [
+        "V2403001"
+      ]
+    },
+    {
+      "brand": "STARNICILLIN",
+      "ingredient": "Ampicillin",
+      "strength": "250mg",
+      "manufacturer": "Petsow Laboratories Limited",
+      "nrn": "04-4697",
+      "batches": []
+    }
+  ],
+  "summary": "NAFDAC warns of falsified Petsow Starnicillin (Ampicillin) 500mg, batch 023612, purportedly made by Petsow Laboratories Limited, circulating in Cameroon and Central African Republic. Genuine Starnicillin 500mg (NRN 04-7790) batch V2403001. Zonal offices directed to mop up in Nige",
+  "appliesToNigeria": true
+}

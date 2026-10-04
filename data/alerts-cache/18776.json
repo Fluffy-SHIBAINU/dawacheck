@@ -1,0 +1,28 @@
+{
+  "id": "019/2025",
+  "wpId": 18776,
+  "url": "https://nafdac.gov.ng/public-alert-no-019-2025-illegal-retailing-and-marketing-of-health-and-wellness-products/",
+  "date": "2025-06-02",
+  "title": "Public Alert No. 019/2025 – Illegal Retailing and Marketing of Health and Wellness Products",
+  "kind": "unregistered",
+  "products": [
+    {
+      "brand": "Amezcua Bio Disc 3",
+      "ingredient": null,
+      "strength": null,
+      "manufacturer": null,
+      "nrn": null,
+      "batches": []
+    },
+    {
+      "brand": "Amezcua Chi Pendant 4",
+      "ingredient": null,
+      "strength": null,
+      "manufacturer": null,
+      "nrn": null,
+      "batches": []
+    }
+  ],
+  "summary": "NAFDAC warns about illegal retailing and marketing of two unregistered health and wellness products, Amezcua Bio Disc 3 and Amezcua Chi Pendant 4, flagged by EFCC during an investigation into several retailing companies in Nigeria.",
+  "appliesToNigeria": true
+}

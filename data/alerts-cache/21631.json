@@ -1,0 +1,22 @@
+{
+  "id": "033/2026",
+  "wpId": 21631,
+  "url": "https://nafdac.gov.ng/public-alert-no-033-2026-alert-on-the-voluntary-recall-of-sporidex-suspension-125-mg-5-ml-batch-no-dfg4606a/",
+  "date": "2026-06-18",
+  "title": "Public Alert No. 033/2026 – Alert on the Voluntary Recall of Sporidex Suspension 125 mg/5 ml (Batch No. DFG4606A)",
+  "kind": "recall",
+  "products": [
+    {
+      "brand": "Sporidex Suspension",
+      "ingredient": "cephalexin",
+      "strength": "125 mg/5 mL",
+      "manufacturer": "Ranbaxy Nigeria Ltd. (Sun Pharma Company)",
+      "nrn": null,
+      "batches": [
+        "DFG4606A"
+      ]
+    }
+  ],
+  "summary": "NAFDAC alerts on a voluntary recall of Sporidex Suspension 125 mg/5 mL (batch DFG4606A) by Ranbaxy Nigeria Ltd. (Sun Pharma) after an impurity exceeding approved limits was found, risking reduced antibiotic effectiveness, treatment failure, resistance and side effects.",
+  "appliesToNigeria": true
+}

@@ -1,0 +1,44 @@
+{
+  "id": "038/2025",
+  "wpId": 19651,
+  "url": "https://nafdac.gov.ng/public-alert-no-038-2025-prohibition-of-use-and-sale-of-bledine-infant-cereals-by-chadian-authorities/",
+  "date": "2025-11-04",
+  "title": "Public Alert No. 038/2025 – Prohibition of Use and Sale of Bledine Infant Cereals by Chadian Authorities",
+  "kind": "substandard",
+  "products": [
+    {
+      "brand": "Bledine Cereals Saveur biscuit",
+      "ingredient": null,
+      "strength": null,
+      "manufacturer": "Danone Group",
+      "nrn": null,
+      "batches": []
+    },
+    {
+      "brand": "Bledine Saveur Biscuit & Lait",
+      "ingredient": null,
+      "strength": null,
+      "manufacturer": "Danone Group",
+      "nrn": null,
+      "batches": []
+    },
+    {
+      "brand": "Bledine Miel & Lait",
+      "ingredient": null,
+      "strength": null,
+      "manufacturer": "Danone Group",
+      "nrn": null,
+      "batches": []
+    },
+    {
+      "brand": "Bledine Banane & Lait",
+      "ingredient": null,
+      "strength": null,
+      "manufacturer": "Danone Group",
+      "nrn": null,
+      "batches": []
+    }
+  ],
+  "summary": "NAFDAC alerts that Chad banned Bledine infant cereals made by France's Danone Group for exceeding European limits for Aflatoxin B1, a carcinogen. The affected products, with expiry dates from September 2026 to March 2027, are circulating in Nigeria, especially in border communiti",
+  "appliesToNigeria": true
+}

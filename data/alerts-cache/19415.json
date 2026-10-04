@@ -1,0 +1,32 @@
+{
+  "id": "033/2025",
+  "wpId": 19415,
+  "url": "https://nafdac.gov.ng/public-alert-no-033-2025-alert-on-the-sale-of-counterfeit-cialis-tablet-20mg-in-nigeria/",
+  "date": "2025-10-15",
+  "title": "Public Alert No. 033/2025 – Alert on the Sale of Counterfeit Cialis Tablet 20mg in Nigeria",
+  "kind": "counterfeit",
+  "products": [
+    {
+      "brand": "Cialis Tadalafil tablets 20mg (counterfeit)",
+      "ingredient": "Tadalafil",
+      "strength": "20mg",
+      "manufacturer": null,
+      "nrn": null,
+      "batches": [
+        "E3242401"
+      ]
+    },
+    {
+      "brand": "Cialis 20mg film-coated tablets (genuine)",
+      "ingredient": "Tadalafil",
+      "strength": "20mg",
+      "manufacturer": null,
+      "nrn": "04-5196",
+      "batches": [
+        "D636431"
+      ]
+    }
+  ],
+  "summary": "NAFDAC warns of counterfeit Cialis (tadalafil) 20mg tablets found in Abuja, sold at about ₦8,000 per pack versus ₦55,000 for the genuine product. The fake bears NRN 4464 and lot E3242401, unlike the genuine NRN 04-5196, lot D636431.",
+  "appliesToNigeria": true
+}

@@ -1,0 +1,22 @@
+{
+  "id": "016/2025",
+  "wpId": 18646,
+  "url": "https://nafdac.gov.ng/public-alert-no-16-2025-alert-on-counterfeit-falsified-rosprazole-rabeprazole-injection-20mg/",
+  "date": "2025-05-31",
+  "title": "Public Alert No. 16/2025 – Alert on Counterfeit/Falsified Rosprazole (Rabeprazole Injection) 20mg",
+  "kind": "counterfeit",
+  "products": [
+    {
+      "brand": "Rosprazole Injection",
+      "ingredient": "Rabeprazole",
+      "strength": "20mg",
+      "manufacturer": "Nil; manufactured for Celeste Farmaceutical Inc., 2063, Rabari Vas Khoraj, Gujarat, India",
+      "nrn": "C4-0150",
+      "batches": [
+        "PLED23108"
+      ]
+    }
+  ],
+  "summary": "NAFDAC warns of falsified Rosprazole (Rabeprazole Injection) 20mg bearing fake NAFDAC Reg. No. C4-0150, which actually belongs to an Amlodipine tablet. Batch PLED23108. It may lack active ingredient or contain contaminants, risking organ failure or death.",
+  "appliesToNigeria": true
+}

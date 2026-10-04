@@ -1,0 +1,76 @@
+{
+  "id": "032/2025",
+  "wpId": 19672,
+  "url": "https://nafdac.gov.ng/public-alert-no-032-2025-alert-on-the-discontinuation-of-the-production-of-penicillin-based-moiety-by-miraflash-2/",
+  "date": "2025-10-15",
+  "title": "Public Alert No. 032/2025 – Alert on the Discontinuation of the Production of Penicillin-Based Moiety by Miraflash",
+  "kind": "other",
+  "products": [
+    {
+      "brand": "Miramox 125mg Powder for Oral Suspension",
+      "ingredient": "Amoxicillin",
+      "strength": "125mg",
+      "manufacturer": "Miraflash Nigeria Limited",
+      "nrn": "04-6869",
+      "batches": []
+    },
+    {
+      "brand": "Miramox 250mg Powder for Oral Suspension",
+      "ingredient": "Amoxicillin",
+      "strength": "250mg",
+      "manufacturer": "Miraflash Nigeria Limited",
+      "nrn": "A11-0999",
+      "batches": []
+    },
+    {
+      "brand": "Miramox 500mg Capsules",
+      "ingredient": "Amoxicillin",
+      "strength": "500mg",
+      "manufacturer": "Miraflash Nigeria Limited",
+      "nrn": "B4-5536",
+      "batches": []
+    },
+    {
+      "brand": "Miraclox 250mg Powder for Oral Suspension",
+      "ingredient": "Ampicillin/Cloxacillin",
+      "strength": "250mg",
+      "manufacturer": "Miraflash Nigeria Limited",
+      "nrn": "04-7004",
+      "batches": []
+    },
+    {
+      "brand": "Miraclox 500mg Capsules",
+      "ingredient": "Ampicillin/Cloxacillin",
+      "strength": "500mg",
+      "manufacturer": "Miraflash Nigeria Limited",
+      "nrn": "A11-0038",
+      "batches": []
+    },
+    {
+      "brand": "Mirapicin 125mg Powder for Oral Suspension",
+      "ingredient": "Ampicillin",
+      "strength": "125mg",
+      "manufacturer": "Miraflash Nigeria Limited",
+      "nrn": "04-6868",
+      "batches": []
+    },
+    {
+      "brand": "Mirapicin 250mg Capsules",
+      "ingredient": "Ampicillin",
+      "strength": "250mg",
+      "manufacturer": "Miraflash Nigeria Limited",
+      "nrn": "B4-5538",
+      "batches": []
+    },
+    {
+      "brand": "Miraclox 90mg Powder for Oral drops",
+      "ingredient": "Ampicillin/Cloxacillin",
+      "strength": "90mg",
+      "manufacturer": "Miraflash Nigeria Limited",
+      "nrn": "A4-0044",
+      "batches": []
+    }
+  ],
+  "summary": "Miraflash Nigeria Ltd has stopped making penicillin-based products to avoid cross-contamination with cephalosporins made in the same plant. Stock made up to August 2025 is safe to use; any such product made after that date will be deemed counterfeit.",
+  "appliesToNigeria": true
+}

@@ -1,0 +1,23 @@
+{
+  "id": "001/2026",
+  "wpId": 19885,
+  "url": "https://nafdac.gov.ng/public-alert-no-01-2026-sale-of-falsified-tavanic-500mg-tablet-in-nigeria/",
+  "date": "2026-01-08",
+  "title": "Public Alert No. 01/2026 – Sale of Falsified TAVANIC® 500mg Tablet in Nigeria",
+  "kind": "counterfeit",
+  "products": [
+    {
+      "brand": "Tavanic®",
+      "ingredient": null,
+      "strength": "500mg",
+      "manufacturer": "Sanofi",
+      "nrn": null,
+      "batches": [
+        "4MW4C",
+        "2PK3C"
+      ]
+    }
+  ],
+  "summary": "NAFDAC warns of falsified Tavanic® 500mg tablets (Sanofi) labelled batch 4MW4C, Mfg 05/2024, Exp 04/2027, traced to the open drug market at Idumota, Lagos. Blister stickers hid an older expired batch (2PK3C) and the MAS label differs from the authorised distributor's.",
+  "appliesToNigeria": true
+}

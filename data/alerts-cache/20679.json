@@ -1,0 +1,28 @@
+{
+  "id": "022/2026",
+  "wpId": 20679,
+  "url": "https://nafdac.gov.ng/public-alert-no-022-2026-alert-on-the-distribution-of-unregistered-and-suspected-counterfeit-colgate-toothpaste/",
+  "date": "2026-03-25",
+  "title": "Public Alert No. 022/2026 – Alert on the Distribution of Unregistered and Suspected Counterfeit Colgate Toothpaste",
+  "kind": "counterfeit",
+  "products": [
+    {
+      "brand": "Coglaet Crema Dental Herbal 100 g",
+      "ingredient": null,
+      "strength": "100 g",
+      "manufacturer": "Guangzhou YECAI Oral Cleaning Products Co., Ltd, 4335 4th floor, Baiyun District, Guangzhou, China.",
+      "nrn": null,
+      "batches": []
+    },
+    {
+      "brand": "Coglaet ActivGel 100g",
+      "ingredient": null,
+      "strength": "100 g",
+      "manufacturer": "Guangzhou YECAI Oral Cleaning Products Co., Ltd, 4335 4th floor, Baiyun District, Guangzhou, China.",
+      "nrn": null,
+      "batches": []
+    }
+  ],
+  "summary": "NAFDAC warns of unregistered, suspected counterfeit Colgate-lookalike toothpastes branded 'Coglaet ActivGel 100g' and 'Coglaet Crema Dental Herbal 100g' found in Kaduna State. No batch or NAFDAC registration numbers; products seized and investigations ongoing.",
+  "appliesToNigeria": true
+}

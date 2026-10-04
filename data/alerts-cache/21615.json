@@ -1,0 +1,32 @@
+{
+  "id": "032/2026",
+  "wpId": 21615,
+  "url": "https://nafdac.gov.ng/public-alert-no-032-2026-alert-on-the-confiscation-of-a-banned-alcoholic-energy-drink-in-ghana/",
+  "date": "2026-06-18",
+  "title": "Public Alert No.032/2026 – Alert on the Confiscation of a Banned Alcoholic Energy Drink in Ghana",
+  "kind": "unregistered",
+  "products": [
+    {
+      "brand": "Bel Ice Vodka Energy Drink",
+      "ingredient": null,
+      "strength": null,
+      "manufacturer": "Bel Beverages, Ghana",
+      "nrn": null,
+      "batches": [
+        "ALLBATCHES"
+      ]
+    },
+    {
+      "brand": "Cody's Vody Energy Mix",
+      "ingredient": null,
+      "strength": null,
+      "manufacturer": "Jens Warneke Export GmbH, Bremen, Germany",
+      "nrn": null,
+      "batches": [
+        "ALLBATCHES"
+      ]
+    }
+  ],
+  "summary": "Ghana's FDA seized ~140 boxes of banned alcoholic energy drinks (Bel Ice Vodka Energy Drink and Cody's Vody Energy Mix) in the Upper East Region. Mixing alcohol with stimulants can mask intoxication and cause cardiovascular and injury risks. NAFDAC is monitoring to keep them out ",
+  "appliesToNigeria": false
+}

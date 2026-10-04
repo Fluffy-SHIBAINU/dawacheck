@@ -1,0 +1,36 @@
+{
+  "id": "044/2025",
+  "wpId": 19870,
+  "url": "https://nafdac.gov.ng/public-alert-no-44-2025-recall-of-mivacron-injection-0-2-nimbex-injection-2mg-ml-over-safety-concerns/",
+  "date": "2025-12-19",
+  "title": "Public Alert No.44/2025 – Recall of Mivacron Injection 0.2%, Nimbex Injection 2mg/ml Over Safety Concerns",
+  "kind": "recall",
+  "products": [
+    {
+      "brand": "Mivacron Inj. 0.2%",
+      "ingredient": "mivacurium",
+      "strength": "0.2%",
+      "manufacturer": "Aspen Pharmacare Asia Limited",
+      "nrn": null,
+      "batches": [
+        "XPC19"
+      ]
+    },
+    {
+      "brand": "Nimbex Inj. 2mg/mL",
+      "ingredient": "cisatracurium",
+      "strength": "2mg/mL",
+      "manufacturer": "Aspen Pharmacare Asia Limited",
+      "nrn": null,
+      "batches": [
+        "XP1SQ",
+        "XPC1G",
+        "XPC6W",
+        "XP1V5",
+        "XP1VF"
+      ]
+    }
+  ],
+  "summary": "NAFDAC relays Hong Kong recall of one batch of Mivacron Injection 0.2% (mivacurium) and five batches of Nimbex Injection 2mg/mL (cisatracurium) by Aspen Pharmacare Asia Limited, after manual visual inspection deficiencies meant glass particles in ampoules may not have been detect",
+  "appliesToNigeria": true
+}

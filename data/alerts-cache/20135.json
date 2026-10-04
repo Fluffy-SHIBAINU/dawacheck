@@ -1,0 +1,24 @@
+{
+  "id": "007/2026",
+  "wpId": 20135,
+  "url": "https://nafdac.gov.ng/public-alert-no-07-2026-alert-on-surveillance-and-mop-up-of-counterfeit-dostinex-0-5mg-tablets-found-in-circulation/",
+  "date": "2026-02-13",
+  "title": "Public Alert No. 07/2026- Alert on Surveillance and mop up of Counterfeit Dostinex (0.5mg) Tablets Found in Circulation",
+  "kind": "counterfeit",
+  "products": [
+    {
+      "brand": "Dostinex",
+      "ingredient": null,
+      "strength": "0.5mg",
+      "manufacturer": "Pfizer Italia S.R.L, Ascoli Piceno, Italy.",
+      "nrn": null,
+      "batches": [
+        "GG3470",
+        "LG8659",
+        "GG2440"
+      ]
+    }
+  ],
+  "summary": "NAFDAC warns of falsified and parallel-imported Dostinex 0.5mg tablets circulating in Nigeria. Pfizer Nigeria Ltd confirms the genuine product, though registered, has not yet been imported. Three batches affected; no NAFDAC reg. number. Mop-up ordered nationwide.",
+  "appliesToNigeria": true
+}

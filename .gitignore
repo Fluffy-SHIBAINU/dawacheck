@@ -14,3 +14,6 @@ coverage
 
 # Local MCP client config (per developer, not part of the app)
 .mcp.json
+
+# Update packs published to Supabase Storage (rebuild with npm run holdback from a full register)
+data/packs

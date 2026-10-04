@@ -1,0 +1,23 @@
+{
+  "id": "027/2025",
+  "wpId": 19165,
+  "url": "https://nafdac.gov.ng/public-alert-no-027-2025-alert-on-confirmed-counterfeit-postinor2-levonorgestrel-0-75mg-in-nigeria/",
+  "date": "2025-08-22",
+  "title": "Public Alert No. 027/2025 – Alert on Confirmed Counterfeit Postinor2 (Levonorgestrel 0.75mg) in Nigeria",
+  "kind": "counterfeit",
+  "products": [
+    {
+      "brand": "Postinor 2",
+      "ingredient": "Levonorgestrel",
+      "strength": "0.75mg",
+      "manufacturer": null,
+      "nrn": "04-6985",
+      "batches": [
+        "T36184B",
+        "332"
+      ]
+    }
+  ],
+  "summary": "NAFDAC warns of falsified Postinor 2 (Levonorgestrel 0.75mg) emergency contraceptive circulating in Nigeria. Two counterfeit types (batches T36184B and 332) have spelling errors such as 'Veify' and 'Distnibuted'. Society of Family Health confirmed it did not import them.",
+  "appliesToNigeria": true
+}

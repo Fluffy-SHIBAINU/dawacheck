@@ -1,0 +1,20 @@
+{
+  "id": "021/2025",
+  "wpId": 18841,
+  "url": "https://nafdac.gov.ng/public-alert-no-21-2025-alert-on-the-report-of-unregistered-tarivid-ofloxacin-200mg-found-in-nigeria/",
+  "date": "2025-06-10",
+  "title": "Public Alert No. 21/2025 – Alert on the Report of Unregistered Tarivid (Ofloxacin 200mg) found in Nigeria",
+  "kind": "unregistered",
+  "products": [
+    {
+      "brand": "Tarivid",
+      "ingredient": "Ofloxacin",
+      "strength": "200mg",
+      "manufacturer": "Sanofi",
+      "nrn": null,
+      "batches": []
+    }
+  ],
+  "summary": "NAFDAC warns that an unregistered batch of Tarivid (Ofloxacin 200mg) by Sanofi was found in Onipan, Shomolu LGA, Lagos. Sanofi confirmed the batch was meant for Pakistan, not Nigeria, and is not covered by NAFDAC registration. Public urged to buy only from licensed suppliers.",
+  "appliesToNigeria": true
+}

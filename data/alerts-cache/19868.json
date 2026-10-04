@@ -1,0 +1,32 @@
+{
+  "id": "002/2026",
+  "wpId": 19868,
+  "url": "https://nafdac.gov.ng/public-alert-no-02-2026-alert-on-revalidated-and-unregistered-natrilix-sr-found-on-sale/",
+  "date": "2026-01-09",
+  "title": "Public Alert No. 02/2026– Alert on Revalidated and Unregistered Natrilix SR Found on Sale",
+  "kind": "counterfeit",
+  "products": [
+    {
+      "brand": "Natrilix SR",
+      "ingredient": "Indapamide",
+      "strength": "1.5mg",
+      "manufacturer": "SERVIER Egypt Industries Limited",
+      "nrn": "04-8509",
+      "batches": [
+        "32417"
+      ]
+    },
+    {
+      "brand": "Natrilix SR",
+      "ingredient": "Indapamide",
+      "strength": "1.5mg",
+      "manufacturer": "SERVIER Egypt Industries Limited",
+      "nrn": null,
+      "batches": [
+        "34934"
+      ]
+    }
+  ],
+  "summary": "NAFDAC warns that revalidated and unregistered Natrilix SR (Indapamide 1.5mg) is on sale in Nigeria. Batch 32417 had its expiry altered from 03/2025 to 03/2026; batch 34934 is parallel-imported with no NAFDAC registration number. Both pose safety and potency risks.",
+  "appliesToNigeria": true
+}

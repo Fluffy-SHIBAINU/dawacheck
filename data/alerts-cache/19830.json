@@ -1,0 +1,20 @@
+{
+  "id": "042/2025",
+  "wpId": 19830,
+  "url": "https://nafdac.gov.ng/public-alert-no-042-2025-alert-on-counterfeit-kiss-condom-in-nigerian-market/",
+  "date": "2025-12-18",
+  "title": "Public Alert No. 042/2025 – Alert on Counterfeit Kiss Condom in Nigerian Market",
+  "kind": "counterfeit",
+  "products": [
+    {
+      "brand": "Kiss Condom",
+      "ingredient": null,
+      "strength": null,
+      "manufacturer": "DKT International Nigeria",
+      "nrn": null,
+      "batches": []
+    }
+  ],
+  "summary": "NAFDAC warns of counterfeit Kiss Condoms sold in Onitsha, Idumota, Trade Fair and markets in Kano, Abuja, Uyo, Gombe and Enugu. Fakes have darker packs, wrong address (42 Montgomery Road, Yaba), missing caution/medical device info, and risk breakage, infection and STI/pregnancy e",
+  "appliesToNigeria": true
+}

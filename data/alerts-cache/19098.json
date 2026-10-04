@@ -1,0 +1,22 @@
+{
+  "id": "024/2025",
+  "wpId": 19098,
+  "url": "https://nafdac.gov.ng/public-alert-no-024-2025-recall-of-amoxivue-amoxicillin-500mg-capsules-due-to-significantly-low-active-pharmaceutical-ingredient-api-content/",
+  "date": "2025-08-06",
+  "title": "Public Alert No. 024/2025 – Recall of Amoxivue (Amoxicillin) 500mg Capsules due to significantly low Active Pharmaceutical Ingredient (API) content",
+  "kind": "substandard",
+  "products": [
+    {
+      "brand": "Amoxivue",
+      "ingredient": "Amoxicillin",
+      "strength": "500mg",
+      "manufacturer": "Sparsh Bio-Tech Pvt, Ltd. Plot NO.1, Survey NO: 242/243/244 Lakhabavad Jamnagar -361006, Gujarat, India",
+      "nrn": "A4-100178",
+      "batches": [
+        "322584"
+      ]
+    }
+  ],
+  "summary": "NAFDAC recalls Amoxivue (Amoxicillin) 500mg capsules, batch 322584, after lab tests found only 26.3% of the active ingredient plus failed weight variation and IR spectrum tests. Low potency risks treatment failure and antibiotic resistance.",
+  "appliesToNigeria": true
+}

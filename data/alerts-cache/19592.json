@@ -1,0 +1,33 @@
+{
+  "id": "034/2025",
+  "wpId": 19592,
+  "url": "https://nafdac.gov.ng/public-alert-no-34-2025-substandard-astamocil-amoxicillin-suspension-125mg-5ml-batch-no-826024-and-astamentin-amoxicillin-clavulanic-acid-suspension-batch-nos-0503024-0501724/",
+  "date": "2025-10-22",
+  "title": "Public Alert No. 34/2025 –Substandard Astamocil (Amoxicillin Suspension 125mg/5ml), Batch No. 826024, and Astamentin (Amoxicillin/Clavulanic Acid Suspension), Batch Nos: 0503024 & 0501724, manufactured by Sam-Ace Ltd in Nigeria",
+  "kind": "substandard",
+  "products": [
+    {
+      "brand": "Astamocil",
+      "ingredient": "Amoxicillin",
+      "strength": "125mg/5ml",
+      "manufacturer": "Sam-Ace Ltd, Plot 9/10, Block 7C, Akoda Industrial Estate, KM 14, Gbongan/Ibadan Rd. Akoda-Ede, Osun State.",
+      "nrn": "A4-8681",
+      "batches": [
+        "826024"
+      ]
+    },
+    {
+      "brand": "Astamentin",
+      "ingredient": "Amoxicillin/Clavulanic Acid",
+      "strength": "228.5mg/5ml",
+      "manufacturer": "Sam-Ace Ltd, Plot 9/10, Block 7C, Akoda Industrial Estate, KM 14, Gbongan/Ibadan Rd. Akoda-Ede, Osun State.",
+      "nrn": "A11-0341",
+      "batches": [
+        "0501724",
+        "0503024"
+      ]
+    }
+  ],
+  "summary": "NAFDAC recalled substandard Astamocil (Amoxicillin 125mg/5ml suspension) batch 826024 and Astamentin (Amoxicillin/Clavulanic Acid 228.5mg/5ml) batches 0501724 and 0503024 by Sam-Ace Ltd, found in Kano. Both failed lab analysis for low API, risking treatment failure and resistance",
+  "appliesToNigeria": true
+}

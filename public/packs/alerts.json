@@ -1,6 +1,6 @@
 {
- "version": "2026-10-03",
- "fetchedAt": "2026-10-03T19:03:27.082Z",
+ "version": "2026-10-04",
+ "fetchedAt": "2026-10-04T00:34:46.303Z",
  "alerts": [
   {
    "id": "043/2026",
@@ -11,15 +11,15 @@
    "kind": "watchlist",
    "products": [
     {
-     "brand": "NAFDAC Places Products Marketed",
+     "brand": "Ayrtons Saunders Ltd",
      "ingredient": null,
      "strength": null,
-     "manufacturer": null,
+     "manufacturer": "PHARMASERVE (North West) Ltd",
      "nrn": null,
      "batches": []
     }
    ],
-   "summary": "Public Alert No. 043/2026-NAFDAC Places Products Marketed by Mofus Nigeria Ltd on Watchlist Pending Regulatory Investigation",
+   "summary": "NAFDAC has placed products marketed by Mofus Nigeria Ltd (MAH) — linked to Ayrtons Saunders Ltd, UK and manufacturer Pharmaserve (North West) Ltd — on its watchlist pending investigation (ref NAFDAC/PMS/2026/0029) over regulatory non-compliance and possible misrepresentation.",
    "appliesToNigeria": true
   },
   {
@@ -31,15 +31,17 @@
    "kind": "counterfeit",
    "products": [
     {
-     "brand": "BPPL Artemether/Lumefantrine 80mg/480mg",
-     "ingredient": null,
-     "strength": null,
-     "manufacturer": null,
-     "nrn": null,
-     "batches": []
+     "brand": "BPPL Artemether/Lumefantrine",
+     "ingredient": "Artemether/Lumefantrine",
+     "strength": "80mg/480mg",
+     "manufacturer": "Bandaram Pharma Packleh Ltd (BPPL), Plot No. 1 & 2, Number 13, Mirgila, Nagar, India",
+     "nrn": "02-3457",
+     "batches": [
+      "BP5203"
+     ]
     }
    ],
-   "summary": "Public Alert No. 042/2026-Alert on the Seizure of Suspected Substandard and Falsified BPPL Artemether/Lumefantrine 80mg/480mg",
+   "summary": "NAFDAC seized falsified Artemether/Lumefantrine 80mg/480mg, purportedly made by Bandaram Pharma Packleh Ltd (India), at the Coordinated Wholesale Centre in Kano. Its NAFDAC number 02-3457 is fake and no MAH is declared. Batch BP5203. Avoid buying, selling or using it.",
    "appliesToNigeria": true
   },
   {
@@ -57,9 +59,17 @@
      "manufacturer": null,
      "nrn": null,
      "batches": []
+    },
+    {
+     "brand": "ORACARE+ Toothpaste",
+     "ingredient": null,
+     "strength": null,
+     "manufacturer": "Aspira Nigeria Limited",
+     "nrn": null,
+     "batches": []
     }
    ],
-   "summary": "Public Alert No. 041/2026 – Alert on Suspected Counterfeit ORACIRE+ Toothpaste",
+   "summary": "NAFDAC warns that counterfeit \"ORACIRE+ Toothpaste\" is circulating in Nigeria, mimicking the registered ORACARE+ Toothpaste by Aspira Nigeria Limited. Found at Ojuwoye Market, Mushin, Lagos. Buy only from authorized outlets and check packaging.",
    "appliesToNigeria": true
   },
   {
@@ -71,15 +81,47 @@
    "kind": "recall",
    "products": [
     {
-     "brand": "Medicines- NITRAS, KADIN 2, ACEFYL and LORATADINE 24 Recalled",
-     "ingredient": null,
+     "brand": "Tablet Nitras",
+     "ingredient": "Glyceryl Trinitrate",
      "strength": null,
-     "manufacturer": null,
+     "manufacturer": "M/s Caraway Pharma, Rawat",
      "nrn": null,
-     "batches": []
+     "batches": [
+      "24L069"
+     ]
+    },
+    {
+     "brand": "Tablet Kadin 2",
+     "ingredient": "Tizanidine Hydrochloride",
+     "strength": null,
+     "manufacturer": "M/s FYNK Pharma, Lahore",
+     "nrn": null,
+     "batches": [
+      "569"
+     ]
+    },
+    {
+     "brand": "ACEFYL Cough Syrup",
+     "ingredient": "Acefylline Piperazine",
+     "strength": null,
+     "manufacturer": "M/s NABIQASIM Industries, Karachi",
+     "nrn": null,
+     "batches": [
+      "ACH479"
+     ]
+    },
+    {
+     "brand": "Tablet Loratadine 24",
+     "ingredient": "Loratadine",
+     "strength": null,
+     "manufacturer": "M/s Murfy Pharma, Lahore",
+     "nrn": null,
+     "batches": [
+      "24"
+     ]
     }
    ],
-   "summary": "Public Alert No. 038/2026 – Alert on Adulterated and Substandard Medicines- NITRAS, KADIN 2, ACEFYL and LORATADINE 24 Recalled by the Drug Regulatory Authority of Pakistan (DRAP)",
+   "summary": "NAFDAC relays DRAP (Pakistan) recall of adulterated/substandard batches of Nitras, Kadin 2, Acefyl cough syrup and Loratadine 24. Monitoring is ongoing to prevent entry into Nigeria; zonal directors told to conduct surveillance.",
    "appliesToNigeria": false
   },
   {
@@ -91,15 +133,17 @@
    "kind": "counterfeit",
    "products": [
     {
-     "brand": "Pulmicort® Inhalation Suspension",
-     "ingredient": null,
-     "strength": null,
-     "manufacturer": null,
+     "brand": "Ulmicort",
+     "ingredient": "Budesonide",
+     "strength": "0.5 mg/ml",
+     "manufacturer": "Legency Remedies PVT Ltd, Vill Kalha Baddi, Tehsil Baddi, Distt Solan (H.P) 173205, India",
      "nrn": null,
-     "batches": []
+     "batches": [
+      "25770416E"
+     ]
     }
    ],
-   "summary": "Public Alert No. 037/2026 – Alert on Suspected Counterfeit Pulmicort® (Budesonide) Inhalation Suspension",
+   "summary": "NAFDAC warns of a suspected counterfeit \"Ulmicort 0.5 mg/ml Inhalation Suspension\" found in Eastern Nigeria, mimicking AstraZeneca's registered Pulmicort (budesonide). Batch 25770416E, labelled made by Legency Remedies PVT Ltd, India. Buy only from licensed pharmacies.",
    "appliesToNigeria": true
   },
   {
@@ -111,15 +155,35 @@
    "kind": "counterfeit",
    "products": [
     {
-     "brand": "Forxiga®",
+     "brand": "Forzigar",
      "ingredient": null,
      "strength": null,
-     "manufacturer": null,
+     "manufacturer": "Alliaance Biotech",
+     "nrn": null,
+     "batches": [
+      "ATE-262"
+     ]
+    },
+    {
+     "brand": "Foziga",
+     "ingredient": null,
+     "strength": null,
+     "manufacturer": "Medico Remedies Ltd",
+     "nrn": null,
+     "batches": [
+      "GIB405-"
+     ]
+    },
+    {
+     "brand": "Forxiga®",
+     "ingredient": "Dapagliflozin",
+     "strength": null,
+     "manufacturer": "AstraZeneca",
      "nrn": null,
      "batches": []
     }
    ],
-   "summary": "Public Alert No. 036/2026 – Alert on Suspected Counterfeit Products Mimicking Forxiga® (Dapagliflozin)",
+   "summary": "NAFDAC warns of suspected counterfeit products named \"Forzigar\" and \"Foziga\" mimicking AstraZeneca's Forxiga (dapagliflozin), detected in Eastern Nigeria. They imitate the AstraZeneca logo and may cause treatment failure or harm. Surveillance and mop-up ordered.",
    "appliesToNigeria": true
   },
   {
@@ -131,15 +195,31 @@
    "kind": "unregistered",
    "products": [
     {
-     "brand": "Menofix Composition",
+     "brand": "Menofix Capsules",
      "ingredient": null,
      "strength": null,
-     "manufacturer": null,
+     "manufacturer": "PureEve (marketed by)",
      "nrn": null,
+     "batches": []
+    },
+    {
+     "brand": "Menofix Herbal Capsule",
+     "ingredient": null,
+     "strength": null,
+     "manufacturer": "Gudugudu Herbal Worldwide Enterprises",
+     "nrn": "A7-103321L",
+     "batches": []
+    },
+    {
+     "brand": "Menofix Powder",
+     "ingredient": null,
+     "strength": null,
+     "manufacturer": "Gudugudu Herbal Worldwide Enterprises",
+     "nrn": "A7-103342L",
      "batches": []
     }
    ],
-   "summary": "Public Alert No. 035/2026 – Alert on the Marketing and Sale of Unregistered Menofix Composition",
+   "summary": "NAFDAC warns that Menofix Capsules, marketed by PureEve as a herbal/multivitamin supplement for menopause, is not registered with NAFDAC. Some ingredients are linked to rare liver injury. It differs from similarly named registered Menofix products. Avoid sale or use.",
    "appliesToNigeria": true
   },
   {
@@ -151,15 +231,15 @@
    "kind": "substandard",
    "products": [
     {
-     "brand": "Niger Republic Imposes Import Ban on Bulmex Parboiled Rice",
+     "brand": "Bulmex Parboiled Rice",
      "ingredient": null,
      "strength": null,
-     "manufacturer": null,
+     "manufacturer": "Karam Food Grains Private Limited; Paragon Commodities Limited; Imoro Brunya / Sulemana Imoro Distribution Company",
      "nrn": null,
      "batches": []
     }
    ],
-   "summary": "Public Alert No. 034/2026 – Niger Republic Imposes Import Ban on Bulmex Parboiled Rice from India due to Metallic Contamination",
+   "summary": "Niger Republic banned imports of Bulmex parboiled rice from India after iron debris was found in the product. NAFDAC says presence in Nigeria is unconfirmed but has ordered surveillance and mop-up at zonal and state levels.",
    "appliesToNigeria": false
   },
   {
@@ -171,15 +251,17 @@
    "kind": "recall",
    "products": [
     {
-     "brand": "Voluntary Recall of Sporidex Suspension 125 mg/5 ml",
-     "ingredient": null,
-     "strength": null,
-     "manufacturer": null,
+     "brand": "Sporidex Suspension",
+     "ingredient": "cephalexin",
+     "strength": "125 mg/5 mL",
+     "manufacturer": "Ranbaxy Nigeria Ltd. (Sun Pharma Company)",
      "nrn": null,
-     "batches": []
+     "batches": [
+      "DFG4606A"
+     ]
     }
    ],
-   "summary": "Public Alert No. 033/2026 – Alert on the Voluntary Recall of Sporidex Suspension 125 mg/5 ml (Batch No. DFG4606A)",
+   "summary": "NAFDAC alerts on a voluntary recall of Sporidex Suspension 125 mg/5 mL (batch DFG4606A) by Ranbaxy Nigeria Ltd. (Sun Pharma) after an impurity exceeding approved limits was found, risking reduced antibiotic effectiveness, treatment failure, resistance and side effects.",
    "appliesToNigeria": true
   },
   {
@@ -188,19 +270,31 @@
    "url": "https://nafdac.gov.ng/public-alert-no-032-2026-alert-on-the-confiscation-of-a-banned-alcoholic-energy-drink-in-ghana/",
    "date": "2026-06-18",
    "title": "Public Alert No.032/2026 – Alert on the Confiscation of a Banned Alcoholic Energy Drink in Ghana",
-   "kind": "other",
+   "kind": "unregistered",
    "products": [
     {
-     "brand": "Confiscation of a Banned Alcoholic Energy Drink",
+     "brand": "Bel Ice Vodka Energy Drink",
      "ingredient": null,
      "strength": null,
-     "manufacturer": null,
+     "manufacturer": "Bel Beverages, Ghana",
      "nrn": null,
-     "batches": []
+     "batches": [
+      "ALLBATCHES"
+     ]
+    },
+    {
+     "brand": "Cody's Vody Energy Mix",
+     "ingredient": null,
+     "strength": null,
+     "manufacturer": "Jens Warneke Export GmbH, Bremen, Germany",
+     "nrn": null,
+     "batches": [
+      "ALLBATCHES"
+     ]
     }
    ],
-   "summary": "Public Alert No.032/2026 – Alert on the Confiscation of a Banned Alcoholic Energy Drink in Ghana",
-   "appliesToNigeria": true
+   "summary": "Ghana's FDA seized ~140 boxes of banned alcoholic energy drinks (Bel Ice Vodka Energy Drink and Cody's Vody Energy Mix) in the Upper East Region. Mixing alcohol with stimulants can mask intoxication and cause cardiovascular and injury risks. NAFDAC is monitoring to keep them out ",
+   "appliesToNigeria": false
   },
   {
    "id": "031/2026",
@@ -211,15 +305,17 @@
    "kind": "recall",
    "products": [
     {
-     "brand": "Sexual Enhancement Product Due to Undeclared Pharmaceutical Ingredients",
-     "ingredient": null,
+     "brand": "WAP Sensual Enhancement capsules",
+     "ingredient": "undeclared sildenafil, tadalafil, and flibanserin",
      "strength": null,
-     "manufacturer": null,
+     "manufacturer": "Best Supplement Best Prices Company",
      "nrn": null,
-     "batches": []
+     "batches": [
+      "ALLLOTS"
+     ]
     }
    ],
-   "summary": "Public Alert No. 31/2026- Recall of Sexual Enhancement Product Due to Undeclared Pharmaceutical Ingredients",
+   "summary": "NAFDAC relays a US FDA-prompted voluntary recall of all lots of WAP Sensual Enhancement capsules by Best Supplements Best Prices Company, found to contain undeclared sildenafil, tadalafil and flibanserin. Public told to stop use and hand product to nearest NAFDAC office.",
    "appliesToNigeria": true
   },
   {
@@ -228,18 +324,18 @@
    "url": "https://nafdac.gov.ng/public-alert-no-030-2026-alert-on-the-withdrawal-of-levamisole-containing-medicines-as-endorsed-by-the-italian-medicines-agency-aifa-over-serious-neurological-risks/",
    "date": "2026-06-08",
    "title": "Public Alert No. 030/2026: Alert on the Withdrawal of Levamisole-Containing Medicines as endorsed by the Italian Medicines Agency (AIFA) over serious Neurological risks",
-   "kind": "other",
+   "kind": "recall",
    "products": [
     {
-     "brand": "Withdrawal of Levamisole-Containing Medicines as endorsed",
-     "ingredient": null,
+     "brand": null,
+     "ingredient": "Levamisole",
      "strength": null,
      "manufacturer": null,
      "nrn": null,
      "batches": []
     }
    ],
-   "summary": "Public Alert No. 030/2026: Alert on the Withdrawal of Levamisole-Containing Medicines as endorsed by the Italian Medicines Agency (AIFA) over serious Neurological risks",
+   "summary": "NAFDAC relays the Italian Medicines Agency's endorsement of an EU-wide withdrawal of all levamisole-containing medicines, after EMA's PRAC found the anthelmintic's benefits no longer outweigh risks due to rare but serious leukoencephalopathy (brain white matter damage).",
    "appliesToNigeria": true
   },
   {
@@ -251,16 +347,48 @@
    "kind": "recall",
    "products": [
     {
-     "brand": "Impala Brand Gel Nail Polish Products",
-     "ingredient": null,
+     "brand": "Plus, Gel Esmalte Impala Gel",
+     "ingredient": "Trimethylbenzoyl Diphenylphosphine Oxide (TPO)",
      "strength": null,
-     "manufacturer": null,
+     "manufacturer": "Laboratório Avamiller de Cosméticos Ltda.",
+     "nrn": null,
+     "batches": []
+    },
+    {
+     "brand": "Esmalte Gel Impala Gel Plus",
+     "ingredient": "Trimethylbenzoyl Diphenylphosphine Oxide (TPO)",
+     "strength": null,
+     "manufacturer": "Laboratório Avamiller de Cosméticos Ltda.",
+     "nrn": null,
+     "batches": []
+    },
+    {
+     "brand": "Gel Plus Impala Esmalte Gel",
+     "ingredient": "Trimethylbenzoyl Diphenylphosphine Oxide (TPO)",
+     "strength": null,
+     "manufacturer": "Laboratório Avamiller de Cosméticos Ltda.",
+     "nrn": null,
+     "batches": []
+    },
+    {
+     "brand": "Esmalte Gel Plus Impala",
+     "ingredient": "Trimethylbenzoyl Diphenylphosphine Oxide (TPO)",
+     "strength": null,
+     "manufacturer": "Laboratório Avamiller de Cosméticos Ltda.",
+     "nrn": null,
+     "batches": []
+    },
+    {
+     "brand": "Topcoat Gel Impala Gel Plus Clear",
+     "ingredient": "Trimethylbenzoyl Diphenylphosphine Oxide (TPO)",
+     "strength": null,
+     "manufacturer": "Laboratório Avamiller de Cosméticos Ltda.",
      "nrn": null,
      "batches": []
     }
    ],
-   "summary": "Public Alert No. 029/2026 – Recall of Impala Brand Gel Nail Polish Products by Brazilian Health Regulatory Authority(ANVISA)",
-   "appliesToNigeria": true
+   "summary": "ANVISA (Brazil) recalled all batches of Impala brand gel nail polishes made by Laboratório Avamiller de Cosméticos Ltda after the banned chemical TPO was found in them. NAFDAC is monitoring; products not reported in Nigeria's supply chain.",
+   "appliesToNigeria": false
   },
   {
    "id": "028/2026",
@@ -271,15 +399,18 @@
    "kind": "recall",
    "products": [
     {
-     "brand": "Children’s Ibuprofen Oral Suspension",
-     "ingredient": null,
-     "strength": null,
-     "manufacturer": null,
+     "brand": "Children's Ibuprofen Oral Suspension, USP",
+     "ingredient": "Ibuprofen",
+     "strength": "100 mg/5 mL",
+     "manufacturer": "Strides Pharma Inc., India (for Taro Pharmaceuticals U.S.A., Inc.)",
      "nrn": null,
-     "batches": []
+     "batches": [
+      "7261973A",
+      "7261974A"
+     ]
     }
    ],
-   "summary": "Public Alert No. 028/2026- Recall Of Children’s Ibuprofen Oral Suspension in the United States Due To Potential Contamination With Foreign Material",
+   "summary": "USFDA recall of ~90,000 bottles of Children's Ibuprofen Oral Suspension USP 100 mg/5 mL (lots 7261973A, 7261974A) by Strides Pharma due to foreign material ('gel-like mass', 'black particles'). Distributed in the US only; NAFDAC is conducting surveillance to keep it out of Nigeri",
    "appliesToNigeria": false
   },
   {
@@ -288,19 +419,21 @@
    "url": "https://nafdac.gov.ng/public-alert-no-027-2026-alert-on-european-union-ban-on-the-sale-and-orders-the-destruction-of-defective-signo-ffp2-particle-filter-mask-produced-in-china/",
    "date": "2026-05-20",
    "title": "Public Alert No. 027/2026 -Alert on European Union Ban on the Sale and Orders the Destruction of Defective Signo FFP2 Particle Filter Mask Produced in China",
-   "kind": "other",
+   "kind": "substandard",
    "products": [
     {
-     "brand": "European Union Ban on the Sale and Orders the Destruction of Defective Signo FFP",
+     "brand": "SIGNO",
      "ingredient": null,
      "strength": null,
-     "manufacturer": null,
+     "manufacturer": "Shenzhen Signo Group Technology Co. Ltd.",
      "nrn": null,
-     "batches": []
+     "batches": [
+      "20220112"
+     ]
     }
    ],
-   "summary": "Public Alert No. 027/2026 -Alert on European Union Ban on the Sale and Orders the Destruction of Defective Signo FFP2 Particle Filter Mask Produced in China",
-   "appliesToNigeria": false
+   "summary": "NAFDAC relays an EU RAPEX ban and destruction order for SIGNO FFP2 non-reusable particle filter masks made in China by Shenzhen Signo Group Technology Co. Ltd. Filtration is insufficient (mean 32.3%), failing PPE Regulation and EN 149. Not in NAFDAC database.",
+   "appliesToNigeria": true
   },
   {
    "id": "026/2026",
@@ -311,15 +444,267 @@
    "kind": "substandard",
    "products": [
     {
-     "brand": "WHO Alert on Substandard ACCUPAQUE , OMNIPAQUE and VISIPAQUE",
-     "ingredient": null,
-     "strength": null,
-     "manufacturer": null,
+     "brand": "ACCUPAQUE",
+     "ingredient": "Iohexol",
+     "strength": "300 mg",
+     "manufacturer": "GE Healthcare Ireland Limited",
      "nrn": null,
-     "batches": []
+     "batches": [
+      "17333581",
+      "17321114",
+      "17270628",
+      "17329106",
+      "17334255",
+      "17356931",
+      "17356935",
+      "17366385",
+      "17370957",
+      "17298685",
+      "17333586",
+      "17366373"
+     ]
+    },
+    {
+     "brand": "ACCUPAQUE",
+     "ingredient": "Iohexol",
+     "strength": "350 mg",
+     "manufacturer": "GE Healthcare Ireland Limited",
+     "nrn": null,
+     "batches": [
+      "17089899",
+      "17260069",
+      "17302542",
+      "17302545",
+      "17370473",
+      "17370474",
+      "17238981",
+      "17312081",
+      "17318004",
+      "17340520"
+     ]
+    },
+    {
+     "brand": "OMNIPAQUE",
+     "ingredient": "Iohexol",
+     "strength": "300 mg/ml",
+     "manufacturer": "GE Healthcare Ireland Limited",
+     "nrn": "B4-0329",
+     "batches": [
+      "17339149",
+      "17359537",
+      "17271303",
+      "17334249",
+      "17350896",
+      "17353261",
+      "17371056",
+      "17305242",
+      "17305243",
+      "17318263",
+      "17258864",
+      "17378212",
+      "17349041",
+      "17262273",
+      "17320901",
+      "17374661",
+      "17366313",
+      "17370931",
+      "17291358",
+      "17300760",
+      "17379399",
+      "17325312",
+      "17327161",
+      "17404129",
+      "17225029",
+      "17265376",
+      "17270885",
+      "17292246",
+      "17301805",
+      "17301807",
+      "17301810",
+      "17304992",
+      "17304993",
+      "17304996",
+      "17321225",
+      "17333589",
+      "17333611",
+      "17333613",
+      "17357000",
+      "17366399",
+      "17376486",
+      "17404114"
+     ]
+    },
+    {
+     "brand": "OMNIPAQUE",
+     "ingredient": "Iohexol",
+     "strength": "350 mg/ml",
+     "manufacturer": "GE Healthcare Ireland Limited",
+     "nrn": "B4-0328",
+     "batches": [
+      "17253643",
+      "17238983",
+      "17277327",
+      "17322643",
+      "17271306",
+      "17270328",
+      "17277326",
+      "17370479",
+      "17370480",
+      "17407025",
+      "17301796",
+      "17277089",
+      "17351100",
+      "17320944",
+      "17411626",
+      "17332846",
+      "17238980",
+      "17277322",
+      "17298718",
+      "17361175",
+      "17379390",
+      "17429790",
+      "17277208",
+      "17340558",
+      "17327354",
+      "17324090",
+      "17361386",
+      "17364400",
+      "17364401",
+      "17275275",
+      "17227949",
+      "17340534",
+      "17361385",
+      "17403686",
+      "17291368",
+      "17349069",
+      "17413362",
+      "17258866",
+      "17378255",
+      "17212392",
+      "17349047",
+      "17294798",
+      "17358213",
+      "17396721",
+      "17340557",
+      "17367331",
+      "17364593",
+      "17291310",
+      "17352078",
+      "17388194",
+      "17368323",
+      "17244048",
+      "17374668",
+      "17344032",
+      "17306297",
+      "17308416",
+      "17314055",
+      "17328722",
+      "17358222",
+      "17376107",
+      "17409644",
+      "17433391",
+      "17277315",
+      "17312303",
+      "17323704",
+      "17370063",
+      "17407055",
+      "17425028",
+      "17359070",
+      "17402891",
+      "17402903",
+      "17406203",
+      "17417180",
+      "17296065",
+      "17201254",
+      "17305630",
+      "17370936",
+      "17383109",
+      "17239721",
+      "17241442",
+      "17183380",
+      "17319894",
+      "17253638",
+      "17306628",
+      "17333197",
+      "17333198",
+      "17396945",
+      "17396948",
+      "17396953",
+      "17396956",
+      "17423503",
+      "17423525",
+      "17426429",
+      "17426440",
+      "17431310"
+     ]
+    },
+    {
+     "brand": "OMNIPAQUE",
+     "ingredient": "Iohexol",
+     "strength": "647 mg",
+     "manufacturer": "GE Healthcare Ireland Limited",
+     "nrn": null,
+     "batches": [
+      "17296089",
+      "17322376",
+      "17363927"
+     ]
+    },
+    {
+     "brand": "OMNIPAQUE",
+     "ingredient": "Iohexol",
+     "strength": "755 mg",
+     "manufacturer": "GE Healthcare Ireland Limited",
+     "nrn": null,
+     "batches": [
+      "17247369"
+     ]
+    },
+    {
+     "brand": "VISIPAQUE",
+     "ingredient": "Iodixanol",
+     "strength": "320 mg",
+     "manufacturer": "GE Healthcare Ireland Limited",
+     "nrn": null,
+     "batches": [
+      "17244625",
+      "17270129",
+      "17363725",
+      "17385132",
+      "17292643",
+      "17305012",
+      "17271300",
+      "17305010",
+      "17320967",
+      "17338638",
+      "17306843",
+      "17336632",
+      "17353211",
+      "17247383",
+      "17331540",
+      "17299098",
+      "17264297",
+      "17325742",
+      "17338633",
+      "17314000",
+      "17264301",
+      "17264302",
+      "17302277",
+      "17323156",
+      "17302289",
+      "17302290",
+      "17321866",
+      "17264005",
+      "17291370",
+      "17349086",
+      "17230467",
+      "17350682",
+      "17318726",
+      "17330329"
+     ]
     }
    ],
-   "summary": "Public Alert No. 26/2026 – WHO Alert on Substandard ACCUPAQUE (Iohexol), OMNIPAQUE (Iohexol) and VISIPAQUE (Iodixanol) in all WHO regions",
+   "summary": "WHO/HPRA Ireland alert: Class I defect — metallic particles in 100 ml plastic bottles of ACCUPAQUE, OMNIPAQUE (iohexol) and VISIPAQUE (iodixanol) contrast media by GE HealthCare Ireland. Risk of life-threatening embolic events. Glass containers unaffected; Omnipaque is registered",
    "appliesToNigeria": true
   },
   {
@@ -331,16 +716,18 @@
    "kind": "recall",
    "products": [
     {
-     "brand": "Antacid",
+     "brand": "Citro-Soda Regular",
      "ingredient": null,
      "strength": null,
-     "manufacturer": null,
+     "manufacturer": "Adcock Ingram Clayville manufacturing facility, Johannesburg",
      "nrn": null,
-     "batches": []
+     "batches": [
+      "ALLBATCHESSTARTINGWITHTHELETTER“C”"
+     ]
     }
    ],
-   "summary": "Public Alert No. 025/2026 -Alert on the Recall Specific Batches of Antacid (Citro-Soda regular) in South Africa",
-   "appliesToNigeria": false
+   "summary": "NAFDAC relays a South African (SAHPRA) recall of Citro-Soda Regular antacid/urinary alkalinizer made at Adcock Ingram's Clayville plant, Johannesburg, over possible contamination. Affected: all batches starting with 'C', expiry on or before Nov 2027, in 60g, 120g and 4g x 30 sach",
+   "appliesToNigeria": true
   },
   {
    "id": "024/2026",
@@ -351,15 +738,17 @@
    "kind": "counterfeit",
    "products": [
     {
-     "brand": "Augmentin 625mg Tablets",
-     "ingredient": null,
-     "strength": null,
-     "manufacturer": null,
+     "brand": "Augmentin",
+     "ingredient": "amoxicillin/clavulanic acid",
+     "strength": "625mg",
+     "manufacturer": "GlaxoSmithKline (GSK), Worthing Site, United Kingdom",
      "nrn": null,
-     "batches": []
+     "batches": [
+      "AC3N"
+     ]
     }
    ],
-   "summary": "Public Alert No. 024/2026 – Alert on Counterfeit Augmentin 625mg Tablets (Batch No. AC3N) in Nigeria",
+   "summary": "NAFDAC warns of counterfeit Augmentin 625mg Tablets (2 x 7 pack), Batch No. AC3N, circulating in Nigeria. GSK confirmed falsification: the sample's manufacturing/expiry dates (Sept 2025/Sept 2028) don't match records, with packaging text errors and poor fin seals.",
    "appliesToNigeria": true
   },
   {
@@ -371,15 +760,27 @@
    "kind": "counterfeit",
    "products": [
     {
-     "brand": "Brands of Proguanil Tablet B.P 100mg with Fake NAFDAC Registration Number found",
-     "ingredient": null,
-     "strength": null,
-     "manufacturer": null,
-     "nrn": null,
-     "batches": []
+     "brand": "Projeanil",
+     "ingredient": "Proguanil",
+     "strength": "100mg",
+     "manufacturer": "Apple King Industry PVT 253, A/2 Shapujat, New Delhi, India",
+     "nrn": "04-6433",
+     "batches": [
+      "BN600"
+     ]
+    },
+    {
+     "brand": "Re-Granil",
+     "ingredient": "Proguanil",
+     "strength": "100mg",
+     "manufacturer": "Jamila Export LAB. PVT LTD. 401 Indraluse Estate, Mumbai Batal, India",
+     "nrn": "04-6433",
+     "batches": [
+      "BN600"
+     ]
     }
    ],
-   "summary": "Public Alert No. 023/2026 – Alert on Counterfeit Brands of Proguanil (Projeanil and Re-granil) Tablet B.P 100mg with Fake NAFDAC Registration Number (04-6433) found in Nigeria",
+   "summary": "NAFDAC warns of counterfeit Proguanil 100mg tablets sold as Projeanil and Re-Granil, both bearing fake NAFDAC number 04-6433 that actually belongs to Feroglobin B12 Capsules. Both carry batch BN600. Do not distribute, sell or use.",
    "appliesToNigeria": true
   },
   {
@@ -388,18 +789,26 @@
    "url": "https://nafdac.gov.ng/public-alert-no-022-2026-alert-on-the-distribution-of-unregistered-and-suspected-counterfeit-colgate-toothpaste/",
    "date": "2026-03-25",
    "title": "Public Alert No. 022/2026 – Alert on the Distribution of Unregistered and Suspected Counterfeit Colgate Toothpaste",
-   "kind": "unregistered",
+   "kind": "counterfeit",
    "products": [
     {
-     "brand": "Distribution of Unregistered and Suspected Counterfeit Colgate Toothpaste",
+     "brand": "Coglaet Crema Dental Herbal 100 g",
      "ingredient": null,
-     "strength": null,
-     "manufacturer": null,
+     "strength": "100 g",
+     "manufacturer": "Guangzhou YECAI Oral Cleaning Products Co., Ltd, 4335 4th floor, Baiyun District, Guangzhou, China.",
+     "nrn": null,
+     "batches": []
+    },
+    {
+     "brand": "Coglaet ActivGel 100g",
+     "ingredient": null,
+     "strength": "100 g",
+     "manufacturer": "Guangzhou YECAI Oral Cleaning Products Co., Ltd, 4335 4th floor, Baiyun District, Guangzhou, China.",
      "nrn": null,
      "batches": []
     }
    ],
-   "summary": "Public Alert No. 022/2026 – Alert on the Distribution of Unregistered and Suspected Counterfeit Colgate Toothpaste",
+   "summary": "NAFDAC warns of unregistered, suspected counterfeit Colgate-lookalike toothpastes branded 'Coglaet ActivGel 100g' and 'Coglaet Crema Dental Herbal 100g' found in Kaduna State. No batch or NAFDAC registration numbers; products seized and investigations ongoing.",
    "appliesToNigeria": true
   },
   {
@@ -408,19 +817,21 @@
    "url": "https://nafdac.gov.ng/public-alert-no-021-2026-alert-on-the-recall-of-zetol-antiseptic-product-in-pakistan/",
    "date": "2026-03-25",
    "title": "Public Alert No. 021/2026 -Alert on the Recall of Zetol Antiseptic Product in Pakistan",
-   "kind": "recall",
+   "kind": "unregistered",
    "products": [
     {
-     "brand": "Zetol Antiseptic Product",
-     "ingredient": null,
+     "brand": "Zetol Antiseptic",
+     "ingredient": "Chloroxylenol",
      "strength": null,
-     "manufacturer": null,
+     "manufacturer": "UNCUS BROTHERS Address: 23 KM Multan Road, Lahore",
      "nrn": null,
-     "batches": []
+     "batches": [
+      "BOOO1"
+     ]
     }
    ],
-   "summary": "Public Alert No. 021/2026 -Alert on the Recall of Zetol Antiseptic Product in Pakistan",
-   "appliesToNigeria": false
+   "summary": "NAFDAC relays Pakistan's DRAP recall of unregistered Zetol Antiseptic (Chloroxylenol) liquid, sold without approval and packaged to resemble Dettol. Quality, safety and efficacy unverified. Zonal directors told to conduct surveillance in Nigeria.",
+   "appliesToNigeria": true
   },
   {
    "id": "020/2026",
@@ -431,15 +842,17 @@
    "kind": "unregistered",
    "products": [
     {
-     "brand": "ViroActive+ Drug Purported to Cure HIV",
+     "brand": "ViroActive+",
      "ingredient": null,
      "strength": null,
      "manufacturer": null,
      "nrn": null,
-     "batches": []
+     "batches": [
+      "GVC/DEC/25/01"
+     ]
     }
    ],
-   "summary": "Public Alert No. 020/2026 -Alert on Unregistered ViroActive+ Drug Purported to Cure HIV",
+   "summary": "NAFDAC warns that unregistered ViroActive+ Capsules, promoted online as a herbal cure for HIV, are circulating in Nigeria. Its ingredients, safety and efficacy are unverified; use may cause HIV treatment failure, toxicity and delayed care.",
    "appliesToNigeria": true
   },
   {
@@ -448,18 +861,30 @@
    "url": "https://nafdac.gov.ng/public-alert-no-019-2026-alert-on-mop-up-of-all-otrivin-nasal-drops-0-05-and-0-1/",
    "date": "2026-03-14",
    "title": "Public Alert No.019/2026 – Alert on Mop up of all Otrivin Nasal Drops (0.05% and 0.1%)",
-   "kind": "other",
+   "kind": "counterfeit",
    "products": [
     {
-     "brand": "Mop up of all Otrivin Nasal Drops",
+     "brand": "Otrivin Nasal Drops (Children)",
      "ingredient": null,
-     "strength": null,
-     "manufacturer": null,
-     "nrn": null,
-     "batches": []
+     "strength": "0.05%",
+     "manufacturer": "GlaxoSmithKline",
+     "nrn": "04-5350",
+     "batches": [
+      "7U8T"
+     ]
+    },
+    {
+     "brand": "Otrivin Nasal Drops (Adult)",
+     "ingredient": null,
+     "strength": "0.01%",
+     "manufacturer": "GlaxoSmithKline",
+     "nrn": "04-0026",
+     "batches": [
+      "SU8X"
+     ]
     }
    ],
-   "summary": "Public Alert No.019/2026 – Alert on Mop up of all Otrivin Nasal Drops (0.05% and 0.1%)",
+   "summary": "NAFDAC warns of counterfeit and unregistered Otrivin Nasal Drops (0.05% children and 0.01% adult) circulating in Nigeria. GlaxoSmithKline confirmed it is not currently importing the product, so all products in circulation are counterfeit. Mop-up and surveillance ordered.",
    "appliesToNigeria": true
   },
   {
@@ -468,18 +893,20 @@
    "url": "https://nafdac.gov.ng/public-alert-no-018-2026-alert-on-counterfeit-and-unregistered-cerelac-found-on-sale/",
    "date": "2026-03-12",
    "title": "Public Alert No. 018/2026 – Alert on Counterfeit and Unregistered Cerelac Found on Sale",
-   "kind": "unregistered",
+   "kind": "counterfeit",
    "products": [
     {
-     "brand": "Cerelac Found on Sale",
+     "brand": "CERELAC Mixed Fruits and Wheat",
      "ingredient": null,
      "strength": null,
-     "manufacturer": null,
+     "manufacturer": "Nestlé Spain (purported)",
      "nrn": null,
-     "batches": []
+     "batches": [
+      "308002910"
+     ]
     }
    ],
-   "summary": "Public Alert No. 018/2026 – Alert on Counterfeit and Unregistered Cerelac Found on Sale",
+   "summary": "NAFDAC warns of counterfeit and unregistered CERELAC Mixed Fruits and Wheat sold in Lagos, purportedly made by Nestlé Spain, batch 308002910, with tampered/revalidated expiry (10-2026) and a fuel-like odour. Registered packs use a slash in the date; fakes use a hyphen.",
    "appliesToNigeria": true
   },
   {
@@ -491,15 +918,17 @@
    "kind": "counterfeit",
    "products": [
     {
-     "brand": "Confirmed Counterfeit of Herceptin 600 mg",
-     "ingredient": null,
-     "strength": null,
-     "manufacturer": null,
+     "brand": "Herceptin",
+     "ingredient": "trastuzumab",
+     "strength": "600 mg",
+     "manufacturer": "F.Hoffmann-La Roche Ltd, Kaiseraugust, Switzerland (stated)",
      "nrn": null,
-     "batches": []
+     "batches": [
+      "A8519B34"
+     ]
     }
    ],
-   "summary": "Public Alert No. 017/2026 – Alert on Confirmed Counterfeit of Herceptin 600 mg in Nigeria",
+   "summary": "NAFDAC confirms a counterfeit batch of Herceptin 600 mg (batch A8519B34) circulating in Lagos, Nigeria. Roche Nigeria found wrong artwork, wrong expiry date and incorrect 2D matrix code; the batch number is not genuine. Counterfeit oncology drugs risk treatment failure or death.",
    "appliesToNigeria": true
   },
   {
@@ -511,15 +940,17 @@
    "kind": "counterfeit",
    "products": [
     {
-     "brand": "Confirmed Counterfeit of Mabthera 500mg/ 50ml",
-     "ingredient": null,
-     "strength": null,
-     "manufacturer": null,
+     "brand": "Mabthera",
+     "ingredient": "rituximab",
+     "strength": "500 mg/50 mL",
+     "manufacturer": "Stated on pack as Genentech Inc., Hillsboro, ABD (genuine product made for F. Hoffmann-La Roche Ltd, Basel, Switzerland by Roche Diagnostics GmbH, Galenical Plant, Mannheim, Germany)",
      "nrn": null,
-     "batches": []
+     "batches": [
+      "N2110A09"
+     ]
     }
    ],
-   "summary": "Public Alert No. 016/2026 – Alert on Confirmed Counterfeit of Mabthera 500mg/ 50ml in Nigeria",
+   "summary": "NAFDAC confirms counterfeit Mabthera (rituximab) 500mg/50ml, batch N2110A09, circulating in Kaduna and Gombe states. Packaging shows wrong language, bad Braille placement, fake tamper labels and a batch number absent from Roche's database. Sold cheaply; risk of treatment failure ",
    "appliesToNigeria": true
   },
   {
@@ -531,15 +962,29 @@
    "kind": "counterfeit",
    "products": [
     {
-     "brand": "Confirmed Counterfeit of Avastin 400mg/ 16ml and Tecentriq 1200mg/20ml",
-     "ingredient": null,
-     "strength": null,
-     "manufacturer": null,
+     "brand": "Avastin",
+     "ingredient": "Bevacizumab",
+     "strength": "400mg/16ml",
+     "manufacturer": "Made for F. Hoffmann-La Roche Ltd, Basel, Switzerland, by Roche Diagnostics GmbH, Mannheim, Germany",
      "nrn": null,
-     "batches": []
+     "batches": [
+      "H4239A70",
+      "H2290A34",
+      "A3508B02"
+     ]
+    },
+    {
+     "brand": "Tecentriq",
+     "ingredient": "Atezolizumab",
+     "strength": "1200mg/20ml",
+     "manufacturer": "F. Hoffmann-La Roche Ltd, Kaiseraugst, Switzerland",
+     "nrn": null,
+     "batches": [
+      "B3071A12"
+     ]
     }
    ],
-   "summary": "Public Alert No. 015/2026 – Alert on Confirmed Counterfeit of Avastin 400mg/ 16ml and Tecentriq 1200mg/20ml in Nigeria",
+   "summary": "NAFDAC confirms counterfeit Avastin 400mg/16ml (bevacizumab) and Tecentriq 1200mg/20ml (atezolizumab) circulating in Nigeria, confirmed by Roche Nigeria. Fake packs show wrong batch/serial numbers, poor artwork and tamper labels; sold cheaply at NGN180,000–350,000.",
    "appliesToNigeria": true
   },
   {
@@ -551,15 +996,19 @@
    "kind": "counterfeit",
    "products": [
     {
-     "brand": "Confirmed Counterfeits PHESGO 600mg With Batch Numbers B2346B16 and C3809C5",
-     "ingredient": null,
-     "strength": null,
+     "brand": "Phesgo®",
+     "ingredient": "Pertuzumab/Trastuzumab",
+     "strength": "600mg/600mg/10mL",
      "manufacturer": null,
      "nrn": null,
-     "batches": []
+     "batches": [
+      "C3809C51",
+      "B2346B16",
+      "C3809C5"
+     ]
     }
    ],
-   "summary": "Public Alert No. 014/2026 -Alert on Confirmed Counterfeits PHESGO 600mg With Batch Numbers B2346B16 and C3809C5",
+   "summary": "NAFDAC alerts on confirmed counterfeit Phesgo 600mg/600mg/10mL (pertuzumab/trastuzumab) with batch numbers B2346B16 and C3809C5, reported from LUTH and confirmed falsified by Roche. Fake batch numbers, wrong GTIN, missing tamper-evidence label and packaging differences.",
    "appliesToNigeria": true
   },
   {
@@ -568,18 +1017,20 @@
    "url": "https://nafdac.gov.ng/public-alert-no-013-2026-alert-on-dietary-supplement-by-fda-over-safety-concerns/",
    "date": "2026-03-08",
    "title": "Public Alert No. 013/2026 – Alert on Dietary Supplement By FDA Over Safety Concerns",
-   "kind": "other",
+   "kind": "recall",
    "products": [
     {
-     "brand": "Dietary Supplement",
-     "ingredient": null,
+     "brand": "MR.7 SUPER 700000",
+     "ingredient": "tadalafil and sildenafil (undeclared)",
      "strength": null,
-     "manufacturer": null,
+     "manufacturer": "StuffbyNainax LLC",
      "nrn": null,
-     "batches": []
+     "batches": [
+      "ALLAVAILABLELOTS"
+     ]
     }
    ],
-   "summary": "Public Alert No. 013/2026 – Alert on Dietary Supplement By FDA Over Safety Concerns",
+   "summary": "NAFDAC alerts the public that Stuff by Nainax LLC is recalling all lots of MR.7 SUPER 700000 capsules, marketed online as a male-enhancement dietary supplement, after FDA analysis found undeclared sildenafil and tadalafil, which can dangerously lower blood pressure with nitrates.",
    "appliesToNigeria": true
   },
   {
@@ -591,15 +1042,18 @@
    "kind": "counterfeit",
    "products": [
     {
-     "brand": "Confirmed Counterfeit Batches of Avastin 400mg",
-     "ingredient": null,
-     "strength": null,
-     "manufacturer": null,
+     "brand": "Avastin",
+     "ingredient": "bevacizumab",
+     "strength": "400 mg/16 ml",
+     "manufacturer": "F. Hoffmann- La Roche Ltd, Basel, Switzerland by Roche Diagnostics GmbH, Mannheim, Germany.",
      "nrn": null,
-     "batches": []
+     "batches": [
+      "K1830T71",
+      "H0375B01"
+     ]
     }
    ],
-   "summary": "Public Alert No. 012/2026 – Alert on Confirmed Counterfeit Batches of Avastin 400mg in Nigeria",
+   "summary": "NAFDAC alerts that counterfeit Avastin (bevacizumab) 400mg/16ml vials, batches K1830T71 and H0375B01, have been confirmed in Nigeria. Roche says the batch numbers and serial numbers don't exist in its database, with artwork errors and fake tamper-evident labels.",
    "appliesToNigeria": true
   },
   {
@@ -611,15 +1065,27 @@
    "kind": "counterfeit",
    "products": [
     {
-     "brand": "Version of VISITECT HIV Advanced Disease Test Kits Identified",
+     "brand": "VISITECT CD4 Advanced Disease",
      "ingredient": null,
      "strength": null,
-     "manufacturer": null,
+     "manufacturer": "AccuBio Ltd, Units 1-12 Hillfoots Business Village Alva, FK 12 5DQ, Scotland, United Kingdom",
      "nrn": null,
-     "batches": []
+     "batches": [
+      "0002172"
+     ]
+    },
+    {
+     "brand": "VISITECT CD4 Advanced Disease",
+     "ingredient": null,
+     "strength": null,
+     "manufacturer": "OMEGA DIAGNOSTICS LTD., Omega House Hillfoots Business Village Alva, FK 12 5DQ, Scotland, United Kingdom",
+     "nrn": null,
+     "batches": [
+      "0001586"
+     ]
     }
    ],
-   "summary": "Public Alert No. 011/2026 – Alert on the Counterfeit Version of VISITECT HIV Advanced Disease Test Kits Identified in Nigeria",
+   "summary": "NAFDAC warns of counterfeit/unregistered VISITECT CD4 Advanced Disease HIV test kits in Nigeria. Fakes list OMEGA DIAGNOSTICS LTD as maker, LOT 0001586, no NAFDAC number and a 3-year shelf life (2024-08 to 2027-01), unlike the genuine kit (A3-100-153, LOT 0002172).",
    "appliesToNigeria": true
   },
   {
@@ -628,18 +1094,42 @@
    "url": "https://nafdac.gov.ng/public-alert-no-010-2026-alert-on-notice-of-concern-issued-by-who-for-meril-diagnostics-pvt-ltd/",
    "date": "2026-02-22",
    "title": "Public Alert No. 010/2026- Alert on Notice of Concern Issued by Who for Meril Diagnostics Pvt Ltd",
-   "kind": "other",
+   "kind": "substandard",
    "products": [
     {
-     "brand": "Notice of Concern Issued",
+     "brand": "Meriscreen Malaria Pf / Pv Ag",
      "ingredient": null,
      "strength": null,
-     "manufacturer": null,
-     "nrn": null,
+     "manufacturer": "Meril Diagnostics Pvt. Ltd, India",
+     "nrn": "A3-101135",
+     "batches": []
+    },
+    {
+     "brand": "Meriscreen HIV 1-2 WB",
+     "ingredient": null,
+     "strength": null,
+     "manufacturer": "Meril Diagnostics Pvt. Ltd, India",
+     "nrn": "A3-101136",
+     "batches": []
+    },
+    {
+     "brand": "Meriscreen Malaria PF/PAN AG",
+     "ingredient": null,
+     "strength": null,
+     "manufacturer": "Meril Diagnostics Pvt. Ltd, India",
+     "nrn": "A3-101137",
+     "batches": []
+    },
+    {
+     "brand": "MERISCREEN Malaria Pf HRP-II Ag",
+     "ingredient": null,
+     "strength": null,
+     "manufacturer": "Meril Diagnostics Pvt. Ltd, India",
+     "nrn": "A3-101118",
      "batches": []
     }
    ],
-   "summary": "Public Alert No. 010/2026- Alert on Notice of Concern Issued by Who for Meril Diagnostics Pvt Ltd",
+   "summary": "WHO issued a Notice of Concern against Meril Diagnostics Pvt Ltd (India) after audit violations, so quality/safety of four NAFDAC-registered Meriscreen rapid test devices is not guaranteed. The MAH says they have not been imported; any found in Nigeria are deemed falsified.",
    "appliesToNigeria": true
   },
   {
@@ -648,18 +1138,18 @@
    "url": "https://nafdac.gov.ng/public-alert-no-09-2026-public-reminder-of-nafdacs-regulatory-directive-on-the-discontinued-registration-of-multi-dose-artemether-lumefantrine-dry-powder-for-oral-suspension/",
    "date": "2026-02-20",
    "title": "Public Alert No. 09/2026 – Public Reminder of NAFDAC’s Regulatory Directive on the Discontinued Registration of Multi-Dose Artemether /Lumefantrine Dry Powder for Oral Suspension",
-   "kind": "other",
+   "kind": "unregistered",
    "products": [
     {
-     "brand": "Public Reminder of NAFDAC’s Regulatory Directive on the Discontinued Registratio",
-     "ingredient": null,
+     "brand": "All brands of Multi-Dose Artemether/Lumefantrine dry powder for oral suspension",
+     "ingredient": "Artemether/Lumefantrine",
      "strength": null,
-     "manufacturer": null,
+     "manufacturer": "All manufacturers and importers of Multi-Dose Anti-Malarial (Artemether/Lumefantrine) dry powder Oral Suspension",
      "nrn": null,
      "batches": []
     }
    ],
-   "summary": "Public Alert No. 09/2026 – Public Reminder of NAFDAC’s Regulatory Directive on the Discontinued Registration of Multi-Dose Artemether /Lumefantrine Dry Powder for Oral Suspension",
+   "summary": "NAFDAC reminds the public that registration of all multi-dose Artemether/Lumefantrine dry powder for oral suspension has been discontinued because reconstituted suspensions are unstable and lose efficacy. Importation, distribution, sale and use must stop; products are still in ci",
    "appliesToNigeria": true
   },
   {
@@ -671,16 +1161,152 @@
    "kind": "recall",
    "products": [
     {
-     "brand": "Danone Nutricia Recalls Several Batches of Aptamil and Cow and Gate First Infant",
+     "brand": "Aptamil 1 From Birth First infant milk",
+     "ingredient": null,
+     "strength": "800g",
+     "manufacturer": "Danone Nutricia Ltd, Ireland",
+     "nrn": null,
+     "batches": []
+    },
+    {
+     "brand": "Aptamil 1 First Infant Milk",
+     "ingredient": null,
+     "strength": "700g",
+     "manufacturer": "Danone Nutricia",
+     "nrn": null,
+     "batches": []
+    },
+    {
+     "brand": "Cow & Gate 1 First Infant Milk",
+     "ingredient": null,
+     "strength": "700g",
+     "manufacturer": "Danone Nutricia",
+     "nrn": null,
+     "batches": []
+    },
+    {
+     "brand": "Cow & Gate 1 First Infant Milk Big Pack",
+     "ingredient": null,
+     "strength": "1.2kg",
+     "manufacturer": "Danone Nutricia",
+     "nrn": null,
+     "batches": []
+    },
+    {
+     "brand": "Cow & Gate 1 First Infant Milk Hungry",
+     "ingredient": null,
+     "strength": "800g",
+     "manufacturer": "Danone Nutricia",
+     "nrn": null,
+     "batches": []
+    },
+    {
+     "brand": "Cow & Gate 1 First Infant Milk",
+     "ingredient": null,
+     "strength": "600g",
+     "manufacturer": "Danone Nutricia",
+     "nrn": null,
+     "batches": []
+    },
+    {
+     "brand": "Cow & Gate Anti-Reflux",
+     "ingredient": null,
+     "strength": "800g",
+     "manufacturer": "Danone Nutricia",
+     "nrn": null,
+     "batches": []
+    },
+    {
+     "brand": "Aptamil 1 First Infant Milk Big Pack",
+     "ingredient": null,
+     "strength": "1.2kg",
+     "manufacturer": "Danone Nutricia",
+     "nrn": null,
+     "batches": []
+    },
+    {
+     "brand": "Aptamil 1 First Infant Milk Hungry",
+     "ingredient": null,
+     "strength": "800g",
+     "manufacturer": "Danone Nutricia",
+     "nrn": null,
+     "batches": []
+    },
+    {
+     "brand": "Aptamil 1 First Infant Milk Pre-Measured Tabs",
      "ingredient": null,
      "strength": null,
+     "manufacturer": "Danone Nutricia",
+     "nrn": null,
+     "batches": []
+    },
+    {
+     "brand": "Aptamil 2 Follow-On Milk",
+     "ingredient": null,
+     "strength": "800g",
+     "manufacturer": "Danone Nutricia",
+     "nrn": null,
+     "batches": []
+    },
+    {
+     "brand": "Aptamil 2 Follow-On Milk",
+     "ingredient": null,
+     "strength": "700g",
+     "manufacturer": "Danone Nutricia",
+     "nrn": null,
+     "batches": []
+    },
+    {
+     "brand": "Aptamil 2 Follow-On Milk Big Pack",
+     "ingredient": null,
+     "strength": "1.2kg",
+     "manufacturer": "Danone Nutricia",
+     "nrn": null,
+     "batches": []
+    },
+    {
+     "brand": "Aptamil 2 Follow-On Milk Pre-Measured Tabs",
+     "ingredient": null,
+     "strength": null,
+     "manufacturer": "Danone Nutricia",
+     "nrn": null,
+     "batches": []
+    },
+    {
+     "brand": "Cow & Gate 1 First Infant Milk",
+     "ingredient": null,
+     "strength": "800g",
+     "manufacturer": "Danone Nutricia",
+     "nrn": null,
+     "batches": []
+    },
+    {
+     "brand": "Aptamil Nutribiotik 1 (Aptamil first infant milk)",
+     "ingredient": null,
+     "strength": "800g, 400g",
+     "manufacturer": null,
+     "nrn": null,
+     "batches": []
+    },
+    {
+     "brand": "Aptamil Nutribiotik 2 (Aptamil follow on milk 2)",
+     "ingredient": null,
+     "strength": "800g, 400g",
+     "manufacturer": null,
+     "nrn": null,
+     "batches": []
+    },
+    {
+     "brand": "AptaJunior Nutribiotik 3 (Aptamil growing up milk 3)",
+     "ingredient": null,
+     "strength": "800g, 400g",
      "manufacturer": null,
      "nrn": null,
      "batches": []
     }
    ],
-   "summary": "Public Alert No. 08/2026 – Danone Nutricia Recalls Several Batches of Aptamil and Cow and Gate First Infant Milk and Follow-on Milk Formula Products Due To Potential Contamination with Cereulide Toxin",
-   "appliesToNigeria": true
+   "summary": "Danone Nutricia is recalling batches of Aptamil and Cow & Gate first infant and follow-on milk formulas made in Ireland and Hungary over possible cereulide toxin contamination. NAFDAC says Aptamil made for Nigeria is unaffected; stock was blocked at the Nigerian warehouse as a pr",
+   "appliesToNigeria": false
   },
   {
    "id": "007/2026",
@@ -691,15 +1317,19 @@
    "kind": "counterfeit",
    "products": [
     {
-     "brand": "Surveillance and mop up of Counterfeit Dostinex Tablets Found",
+     "brand": "Dostinex",
      "ingredient": null,
-     "strength": null,
-     "manufacturer": null,
+     "strength": "0.5mg",
+     "manufacturer": "Pfizer Italia S.R.L, Ascoli Piceno, Italy.",
      "nrn": null,
-     "batches": []
+     "batches": [
+      "GG3470",
+      "LG8659",
+      "GG2440"
+     ]
     }
    ],
-   "summary": "Public Alert No. 07/2026- Alert on Surveillance and mop up of Counterfeit Dostinex (0.5mg) Tablets Found in Circulation",
+   "summary": "NAFDAC warns of falsified and parallel-imported Dostinex 0.5mg tablets circulating in Nigeria. Pfizer Nigeria Ltd confirms the genuine product, though registered, has not yet been imported. Three batches affected; no NAFDAC reg. number. Mop-up ordered nationwide.",
    "appliesToNigeria": true
   },
   {
@@ -708,18 +1338,20 @@
    "url": "https://nafdac.gov.ng/public-alert-no-06-2026-alert-on-revalidated-infant-formula-sma-gold-found-on-sale/",
    "date": "2026-02-12",
    "title": "Public Alert No. 06/2026 – Alert on Revalidated Infant Formula (SMA Gold) Found on Sale",
-   "kind": "other",
+   "kind": "counterfeit",
    "products": [
     {
-     "brand": "Revalidated Infant Formula Found on Sale",
+     "brand": "SMA GOLD From Birth First Infant Milk",
      "ingredient": null,
-     "strength": null,
-     "manufacturer": null,
-     "nrn": null,
-     "batches": []
+     "strength": "900g",
+     "manufacturer": "Nestle",
+     "nrn": "B1-2783",
+     "batches": [
+      "22939510A120607:35"
+     ]
     }
    ],
-   "summary": "Public Alert No. 06/2026 – Alert on Revalidated Infant Formula (SMA Gold) Found on Sale",
+   "summary": "NAFDAC alerts the public to revalidated (date-altered) SMA Gold From Birth First Infant Milk 900g found on sale in Kaduna State. Expiry/manufacture stickers were tampered with; an infant reportedly had diarrhoea after consumption.",
    "appliesToNigeria": true
   },
   {
@@ -731,15 +1363,17 @@
    "kind": "counterfeit",
    "products": [
     {
-     "brand": "Mop-up of Counterfeit Dermazin Cream",
-     "ingredient": null,
-     "strength": null,
-     "manufacturer": null,
+     "brand": "Dermazin",
+     "ingredient": "Silver Sulphadiazine",
+     "strength": "1%",
+     "manufacturer": "Salutas Pharma GmbH, 39171 Osterweddingen, Germany (stated)",
      "nrn": null,
-     "batches": []
+     "batches": [
+      "MV5093"
+     ]
     }
    ],
-   "summary": "Public Alert No. 05/2026 – Alert on the Mop-up of Counterfeit Dermazin (1% Silver Sulphadiazine) Cream",
+   "summary": "NAFDAC warns of counterfeit Dermazin (1% Silver Sulphadiazine) Cream in circulation, reported by MAH Taylek Drugs Company Limited. The fake bears batch MV5093 (mfd 05/2024, exp 05/2027) and falsely states Salutas Pharma GmbH, Germany as manufacturer. Zonal offices are mopping it ",
    "appliesToNigeria": true
   },
   {
@@ -751,16 +1385,32 @@
    "kind": "recall",
    "products": [
     {
-     "brand": "Nestle UK RecallsSpecific Batches Of Its SMAInfant Formula and Follow-On Formula",
+     "brand": "SMA Gold 1",
      "ingredient": null,
      "strength": null,
-     "manufacturer": null,
-     "nrn": null,
+     "manufacturer": "Nestlé",
+     "nrn": "B1-2783",
+     "batches": []
+    },
+    {
+     "brand": "SMA Gold 2",
+     "ingredient": null,
+     "strength": null,
+     "manufacturer": "Nestlé",
+     "nrn": "B1-2780",
+     "batches": []
+    },
+    {
+     "brand": "SMA Gold 3",
+     "ingredient": null,
+     "strength": null,
+     "manufacturer": "Nestlé",
+     "nrn": "B1-2781",
      "batches": []
     }
    ],
-   "summary": "Public Alert No. 04/2026- Nestle UK RecallsSpecific Batches Of Its SMAInfant Formula and Follow-On FormulaOver Toxin Contamination Concerns",
-   "appliesToNigeria": true
+   "summary": "Nestlé UK voluntarily recalled certain batches of SMA Infant Formula and Follow-On Formula over possible cereulide toxin contamination. NAFDAC says the recall does not affect SMA formulae produced for Nigeria, and lists registered SMA Gold 1, 2 and 3 NAFDAC numbers.",
+   "appliesToNigeria": false
   },
   {
    "id": "003/2026",
@@ -771,15 +1421,17 @@
    "kind": "unregistered",
    "products": [
     {
-     "brand": "Circulation of an Unauthorized and Unregistered Risperdal 2 mg Tablets Brand For",
+     "brand": "Risperdal",
      "ingredient": null,
-     "strength": null,
-     "manufacturer": null,
+     "strength": "2 mg",
+     "manufacturer": "Johnson & Johnson",
      "nrn": null,
-     "batches": []
+     "batches": [
+      "ELB01723"
+     ]
     }
    ],
-   "summary": "Public Alert No. 03/2026–Alert on the Circulation of an Unauthorized and Unregistered Risperdal 2 mg Tablets Brand Formulation in Nigeria",
+   "summary": "NAFDAC warns that an unauthorized, unregistered batch of Risperdal 2 mg tablets is circulating in Nigeria, notably Kaduna State. Johnson & Johnson confirmed batch ELB01723 was meant for Turkey but illegally diverted; its pack artwork differs from the registered brand.",
    "appliesToNigeria": true
   },
   {
@@ -788,18 +1440,30 @@
    "url": "https://nafdac.gov.ng/public-alert-no-02-2026-alert-on-revalidated-and-unregistered-natrilix-sr-found-on-sale/",
    "date": "2026-01-09",
    "title": "Public Alert No. 02/2026– Alert on Revalidated and Unregistered Natrilix SR Found on Sale",
-   "kind": "unregistered",
+   "kind": "counterfeit",
    "products": [
     {
-     "brand": "Revalidated and Unregistered Natrilix SR Found on Sale",
-     "ingredient": null,
-     "strength": null,
-     "manufacturer": null,
+     "brand": "Natrilix SR",
+     "ingredient": "Indapamide",
+     "strength": "1.5mg",
+     "manufacturer": "SERVIER Egypt Industries Limited",
+     "nrn": "04-8509",
+     "batches": [
+      "32417"
+     ]
+    },
+    {
+     "brand": "Natrilix SR",
+     "ingredient": "Indapamide",
+     "strength": "1.5mg",
+     "manufacturer": "SERVIER Egypt Industries Limited",
      "nrn": null,
-     "batches": []
+     "batches": [
+      "34934"
+     ]
     }
    ],
-   "summary": "Public Alert No. 02/2026– Alert on Revalidated and Unregistered Natrilix SR Found on Sale",
+   "summary": "NAFDAC warns that revalidated and unregistered Natrilix SR (Indapamide 1.5mg) is on sale in Nigeria. Batch 32417 had its expiry altered from 03/2025 to 03/2026; batch 34934 is parallel-imported with no NAFDAC registration number. Both pose safety and potency risks.",
    "appliesToNigeria": true
   },
   {
@@ -811,15 +1475,18 @@
    "kind": "counterfeit",
    "products": [
     {
-     "brand": "Sale of Falsified TAVANIC® 500mg Tablet",
+     "brand": "Tavanic®",
      "ingredient": null,
-     "strength": null,
-     "manufacturer": null,
+     "strength": "500mg",
+     "manufacturer": "Sanofi",
      "nrn": null,
-     "batches": []
+     "batches": [
+      "4MW4C",
+      "2PK3C"
+     ]
     }
    ],
-   "summary": "Public Alert No. 01/2026 – Sale of Falsified TAVANIC® 500mg Tablet in Nigeria",
+   "summary": "NAFDAC warns of falsified Tavanic® 500mg tablets (Sanofi) labelled batch 4MW4C, Mfg 05/2024, Exp 04/2027, traced to the open drug market at Idumota, Lagos. Blister stickers hid an older expired batch (2PK3C) and the MAS label differs from the authorised distributor's.",
    "appliesToNigeria": true
   },
   {
@@ -831,15 +1498,31 @@
    "kind": "recall",
    "products": [
     {
-     "brand": "Mivacron Injection 0.2%, Nimbex Injection 2mg/ml Over Safety Concerns",
-     "ingredient": null,
-     "strength": null,
-     "manufacturer": null,
+     "brand": "Mivacron Inj. 0.2%",
+     "ingredient": "mivacurium",
+     "strength": "0.2%",
+     "manufacturer": "Aspen Pharmacare Asia Limited",
      "nrn": null,
-     "batches": []
+     "batches": [
+      "XPC19"
+     ]
+    },
+    {
+     "brand": "Nimbex Inj. 2mg/mL",
+     "ingredient": "cisatracurium",
+     "strength": "2mg/mL",
+     "manufacturer": "Aspen Pharmacare Asia Limited",
+     "nrn": null,
+     "batches": [
+      "XP1SQ",
+      "XPC1G",
+      "XPC6W",
+      "XP1V5",
+      "XP1VF"
+     ]
     }
    ],
-   "summary": "Public Alert No.44/2025 – Recall of Mivacron Injection 0.2%, Nimbex Injection 2mg/ml Over Safety Concerns",
+   "summary": "NAFDAC relays Hong Kong recall of one batch of Mivacron Injection 0.2% (mivacurium) and five batches of Nimbex Injection 2mg/mL (cisatracurium) by Aspen Pharmacare Asia Limited, after manual visual inspection deficiencies meant glass particles in ampoules may not have been detect",
    "appliesToNigeria": true
   },
   {
@@ -848,18 +1531,18 @@
    "url": "https://nafdac.gov.ng/public-alert-no-043-2025-alert-on-uk-legal-claims-involving-johnson-johnson-talc-baby-powder-and-alleged-asbestos-related-cancer-risks/",
    "date": "2025-12-19",
    "title": "Public Alert No.043/2025 – Alert on UK Legal Claims Involving Johnson & Johnson Talc Baby Powder and Alleged Asbestos-Related Cancer Risks",
-   "kind": "other",
+   "kind": "watchlist",
    "products": [
     {
-     "brand": "UK Legal Claims Involving Johnson & Johnson Talc Baby Powder and Alleged Asbesto",
-     "ingredient": null,
+     "brand": "Johnson & Johnson Baby Powder",
+     "ingredient": "Talcum powder",
      "strength": null,
-     "manufacturer": null,
+     "manufacturer": "Johnson and Johnson (A United States multinational corporation)",
      "nrn": null,
      "batches": []
     }
    ],
-   "summary": "Public Alert No.043/2025 – Alert on UK Legal Claims Involving Johnson & Johnson Talc Baby Powder and Alleged Asbestos-Related Cancer Risks",
+   "summary": "NAFDAC alerts the public to UK lawsuits by over 3,000 claimants alleging Johnson & Johnson talc baby powder contained asbestos, linked to ovarian cancer and mesothelioma. The product is used in Nigeria. No conclusive regulatory finding yet; NAFDAC is monitoring.",
    "appliesToNigeria": true
   },
   {
@@ -874,12 +1557,12 @@
      "brand": "Kiss Condom",
      "ingredient": null,
      "strength": null,
-     "manufacturer": null,
+     "manufacturer": "DKT International Nigeria",
      "nrn": null,
      "batches": []
     }
    ],
-   "summary": "Public Alert No. 042/2025 – Alert on Counterfeit Kiss Condom in Nigerian Market",
+   "summary": "NAFDAC warns of counterfeit Kiss Condoms sold in Onitsha, Idumota, Trade Fair and markets in Kano, Abuja, Uyo, Gombe and Enugu. Fakes have darker packs, wrong address (42 Montgomery Road, Yaba), missing caution/medical device info, and risk breakage, infection and STI/pregnancy e",
    "appliesToNigeria": true
   },
   {
@@ -891,16 +1574,18 @@
    "kind": "recall",
    "products": [
     {
-     "brand": "Indomie Brand Noodles due to the Presence of Undeclared Allergens",
+     "brand": "Indomie",
      "ingredient": null,
      "strength": null,
      "manufacturer": null,
      "nrn": null,
-     "batches": []
+     "batches": [
+      "ALLLOTS"
+     ]
     }
    ],
-   "summary": "Public Alert No. 041/2025 – Recall of Indomie Brand Noodles (Vegetable Flavour Product) due to the Presence of Undeclared Allergens (Milk and Eggs)",
-   "appliesToNigeria": true
+   "summary": "NAFDAC relays a French (Rappel Conso) recall of Indomie Vegetable Flavour noodles due to undeclared milk and egg allergens. All lots, BB date 06/02/2026. Risk of entry into Nigeria is low due to the noodle import ban, but surveillance and mop-up have begun.",
+   "appliesToNigeria": false
   },
   {
    "id": "040/2025",
@@ -908,18 +1593,154 @@
    "url": "https://nafdac.gov.ng/public-alert-no-040-2025-mop-up-of-all-products-produced-and-distributed-by-europharm-laboratories/",
    "date": "2025-12-02",
    "title": "Public Alert No. 040/2025 – Mop up of all Products Produced and Distributed by EuroPharm Laboratories",
-   "kind": "other",
+   "kind": "substandard",
    "products": [
     {
-     "brand": "Mop up of all Products Produced and Distributed",
-     "ingredient": null,
+     "brand": "Linocloxin",
+     "ingredient": "Ampicillin & Cloxacillin",
+     "strength": "125mg & 125mg",
+     "manufacturer": "Europharm Laboratories, Eurolink Nigeria Limited, Plot Pl., 7354, Anglo Jos, New Ind. Area, Zarmaganda, Jos, Nigeria",
+     "nrn": "04-4576",
+     "batches": []
+    },
+    {
+     "brand": "Linromycine",
+     "ingredient": "Erythromycin",
      "strength": null,
-     "manufacturer": null,
+     "manufacturer": "Europharm Laboratories, Eurolink Nigeria Limited, Plot Pl., 7354, Anglo Jos, New Ind. Area, Zarmaganda, Jos, Nigeria",
+     "nrn": "04-4573",
+     "batches": []
+    },
+    {
+     "brand": "Linocillin",
+     "ingredient": "Ampicillin",
+     "strength": null,
+     "manufacturer": "Europharm Laboratories, Eurolink Nigeria Limited, Plot Pl., 7354, Anglo Jos, New Ind. Area, Zarmaganda, Jos, Nigeria",
+     "nrn": "04-4560",
+     "batches": []
+    },
+    {
+     "brand": "Linmoxyn",
+     "ingredient": "Amoxicillin",
+     "strength": "125mg",
+     "manufacturer": "Europharm Laboratories, Eurolink Nigeria Limited, Plot Pl., 7354, Anglo Jos, New Ind. Area, Zarmaganda, Jos, Nigeria",
+     "nrn": "04-4567",
+     "batches": []
+    },
+    {
+     "brand": "Eurogyl",
+     "ingredient": "Metronidazole",
+     "strength": null,
+     "manufacturer": "Europharm Laboratories, Eurolink Nigeria Limited, Plot Pl., 7354, Anglo Jos, New Ind. Area, Zarmaganda, Jos, Nigeria",
+     "nrn": "04-4568",
+     "batches": []
+    },
+    {
+     "brand": "Naflin",
+     "ingredient": "Cough Expectorant",
+     "strength": null,
+     "manufacturer": "Europharm Laboratories, Eurolink Nigeria Limited, Plot Pl., 7354, Anglo Jos, New Ind. Area, Zarmaganda, Jos, Nigeria",
+     "nrn": "04-4558",
+     "batches": []
+    },
+    {
+     "brand": "Natacid",
+     "ingredient": "Magnesium Trisilicate",
+     "strength": null,
+     "manufacturer": "Europharm Laboratories, Eurolink Nigeria Limited, Plot Pl., 7354, Anglo Jos, New Ind. Area, Zarmaganda, Jos, Nigeria",
+     "nrn": "04-5752",
+     "batches": []
+    },
+    {
+     "brand": "Navit-B Syrup",
+     "ingredient": "Vitamin B Complex",
+     "strength": null,
+     "manufacturer": "Europharm Laboratories, Eurolink Nigeria Limited, Plot Pl., 7354, Anglo Jos, New Ind. Area, Zarmaganda, Jos, Nigeria",
+     "nrn": "04-4572",
+     "batches": []
+    },
+    {
+     "brand": "Fountain B-12",
+     "ingredient": "Blood Tonic",
+     "strength": null,
+     "manufacturer": "Europharm Laboratories, Eurolink Nigeria Limited, Plot Pl., 7354, Anglo Jos, New Ind. Area, Zarmaganda, Jos, Nigeria",
+     "nrn": "04-4569",
+     "batches": []
+    },
+    {
+     "brand": "Fountain B-12",
+     "ingredient": "Blood Tonic",
+     "strength": null,
+     "manufacturer": "Europharm Laboratories, Eurolink Nigeria Limited, Plot Pl., 7354, Anglo Jos, New Ind. Area, Zarmaganda, Jos, Nigeria",
+     "nrn": "04-4569",
+     "batches": []
+    },
+    {
+     "brand": "Vitamin-C Syrup",
+     "ingredient": "Vitamin C",
+     "strength": null,
+     "manufacturer": "Europharm Laboratories, Eurolink Nigeria Limited, Plot Pl., 7354, Anglo Jos, New Ind. Area, Zarmaganda, Jos, Nigeria",
+     "nrn": "04-5001",
+     "batches": []
+    },
+    {
+     "brand": "Eurogyl",
+     "ingredient": "Metronidazole",
+     "strength": null,
+     "manufacturer": "Europharm Laboratories, Eurolink Nigeria Limited, Plot Pl., 7354, Anglo Jos, New Ind. Area, Zarmaganda, Jos, Nigeria",
+     "nrn": "04-4563",
+     "batches": []
+    },
+    {
+     "brand": "Eurogyl",
+     "ingredient": "Metronidazole",
+     "strength": null,
+     "manufacturer": "Europharm Laboratories, Eurolink Nigeria Limited, Plot Pl., 7354, Anglo Jos, New Ind. Area, Zarmaganda, Jos, Nigeria",
+     "nrn": "04-4563",
+     "batches": []
+    },
+    {
+     "brand": "Euramol",
+     "ingredient": "Paracetamol",
+     "strength": null,
+     "manufacturer": "Europharm Laboratories, Eurolink Nigeria Limited, Plot Pl., 7354, Anglo Jos, New Ind. Area, Zarmaganda, Jos, Nigeria",
+     "nrn": "04-4564",
+     "batches": []
+    },
+    {
+     "brand": "Euramox",
+     "ingredient": "Mebendazole",
+     "strength": "100mg",
+     "manufacturer": "Europharm Laboratories, Eurolink Nigeria Limited, Plot Pl., 7354, Anglo Jos, New Ind. Area, Zarmaganda, Jos, Nigeria",
+     "nrn": "04-4566",
+     "batches": []
+    },
+    {
+     "brand": "Linotrim",
+     "ingredient": "Cotrimoxazole",
+     "strength": null,
+     "manufacturer": "Europharm Laboratories, Eurolink Nigeria Limited, Plot Pl., 7354, Anglo Jos, New Ind. Area, Zarmaganda, Jos, Nigeria",
+     "nrn": "04-4574",
+     "batches": []
+    },
+    {
+     "brand": "Linoquine",
+     "ingredient": "Chloroquine Phosphate",
+     "strength": "80mg/5ml",
+     "manufacturer": "Europharm Laboratories, Eurolink Nigeria Limited, Plot Pl., 7354, Anglo Jos, New Ind. Area, Zarmaganda, Jos, Nigeria",
+     "nrn": "04-4571",
+     "batches": []
+    },
+    {
+     "brand": "Linmoxyn",
+     "ingredient": "Amoxicillin",
+     "strength": "500mg",
+     "manufacturer": "Europharm Laboratories, Eurolink Nigeria Limited, Plot Pl., 7354, Anglo Jos, New Ind. Area, Zarmaganda, Jos, Nigeria",
      "nrn": null,
      "batches": []
     }
    ],
-   "summary": "Public Alert No. 040/2025 – Mop up of all Products Produced and Distributed by EuroPharm Laboratories",
+   "summary": "NAFDAC is mopping up nationwide all products made and distributed by Europharm Laboratories, Jos, over marketing authorization violations. Lab tests found Linmoxyn (Amoxicillin) suspension at 13.9% and 18.4% API and Amoxicillin 500mg capsules at 48.3% API.",
    "appliesToNigeria": true
   },
   {
@@ -931,15 +1752,47 @@
    "kind": "unregistered",
    "products": [
     {
-     "brand": "Incessant Importation and Circulation of Substandard and Unregistered Edible Oil",
-     "ingredient": null,
+     "brand": "FINO",
+     "ingredient": "Edible oil",
+     "strength": null,
+     "manufacturer": null,
+     "nrn": null,
+     "batches": []
+    },
+    {
+     "brand": "PUR",
+     "ingredient": "Edible oil",
+     "strength": null,
+     "manufacturer": null,
+     "nrn": null,
+     "batches": []
+    },
+    {
+     "brand": "OKI",
+     "ingredient": "Edible oil",
+     "strength": null,
+     "manufacturer": null,
+     "nrn": null,
+     "batches": []
+    },
+    {
+     "brand": "SUPER DELICIEX",
+     "ingredient": "Edible oil",
+     "strength": null,
+     "manufacturer": null,
+     "nrn": null,
+     "batches": []
+    },
+    {
+     "brand": "LA JONIC",
+     "ingredient": "Edible oil",
      "strength": null,
      "manufacturer": null,
      "nrn": null,
      "batches": []
     }
    ],
-   "summary": "Public Alert No.039 /2025 – Incessant Importation and Circulation of Substandard and Unregistered Edible Oils in Nigeria",
+   "summary": "NAFDAC warns about substandard and unregistered edible oils smuggled into Nigeria and widely circulating. Brands include FINO, PUR, OKI, SUPER DELICIEX and LA JONIC, with no identifiable manufacturer or NAFDAC registration. Risks include harmful residues, liver damage and heart d",
    "appliesToNigeria": true
   },
   {
@@ -948,18 +1801,42 @@
    "url": "https://nafdac.gov.ng/public-alert-no-038-2025-prohibition-of-use-and-sale-of-bledine-infant-cereals-by-chadian-authorities/",
    "date": "2025-11-04",
    "title": "Public Alert No. 038/2025 – Prohibition of Use and Sale of Bledine Infant Cereals by Chadian Authorities",
-   "kind": "other",
+   "kind": "substandard",
    "products": [
     {
-     "brand": "Prohibition of Use and Sale of Bledine Infant Cereals",
+     "brand": "Bledine Cereals Saveur biscuit",
      "ingredient": null,
      "strength": null,
-     "manufacturer": null,
+     "manufacturer": "Danone Group",
+     "nrn": null,
+     "batches": []
+    },
+    {
+     "brand": "Bledine Saveur Biscuit & Lait",
+     "ingredient": null,
+     "strength": null,
+     "manufacturer": "Danone Group",
+     "nrn": null,
+     "batches": []
+    },
+    {
+     "brand": "Bledine Miel & Lait",
+     "ingredient": null,
+     "strength": null,
+     "manufacturer": "Danone Group",
+     "nrn": null,
+     "batches": []
+    },
+    {
+     "brand": "Bledine Banane & Lait",
+     "ingredient": null,
+     "strength": null,
+     "manufacturer": "Danone Group",
      "nrn": null,
      "batches": []
     }
    ],
-   "summary": "Public Alert No. 038/2025 – Prohibition of Use and Sale of Bledine Infant Cereals by Chadian Authorities",
+   "summary": "NAFDAC alerts that Chad banned Bledine infant cereals made by France's Danone Group for exceeding European limits for Aflatoxin B1, a carcinogen. The affected products, with expiry dates from September 2026 to March 2027, are circulating in Nigeria, especially in border communiti",
    "appliesToNigeria": true
   },
   {
@@ -971,15 +1848,17 @@
    "kind": "counterfeit",
    "products": [
     {
-     "brand": "Report of Substandard and Falsified BETACLOX found",
-     "ingredient": null,
-     "strength": null,
-     "manufacturer": null,
+     "brand": "BETACLOX",
+     "ingredient": "Ampicillin and Cloxacillin",
+     "strength": "Ampicillin 250mg and Cloxacillin 250mg",
+     "manufacturer": "Saeny Laboratory Pvt, Ltd, Elappunkal Junction, Kozhuvanal, Kerala, 864 423 India",
      "nrn": null,
-     "batches": []
+     "batches": [
+      "230701"
+     ]
     }
    ],
-   "summary": "Public Alert No. 37/2025 – Alert on the Report of Substandard and Falsified (SF) BETACLOX found in Nigeria",
+   "summary": "NAFDAC warns of substandard/falsified BETACLOX (ampicillin 250mg + cloxacillin 250mg), batch 230701, bearing NAFDAC No. A4 4724 that actually belongs to Chi Ltd's Mebendazole 500mg. Sourced from Gambori Market, Maiduguri and sold in Kano and Zaria.",
    "appliesToNigeria": true
   },
   {
@@ -991,16 +1870,38 @@
    "kind": "substandard",
    "products": [
     {
-     "brand": "WHO Alert on 3 Substandard oral liquid medicines identified",
-     "ingredient": null,
+     "brand": "COLDRIF",
+     "ingredient": "Paracetamol, chlorpheniramine maleate, phenylephrine, sodium citrate",
      "strength": null,
-     "manufacturer": null,
+     "manufacturer": "Sresan Pharmaceutical manufacturer, No. 787, Bangalore Highways, Sunguvarchatraam (Mathura) Kancheepuram, Dist. 602106",
      "nrn": null,
-     "batches": []
+     "batches": [
+      "SR-13"
+     ]
+    },
+    {
+     "brand": "Respifresh TR",
+     "ingredient": "Bromhexine hydrochloride, terbutaline sulphate, guaiphenesin, menthol",
+     "strength": null,
+     "manufacturer": "Rednex Pharmaceutical Pvt Ltd. Survey No. 586 & 231, NR. SKF Bearing Bavla Bagodra N.H. 8A Kerala, Tal, Bavla, Dist. Ahmedabad-383220 Gujarat",
+     "nrn": null,
+     "batches": [
+      "R01GL2523"
+     ]
+    },
+    {
+     "brand": "ReLife",
+     "ingredient": "Ambroxol HCL, guaiphenesin, terbutaline sulphate, menthol",
+     "strength": null,
+     "manufacturer": "Shape Pharma Pvt. Ltd. Plot No. 4, Surendranagar Rajkot Highway Rd. Shekhpur 363510 Gujarat",
+     "nrn": null,
+     "batches": [
+      "LSL25160"
+     ]
     }
    ],
-   "summary": "Public Alert No. 36/2025 – WHO Alert on 3 Substandard (contaminated) oral liquid medicines identified in India",
-   "appliesToNigeria": false
+   "summary": "NAFDAC relays a WHO alert on three DEG-contaminated oral liquid medicines found in India: COLDRIF, Respifresh TR and ReLife. Diethylene glycol can cause kidney injury and death, especially in children. NAFDAC zonal offices are to carry out surveillance and mop-up.",
+   "appliesToNigeria": true
   },
   {
    "id": "035/2025",
@@ -1011,15 +1912,28 @@
    "kind": "substandard",
    "products": [
     {
-     "brand": "batches of Annmox and Jawamox manufactured",
-     "ingredient": null,
-     "strength": null,
-     "manufacturer": null,
-     "nrn": null,
-     "batches": []
+     "brand": "Annmox",
+     "ingredient": "Amoxicillin",
+     "strength": "125mg/5ml",
+     "manufacturer": "Jawa International Limited, Plot 6, Abimbola Way, Isolo Industrial Estate, Lagos.",
+     "nrn": "A11-0329",
+     "batches": [
+      "360M"
+     ]
+    },
+    {
+     "brand": "Jawamox",
+     "ingredient": "Amoxicillin",
+     "strength": "125mg/5ml",
+     "manufacturer": "Jawa International Limited, Plot 6, Abimbola Way, Isolo Industrial Estate, Lagos.",
+     "nrn": "04-1139",
+     "batches": [
+      "4290M",
+      "4231M"
+     ]
     }
    ],
-   "summary": "Public Alert No. 35/2025 – Substandard batches of Annmox (Amoxicillin suspensions 125mg/5ml) and Jawamox (Amoxicillin suspension 125mg/5ml) manufactured by Jawa International Ltd due to low Active Pharmaceutical Ingredient (API) content",
+   "summary": "NAFDAC is recalling and mopping up substandard batches of Annmox (batch 360M) and Jawamox (batches 4290M, 4231M) amoxicillin 125mg/5ml suspensions by Jawa International Ltd, which failed lab tests for low active ingredient content.",
    "appliesToNigeria": true
   },
   {
@@ -1031,15 +1945,28 @@
    "kind": "substandard",
    "products": [
     {
-     "brand": "Astamocil , Batch No. 826024, and Astamentin , Batch Nos: 0503024 & 0501724, man",
-     "ingredient": null,
-     "strength": null,
-     "manufacturer": null,
-     "nrn": null,
-     "batches": []
+     "brand": "Astamocil",
+     "ingredient": "Amoxicillin",
+     "strength": "125mg/5ml",
+     "manufacturer": "Sam-Ace Ltd, Plot 9/10, Block 7C, Akoda Industrial Estate, KM 14, Gbongan/Ibadan Rd. Akoda-Ede, Osun State.",
+     "nrn": "A4-8681",
+     "batches": [
+      "826024"
+     ]
+    },
+    {
+     "brand": "Astamentin",
+     "ingredient": "Amoxicillin/Clavulanic Acid",
+     "strength": "228.5mg/5ml",
+     "manufacturer": "Sam-Ace Ltd, Plot 9/10, Block 7C, Akoda Industrial Estate, KM 14, Gbongan/Ibadan Rd. Akoda-Ede, Osun State.",
+     "nrn": "A11-0341",
+     "batches": [
+      "0501724",
+      "0503024"
+     ]
     }
    ],
-   "summary": "Public Alert No. 34/2025 –Substandard Astamocil (Amoxicillin Suspension 125mg/5ml), Batch No. 826024, and Astamentin (Amoxicillin/Clavulanic Acid Suspension), Batch Nos: 0503024 & 0501724, manufactured by Sam-Ace Ltd in Nigeria",
+   "summary": "NAFDAC recalled substandard Astamocil (Amoxicillin 125mg/5ml suspension) batch 826024 and Astamentin (Amoxicillin/Clavulanic Acid 228.5mg/5ml) batches 0501724 and 0503024 by Sam-Ace Ltd, found in Kano. Both failed lab analysis for low API, risking treatment failure and resistance",
    "appliesToNigeria": true
   },
   {
@@ -1051,15 +1978,27 @@
    "kind": "counterfeit",
    "products": [
     {
-     "brand": "Sale of Counterfeit Cialis Tablet 20mg",
-     "ingredient": null,
-     "strength": null,
+     "brand": "Cialis Tadalafil tablets 20mg (counterfeit)",
+     "ingredient": "Tadalafil",
+     "strength": "20mg",
      "manufacturer": null,
      "nrn": null,
-     "batches": []
+     "batches": [
+      "E3242401"
+     ]
+    },
+    {
+     "brand": "Cialis 20mg film-coated tablets (genuine)",
+     "ingredient": "Tadalafil",
+     "strength": "20mg",
+     "manufacturer": null,
+     "nrn": "04-5196",
+     "batches": [
+      "D636431"
+     ]
     }
    ],
-   "summary": "Public Alert No. 033/2025 – Alert on the Sale of Counterfeit Cialis Tablet 20mg in Nigeria",
+   "summary": "NAFDAC warns of counterfeit Cialis (tadalafil) 20mg tablets found in Abuja, sold at about ₦8,000 per pack versus ₦55,000 for the genuine product. The fake bears NRN 4464 and lot E3242401, unlike the genuine NRN 04-5196, lot D636431.",
    "appliesToNigeria": true
   },
   {
@@ -1071,15 +2010,17 @@
    "kind": "unregistered",
    "products": [
     {
-     "brand": "Presence of an Unauthorized/ Unregistered Darzalex 1800mg/15ml vial SC Injection",
-     "ingredient": null,
-     "strength": null,
-     "manufacturer": null,
+     "brand": "Darzalex",
+     "ingredient": "Daratumumab",
+     "strength": "1800mg/15 ml vial for SC Injection",
+     "manufacturer": "Johnson & Johnson",
      "nrn": null,
-     "batches": []
+     "batches": [
+      "PKS1F01"
+     ]
     }
    ],
-   "summary": "Public Alert No. 031/2025 – Alert on the Presence of an Unauthorized/ Unregistered Darzalex (Daratumumab) 1800mg/15ml vial SC Injection in Nigeria",
+   "summary": "NAFDAC warns that unauthorized/unregistered Darzalex (daratumumab) 1800mg/15ml SC injection vials are being sold in Nigeria. Packs meant for the Indian market (batch PKS1F01, exp 10-2026) and Arab market were not bought from Johnson & Johnson's official distributors.",
    "appliesToNigeria": true
   },
   {
@@ -1091,15 +2032,71 @@
    "kind": "other",
    "products": [
     {
-     "brand": "Discontinuation of the Production of Penicillin-Based Moiety",
-     "ingredient": null,
-     "strength": null,
-     "manufacturer": null,
-     "nrn": null,
+     "brand": "Miramox 125mg Powder for Oral Suspension",
+     "ingredient": "Amoxicillin",
+     "strength": "125mg",
+     "manufacturer": "Miraflash Nigeria Limited",
+     "nrn": "04-6869",
+     "batches": []
+    },
+    {
+     "brand": "Miramox 250mg Powder for Oral Suspension",
+     "ingredient": "Amoxicillin",
+     "strength": "250mg",
+     "manufacturer": "Miraflash Nigeria Limited",
+     "nrn": "A11-0999",
+     "batches": []
+    },
+    {
+     "brand": "Miramox 500mg Capsules",
+     "ingredient": "Amoxicillin",
+     "strength": "500mg",
+     "manufacturer": "Miraflash Nigeria Limited",
+     "nrn": "B4-5536",
+     "batches": []
+    },
+    {
+     "brand": "Miraclox 250mg Powder for Oral Suspension",
+     "ingredient": "Ampicillin/Cloxacillin",
+     "strength": "250mg",
+     "manufacturer": "Miraflash Nigeria Limited",
+     "nrn": "04-7004",
+     "batches": []
+    },
+    {
+     "brand": "Miraclox 500mg Capsules",
+     "ingredient": "Ampicillin/Cloxacillin",
+     "strength": "500mg",
+     "manufacturer": "Miraflash Nigeria Limited",
+     "nrn": "A11-0038",
+     "batches": []
+    },
+    {
+     "brand": "Mirapicin 125mg Powder for Oral Suspension",
+     "ingredient": "Ampicillin",
+     "strength": "125mg",
+     "manufacturer": "Miraflash Nigeria Limited",
+     "nrn": "04-6868",
+     "batches": []
+    },
+    {
+     "brand": "Mirapicin 250mg Capsules",
+     "ingredient": "Ampicillin",
+     "strength": "250mg",
+     "manufacturer": "Miraflash Nigeria Limited",
+     "nrn": "B4-5538",
+     "batches": []
+    },
+    {
+     "brand": "Miraclox 90mg Powder for Oral drops",
+     "ingredient": "Ampicillin/Cloxacillin",
+     "strength": "90mg",
+     "manufacturer": "Miraflash Nigeria Limited",
+     "nrn": "A4-0044",
      "batches": []
     }
    ],
-   "summary": "Public Alert No. 032/2025 – Alert on the Discontinuation of the Production of Penicillin-Based Moiety by Miraflash",
+   "summary": "Miraflash Nigeria Ltd has stopped making penicillin-based products to avoid cross-contamination with cephalosporins made in the same plant. Stock made up to August 2025 is safe to use; any such product made after that date will be deemed counterfeit.",
    "appliesToNigeria": true
   },
   {
@@ -1111,15 +2108,17 @@
    "kind": "recall",
    "products": [
     {
-     "brand": "Notice to Recall Embacef 125 Powder For Oral Suspension",
-     "ingredient": null,
-     "strength": null,
-     "manufacturer": null,
-     "nrn": null,
-     "batches": []
+     "brand": "Embacef-125 Suspension",
+     "ingredient": "Cefuroxime Axetil",
+     "strength": "125",
+     "manufacturer": "Laborate Pharmaceutical India, E-11 Industrial Area, Panipat 132103",
+     "nrn": "A4-9040",
+     "batches": [
+      "PEDSE001"
+     ]
     }
    ],
-   "summary": "Public Alert No. 029/2025 – Notice to Recall Embacef 125 Powder For Oral Suspension",
+   "summary": "NAFDAC has ordered a recall of Embacef-125 Powder for Oral Suspension (cefuroxime axetil) after complaints that the reconstituted suspension caked within a day. Investigation confirmed poor quality; batch PEDSE001 and similar batches are being mopped up nationwide.",
    "appliesToNigeria": true
   },
   {
@@ -1128,18 +2127,42 @@
    "url": "https://nafdac.gov.ng/public-alert-no-028-2025-alert-on-unregistered-falsified-oxytocin-injection/",
    "date": "2025-08-25",
    "title": "Public Alert No. 028/2025 – Alert on Unregistered/Falsified Oxytocin Injection",
-   "kind": "unregistered",
+   "kind": "counterfeit",
    "products": [
     {
-     "brand": "Unregistered/Falsified Oxytocin Injection",
-     "ingredient": null,
+     "brand": "Gold Vision Oxytocin injection",
+     "ingredient": "Oxytocin",
+     "strength": "10IU",
+     "manufacturer": "Anhui Hongye Pharmaceutical Co., Ltd., Fengyang East Road, Bengbu, Anhui Province, China",
+     "nrn": "A4-9566",
+     "batches": []
+    },
+    {
+     "brand": "A-tocin injection",
+     "ingredient": "Oxytocin",
      "strength": null,
-     "manufacturer": null,
-     "nrn": null,
+     "manufacturer": "Anhui Hongye Pharmaceutical Co., Ltd., Fengyang East Road, Bengbu, Anhui Province, China",
+     "nrn": "A4-9566",
+     "batches": []
+    },
+    {
+     "brand": "Extocin Injection",
+     "ingredient": "Oxytocin",
+     "strength": null,
+     "manufacturer": "Anhui Hongye Pharmaceutical Co., Ltd., Fengyang East Road, Bengbu, Anhui Province, China",
+     "nrn": "A4-9566",
+     "batches": []
+    },
+    {
+     "brand": "Claxitodin injection",
+     "ingredient": "Oxytocin",
+     "strength": null,
+     "manufacturer": "Anhui Hongye Pharmaceutical Co., Ltd., Fengyang East Road, Bengbu, Anhui Province, China",
+     "nrn": "A4-9566",
      "batches": []
     }
    ],
-   "summary": "Public Alert No. 028/2025 – Alert on Unregistered/Falsified Oxytocin Injection",
+   "summary": "NAFDAC warns of unregistered/falsified oxytocin injections — Gold Vision Oxytocin 10IU, A-tocin, Extocin and Claxitodin — all bearing fake NAFDAC Reg. No. A4-9566 and claiming manufacture by Anhui Hongye Pharmaceutical, China. They risk ineffective labour control, postpartum haem",
    "appliesToNigeria": true
   },
   {
@@ -1151,15 +2174,18 @@
    "kind": "counterfeit",
    "products": [
     {
-     "brand": "Confirmed Counterfeit Postinor2",
-     "ingredient": null,
-     "strength": null,
+     "brand": "Postinor 2",
+     "ingredient": "Levonorgestrel",
+     "strength": "0.75mg",
      "manufacturer": null,
-     "nrn": null,
-     "batches": []
+     "nrn": "04-6985",
+     "batches": [
+      "T36184B",
+      "332"
+     ]
     }
    ],
-   "summary": "Public Alert No. 027/2025 – Alert on Confirmed Counterfeit Postinor2 (Levonorgestrel 0.75mg) in Nigeria",
+   "summary": "NAFDAC warns of falsified Postinor 2 (Levonorgestrel 0.75mg) emergency contraceptive circulating in Nigeria. Two counterfeit types (batches T36184B and 332) have spelling errors such as 'Veify' and 'Distnibuted'. Society of Family Health confirmed it did not import them.",
    "appliesToNigeria": true
   },
   {
@@ -1171,15 +2197,15 @@
    "kind": "counterfeit",
    "products": [
     {
-     "brand": "Circulation of Counterfeit Cowbell “Our Milk” Milk",
+     "brand": "Cowbell Our Milk",
      "ingredient": null,
-     "strength": null,
-     "manufacturer": null,
+     "strength": "12g",
+     "manufacturer": "Promasidor Nigeria Ltd. (purported)",
      "nrn": null,
      "batches": []
     }
    ],
-   "summary": "Public Alert No. 026/2025 – Alert on the Circulation of Counterfeit Cowbell “Our Milk” Milk in Nigeria",
+   "summary": "NAFDAC warns of counterfeit Cowbell \"Our Milk\" 12g sachet milk circulating in Nigeria. Fakes copy the old \"Our Milk\" artwork, NAFDAC number and trademark, use ink-printed codes and manual sealing. Promasidor confirms it did not make them; health risks include poisoning.",
    "appliesToNigeria": true
   },
   {
@@ -1191,15 +2217,17 @@
    "kind": "other",
    "products": [
     {
-     "brand": "Unauthorized Auction and Circulation of Expired Insecticide",
-     "ingredient": null,
-     "strength": null,
+     "brand": "Lara Force Lambda",
+     "ingredient": "Lambda-Cyhalothrin",
+     "strength": "2.5% (1 Litre)",
      "manufacturer": null,
      "nrn": null,
-     "batches": []
+     "batches": [
+      "XZH2020006"
+     ]
     }
    ],
-   "summary": "Public Alert No. 025/2025 – Alert on the Unauthorized Auction and Circulation of Expired Insecticide (LARA FORCE LAMBDA 1L)",
+   "summary": "NAFDAC warns that 5,000 cartons of expired Lara Force Lambda-Cyhalothrin 2.5% 1L insecticide (batch XZH2020006, expired 7 March 2023) were unlawfully auctioned and are circulating. Expired product risks poor pest control, higher toxicity and environmental harm.",
    "appliesToNigeria": true
   },
   {
@@ -1208,18 +2236,20 @@
    "url": "https://nafdac.gov.ng/public-alert-no-024-2025-recall-of-amoxivue-amoxicillin-500mg-capsules-due-to-significantly-low-active-pharmaceutical-ingredient-api-content/",
    "date": "2025-08-06",
    "title": "Public Alert No. 024/2025 – Recall of Amoxivue (Amoxicillin) 500mg Capsules due to significantly low Active Pharmaceutical Ingredient (API) content",
-   "kind": "recall",
+   "kind": "substandard",
    "products": [
     {
-     "brand": "Amoxivue 500mg Capsules due to significantly low Active Pharmaceutical Ingredien",
-     "ingredient": null,
-     "strength": null,
-     "manufacturer": null,
-     "nrn": null,
-     "batches": []
+     "brand": "Amoxivue",
+     "ingredient": "Amoxicillin",
+     "strength": "500mg",
+     "manufacturer": "Sparsh Bio-Tech Pvt, Ltd. Plot NO.1, Survey NO: 242/243/244 Lakhabavad Jamnagar -361006, Gujarat, India",
+     "nrn": "A4-100178",
+     "batches": [
+      "322584"
+     ]
     }
    ],
-   "summary": "Public Alert No. 024/2025 – Recall of Amoxivue (Amoxicillin) 500mg Capsules due to significantly low Active Pharmaceutical Ingredient (API) content",
+   "summary": "NAFDAC recalls Amoxivue (Amoxicillin) 500mg capsules, batch 322584, after lab tests found only 26.3% of the active ingredient plus failed weight variation and IR spectrum tests. Low potency risks treatment failure and antibiotic resistance.",
    "appliesToNigeria": true
   },
   {
@@ -1231,15 +2261,41 @@
    "kind": "recall",
    "products": [
     {
-     "brand": "Multivitamin Supplements due to Risk of Serious Injury or Death",
-     "ingredient": null,
+     "brand": "Daily Prenatal Multi",
+     "ingredient": "Multivitamin and iron",
      "strength": null,
-     "manufacturer": null,
+     "manufacturer": "iHerb/ California Gold Nutrition",
      "nrn": null,
-     "batches": []
+     "batches": [
+      "2307050A",
+      "2404096A",
+      "2411100A"
+     ]
+    },
+    {
+     "brand": "Ultamins Women's Multivitamin",
+     "ingredient": "Multivitamin and iron",
+     "strength": null,
+     "manufacturer": "iHerb/ California Gold Nutrition",
+     "nrn": null,
+     "batches": [
+      "V0532",
+      "V0533"
+     ]
+    },
+    {
+     "brand": "Ultamins Women's 50+ Multivitamin",
+     "ingredient": "Multivitamin and iron",
+     "strength": null,
+     "manufacturer": "iHerb/ California Gold Nutrition",
+     "nrn": null,
+     "batches": [
+      "V0534",
+      "V0536"
+     ]
     }
    ],
-   "summary": "Public Alert No. 023/2025 – Recall of Multivitamin Supplements due to Risk of Serious Injury or Death From Poisoning",
+   "summary": "NAFDAC alerts on a US recall of iHerb/California Gold Nutrition iron-containing multivitamins (Daily Prenatal Multi, Ultamins Women's Multivitamin, Ultamins Women's 50+) lacking child-resistant packaging, risking fatal iron poisoning in children. Zonal offices directed to mop up.",
    "appliesToNigeria": true
   },
   {
@@ -1251,15 +2307,17 @@
    "kind": "counterfeit",
    "products": [
     {
-     "brand": "Herceptin® 600mg/5ml",
-     "ingredient": null,
-     "strength": null,
-     "manufacturer": null,
+     "brand": "HERCEPTIN",
+     "ingredient": "Trastuzumab",
+     "strength": "600mg/5ml",
+     "manufacturer": "Roche Products Limited",
      "nrn": null,
-     "batches": []
+     "batches": [
+      "A8519"
+     ]
     }
    ],
-   "summary": "Public Alert No. 22/2025 –Counterfeit Herceptin® 600mg/5ml in Vial (Trastuzumab Solution for Injection) found in Ghana",
+   "summary": "NAFDAC warns of counterfeit Herceptin 600mg/5ml (trastuzumab) injection, batch A8519, circulating in Ghana but reportedly bought in Nigeria. The batch is not a valid Roche batch; packaging and seals differ. It may lack active ingredient, risking ineffective cancer treatment.",
    "appliesToNigeria": true
   },
   {
@@ -1271,15 +2329,15 @@
    "kind": "unregistered",
    "products": [
     {
-     "brand": "Report of Unregistered Tarivid found",
-     "ingredient": null,
-     "strength": null,
-     "manufacturer": null,
+     "brand": "Tarivid",
+     "ingredient": "Ofloxacin",
+     "strength": "200mg",
+     "manufacturer": "Sanofi",
      "nrn": null,
      "batches": []
     }
    ],
-   "summary": "Public Alert No. 21/2025 – Alert on the Report of Unregistered Tarivid (Ofloxacin 200mg) found in Nigeria",
+   "summary": "NAFDAC warns that an unregistered batch of Tarivid (Ofloxacin 200mg) by Sanofi was found in Onipan, Shomolu LGA, Lagos. Sanofi confirmed the batch was meant for Pakistan, not Nigeria, and is not covered by NAFDAC registration. Public urged to buy only from licensed suppliers.",
    "appliesToNigeria": true
   },
   {
@@ -1291,15 +2349,15 @@
    "kind": "unregistered",
    "products": [
     {
-     "brand": "Report of Unregistered Fair Child Soap Circulating",
+     "brand": "Fair Child Soap",
      "ingredient": null,
      "strength": null,
-     "manufacturer": null,
+     "manufacturer": "Produced for & marketed by Lexmart Cosmetics Ltd",
      "nrn": null,
      "batches": []
     }
    ],
-   "summary": "Public Alert No. 20/2025 – Alert on the Report of Unregistered Fair Child Soap Circulating in Nigerian Markets",
+   "summary": "NAFDAC warns that \"Fair Child Soap\", an unregistered imported skin-lightening soap marketed for children by Lexmart Cosmetics Ltd, is being sold in Lagos retail outlets. The marketer was sanctioned and told to halt distribution; states must quarantine stock.",
    "appliesToNigeria": true
   },
   {
@@ -1308,10 +2366,18 @@
    "url": "https://nafdac.gov.ng/public-alert-no-019-2025-illegal-retailing-and-marketing-of-health-and-wellness-products/",
    "date": "2025-06-02",
    "title": "Public Alert No. 019/2025 – Illegal Retailing and Marketing of Health and Wellness Products",
-   "kind": "other",
+   "kind": "unregistered",
    "products": [
     {
-     "brand": "Illegal Retailing and Marketing of Health and Wellness Products",
+     "brand": "Amezcua Bio Disc 3",
+     "ingredient": null,
+     "strength": null,
+     "manufacturer": null,
+     "nrn": null,
+     "batches": []
+    },
+    {
+     "brand": "Amezcua Chi Pendant 4",
      "ingredient": null,
      "strength": null,
      "manufacturer": null,
@@ -1319,7 +2385,7 @@
      "batches": []
     }
    ],
-   "summary": "Public Alert No. 019/2025 – Illegal Retailing and Marketing of Health and Wellness Products",
+   "summary": "NAFDAC warns about illegal retailing and marketing of two unregistered health and wellness products, Amezcua Bio Disc 3 and Amezcua Chi Pendant 4, flagged by EFCC during an investigation into several retailing companies in Nigeria.",
    "appliesToNigeria": true
   },
   {
@@ -1328,18 +2394,48 @@
    "url": "https://nafdac.gov.ng/public-alert-no-018-2025-alert-on-the-ban-of-dove-hand-and-deodorant-soap-due-to-butylphenyl-methylpropional-bmhca-contamination/",
    "date": "2025-06-02",
    "title": "Public Alert No. 018/2025 – Alert on the Ban of Dove Hand and Deodorant Soap due to Butylphenyl Methylpropional (BMHCA) Contamination",
-   "kind": "substandard",
+   "kind": "unregistered",
    "products": [
     {
-     "brand": "Ban of Dove Hand and Deodorant Soap due to Butylphenyl Methylpropional Contamina",
+     "brand": "Dove Exfoliating Hand Soap",
      "ingredient": null,
-     "strength": null,
+     "strength": "100g",
      "manufacturer": null,
      "nrn": null,
      "batches": []
+    },
+    {
+     "brand": "Dove Deo Go Fresh",
+     "ingredient": null,
+     "strength": "50ml",
+     "manufacturer": null,
+     "nrn": null,
+     "batches": [
+      "9212174"
+     ]
+    },
+    {
+     "brand": "Dove Invisible Dry",
+     "ingredient": null,
+     "strength": "50ml",
+     "manufacturer": null,
+     "nrn": null,
+     "batches": [
+      "9183646"
+     ]
+    },
+    {
+     "brand": "Dove Men + Care Silver Control Spray",
+     "ingredient": null,
+     "strength": "150ml",
+     "manufacturer": null,
+     "nrn": null,
+     "batches": [
+      "62867LD"
+     ]
     }
    ],
-   "summary": "Public Alert No. 018/2025 – Alert on the Ban of Dove Hand and Deodorant Soap due to Butylphenyl Methylpropional (BMHCA) Contamination",
+   "summary": "NAFDAC relays an EU ban on certain Dove hand soap and deodorant products found to contain BMHCA, a prohibited cosmetic ingredient linked to reproductive harm and skin sensitization. The products are not in the NAFDAC database; soap imports are prohibited in Nigeria.",
    "appliesToNigeria": true
   },
   {
@@ -1351,16 +2447,21 @@
    "kind": "counterfeit",
    "products": [
     {
-     "brand": "Batches of Healmoxy Capsules 500mg found",
-     "ingredient": null,
-     "strength": null,
-     "manufacturer": null,
+     "brand": "Healmoxy Capsules",
+     "ingredient": "Amoxicillin (Amoxicillin Trihydrate)",
+     "strength": "500mg",
+     "manufacturer": "Maxheal Pharmaceuticals (India)",
      "nrn": null,
-     "batches": []
+     "batches": [
+      "HO26051",
+      "023011",
+      "H02605",
+      "H026051"
+     ]
     }
    ],
-   "summary": "Public Alert No. 17/2025 – Alert on Falsified Batches of Healmoxy Capsules 500mg found in Cameroon and Central African Republic (CAR)",
-   "appliesToNigeria": true
+   "summary": "NAFDAC warns of falsified Healmoxy Capsules 500mg (Amoxicillin) by Maxheal Pharmaceuticals India, found in Cameroon and CAR. WHO testing showed no active ingredient and inconsistent date formats. Investigation found the batches were never imported into Nigeria.",
+   "appliesToNigeria": false
   },
   {
    "id": "016/2025",
@@ -1371,15 +2472,17 @@
    "kind": "counterfeit",
    "products": [
     {
-     "brand": "Counterfeit/Falsified Rosprazole 20mg",
-     "ingredient": null,
-     "strength": null,
-     "manufacturer": null,
-     "nrn": null,
-     "batches": []
+     "brand": "Rosprazole Injection",
+     "ingredient": "Rabeprazole",
+     "strength": "20mg",
+     "manufacturer": "Nil; manufactured for Celeste Farmaceutical Inc., 2063, Rabari Vas Khoraj, Gujarat, India",
+     "nrn": "C4-0150",
+     "batches": [
+      "PLED23108"
+     ]
     }
    ],
-   "summary": "Public Alert No. 16/2025 – Alert on Counterfeit/Falsified Rosprazole (Rabeprazole Injection) 20mg",
+   "summary": "NAFDAC warns of falsified Rosprazole (Rabeprazole Injection) 20mg bearing fake NAFDAC Reg. No. C4-0150, which actually belongs to an Amlodipine tablet. Batch PLED23108. It may lack active ingredient or contain contaminants, risking organ failure or death.",
    "appliesToNigeria": true
   },
   {
@@ -1388,18 +2491,20 @@
    "url": "https://nafdac.gov.ng/public-alert-no-015-2025-recall-of-substandard-juhel-folic-acid-tablet/",
    "date": "2025-05-27",
    "title": "Public Alert No. 015/2025 – Recall of Substandard Juhel Folic Acid Tablet",
-   "kind": "recall",
+   "kind": "substandard",
    "products": [
     {
-     "brand": "Juhel Folic Acid Tablet",
-     "ingredient": null,
-     "strength": null,
-     "manufacturer": null,
+     "brand": "Juhel Folic acid tablet",
+     "ingredient": "Folic acid",
+     "strength": "5mg x1000",
+     "manufacturer": "Juhel Pharma Ltd. 35, Nkwubor Road Emene – Enugu",
      "nrn": null,
-     "batches": []
+     "batches": [
+      "0531"
+     ]
     }
    ],
-   "summary": "Public Alert No. 015/2025 – Recall of Substandard Juhel Folic Acid Tablet",
+   "summary": "NAFDAC recalls one batch of Juhel Folic Acid 5mg x1000 tablets found substandard during February 2025 post-marketing surveillance. Low active ingredient content was caused by a faulty weight adjuster in the tableting machine. Risks include treatment failure.",
    "appliesToNigeria": true
   },
   {
@@ -1411,16 +2516,144 @@
    "kind": "substandard",
    "products": [
     {
-     "brand": "Declaration of Over 100 Medications as Substandard",
+     "brand": null,
      "ingredient": null,
      "strength": null,
-     "manufacturer": null,
+     "manufacturer": "Abaris Healthcare Pvt Ltd",
+     "nrn": null,
+     "batches": []
+    },
+    {
+     "brand": null,
+     "ingredient": null,
+     "strength": null,
+     "manufacturer": "Alencure Biotech Pvt Ltd",
+     "nrn": null,
+     "batches": []
+    },
+    {
+     "brand": null,
+     "ingredient": null,
+     "strength": null,
+     "manufacturer": "Eurolife Healthcare Pvt Ltd",
+     "nrn": null,
+     "batches": []
+    },
+    {
+     "brand": null,
+     "ingredient": null,
+     "strength": null,
+     "manufacturer": "Health Biotech Ltd",
+     "nrn": null,
+     "batches": []
+    },
+    {
+     "brand": null,
+     "ingredient": null,
+     "strength": null,
+     "manufacturer": "HIGGS Healthcare",
+     "nrn": null,
+     "batches": []
+    },
+    {
+     "brand": null,
+     "ingredient": null,
+     "strength": null,
+     "manufacturer": "Kamataka Antibiotics & Pharmaceuticals Ltd (KAPL)",
+     "nrn": null,
+     "batches": []
+    },
+    {
+     "brand": null,
+     "ingredient": null,
+     "strength": null,
+     "manufacturer": "Laborate Pharmaceuticals India Ltd",
+     "nrn": null,
+     "batches": []
+    },
+    {
+     "brand": null,
+     "ingredient": null,
+     "strength": null,
+     "manufacturer": "Legend Industries",
+     "nrn": null,
+     "batches": []
+    },
+    {
+     "brand": null,
+     "ingredient": null,
+     "strength": null,
+     "manufacturer": "Martins & Brown Biosciences Pvt Ltd",
+     "nrn": null,
+     "batches": []
+    },
+    {
+     "brand": null,
+     "ingredient": null,
+     "strength": null,
+     "manufacturer": "Mascot Health Series Pvt Ltd",
+     "nrn": null,
+     "batches": []
+    },
+    {
+     "brand": null,
+     "ingredient": null,
+     "strength": null,
+     "manufacturer": "Micron Pharmaceutical",
+     "nrn": null,
+     "batches": []
+    },
+    {
+     "brand": null,
+     "ingredient": null,
+     "strength": null,
+     "manufacturer": "Orison Pharma International",
+     "nrn": null,
+     "batches": []
+    },
+    {
+     "brand": null,
+     "ingredient": null,
+     "strength": null,
+     "manufacturer": "Rivpra Formulation Pvt Ltd",
+     "nrn": null,
+     "batches": []
+    },
+    {
+     "brand": null,
+     "ingredient": null,
+     "strength": null,
+     "manufacturer": "Sai Parenterals Ltd",
+     "nrn": null,
+     "batches": []
+    },
+    {
+     "brand": null,
+     "ingredient": null,
+     "strength": null,
+     "manufacturer": "Symbiosis Pharmaceuticals Pvt Ltd",
+     "nrn": null,
+     "batches": []
+    },
+    {
+     "brand": null,
+     "ingredient": null,
+     "strength": null,
+     "manufacturer": "Syncom Formulations (India) Ltd",
+     "nrn": null,
+     "batches": []
+    },
+    {
+     "brand": null,
+     "ingredient": null,
+     "strength": null,
+     "manufacturer": "Zee Laboratories Ltd",
      "nrn": null,
      "batches": []
     }
    ],
-   "summary": "Public Alert No. 14/2025 – Alert on the Declaration of Over 100 Medications as Substandard by Indian Authorities",
-   "appliesToNigeria": false
+   "summary": "NAFDAC relays India's CDSCO declaration of over 100 medicines as Not of Standard Quality from 17 named Indian manufacturers, some with subsidiaries, partners or products in Nigeria. Risks include poisoning, treatment failure, resistance and death. Surveillance and mop-up ordered.",
+   "appliesToNigeria": true
   },
   {
    "id": "013/2025",
@@ -1431,15 +2664,17 @@
    "kind": "counterfeit",
    "products": [
     {
-     "brand": "Circulation of Counterfeit Accu-Chek Instant Test Strips",
+     "brand": "Accu-Chek Instant Test Strips",
      "ingredient": null,
      "strength": null,
      "manufacturer": null,
      "nrn": null,
-     "batches": []
+     "batches": [
+      "302244"
+     ]
     }
    ],
-   "summary": "Public Alert No. 13/2025 – Alert on the Circulation of Counterfeit Accu-Chek Instant Test Strips in Nigeria",
+   "summary": "NAFDAC warns of counterfeit Accu-Chek Instant blood glucose test strips found in Jos. The strips expired October 2024 but were relabelled with a new expiry of December 2025, risking inaccurate glucose readings and unsafe medication decisions for people with diabetes.",
    "appliesToNigeria": true
   },
   {
@@ -1451,16 +2686,27 @@
    "kind": "recall",
    "products": [
     {
-     "brand": "Batches of Regpara Tablets 25mg due to the presence of impurity",
-     "ingredient": null,
-     "strength": null,
-     "manufacturer": null,
+     "brand": "Regpara Tab 25mg",
+     "ingredient": "cinacalcet",
+     "strength": "25mg",
+     "manufacturer": "Kyowa Kirin",
      "nrn": null,
-     "batches": []
+     "batches": [
+      "DES169675",
+      "DHS171505",
+      "DMS173037",
+      "DBS176064",
+      "DBS176065",
+      "EES176886",
+      "EES177675",
+      "EHS178805",
+      "EHS179575",
+      "ENS181132"
+     ]
     }
    ],
-   "summary": "Public Alert No. 12/2025 – Recall of Batches of Regpara Tablets 25mg due to the presence of impurity",
-   "appliesToNigeria": true
+   "summary": "NAFDAC relays DKSH Hong Kong Limited's precautionary recall of 10 batches of Regpara (cinacalcet) 25mg tablets due to N-nitroso-cinacalcet impurity above acceptable daily intake, a probable human carcinogen. The products are not in the NAFDAC database.",
+   "appliesToNigeria": false
   },
   {
    "id": "011/2025",
@@ -1471,16 +2717,74 @@
    "kind": "recall",
    "products": [
     {
-     "brand": "Various Products",
-     "ingredient": null,
+     "brand": null,
+     "ingredient": "Propafenone Hydrochloride ER capsules",
      "strength": null,
-     "manufacturer": null,
+     "manufacturer": "Glenmark Pharmaceuticals Inc. (New Jersey)",
      "nrn": null,
      "batches": []
+    },
+    {
+     "brand": null,
+     "ingredient": "Solifenacin Succinate Tablets",
+     "strength": null,
+     "manufacturer": "Glenmark Pharmaceuticals Inc. (New Jersey)",
+     "nrn": null,
+     "batches": []
+    },
+    {
+     "brand": null,
+     "ingredient": "Voriconazole Tablets",
+     "strength": null,
+     "manufacturer": "Glenmark Pharmaceuticals Inc. (New Jersey)",
+     "nrn": null,
+     "batches": []
+    },
+    {
+     "brand": null,
+     "ingredient": "Lacosamide Tablets",
+     "strength": null,
+     "manufacturer": "Glenmark Pharmaceuticals Inc. (New Jersey)",
+     "nrn": null,
+     "batches": []
+    },
+    {
+     "brand": null,
+     "ingredient": "Frovatriptan Succinate Tablets",
+     "strength": null,
+     "manufacturer": "Glenmark Pharmaceuticals Inc. (New Jersey)",
+     "nrn": null,
+     "batches": []
+    },
+    {
+     "brand": null,
+     "ingredient": "Rufinamide Tablets",
+     "strength": null,
+     "manufacturer": "Glenmark Pharmaceuticals Inc. (New Jersey)",
+     "nrn": null,
+     "batches": []
+    },
+    {
+     "brand": null,
+     "ingredient": "Gabapentin capsules",
+     "strength": null,
+     "manufacturer": "Sun Pharmaceutical Industries Inc.",
+     "nrn": null,
+     "batches": []
+    },
+    {
+     "brand": null,
+     "ingredient": "Chlorpromazine Hydrochloride Tablets, USP",
+     "strength": "10 mg",
+     "manufacturer": "Zydus Pharmaceuticals (USA) Inc.",
+     "nrn": null,
+     "batches": [
+      "Z400069"
+     ]
     }
    ],
-   "summary": "Public Alert No. 11/2025 – Recall of Various Products by Sun Pharma, Glenmark, and Zydus Pharmaceuticals Over Manufacturing Issues",
-   "appliesToNigeria": true
+   "summary": "NAFDAC relays US FDA recalls by Glenmark (25+ products incl. propafenone, solifenacin, voriconazole, lacosamide, frovatriptan, rufinamide; CGMP deviations), Sun Pharma (13,700 bottles gabapentin capsules, cross-contamination) and Zydus (3,144 bottles chlorpromazine 10mg, nitrosam",
+   "appliesToNigeria": false
   },
   {
    "id": "010/2025",
@@ -1491,15 +2795,15 @@
    "kind": "counterfeit",
    "products": [
     {
-     "brand": "Sale of a Fake Product Named Wonder Calcium",
+     "brand": "Wonder Calcium",
      "ingredient": null,
      "strength": null,
-     "manufacturer": null,
-     "nrn": null,
+     "manufacturer": "Falsely stated as Asad Pharmaceutical Ltd; actually produced by Health and Hygiene, Atiku Abubakar Plaza, International Trade Fair Complex, Badagry Expressway, Lagos State",
+     "nrn": "04-1029",
      "batches": []
     }
    ],
-   "summary": "Public Alert No. 010/2025 – Alert on the Sale of a Fake Product Named Wonder Calcium by Health and Hygiene",
+   "summary": "NAFDAC warns of a falsified product, Wonder Calcium, bearing fake NAFDAC registration number 04-1029 and falsely claiming manufacture by Asad Pharmaceutical Ltd. It is produced and sold by Health and Hygiene in Lagos. A distributor has been apprehended.",
    "appliesToNigeria": true
   },
   {
@@ -1511,16 +2815,19 @@
    "kind": "recall",
    "products": [
     {
-     "brand": "Voluntary Recall of Zovirax IV Infusion",
-     "ingredient": null,
-     "strength": null,
-     "manufacturer": null,
+     "brand": "Zovirax IV Infusion",
+     "ingredient": "Acyclovir",
+     "strength": "250mg",
+     "manufacturer": "GlaxoSmithKline (GSK) Limited",
      "nrn": null,
-     "batches": []
+     "batches": [
+      "RN3T",
+      "RP8K"
+     ]
     }
    ],
-   "summary": "Public Alert No. 09/2025 – Voluntary Recall of Zovirax IV Infusion by GlaxoSmithKline (GSK) Limited Due to Potential Quality Defects",
-   "appliesToNigeria": true
+   "summary": "GSK voluntarily recalled Zovirax IV Infusion 250mg (batch RN3T in Hong Kong) after glass-like particles were found in batch RP8K in Taiwan; both used the same intermediate batch. Particulate contamination can cause phlebitis, pulmonary dysfunction or death. Not listed in NAFDAC d",
+   "appliesToNigeria": false
   },
   {
    "id": "008/2025",
@@ -1531,15 +2838,17 @@
    "kind": "counterfeit",
    "products": [
     {
-     "brand": "Presence of Counterfeit Artemether/Lumefantrine Tablets Circulating Under Brand ",
-     "ingredient": null,
-     "strength": null,
-     "manufacturer": null,
+     "brand": "AFLOTIN 20/120mg",
+     "ingredient": "Artemether/Lumefantrine",
+     "strength": "20mg/120mg",
+     "manufacturer": "Ajanta Pharma Limited Mumbai, India",
      "nrn": null,
-     "batches": []
+     "batches": [
+      "PA2128L"
+     ]
     }
    ],
-   "summary": "Public Alert No. 08/2025 –Alert on the Presence of Counterfeit Artemether/Lumefantrine Tablets Circulating Under Brand Name Aflotin 20/120 in Nigeria",
+   "summary": "NAFDAC warns of counterfeit Aflotin 20/120mg (Artemether 20mg/Lumefantrine 120mg) tablets, batch PA2128L, circulating in Nigeria. Genuine maker Ajanta Pharma confirmed the batch was originally for Combisunate and the carton artwork/overprinting do not match theirs.",
    "appliesToNigeria": true
   },
   {
@@ -1551,16 +2860,18 @@
    "kind": "counterfeit",
    "products": [
     {
-     "brand": "OXYCONTIN 80mg identified",
-     "ingredient": null,
-     "strength": null,
-     "manufacturer": null,
+     "brand": "OxyContin",
+     "ingredient": "oxycodone hydrochloride",
+     "strength": "80mg",
+     "manufacturer": "Mundipharma A/S",
      "nrn": null,
-     "batches": []
+     "batches": [
+      "262174"
+     ]
     }
    ],
-   "summary": "Public Alert No. 07/2025 – Alert on Falsified OXYCONTIN 80mg identified in the WHO European Region",
-   "appliesToNigeria": false
+   "summary": "NAFDAC alerts on falsified OxyContin 80mg (batch 262174, exp 12/2025) found in Switzerland, imitating Mundipharma's Polish product. Tablets contained no oxycodone but a nitazene synthetic opioid, risking overdose and death. Surveillance ordered in Nigeria.",
+   "appliesToNigeria": true
   },
   {
    "id": "006/2025",
@@ -1571,15 +2882,17 @@
    "kind": "counterfeit",
    "products": [
     {
-     "brand": "Sale of Counterfeit Noristerat Injection 200mg",
-     "ingredient": null,
-     "strength": null,
+     "brand": "Noristerat Injection",
+     "ingredient": "Norethisterone enantate",
+     "strength": "200mg",
      "manufacturer": null,
-     "nrn": null,
-     "batches": []
+     "nrn": "04-5715",
+     "batches": [
+      "KT02TTK"
+     ]
     }
    ],
-   "summary": "Public Alert No. 06/2025 – Alert on the Sale of Counterfeit Noristerat Injection 200mg in Nigeria",
+   "summary": "NAFDAC warns that Chlorpheniramine and Dexamethasone injection ampoules are being mislabelled and repacked as Noristerat Injection 200mg, found in Niger, Bauchi and Kano (CWC) states. The counterfeiter has been arrested.",
    "appliesToNigeria": true
   },
   {
@@ -1591,15 +2904,17 @@
    "kind": "counterfeit",
    "products": [
     {
-     "brand": "Circulation of Falsified Cikatem with Falsified NAFDAC Registration Number NRN A",
-     "ingredient": null,
-     "strength": null,
-     "manufacturer": null,
-     "nrn": null,
-     "batches": []
+     "brand": "Cikatem Suspension",
+     "ingredient": "Artemether/Lumefantrine",
+     "strength": "180mg/1080mg",
+     "manufacturer": "Michelle Laboratories",
+     "nrn": "A11-100025",
+     "batches": [
+      "ALS063"
+     ]
     }
    ],
-   "summary": "Public Alert No. 05/2025 – Alert on the Circulation of Falsified Cikatem (Artemether 180mg/Lumefantrine 1080mg) with Falsified NAFDAC Registration Number NRN A11-100025",
+   "summary": "NAFDAC warns of falsified Cikatem (Artemether 180mg/Lumefantrine 1080mg) suspension found at the Kano Coordinated Wholesale Centre. It bears NAFDAC number A11-100025, which belongs to Cikatem Tablet 20/120mg. 17,280 bottles held at the maker for destruction.",
    "appliesToNigeria": true
   },
   {
@@ -1608,18 +2923,18 @@
    "url": "https://nafdac.gov.ng/public-alert-no-04-2025-public-alert-on-the-illegal-exportation-and-sale-of-opioids-to-west-african-countries-by-aveo-pharmaceuticals/",
    "date": "2025-02-28",
    "title": "Public Alert No. 04/2025 – Public Alert on the Illegal Exportation and Sale of Opioids to West African Countries by Aveo Pharmaceuticals",
-   "kind": "other",
+   "kind": "unregistered",
    "products": [
     {
-     "brand": "Public Alert on the Illegal Exportation and Sale of Opioids to West African Coun",
-     "ingredient": null,
+     "brand": "Tafrodol",
+     "ingredient": "tapentadol and carisoprodol",
      "strength": null,
-     "manufacturer": null,
+     "manufacturer": "Aveo Pharmaceuticals, Mumbai, India",
      "nrn": null,
      "batches": []
     }
    ],
-   "summary": "Public Alert No. 04/2025 – Public Alert on the Illegal Exportation and Sale of Opioids to West African Countries by Aveo Pharmaceuticals",
+   "summary": "NAFDAC warns that Indian firm Aveo Pharmaceuticals is illegally exporting unlicensed, highly addictive opioid pills to West Africa, including Nigeria. Green pills branded 'Tafrodol' contain tapentadol plus carisoprodol, a combination unlicensed anywhere, risking breathing difficu",
    "appliesToNigeria": true
   },
   {
@@ -1631,15 +2946,35 @@
    "kind": "counterfeit",
    "products": [
     {
-     "brand": "Sale of Counterfeit/Falsified Petsow Starnicillin 500mg found",
-     "ingredient": null,
-     "strength": null,
-     "manufacturer": null,
+     "brand": "PETSOW STARNICILLIN",
+     "ingredient": "Ampicillin",
+     "strength": "500mg",
+     "manufacturer": "Petsow Laboratories Limited",
      "nrn": null,
+     "batches": [
+      "023612"
+     ]
+    },
+    {
+     "brand": "STARNICILLIN",
+     "ingredient": "Ampicillin",
+     "strength": "500mg",
+     "manufacturer": "Petsow Laboratories Limited",
+     "nrn": "04-7790",
+     "batches": [
+      "V2403001"
+     ]
+    },
+    {
+     "brand": "STARNICILLIN",
+     "ingredient": "Ampicillin",
+     "strength": "250mg",
+     "manufacturer": "Petsow Laboratories Limited",
+     "nrn": "04-4697",
      "batches": []
     }
    ],
-   "summary": "Public Alert No. 03/2025 – Alert on the Sale of Counterfeit/Falsified Petsow Starnicillin (Ampicillin) 500mg found in Cameroon and Central African Republic",
+   "summary": "NAFDAC warns of falsified Petsow Starnicillin (Ampicillin) 500mg, batch 023612, purportedly made by Petsow Laboratories Limited, circulating in Cameroon and Central African Republic. Genuine Starnicillin 500mg (NRN 04-7790) batch V2403001. Zonal offices directed to mop up in Nige",
    "appliesToNigeria": true
   },
   {
@@ -1651,15 +2986,15 @@
    "kind": "counterfeit",
    "products": [
     {
-     "brand": "Illegal Distribution and Sale of Substandard and Falsified Knowit Insulin Syring",
-     "ingredient": null,
-     "strength": null,
-     "manufacturer": null,
-     "nrn": null,
+     "brand": "Knowit Insulin Syringe",
+     "ingredient": "Insulin Syringe 40IU 29G x 1/2",
+     "strength": "40 IU 29G x 1/2",
+     "manufacturer": "Unknown",
+     "nrn": "03-2933",
      "batches": []
     }
    ],
-   "summary": "Public Alert No. 02/2025 – Illegal Distribution and Sale of Substandard and Falsified (SF) Knowit Insulin Syringe 40 IU 29g X 1/2",
+   "summary": "NAFDAC warns of illegal sale of substandard and falsified Knowit Insulin Syringe 40 IU 29G x 1/2 in Nigeria. The 40 IU/ml syringe is no longer registered and can cause life-threatening insulin dosing errors. Its NAFDAC number 03-2933 is falsified; licence expired in 2019.",
    "appliesToNigeria": true
   },
   {
@@ -1668,18 +3003,18 @@
    "url": "https://nafdac.gov.ng/public-alert-no-01-2025-nafdac-has-discontinued-registration-of-multi-dose-artemether-lumefantrine-dry-powder-for-oral-suspension/",
    "date": "2025-02-27",
    "title": "Public Alert No. 01/2025 – NAFDAC has Discontinued Registration of Multi-Dose Artemether /Lumefantrine Dry Powder for Oral Suspension",
-   "kind": "other",
+   "kind": "unregistered",
    "products": [
     {
-     "brand": "NAFDAC has Discontinued Registration of Multi-Dose Artemether /Lumefantrine Dry ",
-     "ingredient": null,
+     "brand": "All brands of Multi-Dose Artemether/Lumefantrine dry powder oral Suspension",
+     "ingredient": "Artemether/Lumefantrine",
      "strength": null,
-     "manufacturer": null,
+     "manufacturer": "All manufacturers and importers",
      "nrn": null,
      "batches": []
     }
    ],
-   "summary": "Public Alert No. 01/2025 – NAFDAC has Discontinued Registration of Multi-Dose Artemether /Lumefantrine Dry Powder for Oral Suspension",
+   "summary": "NAFDAC has discontinued registration of all multi-dose Artemether/Lumefantrine dry powder for oral suspension, local or imported, because the reconstituted suspension is unstable and loses efficacy. Importation, distribution, sale and use must stop; stock will be mopped up.",
    "appliesToNigeria": true
   }
  ]

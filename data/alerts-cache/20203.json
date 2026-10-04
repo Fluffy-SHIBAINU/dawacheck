@@ -1,0 +1,32 @@
+{
+  "id": "011/2026",
+  "wpId": 20203,
+  "url": "https://nafdac.gov.ng/public-alert-no-011-2026-alert-on-the-counterfeit-version-of-visitect-hiv-advanced-disease-test-kits-identified-in-nigeria/",
+  "date": "2026-02-25",
+  "title": "Public Alert No. 011/2026 – Alert on the Counterfeit Version of VISITECT HIV Advanced Disease Test Kits Identified in Nigeria",
+  "kind": "counterfeit",
+  "products": [
+    {
+      "brand": "VISITECT CD4 Advanced Disease",
+      "ingredient": null,
+      "strength": null,
+      "manufacturer": "AccuBio Ltd, Units 1-12 Hillfoots Business Village Alva, FK 12 5DQ, Scotland, United Kingdom",
+      "nrn": null,
+      "batches": [
+        "0002172"
+      ]
+    },
+    {
+      "brand": "VISITECT CD4 Advanced Disease",
+      "ingredient": null,
+      "strength": null,
+      "manufacturer": "OMEGA DIAGNOSTICS LTD., Omega House Hillfoots Business Village Alva, FK 12 5DQ, Scotland, United Kingdom",
+      "nrn": null,
+      "batches": [
+        "0001586"
+      ]
+    }
+  ],
+  "summary": "NAFDAC warns of counterfeit/unregistered VISITECT CD4 Advanced Disease HIV test kits in Nigeria. Fakes list OMEGA DIAGNOSTICS LTD as maker, LOT 0001586, no NAFDAC number and a 3-year shelf life (2024-08 to 2027-01), unlike the genuine kit (A3-100-153, LOT 0002172).",
+  "appliesToNigeria": true
+}

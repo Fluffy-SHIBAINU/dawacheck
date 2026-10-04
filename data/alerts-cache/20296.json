@@ -1,0 +1,22 @@
+{
+  "id": "013/2026",
+  "wpId": 20296,
+  "url": "https://nafdac.gov.ng/public-alert-no-013-2026-alert-on-dietary-supplement-by-fda-over-safety-concerns/",
+  "date": "2026-03-08",
+  "title": "Public Alert No. 013/2026 – Alert on Dietary Supplement By FDA Over Safety Concerns",
+  "kind": "recall",
+  "products": [
+    {
+      "brand": "MR.7 SUPER 700000",
+      "ingredient": "tadalafil and sildenafil (undeclared)",
+      "strength": null,
+      "manufacturer": "StuffbyNainax LLC",
+      "nrn": null,
+      "batches": [
+        "ALLAVAILABLELOTS"
+      ]
+    }
+  ],
+  "summary": "NAFDAC alerts the public that Stuff by Nainax LLC is recalling all lots of MR.7 SUPER 700000 capsules, marketed online as a male-enhancement dietary supplement, after FDA analysis found undeclared sildenafil and tadalafil, which can dangerously lower blood pressure with nitrates.",
+  "appliesToNigeria": true
+}

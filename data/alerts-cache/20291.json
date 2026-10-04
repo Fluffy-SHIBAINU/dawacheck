@@ -1,0 +1,23 @@
+{
+  "id": "012/2026",
+  "wpId": 20291,
+  "url": "https://nafdac.gov.ng/public-alert-no-012-2026-alert-on-confirmed-counterfeit-batches-of-avastin-400mg-in-nigeria/",
+  "date": "2026-03-08",
+  "title": "Public Alert No. 012/2026 – Alert on Confirmed Counterfeit Batches of Avastin 400mg in Nigeria",
+  "kind": "counterfeit",
+  "products": [
+    {
+      "brand": "Avastin",
+      "ingredient": "bevacizumab",
+      "strength": "400 mg/16 ml",
+      "manufacturer": "F. Hoffmann- La Roche Ltd, Basel, Switzerland by Roche Diagnostics GmbH, Mannheim, Germany.",
+      "nrn": null,
+      "batches": [
+        "K1830T71",
+        "H0375B01"
+      ]
+    }
+  ],
+  "summary": "NAFDAC alerts that counterfeit Avastin (bevacizumab) 400mg/16ml vials, batches K1830T71 and H0375B01, have been confirmed in Nigeria. Roche says the batch numbers and serial numbers don't exist in its database, with artwork errors and fake tamper-evident labels.",
+  "appliesToNigeria": true
+}

@@ -1,0 +1,148 @@
+{
+  "id": "014/2025",
+  "wpId": 18070,
+  "url": "https://nafdac.gov.ng/public-alert-no-14-2025-alert-on-the-declaration-of-over-100-medications-as-substandard-by-indian-authorities/",
+  "date": "2025-05-21",
+  "title": "Public Alert No. 14/2025 – Alert on the Declaration of Over 100 Medications as Substandard by Indian Authorities",
+  "kind": "substandard",
+  "products": [
+    {
+      "brand": null,
+      "ingredient": null,
+      "strength": null,
+      "manufacturer": "Abaris Healthcare Pvt Ltd",
+      "nrn": null,
+      "batches": []
+    },
+    {
+      "brand": null,
+      "ingredient": null,
+      "strength": null,
+      "manufacturer": "Alencure Biotech Pvt Ltd",
+      "nrn": null,
+      "batches": []
+    },
+    {
+      "brand": null,
+      "ingredient": null,
+      "strength": null,
+      "manufacturer": "Eurolife Healthcare Pvt Ltd",
+      "nrn": null,
+      "batches": []
+    },
+    {
+      "brand": null,
+      "ingredient": null,
+      "strength": null,
+      "manufacturer": "Health Biotech Ltd",
+      "nrn": null,
+      "batches": []
+    },
+    {
+      "brand": null,
+      "ingredient": null,
+      "strength": null,
+      "manufacturer": "HIGGS Healthcare",
+      "nrn": null,
+      "batches": []
+    },
+    {
+      "brand": null,
+      "ingredient": null,
+      "strength": null,
+      "manufacturer": "Kamataka Antibiotics & Pharmaceuticals Ltd (KAPL)",
+      "nrn": null,
+      "batches": []
+    },
+    {
+      "brand": null,
+      "ingredient": null,
+      "strength": null,
+      "manufacturer": "Laborate Pharmaceuticals India Ltd",
+      "nrn": null,
+      "batches": []
+    },
+    {
+      "brand": null,
+      "ingredient": null,
+      "strength": null,
+      "manufacturer": "Legend Industries",
+      "nrn": null,
+      "batches": []
+    },
+    {
+      "brand": null,
+      "ingredient": null,
+      "strength": null,
+      "manufacturer": "Martins & Brown Biosciences Pvt Ltd",
+      "nrn": null,
+      "batches": []
+    },
+    {
+      "brand": null,
+      "ingredient": null,
+      "strength": null,
+      "manufacturer": "Mascot Health Series Pvt Ltd",
+      "nrn": null,
+      "batches": []
+    },
+    {
+      "brand": null,
+      "ingredient": null,
+      "strength": null,
+      "manufacturer": "Micron Pharmaceutical",
+      "nrn": null,
+      "batches": []
+    },
+    {
+      "brand": null,
+      "ingredient": null,
+      "strength": null,
+      "manufacturer": "Orison Pharma International",
+      "nrn": null,
+      "batches": []
+    },
+    {
+      "brand": null,
+      "ingredient": null,
+      "strength": null,
+      "manufacturer": "Rivpra Formulation Pvt Ltd",
+      "nrn": null,
+      "batches": []
+    },
+    {
+      "brand": null,
+      "ingredient": null,
+      "strength": null,
+      "manufacturer": "Sai Parenterals Ltd",
+      "nrn": null,
+      "batches": []
+    },
+    {
+      "brand": null,
+      "ingredient": null,
+      "strength": null,
+      "manufacturer": "Symbiosis Pharmaceuticals Pvt Ltd",
+      "nrn": null,
+      "batches": []
+    },
+    {
+      "brand": null,
+      "ingredient": null,
+      "strength": null,
+      "manufacturer": "Syncom Formulations (India) Ltd",
+      "nrn": null,
+      "batches": []
+    },
+    {
+      "brand": null,
+      "ingredient": null,
+      "strength": null,
+      "manufacturer": "Zee Laboratories Ltd",
+      "nrn": null,
+      "batches": []
+    }
+  ],
+  "summary": "NAFDAC relays India's CDSCO declaration of over 100 medicines as Not of Standard Quality from 17 named Indian manufacturers, some with subsidiaries, partners or products in Nigeria. Risks include poisoning, treatment failure, resistance and death. Surveillance and mop-up ordered.",
+  "appliesToNigeria": true
+}

@@ -1,0 +1,52 @@
+{
+  "id": "039/2025",
+  "wpId": 19718,
+  "url": "https://nafdac.gov.ng/public-alert-no-039-2025-incessant-importation-and-circulation-of-substandard-and-unregistered-edible-oils-in-nigeria/",
+  "date": "2025-12-02",
+  "title": "Public Alert No.039 /2025 – Incessant Importation and Circulation of Substandard and Unregistered Edible Oils in Nigeria",
+  "kind": "unregistered",
+  "products": [
+    {
+      "brand": "FINO",
+      "ingredient": "Edible oil",
+      "strength": null,
+      "manufacturer": null,
+      "nrn": null,
+      "batches": []
+    },
+    {
+      "brand": "PUR",
+      "ingredient": "Edible oil",
+      "strength": null,
+      "manufacturer": null,
+      "nrn": null,
+      "batches": []
+    },
+    {
+      "brand": "OKI",
+      "ingredient": "Edible oil",
+      "strength": null,
+      "manufacturer": null,
+      "nrn": null,
+      "batches": []
+    },
+    {
+      "brand": "SUPER DELICIEX",
+      "ingredient": "Edible oil",
+      "strength": null,
+      "manufacturer": null,
+      "nrn": null,
+      "batches": []
+    },
+    {
+      "brand": "LA JONIC",
+      "ingredient": "Edible oil",
+      "strength": null,
+      "manufacturer": null,
+      "nrn": null,
+      "batches": []
+    }
+  ],
+  "summary": "NAFDAC warns about substandard and unregistered edible oils smuggled into Nigeria and widely circulating. Brands include FINO, PUR, OKI, SUPER DELICIEX and LA JONIC, with no identifiable manufacturer or NAFDAC registration. Risks include harmful residues, liver damage and heart d",
+  "appliesToNigeria": true
+}

@@ -1,0 +1,40 @@
+{
+  "id": "036/2026",
+  "wpId": 21780,
+  "url": "https://nafdac.gov.ng/public-alert-no-036-2026-alert-on-suspected-counterfeit-products-mimicking-forxiga-dapagliflozin/",
+  "date": "2026-07-18",
+  "title": "Public Alert No. 036/2026 – Alert on Suspected Counterfeit Products Mimicking Forxiga® (Dapagliflozin)",
+  "kind": "counterfeit",
+  "products": [
+    {
+      "brand": "Forzigar",
+      "ingredient": null,
+      "strength": null,
+      "manufacturer": "Alliaance Biotech",
+      "nrn": null,
+      "batches": [
+        "ATE-262"
+      ]
+    },
+    {
+      "brand": "Foziga",
+      "ingredient": null,
+      "strength": null,
+      "manufacturer": "Medico Remedies Ltd",
+      "nrn": null,
+      "batches": [
+        "GIB405-"
+      ]
+    },
+    {
+      "brand": "Forxiga®",
+      "ingredient": "Dapagliflozin",
+      "strength": null,
+      "manufacturer": "AstraZeneca",
+      "nrn": null,
+      "batches": []
+    }
+  ],
+  "summary": "NAFDAC warns of suspected counterfeit products named \"Forzigar\" and \"Foziga\" mimicking AstraZeneca's Forxiga (dapagliflozin), detected in Eastern Nigeria. They imitate the AstraZeneca logo and may cause treatment failure or harm. Surveillance and mop-up ordered.",
+  "appliesToNigeria": true
+}

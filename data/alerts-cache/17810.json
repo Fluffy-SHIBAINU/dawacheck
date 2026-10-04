@@ -1,0 +1,22 @@
+{
+  "id": "005/2025",
+  "wpId": 17810,
+  "url": "https://nafdac.gov.ng/public-alert-no-05-2025-alert-on-the-circulation-of-falsified-cikatem-artemether-180mg-lumefantrine-1080mg-with-falsified-nafdac-registration-number-nrn-a11-100025/",
+  "date": "2025-03-11",
+  "title": "Public Alert No. 05/2025 – Alert on the Circulation of Falsified Cikatem (Artemether 180mg/Lumefantrine 1080mg) with Falsified NAFDAC Registration Number NRN A11-100025",
+  "kind": "counterfeit",
+  "products": [
+    {
+      "brand": "Cikatem Suspension",
+      "ingredient": "Artemether/Lumefantrine",
+      "strength": "180mg/1080mg",
+      "manufacturer": "Michelle Laboratories",
+      "nrn": "A11-100025",
+      "batches": [
+        "ALS063"
+      ]
+    }
+  ],
+  "summary": "NAFDAC warns of falsified Cikatem (Artemether 180mg/Lumefantrine 1080mg) suspension found at the Kano Coordinated Wholesale Centre. It bears NAFDAC number A11-100025, which belongs to Cikatem Tablet 20/120mg. 17,280 bottles held at the maker for destruction.",
+  "appliesToNigeria": true
+}

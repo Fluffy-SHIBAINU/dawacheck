@@ -1,0 +1,22 @@
+{
+  "id": "031/2025",
+  "wpId": 19400,
+  "url": "https://nafdac.gov.ng/public-alert-no-031-2025-alert-on-the-presence-of-an-unauthorized-unregistered-darzalex-daratumumab-1800mg-15ml-vial-sc-injection-in-nigeria/",
+  "date": "2025-10-15",
+  "title": "Public Alert No. 031/2025 – Alert on the Presence of an Unauthorized/ Unregistered Darzalex (Daratumumab) 1800mg/15ml vial SC Injection in Nigeria",
+  "kind": "unregistered",
+  "products": [
+    {
+      "brand": "Darzalex",
+      "ingredient": "Daratumumab",
+      "strength": "1800mg/15 ml vial for SC Injection",
+      "manufacturer": "Johnson & Johnson",
+      "nrn": null,
+      "batches": [
+        "PKS1F01"
+      ]
+    }
+  ],
+  "summary": "NAFDAC warns that unauthorized/unregistered Darzalex (daratumumab) 1800mg/15ml SC injection vials are being sold in Nigeria. Packs meant for the Indian market (batch PKS1F01, exp 10-2026) and Arab market were not bought from Johnson & Johnson's official distributors.",
+  "appliesToNigeria": true
+}

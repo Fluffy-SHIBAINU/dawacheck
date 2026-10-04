@@ -1,0 +1,36 @@
+{
+  "id": "035/2026",
+  "wpId": 21772,
+  "url": "https://nafdac.gov.ng/public-alert-no-035-2026-alert-on-the-marketing-and-sale-of-unregistered-menofix-composition/",
+  "date": "2026-07-18",
+  "title": "Public Alert No. 035/2026 – Alert on the Marketing and Sale of Unregistered Menofix Composition",
+  "kind": "unregistered",
+  "products": [
+    {
+      "brand": "Menofix Capsules",
+      "ingredient": null,
+      "strength": null,
+      "manufacturer": "PureEve (marketed by)",
+      "nrn": null,
+      "batches": []
+    },
+    {
+      "brand": "Menofix Herbal Capsule",
+      "ingredient": null,
+      "strength": null,
+      "manufacturer": "Gudugudu Herbal Worldwide Enterprises",
+      "nrn": "A7-103321L",
+      "batches": []
+    },
+    {
+      "brand": "Menofix Powder",
+      "ingredient": null,
+      "strength": null,
+      "manufacturer": "Gudugudu Herbal Worldwide Enterprises",
+      "nrn": "A7-103342L",
+      "batches": []
+    }
+  ],
+  "summary": "NAFDAC warns that Menofix Capsules, marketed by PureEve as a herbal/multivitamin supplement for menopause, is not registered with NAFDAC. Some ingredients are linked to rare liver injury. It differs from similarly named registered Menofix products. Avoid sale or use.",
+  "appliesToNigeria": true
+}

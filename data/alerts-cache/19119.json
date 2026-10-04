@@ -1,0 +1,20 @@
+{
+  "id": "026/2025",
+  "wpId": 19119,
+  "url": "https://nafdac.gov.ng/public-alert-no-026-2025-alert-on-the-circulation-of-counterfeit-cowbell-our-milk-milk-in-nigeria/",
+  "date": "2025-08-10",
+  "title": "Public Alert No. 026/2025 – Alert on the Circulation of Counterfeit Cowbell “Our Milk” Milk in Nigeria",
+  "kind": "counterfeit",
+  "products": [
+    {
+      "brand": "Cowbell Our Milk",
+      "ingredient": null,
+      "strength": "12g",
+      "manufacturer": "Promasidor Nigeria Ltd. (purported)",
+      "nrn": null,
+      "batches": []
+    }
+  ],
+  "summary": "NAFDAC warns of counterfeit Cowbell \"Our Milk\" 12g sachet milk circulating in Nigeria. Fakes copy the old \"Our Milk\" artwork, NAFDAC number and trademark, use ink-printed codes and manual sealing. Promasidor confirms it did not make them; health risks include poisoning.",
+  "appliesToNigeria": true
+}

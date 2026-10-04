@@ -1,0 +1,22 @@
+{
+  "id": "022/2025",
+  "wpId": 18876,
+  "url": "https://nafdac.gov.ng/public-alert-no-22-2025-counterfeit-herceptin-600mg-5ml-in-vial-trastuzumab-solution-for-injection-found-in-ghana/",
+  "date": "2025-06-26",
+  "title": "Public Alert No. 22/2025 –Counterfeit Herceptin® 600mg/5ml in Vial (Trastuzumab Solution for Injection) found in Ghana",
+  "kind": "counterfeit",
+  "products": [
+    {
+      "brand": "HERCEPTIN",
+      "ingredient": "Trastuzumab",
+      "strength": "600mg/5ml",
+      "manufacturer": "Roche Products Limited",
+      "nrn": null,
+      "batches": [
+        "A8519"
+      ]
+    }
+  ],
+  "summary": "NAFDAC warns of counterfeit Herceptin 600mg/5ml (trastuzumab) injection, batch A8519, circulating in Ghana but reportedly bought in Nigeria. The batch is not a valid Roche batch; packaging and seals differ. It may lack active ingredient, risking ineffective cancer treatment.",
+  "appliesToNigeria": true
+}

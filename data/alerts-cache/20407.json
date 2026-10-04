@@ -1,0 +1,34 @@
+{
+  "id": "015/2026",
+  "wpId": 20407,
+  "url": "https://nafdac.gov.ng/public-alert-no-015-2026-alert-on-confirmed-counterfeit-of-avastin-400mg-16ml-and-tecentriq-1200mg-20ml-in-nigeria/",
+  "date": "2026-03-12",
+  "title": "Public Alert No. 015/2026 – Alert on Confirmed Counterfeit of Avastin 400mg/ 16ml and Tecentriq 1200mg/20ml in Nigeria",
+  "kind": "counterfeit",
+  "products": [
+    {
+      "brand": "Avastin",
+      "ingredient": "Bevacizumab",
+      "strength": "400mg/16ml",
+      "manufacturer": "Made for F. Hoffmann-La Roche Ltd, Basel, Switzerland, by Roche Diagnostics GmbH, Mannheim, Germany",
+      "nrn": null,
+      "batches": [
+        "H4239A70",
+        "H2290A34",
+        "A3508B02"
+      ]
+    },
+    {
+      "brand": "Tecentriq",
+      "ingredient": "Atezolizumab",
+      "strength": "1200mg/20ml",
+      "manufacturer": "F. Hoffmann-La Roche Ltd, Kaiseraugst, Switzerland",
+      "nrn": null,
+      "batches": [
+        "B3071A12"
+      ]
+    }
+  ],
+  "summary": "NAFDAC confirms counterfeit Avastin 400mg/16ml (bevacizumab) and Tecentriq 1200mg/20ml (atezolizumab) circulating in Nigeria, confirmed by Roche Nigeria. Fake packs show wrong batch/serial numbers, poor artwork and tamper labels; sold cheaply at NGN180,000–350,000.",
+  "appliesToNigeria": true
+}

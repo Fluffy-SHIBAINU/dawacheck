@@ -1,0 +1,32 @@
+{
+  "id": "019/2026",
+  "wpId": 20450,
+  "url": "https://nafdac.gov.ng/public-alert-no-019-2026-alert-on-mop-up-of-all-otrivin-nasal-drops-0-05-and-0-1/",
+  "date": "2026-03-14",
+  "title": "Public Alert No.019/2026 – Alert on Mop up of all Otrivin Nasal Drops (0.05% and 0.1%)",
+  "kind": "counterfeit",
+  "products": [
+    {
+      "brand": "Otrivin Nasal Drops (Children)",
+      "ingredient": null,
+      "strength": "0.05%",
+      "manufacturer": "GlaxoSmithKline",
+      "nrn": "04-5350",
+      "batches": [
+        "7U8T"
+      ]
+    },
+    {
+      "brand": "Otrivin Nasal Drops (Adult)",
+      "ingredient": null,
+      "strength": "0.01%",
+      "manufacturer": "GlaxoSmithKline",
+      "nrn": "04-0026",
+      "batches": [
+        "SU8X"
+      ]
+    }
+  ],
+  "summary": "NAFDAC warns of counterfeit and unregistered Otrivin Nasal Drops (0.05% children and 0.01% adult) circulating in Nigeria. GlaxoSmithKline confirmed it is not currently importing the product, so all products in circulation are counterfeit. Mop-up and surveillance ordered.",
+  "appliesToNigeria": true
+}

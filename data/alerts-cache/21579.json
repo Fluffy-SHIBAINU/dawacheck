@@ -1,0 +1,20 @@
+{
+  "id": "030/2026",
+  "wpId": 21579,
+  "url": "https://nafdac.gov.ng/public-alert-no-030-2026-alert-on-the-withdrawal-of-levamisole-containing-medicines-as-endorsed-by-the-italian-medicines-agency-aifa-over-serious-neurological-risks/",
+  "date": "2026-06-08",
+  "title": "Public Alert No. 030/2026: Alert on the Withdrawal of Levamisole-Containing Medicines as endorsed by the Italian Medicines Agency (AIFA) over serious Neurological risks",
+  "kind": "recall",
+  "products": [
+    {
+      "brand": null,
+      "ingredient": "Levamisole",
+      "strength": null,
+      "manufacturer": null,
+      "nrn": null,
+      "batches": []
+    }
+  ],
+  "summary": "NAFDAC relays the Italian Medicines Agency's endorsement of an EU-wide withdrawal of all levamisole-containing medicines, after EMA's PRAC found the anthelmintic's benefits no longer outweigh risks due to rare but serious leukoencephalopathy (brain white matter damage).",
+  "appliesToNigeria": true
+}

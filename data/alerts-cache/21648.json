@@ -1,0 +1,22 @@
+{
+  "id": "027/2026",
+  "wpId": 21648,
+  "url": "https://nafdac.gov.ng/public-alert-no-027-2026-alert-on-european-union-ban-on-the-sale-and-orders-the-destruction-of-defective-signo-ffp2-particle-filter-mask-produced-in-china/",
+  "date": "2026-05-20",
+  "title": "Public Alert No. 027/2026 -Alert on European Union Ban on the Sale and Orders the Destruction of Defective Signo FFP2 Particle Filter Mask Produced in China",
+  "kind": "substandard",
+  "products": [
+    {
+      "brand": "SIGNO",
+      "ingredient": null,
+      "strength": null,
+      "manufacturer": "Shenzhen Signo Group Technology Co. Ltd.",
+      "nrn": null,
+      "batches": [
+        "20220112"
+      ]
+    }
+  ],
+  "summary": "NAFDAC relays an EU RAPEX ban and destruction order for SIGNO FFP2 non-reusable particle filter masks made in China by Shenzhen Signo Group Technology Co. Ltd. Filtration is insufficient (mean 32.3%), failing PPE Regulation and EN 149. Not in NAFDAC database.",
+  "appliesToNigeria": true
+}

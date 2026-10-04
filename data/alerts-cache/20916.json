@@ -1,0 +1,22 @@
+{
+  "id": "024/2026",
+  "wpId": 20916,
+  "url": "https://nafdac.gov.ng/public-alert-no-024-2026-alert-on-counterfeit-augmentin-625mg-tablets-batch-no-ac3n-in-nigeria/",
+  "date": "2026-04-30",
+  "title": "Public Alert No. 024/2026 – Alert on Counterfeit Augmentin 625mg Tablets (Batch No. AC3N) in Nigeria",
+  "kind": "counterfeit",
+  "products": [
+    {
+      "brand": "Augmentin",
+      "ingredient": "amoxicillin/clavulanic acid",
+      "strength": "625mg",
+      "manufacturer": "GlaxoSmithKline (GSK), Worthing Site, United Kingdom",
+      "nrn": null,
+      "batches": [
+        "AC3N"
+      ]
+    }
+  ],
+  "summary": "NAFDAC warns of counterfeit Augmentin 625mg Tablets (2 x 7 pack), Batch No. AC3N, circulating in Nigeria. GSK confirmed falsification: the sample's manufacturing/expiry dates (Sept 2025/Sept 2028) don't match records, with packaging text errors and poor fin seals.",
+  "appliesToNigeria": true
+}

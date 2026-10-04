@@ -1,0 +1,20 @@
+{
+  "id": "043/2026",
+  "wpId": 22027,
+  "url": "https://nafdac.gov.ng/public-alert-no-043-2026-nafdac-places-products-marketed-by-mofus-nigeria-ltd-on-watchlist-pending-regulatory-investigation/",
+  "date": "2026-08-19",
+  "title": "Public Alert No. 043/2026-NAFDAC Places Products Marketed by Mofus Nigeria Ltd on Watchlist Pending Regulatory Investigation",
+  "kind": "watchlist",
+  "products": [
+    {
+      "brand": "Ayrtons Saunders Ltd",
+      "ingredient": null,
+      "strength": null,
+      "manufacturer": "PHARMASERVE (North West) Ltd",
+      "nrn": null,
+      "batches": []
+    }
+  ],
+  "summary": "NAFDAC has placed products marketed by Mofus Nigeria Ltd (MAH) — linked to Ayrtons Saunders Ltd, UK and manufacturer Pharmaserve (North West) Ltd — on its watchlist pending investigation (ref NAFDAC/PMS/2026/0029) over regulatory non-compliance and possible misrepresentation.",
+  "appliesToNigeria": true
+}

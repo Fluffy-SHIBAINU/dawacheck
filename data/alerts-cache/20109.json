@@ -1,0 +1,22 @@
+{
+  "id": "005/2026",
+  "wpId": 20109,
+  "url": "https://nafdac.gov.ng/public-alert-no-05-2026-alert-on-the-mop-up-of-counterfeit-dermazin-1-silver-sulphadiazine-cream/",
+  "date": "2026-02-06",
+  "title": "Public Alert No. 05/2026 – Alert on the Mop-up of Counterfeit Dermazin (1% Silver Sulphadiazine) Cream",
+  "kind": "counterfeit",
+  "products": [
+    {
+      "brand": "Dermazin",
+      "ingredient": "Silver Sulphadiazine",
+      "strength": "1%",
+      "manufacturer": "Salutas Pharma GmbH, 39171 Osterweddingen, Germany (stated)",
+      "nrn": null,
+      "batches": [
+        "MV5093"
+      ]
+    }
+  ],
+  "summary": "NAFDAC warns of counterfeit Dermazin (1% Silver Sulphadiazine) Cream in circulation, reported by MAH Taylek Drugs Company Limited. The fake bears batch MV5093 (mfd 05/2024, exp 05/2027) and falsely states Salutas Pharma GmbH, Germany as manufacturer. Zonal offices are mopping it ",
+  "appliesToNigeria": true
+}

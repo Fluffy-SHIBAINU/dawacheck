@@ -1,0 +1,22 @@
+{
+  "id": "006/2025",
+  "wpId": 17819,
+  "url": "https://nafdac.gov.ng/public-alert-no-06-2024-alert-on-the-sale-of-counterfeit-noristerat-injection-200mg-in-nigeria/",
+  "date": "2025-03-11",
+  "title": "Public Alert No. 06/2025 – Alert on the Sale of Counterfeit Noristerat Injection 200mg in Nigeria",
+  "kind": "counterfeit",
+  "products": [
+    {
+      "brand": "Noristerat Injection",
+      "ingredient": "Norethisterone enantate",
+      "strength": "200mg",
+      "manufacturer": null,
+      "nrn": "04-5715",
+      "batches": [
+        "KT02TTK"
+      ]
+    }
+  ],
+  "summary": "NAFDAC warns that Chlorpheniramine and Dexamethasone injection ampoules are being mislabelled and repacked as Noristerat Injection 200mg, found in Niger, Bauchi and Kano (CWC) states. The counterfeiter has been arrested.",
+  "appliesToNigeria": true
+}

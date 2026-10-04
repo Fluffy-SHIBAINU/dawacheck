@@ -1,0 +1,36 @@
+{
+  "id": "004/2026",
+  "wpId": 19858,
+  "url": "https://nafdac.gov.ng/public-alert-no-04-2026-nestle-uk-recallsspecific-batches-of-its-smainfant-formula-and-follow-on-formulaover-toxin-contamination-concerns/",
+  "date": "2026-01-09",
+  "title": "Public Alert No. 04/2026- Nestle UK RecallsSpecific Batches Of Its SMAInfant Formula and Follow-On FormulaOver Toxin Contamination Concerns",
+  "kind": "recall",
+  "products": [
+    {
+      "brand": "SMA Gold 1",
+      "ingredient": null,
+      "strength": null,
+      "manufacturer": "Nestlé",
+      "nrn": "B1-2783",
+      "batches": []
+    },
+    {
+      "brand": "SMA Gold 2",
+      "ingredient": null,
+      "strength": null,
+      "manufacturer": "Nestlé",
+      "nrn": "B1-2780",
+      "batches": []
+    },
+    {
+      "brand": "SMA Gold 3",
+      "ingredient": null,
+      "strength": null,
+      "manufacturer": "Nestlé",
+      "nrn": "B1-2781",
+      "batches": []
+    }
+  ],
+  "summary": "Nestlé UK voluntarily recalled certain batches of SMA Infant Formula and Follow-On Formula over possible cereulide toxin contamination. NAFDAC says the recall does not affect SMA formulae produced for Nigeria, and lists registered SMA Gold 1, 2 and 3 NAFDAC numbers.",
+  "appliesToNigeria": false
+}

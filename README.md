@@ -13,7 +13,7 @@ World Bank "Small AI for Development" hackathon, Health track.
 
 - **Live app:** https://dawacheck-smoky.vercel.app (install it from Safari or Chrome with "Add to Home Screen", then it works in airplane mode)
 - **Demo cartons to scan:** https://dawacheck-smoky.vercel.app/#/demo-packs
-- **Regulator dashboard:** https://dawacheck-smoky.vercel.app/#/dashboard (shows labelled example data until the Supabase backend is set up; see below)
+- **Regulator dashboard:** https://dawacheck-smoky.vercel.app/#/dashboard (live from Supabase: reports and checks synced from phones)
 - **Design:** https://claude.ai/artifact/Q392hGkC2QW5h8SNR8HHpv
 - **Pitch deck:** https://claude.ai/artifact/VFmE5yFdgihQEJL9oXrimJ (exports to .pptx or PDF; source text in `docs/pitch.md`)
 - **Demo video script:** `docs/video-script.md`
@@ -33,7 +33,7 @@ World Bank "Small AI for Development" hackathon, Health track.
    - **Registered with NAFDAC** (green). The app also shows NAFDAC's own description of the registered tablet and pack so the user can compare.
    - **Check carefully** (amber). Covers a copied number, the wrong strength, a lapsed registration, a NAFDAC warning about the brand, or reports from other users.
    - **Do not take this medicine** (red). Covers a number not in the register, a product or batch named in a NAFDAC alert, or an expired pack.
-4. **Local languages and voice.** Screen text is in Hausa, English and Nigerian Pidgin, with full Yoruba and Igbo drafts. Recorded voice clips (Hausa, English, Pidgin) play with no internet once generated (`npm run voice`). Until then, English and Pidgin verdicts are read aloud by the phone's own offline voice.
+4. **Local languages and voice.** Screen text is in Hausa, English and Nigerian Pidgin, with full Yoruba and Igbo drafts. Every verdict has a recorded voice clip in Hausa, English and Pidgin (ElevenLabs `eleven_v3`, 42 clips, stored on the phone and played with no internet). If a clip is missing, English and Pidgin fall back to the phone's own offline voice.
 5. **Report and sync.** Reports and opt-in anonymous usage events wait on the phone. They upload when any connection appears: on app start, when the network returns, or every 5 minutes. An optional "Send by SMS" button works on a weak signal.
 6. **It learns.**
    - When several phones report the same number, it becomes a community flag on every phone.
@@ -44,23 +44,25 @@ World Bank "Small AI for Development" hackathon, Health track.
 
 ## What works today
 
-| Works now, with no keys | Needs a key or a backend |
-|---|---|
-| Offline checks against 8,922 products and 84 NAFDAC alerts | Hausa voice clips: `ELEVENLABS_API_KEY`, then `npm run voice` |
-| On-device OCR, including sideways photos | Live sync, community flags across phones and the live dashboard: a Supabase project and keys |
-| Find by name and the NAFDAC alerts list | Claude extraction of brands and batches from alert pages: `ANTHROPIC_API_KEY`, then `npm run data:alerts` (the live build matches alerts on their titles) |
-| Reports saved offline, with an SMS backup | BrightData fetching, only needed if NAFDAC blocks direct requests |
-| English and Pidgin verdicts spoken by the phone's own voice | |
-| Regulator dashboard with labelled example data | |
+Everything below runs on the live app:
+
+- Offline checks against 8,922 products and 84 NAFDAC alerts, with brands and 307 batch numbers extracted by Claude.
+- On-device OCR, including sideways photos; find by name; the NAFDAC alerts list.
+- Recorded voice in Hausa, English and Pidgin.
+- Reports saved offline, with an SMS backup, then synced to Supabase: community flags, OCR corrections and fresher data packs come back down. The phone ships with a register 12 products behind, so the first sync shows a real pack update (8,910 → 8,922).
+- The regulator dashboard reads live aggregate views. Built without a backend, it shows labelled example data instead.
+
+Optional: BrightData fetching (`npm run data:alerts -- --via=brightdata`) needs a Web Unlocker zone in `BRIGHTDATA_ZONE`; the direct NAFDAC fetch is used otherwise.
 
 ## Small AI in numbers
 
 | Part | Size |
 |---|---|
-| Whole offline app (everything cached on the phone) | **16.7 MB** |
+| Whole offline app (everything cached on the phone) | **19.0 MB** |
 | NAFDAC register pack (8,922 products) | 4.8 MB |
 | NAFDAC alerts pack (84 alerts) | 0.1 MB |
 | On-device OCR (two engine builds for old and new phones, plus the 3 MB English model) | 10.9 MB |
+| Voice clips (42: Hausa, English, Pidgin) | 2.2 MB |
 | App code | 0.5 MB |
 
 Measured with `npm run sizes`. Reading a demo carton takes about 1.5 s in the browser. No GPU, no cloud and no per-check cost: verdicts never touch the network.
@@ -91,7 +93,7 @@ flowchart LR
 ```bash
 npm install
 npm run dev          # http://localhost:5173
-npm run verify       # typecheck + 202 unit tests + build + 20 end-to-end tests (Chromium + iPhone WebKit: offline, accessibility, sideways photo)
+npm run verify       # typecheck + 219 unit tests + build + 20 end-to-end tests (Chromium + iPhone WebKit: offline, accessibility, sideways photo)
 npm run test:ocr     # real OCR on the demo carton images
 ```
 

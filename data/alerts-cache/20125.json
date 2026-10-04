@@ -1,0 +1,22 @@
+{
+  "id": "006/2026",
+  "wpId": 20125,
+  "url": "https://nafdac.gov.ng/public-alert-no-06-2026-alert-on-revalidated-infant-formula-sma-gold-found-on-sale/",
+  "date": "2026-02-12",
+  "title": "Public Alert No. 06/2026 – Alert on Revalidated Infant Formula (SMA Gold) Found on Sale",
+  "kind": "counterfeit",
+  "products": [
+    {
+      "brand": "SMA GOLD From Birth First Infant Milk",
+      "ingredient": null,
+      "strength": "900g",
+      "manufacturer": "Nestle",
+      "nrn": "B1-2783",
+      "batches": [
+        "22939510A120607:35"
+      ]
+    }
+  ],
+  "summary": "NAFDAC alerts the public to revalidated (date-altered) SMA Gold From Birth First Infant Milk 900g found on sale in Kaduna State. Expiry/manufacture stickers were tampered with; an infant reportedly had diarrhoea after consumption.",
+  "appliesToNigeria": true
+}

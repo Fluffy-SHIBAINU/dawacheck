@@ -1,0 +1,33 @@
+{
+  "id": "035/2025",
+  "wpId": 19598,
+  "url": "https://nafdac.gov.ng/public-alert-no-35-2025-substandard-batches-of-annmox-amoxicillin-suspensions-125mg-5ml-and-jawamox-amoxicillin-suspension-125mg-5ml-manufactured-by-jawa-international-ltd-due-to-low-ac/",
+  "date": "2025-10-22",
+  "title": "Public Alert No. 35/2025 – Substandard batches of Annmox (Amoxicillin suspensions 125mg/5ml) and Jawamox (Amoxicillin suspension 125mg/5ml) manufactured by Jawa International Ltd due to low Active Pharmaceutical Ingredient (API) content",
+  "kind": "substandard",
+  "products": [
+    {
+      "brand": "Annmox",
+      "ingredient": "Amoxicillin",
+      "strength": "125mg/5ml",
+      "manufacturer": "Jawa International Limited, Plot 6, Abimbola Way, Isolo Industrial Estate, Lagos.",
+      "nrn": "A11-0329",
+      "batches": [
+        "360M"
+      ]
+    },
+    {
+      "brand": "Jawamox",
+      "ingredient": "Amoxicillin",
+      "strength": "125mg/5ml",
+      "manufacturer": "Jawa International Limited, Plot 6, Abimbola Way, Isolo Industrial Estate, Lagos.",
+      "nrn": "04-1139",
+      "batches": [
+        "4290M",
+        "4231M"
+      ]
+    }
+  ],
+  "summary": "NAFDAC is recalling and mopping up substandard batches of Annmox (batch 360M) and Jawamox (batches 4290M, 4231M) amoxicillin 125mg/5ml suspensions by Jawa International Ltd, which failed lab tests for low active ingredient content.",
+  "appliesToNigeria": true
+}

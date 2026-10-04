@@ -1,0 +1,31 @@
+{
+  "id": "012/2025",
+  "wpId": 17976,
+  "url": "https://nafdac.gov.ng/public-alert-no-12-2025-recall-of-batches-of-regpara-tablets-25mg-due-to-the-presence-of-impurity/",
+  "date": "2025-05-05",
+  "title": "Public Alert No. 12/2025 – Recall of Batches of Regpara Tablets 25mg due to the presence of impurity",
+  "kind": "recall",
+  "products": [
+    {
+      "brand": "Regpara Tab 25mg",
+      "ingredient": "cinacalcet",
+      "strength": "25mg",
+      "manufacturer": "Kyowa Kirin",
+      "nrn": null,
+      "batches": [
+        "DES169675",
+        "DHS171505",
+        "DMS173037",
+        "DBS176064",
+        "DBS176065",
+        "EES176886",
+        "EES177675",
+        "EHS178805",
+        "EHS179575",
+        "ENS181132"
+      ]
+    }
+  ],
+  "summary": "NAFDAC relays DKSH Hong Kong Limited's precautionary recall of 10 batches of Regpara (cinacalcet) 25mg tablets due to N-nitroso-cinacalcet impurity above acceptable daily intake, a probable human carcinogen. The products are not in the NAFDAC database.",
+  "appliesToNigeria": false
+}

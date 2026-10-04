@@ -1,0 +1,22 @@
+{
+  "id": "008/2025",
+  "wpId": 17887,
+  "url": "https://nafdac.gov.ng/public-alert-no-08-2025-alert-on-the-presence-of-counterfeit-artemether-lumefantrine-tablets-circulating-under-brand-name-aflotin-20-120-in-nigeria/",
+  "date": "2025-04-07",
+  "title": "Public Alert No. 08/2025 –Alert on the Presence of Counterfeit Artemether/Lumefantrine Tablets Circulating Under Brand Name Aflotin 20/120 in Nigeria",
+  "kind": "counterfeit",
+  "products": [
+    {
+      "brand": "AFLOTIN 20/120mg",
+      "ingredient": "Artemether/Lumefantrine",
+      "strength": "20mg/120mg",
+      "manufacturer": "Ajanta Pharma Limited Mumbai, India",
+      "nrn": null,
+      "batches": [
+        "PA2128L"
+      ]
+    }
+  ],
+  "summary": "NAFDAC warns of counterfeit Aflotin 20/120mg (Artemether 20mg/Lumefantrine 120mg) tablets, batch PA2128L, circulating in Nigeria. Genuine maker Ajanta Pharma confirmed the batch was originally for Combisunate and the carton artwork/overprinting do not match theirs.",
+  "appliesToNigeria": true
+}

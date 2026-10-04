@@ -1,0 +1,22 @@
+{
+  "id": "015/2025",
+  "wpId": 18324,
+  "url": "https://nafdac.gov.ng/public-alert-no-015-2025-recall-of-substandard-juhel-folic-acid-tablet/",
+  "date": "2025-05-27",
+  "title": "Public Alert No. 015/2025 – Recall of Substandard Juhel Folic Acid Tablet",
+  "kind": "substandard",
+  "products": [
+    {
+      "brand": "Juhel Folic acid tablet",
+      "ingredient": "Folic acid",
+      "strength": "5mg x1000",
+      "manufacturer": "Juhel Pharma Ltd. 35, Nkwubor Road Emene – Enugu",
+      "nrn": null,
+      "batches": [
+        "0531"
+      ]
+    }
+  ],
+  "summary": "NAFDAC recalls one batch of Juhel Folic Acid 5mg x1000 tablets found substandard during February 2025 post-marketing surveillance. Low active ingredient content was caused by a faulty weight adjuster in the tableting machine. Risks include treatment failure.",
+  "appliesToNigeria": true
+}

@@ -1,0 +1,22 @@
+{
+  "id": "042/2026",
+  "wpId": 22021,
+  "url": "https://nafdac.gov.ng/public-alert-no-042-2026-alert-on-the-seizure-of-suspected-substandard-and-falsified-bppl-artemether-lumefantrine-80mg-480mg/",
+  "date": "2026-08-19",
+  "title": "Public Alert No. 042/2026-Alert on the Seizure of Suspected Substandard and Falsified BPPL Artemether/Lumefantrine 80mg/480mg",
+  "kind": "counterfeit",
+  "products": [
+    {
+      "brand": "BPPL Artemether/Lumefantrine",
+      "ingredient": "Artemether/Lumefantrine",
+      "strength": "80mg/480mg",
+      "manufacturer": "Bandaram Pharma Packleh Ltd (BPPL), Plot No. 1 & 2, Number 13, Mirgila, Nagar, India",
+      "nrn": "02-3457",
+      "batches": [
+        "BP5203"
+      ]
+    }
+  ],
+  "summary": "NAFDAC seized falsified Artemether/Lumefantrine 80mg/480mg, purportedly made by Bandaram Pharma Packleh Ltd (India), at the Coordinated Wholesale Centre in Kano. Its NAFDAC number 02-3457 is fake and no MAH is declared. Batch BP5203. Avoid buying, selling or using it.",
+  "appliesToNigeria": true
+}

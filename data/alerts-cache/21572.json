@@ -1,0 +1,52 @@
+{
+  "id": "029/2026",
+  "wpId": 21572,
+  "url": "https://nafdac.gov.ng/public-alert-no-029-2026-recall-of-impala-brand-gel-nail-polish-products-by-brazilian-health-regulatory-authorityanvisa/",
+  "date": "2026-06-08",
+  "title": "Public Alert No. 029/2026 – Recall of Impala Brand Gel Nail Polish Products by Brazilian Health Regulatory Authority(ANVISA)",
+  "kind": "recall",
+  "products": [
+    {
+      "brand": "Plus, Gel Esmalte Impala Gel",
+      "ingredient": "Trimethylbenzoyl Diphenylphosphine Oxide (TPO)",
+      "strength": null,
+      "manufacturer": "Laboratório Avamiller de Cosméticos Ltda.",
+      "nrn": null,
+      "batches": []
+    },
+    {
+      "brand": "Esmalte Gel Impala Gel Plus",
+      "ingredient": "Trimethylbenzoyl Diphenylphosphine Oxide (TPO)",
+      "strength": null,
+      "manufacturer": "Laboratório Avamiller de Cosméticos Ltda.",
+      "nrn": null,
+      "batches": []
+    },
+    {
+      "brand": "Gel Plus Impala Esmalte Gel",
+      "ingredient": "Trimethylbenzoyl Diphenylphosphine Oxide (TPO)",
+      "strength": null,
+      "manufacturer": "Laboratório Avamiller de Cosméticos Ltda.",
+      "nrn": null,
+      "batches": []
+    },
+    {
+      "brand": "Esmalte Gel Plus Impala",
+      "ingredient": "Trimethylbenzoyl Diphenylphosphine Oxide (TPO)",
+      "strength": null,
+      "manufacturer": "Laboratório Avamiller de Cosméticos Ltda.",
+      "nrn": null,
+      "batches": []
+    },
+    {
+      "brand": "Topcoat Gel Impala Gel Plus Clear",
+      "ingredient": "Trimethylbenzoyl Diphenylphosphine Oxide (TPO)",
+      "strength": null,
+      "manufacturer": "Laboratório Avamiller de Cosméticos Ltda.",
+      "nrn": null,
+      "batches": []
+    }
+  ],
+  "summary": "ANVISA (Brazil) recalled all batches of Impala brand gel nail polishes made by Laboratório Avamiller de Cosméticos Ltda after the banned chemical TPO was found in them. NAFDAC is monitoring; products not reported in Nigeria's supply chain.",
+  "appliesToNigeria": false
+}

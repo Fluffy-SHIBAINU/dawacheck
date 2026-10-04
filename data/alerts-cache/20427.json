@@ -1,0 +1,22 @@
+{
+  "id": "017/2026",
+  "wpId": 20427,
+  "url": "https://nafdac.gov.ng/public-alert-no-017-2026-alert-on-confirmed-counterfeit-of-herceptin-600-mg-in-nigeria/",
+  "date": "2026-03-12",
+  "title": "Public Alert No. 017/2026 – Alert on Confirmed Counterfeit of Herceptin 600 mg in Nigeria",
+  "kind": "counterfeit",
+  "products": [
+    {
+      "brand": "Herceptin",
+      "ingredient": "trastuzumab",
+      "strength": "600 mg",
+      "manufacturer": "F.Hoffmann-La Roche Ltd, Kaiseraugust, Switzerland (stated)",
+      "nrn": null,
+      "batches": [
+        "A8519B34"
+      ]
+    }
+  ],
+  "summary": "NAFDAC confirms a counterfeit batch of Herceptin 600 mg (batch A8519B34) circulating in Lagos, Nigeria. Roche Nigeria found wrong artwork, wrong expiry date and incorrect 2D matrix code; the batch number is not genuine. Counterfeit oncology drugs risk treatment failure or death.",
+  "appliesToNigeria": true
+}

@@ -1,0 +1,52 @@
+{
+  "id": "038/2026",
+  "wpId": 22083,
+  "url": "https://nafdac.gov.ng/public-alert-no-038-2026-alert-on-adulterated-and-substandard-medicines-nitras-kadin-2-acefyl-and-loratadine-24-recalled-by-the-drug-regulatory-authority-of-pakistan-drap/",
+  "date": "2026-08-18",
+  "title": "Public Alert No. 038/2026 – Alert on Adulterated and Substandard Medicines- NITRAS, KADIN 2, ACEFYL and LORATADINE 24 Recalled by the Drug Regulatory Authority of Pakistan (DRAP)",
+  "kind": "recall",
+  "products": [
+    {
+      "brand": "Tablet Nitras",
+      "ingredient": "Glyceryl Trinitrate",
+      "strength": null,
+      "manufacturer": "M/s Caraway Pharma, Rawat",
+      "nrn": null,
+      "batches": [
+        "24L069"
+      ]
+    },
+    {
+      "brand": "Tablet Kadin 2",
+      "ingredient": "Tizanidine Hydrochloride",
+      "strength": null,
+      "manufacturer": "M/s FYNK Pharma, Lahore",
+      "nrn": null,
+      "batches": [
+        "569"
+      ]
+    },
+    {
+      "brand": "ACEFYL Cough Syrup",
+      "ingredient": "Acefylline Piperazine",
+      "strength": null,
+      "manufacturer": "M/s NABIQASIM Industries, Karachi",
+      "nrn": null,
+      "batches": [
+        "ACH479"
+      ]
+    },
+    {
+      "brand": "Tablet Loratadine 24",
+      "ingredient": "Loratadine",
+      "strength": null,
+      "manufacturer": "M/s Murfy Pharma, Lahore",
+      "nrn": null,
+      "batches": [
+        "24"
+      ]
+    }
+  ],
+  "summary": "NAFDAC relays DRAP (Pakistan) recall of adulterated/substandard batches of Nitras, Kadin 2, Acefyl cough syrup and Loratadine 24. Monitoring is ongoing to prevent entry into Nigeria; zonal directors told to conduct surveillance.",
+  "appliesToNigeria": false
+}

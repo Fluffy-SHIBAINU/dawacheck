@@ -1,0 +1,22 @@
+{
+  "id": "037/2025",
+  "wpId": 19641,
+  "url": "https://nafdac.gov.ng/public-alert-no-37-2025-alert-on-the-report-of-substandard-and-falsified-sf-betaclox-found-in-nigeria/",
+  "date": "2025-11-04",
+  "title": "Public Alert No. 37/2025 – Alert on the Report of Substandard and Falsified (SF) BETACLOX found in Nigeria",
+  "kind": "counterfeit",
+  "products": [
+    {
+      "brand": "BETACLOX",
+      "ingredient": "Ampicillin and Cloxacillin",
+      "strength": "Ampicillin 250mg and Cloxacillin 250mg",
+      "manufacturer": "Saeny Laboratory Pvt, Ltd, Elappunkal Junction, Kozhuvanal, Kerala, 864 423 India",
+      "nrn": null,
+      "batches": [
+        "230701"
+      ]
+    }
+  ],
+  "summary": "NAFDAC warns of substandard/falsified BETACLOX (ampicillin 250mg + cloxacillin 250mg), batch 230701, bearing NAFDAC No. A4 4724 that actually belongs to Chi Ltd's Mebendazole 500mg. Sourced from Gambori Market, Maiduguri and sold in Kano and Zaria.",
+  "appliesToNigeria": true
+}

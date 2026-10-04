@@ -31,7 +31,7 @@ npm pkg set scripts.check:env="tsx scripts/check-env.ts"
 npm run check:env
 ```
 
-- [ ] **Step 2: USER: Supabase project**
+- [x] **Step 2: USER: Supabase project**
 
 Tell the user exactly this (print it in the iteration output and in `docs/progress.md`):
 1. Create a free project at supabase.com.
@@ -40,7 +40,7 @@ Tell the user exactly this (print it in the iteration output and in `docs/progre
 
 Continue only when `npm run check:env` shows all three Supabase values set.
 
-- [ ] **Step 3: Backend smoke test**
+- [x] **Step 3: Backend smoke test**
 
 `scripts/check-backend.ts`:
 ```ts
@@ -70,7 +70,7 @@ npm run check:backend
 ```
 Expected: `insert event: 201`, `read community_flags: 200`, raw events `200 []` (RLS hides rows), then `backend OK`.
 
-- [ ] **Step 4: Demo data hold-back and publish (run once)**
+- [x] **Step 4: Demo data hold-back and publish (run once)**
 
 Confirm `docs/progress.md` has no "holdback done" line, then:
 ```bash

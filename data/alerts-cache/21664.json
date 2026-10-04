@@ -1,0 +1,20 @@
+{
+  "id": "034/2026",
+  "wpId": 21664,
+  "url": "https://nafdac.gov.ng/public-alert-no-034-2026-niger-republic-imposes-import-ban-on-bulmex-parboiled-rice-from-india-due-to-metallic-contamination/",
+  "date": "2026-07-12",
+  "title": "Public Alert No. 034/2026 – Niger Republic Imposes Import Ban on Bulmex Parboiled Rice from India due to Metallic Contamination",
+  "kind": "substandard",
+  "products": [
+    {
+      "brand": "Bulmex Parboiled Rice",
+      "ingredient": null,
+      "strength": null,
+      "manufacturer": "Karam Food Grains Private Limited; Paragon Commodities Limited; Imoro Brunya / Sulemana Imoro Distribution Company",
+      "nrn": null,
+      "batches": []
+    }
+  ],
+  "summary": "Niger Republic banned imports of Bulmex parboiled rice from India after iron debris was found in the product. NAFDAC says presence in Nigeria is unconfirmed but has ordered surveillance and mop-up at zonal and state levels.",
+  "appliesToNigeria": false
+}

@@ -1,0 +1,24 @@
+{
+  "id": "014/2026",
+  "wpId": 20304,
+  "url": "https://nafdac.gov.ng/public-alert-no-014-2026-alert-on-confirmed-counterfeits-phesgo-600mg-with-batch-numbers-b2346b16-and-c3809c5/",
+  "date": "2026-03-08",
+  "title": "Public Alert No. 014/2026 -Alert on Confirmed Counterfeits PHESGO 600mg With Batch Numbers B2346B16 and C3809C5",
+  "kind": "counterfeit",
+  "products": [
+    {
+      "brand": "Phesgo®",
+      "ingredient": "Pertuzumab/Trastuzumab",
+      "strength": "600mg/600mg/10mL",
+      "manufacturer": null,
+      "nrn": null,
+      "batches": [
+        "C3809C51",
+        "B2346B16",
+        "C3809C5"
+      ]
+    }
+  ],
+  "summary": "NAFDAC alerts on confirmed counterfeit Phesgo 600mg/600mg/10mL (pertuzumab/trastuzumab) with batch numbers B2346B16 and C3809C5, reported from LUTH and confirmed falsified by Roche. Fake batch numbers, wrong GTIN, missing tamper-evidence label and packaging differences.",
+  "appliesToNigeria": true
+}

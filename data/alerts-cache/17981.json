@@ -1,0 +1,22 @@
+{
+  "id": "013/2025",
+  "wpId": 17981,
+  "url": "https://nafdac.gov.ng/public-alert-no-13-2025-alert-on-the-circulation-of-counterfeit-accu-chek-instant-test-strips-in-nigeria/",
+  "date": "2025-05-05",
+  "title": "Public Alert No. 13/2025 – Alert on the Circulation of Counterfeit Accu-Chek Instant Test Strips in Nigeria",
+  "kind": "counterfeit",
+  "products": [
+    {
+      "brand": "Accu-Chek Instant Test Strips",
+      "ingredient": null,
+      "strength": null,
+      "manufacturer": null,
+      "nrn": null,
+      "batches": [
+        "302244"
+      ]
+    }
+  ],
+  "summary": "NAFDAC warns of counterfeit Accu-Chek Instant blood glucose test strips found in Jos. The strips expired October 2024 but were relabelled with a new expiry of December 2025, risking inaccurate glucose readings and unsafe medication decisions for people with diabetes.",
+  "appliesToNigeria": true
+}

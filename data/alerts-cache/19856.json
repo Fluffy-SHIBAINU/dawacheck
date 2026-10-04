@@ -1,0 +1,20 @@
+{
+  "id": "043/2025",
+  "wpId": 19856,
+  "url": "https://nafdac.gov.ng/public-alert-no-043-2025-alert-on-uk-legal-claims-involving-johnson-johnson-talc-baby-powder-and-alleged-asbestos-related-cancer-risks/",
+  "date": "2025-12-19",
+  "title": "Public Alert No.043/2025 – Alert on UK Legal Claims Involving Johnson & Johnson Talc Baby Powder and Alleged Asbestos-Related Cancer Risks",
+  "kind": "watchlist",
+  "products": [
+    {
+      "brand": "Johnson & Johnson Baby Powder",
+      "ingredient": "Talcum powder",
+      "strength": null,
+      "manufacturer": "Johnson and Johnson (A United States multinational corporation)",
+      "nrn": null,
+      "batches": []
+    }
+  ],
+  "summary": "NAFDAC alerts the public to UK lawsuits by over 3,000 claimants alleging Johnson & Johnson talc baby powder contained asbestos, linked to ovarian cancer and mesothelioma. The product is used in Nigeria. No conclusive regulatory finding yet; NAFDAC is monitoring.",
+  "appliesToNigeria": true
+}

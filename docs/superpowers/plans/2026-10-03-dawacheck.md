@@ -109,7 +109,7 @@ Work strictly in this order. A task is done when every checkbox in its section i
 - [x] Task 23: Regulator dashboard + phase gate
 
 **Phase 6: Ship** (`2026-10-03-dawacheck/p6-ship.md`)
-- [ ] Task 24: Production config, Supabase hookup, Vercel deploy, iPhone checklist · BLOCKED (partial): deployed offline-only to https://dawacheck-smoky.vercel.app; needs Supabase project + keys in .env, then `npm run check:backend`, `npm run holdback -- --n=12`, `npm run publish-packs -- --dir=data/packs`, set VITE_SYNC_MODE=supabase, `npm run deploy`
+- [x] Task 24: Production config, Supabase hookup, Vercel deploy, iPhone checklist (Supabase project dawacheck via MCP: schema applied, live sync on, packs published; iPhone hands-on check is the user's)
 - [x] Task 25: README, pitch deck content, deck file, video script
 
 **Phase 7: Polish backlog, no API keys needed** (`2026-10-03-dawacheck/p7-polish.md`)

@@ -1,0 +1,22 @@
+{
+  "id": "025/2025",
+  "wpId": 19107,
+  "url": "https://nafdac.gov.ng/public-alert-no-025-2025-alert-on-the-unauthorized-auction-and-circulation-of-expired-insecticide-lara-force-lambda-1l/",
+  "date": "2025-08-08",
+  "title": "Public Alert No. 025/2025 – Alert on the Unauthorized Auction and Circulation of Expired Insecticide (LARA FORCE LAMBDA 1L)",
+  "kind": "other",
+  "products": [
+    {
+      "brand": "Lara Force Lambda",
+      "ingredient": "Lambda-Cyhalothrin",
+      "strength": "2.5% (1 Litre)",
+      "manufacturer": null,
+      "nrn": null,
+      "batches": [
+        "XZH2020006"
+      ]
+    }
+  ],
+  "summary": "NAFDAC warns that 5,000 cartons of expired Lara Force Lambda-Cyhalothrin 2.5% 1L insecticide (batch XZH2020006, expired 7 March 2023) were unlawfully auctioned and are circulating. Expired product risks poor pest control, higher toxicity and environmental harm.",
+  "appliesToNigeria": true
+}

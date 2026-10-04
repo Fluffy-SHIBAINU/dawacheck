@@ -1,0 +1,44 @@
+{
+  "id": "010/2026",
+  "wpId": 20179,
+  "url": "https://nafdac.gov.ng/public-alert-no-010-2026-alert-on-notice-of-concern-issued-by-who-for-meril-diagnostics-pvt-ltd/",
+  "date": "2026-02-22",
+  "title": "Public Alert No. 010/2026- Alert on Notice of Concern Issued by Who for Meril Diagnostics Pvt Ltd",
+  "kind": "substandard",
+  "products": [
+    {
+      "brand": "Meriscreen Malaria Pf / Pv Ag",
+      "ingredient": null,
+      "strength": null,
+      "manufacturer": "Meril Diagnostics Pvt. Ltd, India",
+      "nrn": "A3-101135",
+      "batches": []
+    },
+    {
+      "brand": "Meriscreen HIV 1-2 WB",
+      "ingredient": null,
+      "strength": null,
+      "manufacturer": "Meril Diagnostics Pvt. Ltd, India",
+      "nrn": "A3-101136",
+      "batches": []
+    },
+    {
+      "brand": "Meriscreen Malaria PF/PAN AG",
+      "ingredient": null,
+      "strength": null,
+      "manufacturer": "Meril Diagnostics Pvt. Ltd, India",
+      "nrn": "A3-101137",
+      "batches": []
+    },
+    {
+      "brand": "MERISCREEN Malaria Pf HRP-II Ag",
+      "ingredient": null,
+      "strength": null,
+      "manufacturer": "Meril Diagnostics Pvt. Ltd, India",
+      "nrn": "A3-101118",
+      "batches": []
+    }
+  ],
+  "summary": "WHO issued a Notice of Concern against Meril Diagnostics Pvt Ltd (India) after audit violations, so quality/safety of four NAFDAC-registered Meriscreen rapid test devices is not guaranteed. The MAH says they have not been imported; any found in Nigeria are deemed falsified.",
+  "appliesToNigeria": true
+}

@@ -1,0 +1,44 @@
+{
+  "id": "028/2025",
+  "wpId": 19180,
+  "url": "https://nafdac.gov.ng/public-alert-no-028-2025-alert-on-unregistered-falsified-oxytocin-injection/",
+  "date": "2025-08-25",
+  "title": "Public Alert No. 028/2025 – Alert on Unregistered/Falsified Oxytocin Injection",
+  "kind": "counterfeit",
+  "products": [
+    {
+      "brand": "Gold Vision Oxytocin injection",
+      "ingredient": "Oxytocin",
+      "strength": "10IU",
+      "manufacturer": "Anhui Hongye Pharmaceutical Co., Ltd., Fengyang East Road, Bengbu, Anhui Province, China",
+      "nrn": "A4-9566",
+      "batches": []
+    },
+    {
+      "brand": "A-tocin injection",
+      "ingredient": "Oxytocin",
+      "strength": null,
+      "manufacturer": "Anhui Hongye Pharmaceutical Co., Ltd., Fengyang East Road, Bengbu, Anhui Province, China",
+      "nrn": "A4-9566",
+      "batches": []
+    },
+    {
+      "brand": "Extocin Injection",
+      "ingredient": "Oxytocin",
+      "strength": null,
+      "manufacturer": "Anhui Hongye Pharmaceutical Co., Ltd., Fengyang East Road, Bengbu, Anhui Province, China",
+      "nrn": "A4-9566",
+      "batches": []
+    },
+    {
+      "brand": "Claxitodin injection",
+      "ingredient": "Oxytocin",
+      "strength": null,
+      "manufacturer": "Anhui Hongye Pharmaceutical Co., Ltd., Fengyang East Road, Bengbu, Anhui Province, China",
+      "nrn": "A4-9566",
+      "batches": []
+    }
+  ],
+  "summary": "NAFDAC warns of unregistered/falsified oxytocin injections — Gold Vision Oxytocin 10IU, A-tocin, Extocin and Claxitodin — all bearing fake NAFDAC Reg. No. A4-9566 and claiming manufacture by Anhui Hongye Pharmaceutical, China. They risk ineffective labour control, postpartum haem",
+  "appliesToNigeria": true
+}

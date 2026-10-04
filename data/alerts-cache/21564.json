@@ -1,0 +1,23 @@
+{
+  "id": "028/2026",
+  "wpId": 21564,
+  "url": "https://nafdac.gov.ng/public-alert-no-028-2026-recall-of-childrens-ibuprofen-oral-suspension-in-the-united-states-due-to-potential-contamination-with-foreign-material/",
+  "date": "2026-06-08",
+  "title": "Public Alert No. 028/2026- Recall Of Children’s Ibuprofen Oral Suspension in the United States Due To Potential Contamination With Foreign Material",
+  "kind": "recall",
+  "products": [
+    {
+      "brand": "Children's Ibuprofen Oral Suspension, USP",
+      "ingredient": "Ibuprofen",
+      "strength": "100 mg/5 mL",
+      "manufacturer": "Strides Pharma Inc., India (for Taro Pharmaceuticals U.S.A., Inc.)",
+      "nrn": null,
+      "batches": [
+        "7261973A",
+        "7261974A"
+      ]
+    }
+  ],
+  "summary": "USFDA recall of ~90,000 bottles of Children's Ibuprofen Oral Suspension USP 100 mg/5 mL (lots 7261973A, 7261974A) by Strides Pharma due to foreign material ('gel-like mass', 'black particles'). Distributed in the US only; NAFDAC is conducting surveillance to keep it out of Nigeri",
+  "appliesToNigeria": false
+}

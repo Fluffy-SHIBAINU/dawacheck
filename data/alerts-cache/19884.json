@@ -1,0 +1,22 @@
+{
+  "id": "003/2026",
+  "wpId": 19884,
+  "url": "https://nafdac.gov.ng/public-alert-no-03-2026-alert-on-the-circulation-of-an-unauthorized-and-unregistered-risperdal-2-mg-tablets-brand-formulation-in-nigeria/",
+  "date": "2026-01-09",
+  "title": "Public Alert No. 03/2026–Alert on the Circulation of an Unauthorized and Unregistered Risperdal 2 mg Tablets Brand Formulation in Nigeria",
+  "kind": "unregistered",
+  "products": [
+    {
+      "brand": "Risperdal",
+      "ingredient": null,
+      "strength": "2 mg",
+      "manufacturer": "Johnson & Johnson",
+      "nrn": null,
+      "batches": [
+        "ELB01723"
+      ]
+    }
+  ],
+  "summary": "NAFDAC warns that an unauthorized, unregistered batch of Risperdal 2 mg tablets is circulating in Nigeria, notably Kaduna State. Johnson & Johnson confirmed batch ELB01723 was meant for Turkey but illegally diverted; its pack artwork differs from the registered brand.",
+  "appliesToNigeria": true
+}

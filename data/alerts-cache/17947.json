@@ -1,0 +1,20 @@
+{
+  "id": "010/2025",
+  "wpId": 17947,
+  "url": "https://nafdac.gov.ng/public-alert-no-010-2025-alert-on-the-sale-of-a-fake-product-named-wonder-calcium-by-health-and-hygiene/",
+  "date": "2025-04-14",
+  "title": "Public Alert No. 010/2025 – Alert on the Sale of a Fake Product Named Wonder Calcium by Health and Hygiene",
+  "kind": "counterfeit",
+  "products": [
+    {
+      "brand": "Wonder Calcium",
+      "ingredient": null,
+      "strength": null,
+      "manufacturer": "Falsely stated as Asad Pharmaceutical Ltd; actually produced by Health and Hygiene, Atiku Abubakar Plaza, International Trade Fair Complex, Badagry Expressway, Lagos State",
+      "nrn": "04-1029",
+      "batches": []
+    }
+  ],
+  "summary": "NAFDAC warns of a falsified product, Wonder Calcium, bearing fake NAFDAC registration number 04-1029 and falsely claiming manufacture by Asad Pharmaceutical Ltd. It is produced and sold by Health and Hygiene in Lagos. A distributor has been apprehended.",
+  "appliesToNigeria": true
+}

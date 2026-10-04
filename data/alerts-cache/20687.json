@@ -1,0 +1,32 @@
+{
+  "id": "023/2026",
+  "wpId": 20687,
+  "url": "https://nafdac.gov.ng/public-alert-no-023-2026-alert-on-counterfeit-brands-of-proguanil-projeanil-and-re-granil-tablet-b-p-100mg-with-fake-nafdac-registration-number-04-6433-found-in-nigeria/",
+  "date": "2026-03-25",
+  "title": "Public Alert No. 023/2026 – Alert on Counterfeit Brands of Proguanil (Projeanil and Re-granil) Tablet B.P 100mg with Fake NAFDAC Registration Number (04-6433) found in Nigeria",
+  "kind": "counterfeit",
+  "products": [
+    {
+      "brand": "Projeanil",
+      "ingredient": "Proguanil",
+      "strength": "100mg",
+      "manufacturer": "Apple King Industry PVT 253, A/2 Shapujat, New Delhi, India",
+      "nrn": "04-6433",
+      "batches": [
+        "BN600"
+      ]
+    },
+    {
+      "brand": "Re-Granil",
+      "ingredient": "Proguanil",
+      "strength": "100mg",
+      "manufacturer": "Jamila Export LAB. PVT LTD. 401 Indraluse Estate, Mumbai Batal, India",
+      "nrn": "04-6433",
+      "batches": [
+        "BN600"
+      ]
+    }
+  ],
+  "summary": "NAFDAC warns of counterfeit Proguanil 100mg tablets sold as Projeanil and Re-Granil, both bearing fake NAFDAC number 04-6433 that actually belongs to Feroglobin B12 Capsules. Both carry batch BN600. Do not distribute, sell or use.",
+  "appliesToNigeria": true
+}

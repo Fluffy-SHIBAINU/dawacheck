@@ -1,0 +1,22 @@
+{
+  "id": "020/2026",
+  "wpId": 20459,
+  "url": "https://nafdac.gov.ng/public-alert-no-020-2026-alert-on-unregistered-viroactive-drug-purported-to-cure-hiv/",
+  "date": "2026-03-14",
+  "title": "Public Alert No. 020/2026 -Alert on Unregistered ViroActive+ Drug Purported to Cure HIV",
+  "kind": "unregistered",
+  "products": [
+    {
+      "brand": "ViroActive+",
+      "ingredient": null,
+      "strength": null,
+      "manufacturer": null,
+      "nrn": null,
+      "batches": [
+        "GVC/DEC/25/01"
+      ]
+    }
+  ],
+  "summary": "NAFDAC warns that unregistered ViroActive+ Capsules, promoted online as a herbal cure for HIV, are circulating in Nigeria. Its ingredients, safety and efficacy are unverified; use may cause HIV treatment failure, toxicity and delayed care.",
+  "appliesToNigeria": true
+}

@@ -41,9 +41,9 @@ create policy "anon inserts events" on public.events for insert to anon with che
 
 -- Per-device daily caps: 20 reports and 2,000 usage events per 24 hours, by server receive time.
 -- Device ids come from the phone, so this slows spam; it cannot stop a determined attacker.
--- SECURITY DEFINER lets the count see rows that anon cannot read. A retried id passes so that
--- ON CONFLICT DO NOTHING can ignore it. PostgREST turns SQLSTATE PT429 into HTTP 429, and the app
--- keeps those rows queued for a later sync.
+-- SECURITY DEFINER lets the count see rows that anon cannot read. A retried id skips the cap, so
+-- the insert fails as a duplicate (HTTP 409) and the app marks it sent. PostgREST turns SQLSTATE
+-- PT429 into HTTP 429, and the app keeps those rows queued for a later sync.
 create index if not exists reports_device_idx on public.reports (device_id, received_at);
 create index if not exists events_device_idx on public.events (device_id, received_at);
 
@@ -65,6 +65,9 @@ begin
   end if;
   return new;
 end $$;
+
+-- Triggers fire without EXECUTE; nobody should call this function directly.
+revoke all on function public.enforce_daily_cap() from public, anon, authenticated;
 
 drop trigger if exists reports_daily_cap on public.reports;
 create trigger reports_daily_cap before insert on public.reports for each row execute function public.enforce_daily_cap();

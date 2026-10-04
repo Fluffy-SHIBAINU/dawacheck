@@ -1,0 +1,22 @@
+{
+  "id": "037/2026",
+  "wpId": 21788,
+  "url": "https://nafdac.gov.ng/public-alert-no-037-2026-alert-on-suspected-counterfeit-pulmicort-budesonide-inhalation-suspension/",
+  "date": "2026-07-18",
+  "title": "Public Alert No. 037/2026 – Alert on Suspected Counterfeit Pulmicort® (Budesonide) Inhalation Suspension",
+  "kind": "counterfeit",
+  "products": [
+    {
+      "brand": "Ulmicort",
+      "ingredient": "Budesonide",
+      "strength": "0.5 mg/ml",
+      "manufacturer": "Legency Remedies PVT Ltd, Vill Kalha Baddi, Tehsil Baddi, Distt Solan (H.P) 173205, India",
+      "nrn": null,
+      "batches": [
+        "25770416E"
+      ]
+    }
+  ],
+  "summary": "NAFDAC warns of a suspected counterfeit \"Ulmicort 0.5 mg/ml Inhalation Suspension\" found in Eastern Nigeria, mimicking AstraZeneca's registered Pulmicort (budesonide). Batch 25770416E, labelled made by Legency Remedies PVT Ltd, India. Buy only from licensed pharmacies.",
+  "appliesToNigeria": true
+}

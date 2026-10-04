@@ -1,0 +1,78 @@
+{
+  "id": "011/2025",
+  "wpId": 17970,
+  "url": "https://nafdac.gov.ng/public-alert-no-11-2025-recall-of-various-products-by-sun-pharma-glenmark-and-zydus-pharmaceuticals-over-manufacturing-issues/",
+  "date": "2025-04-29",
+  "title": "Public Alert No. 11/2025 – Recall of Various Products by Sun Pharma, Glenmark, and Zydus Pharmaceuticals Over Manufacturing Issues",
+  "kind": "recall",
+  "products": [
+    {
+      "brand": null,
+      "ingredient": "Propafenone Hydrochloride ER capsules",
+      "strength": null,
+      "manufacturer": "Glenmark Pharmaceuticals Inc. (New Jersey)",
+      "nrn": null,
+      "batches": []
+    },
+    {
+      "brand": null,
+      "ingredient": "Solifenacin Succinate Tablets",
+      "strength": null,
+      "manufacturer": "Glenmark Pharmaceuticals Inc. (New Jersey)",
+      "nrn": null,
+      "batches": []
+    },
+    {
+      "brand": null,
+      "ingredient": "Voriconazole Tablets",
+      "strength": null,
+      "manufacturer": "Glenmark Pharmaceuticals Inc. (New Jersey)",
+      "nrn": null,
+      "batches": []
+    },
+    {
+      "brand": null,
+      "ingredient": "Lacosamide Tablets",
+      "strength": null,
+      "manufacturer": "Glenmark Pharmaceuticals Inc. (New Jersey)",
+      "nrn": null,
+      "batches": []
+    },
+    {
+      "brand": null,
+      "ingredient": "Frovatriptan Succinate Tablets",
+      "strength": null,
+      "manufacturer": "Glenmark Pharmaceuticals Inc. (New Jersey)",
+      "nrn": null,
+      "batches": []
+    },
+    {
+      "brand": null,
+      "ingredient": "Rufinamide Tablets",
+      "strength": null,
+      "manufacturer": "Glenmark Pharmaceuticals Inc. (New Jersey)",
+      "nrn": null,
+      "batches": []
+    },
+    {
+      "brand": null,
+      "ingredient": "Gabapentin capsules",
+      "strength": null,
+      "manufacturer": "Sun Pharmaceutical Industries Inc.",
+      "nrn": null,
+      "batches": []
+    },
+    {
+      "brand": null,
+      "ingredient": "Chlorpromazine Hydrochloride Tablets, USP",
+      "strength": "10 mg",
+      "manufacturer": "Zydus Pharmaceuticals (USA) Inc.",
+      "nrn": null,
+      "batches": [
+        "Z400069"
+      ]
+    }
+  ],
+  "summary": "NAFDAC relays US FDA recalls by Glenmark (25+ products incl. propafenone, solifenacin, voriconazole, lacosamide, frovatriptan, rufinamide; CGMP deviations), Sun Pharma (13,700 bottles gabapentin capsules, cross-contamination) and Zydus (3,144 bottles chlorpromazine 10mg, nitrosam",
+  "appliesToNigeria": false
+}

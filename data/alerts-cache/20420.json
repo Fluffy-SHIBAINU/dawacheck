@@ -1,0 +1,22 @@
+{
+  "id": "016/2026",
+  "wpId": 20420,
+  "url": "https://nafdac.gov.ng/public-alert-no-016-2026-alert-on-confirmed-counterfeit-of-mabthera-500mg-50ml-in-nigeria/",
+  "date": "2026-03-12",
+  "title": "Public Alert No. 016/2026 – Alert on Confirmed Counterfeit of Mabthera 500mg/ 50ml in Nigeria",
+  "kind": "counterfeit",
+  "products": [
+    {
+      "brand": "Mabthera",
+      "ingredient": "rituximab",
+      "strength": "500 mg/50 mL",
+      "manufacturer": "Stated on pack as Genentech Inc., Hillsboro, ABD (genuine product made for F. Hoffmann-La Roche Ltd, Basel, Switzerland by Roche Diagnostics GmbH, Galenical Plant, Mannheim, Germany)",
+      "nrn": null,
+      "batches": [
+        "N2110A09"
+      ]
+    }
+  ],
+  "summary": "NAFDAC confirms counterfeit Mabthera (rituximab) 500mg/50ml, batch N2110A09, circulating in Kaduna and Gombe states. Packaging shows wrong language, bad Braille placement, fake tamper labels and a batch number absent from Roche's database. Sold cheaply; risk of treatment failure ",
+  "appliesToNigeria": true
+}

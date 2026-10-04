@@ -1,0 +1,22 @@
+{
+  "id": "031/2026",
+  "wpId": 21609,
+  "url": "https://nafdac.gov.ng/public-alert-no-31-2026-recall-of-sexual-enhancement-product-due-to-undeclared-pharmaceutical-ingredients/",
+  "date": "2026-06-18",
+  "title": "Public Alert No. 31/2026- Recall of Sexual Enhancement Product Due to Undeclared Pharmaceutical Ingredients",
+  "kind": "recall",
+  "products": [
+    {
+      "brand": "WAP Sensual Enhancement capsules",
+      "ingredient": "undeclared sildenafil, tadalafil, and flibanserin",
+      "strength": null,
+      "manufacturer": "Best Supplement Best Prices Company",
+      "nrn": null,
+      "batches": [
+        "ALLLOTS"
+      ]
+    }
+  ],
+  "summary": "NAFDAC relays a US FDA-prompted voluntary recall of all lots of WAP Sensual Enhancement capsules by Best Supplements Best Prices Company, found to contain undeclared sildenafil, tadalafil and flibanserin. Public told to stop use and hand product to nearest NAFDAC office.",
+  "appliesToNigeria": true
+}

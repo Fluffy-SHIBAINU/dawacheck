@@ -1,0 +1,156 @@
+{
+  "id": "040/2025",
+  "wpId": 19733,
+  "url": "https://nafdac.gov.ng/public-alert-no-040-2025-mop-up-of-all-products-produced-and-distributed-by-europharm-laboratories/",
+  "date": "2025-12-02",
+  "title": "Public Alert No. 040/2025 – Mop up of all Products Produced and Distributed by EuroPharm Laboratories",
+  "kind": "substandard",
+  "products": [
+    {
+      "brand": "Linocloxin",
+      "ingredient": "Ampicillin & Cloxacillin",
+      "strength": "125mg & 125mg",
+      "manufacturer": "Europharm Laboratories, Eurolink Nigeria Limited, Plot Pl., 7354, Anglo Jos, New Ind. Area, Zarmaganda, Jos, Nigeria",
+      "nrn": "04-4576",
+      "batches": []
+    },
+    {
+      "brand": "Linromycine",
+      "ingredient": "Erythromycin",
+      "strength": null,
+      "manufacturer": "Europharm Laboratories, Eurolink Nigeria Limited, Plot Pl., 7354, Anglo Jos, New Ind. Area, Zarmaganda, Jos, Nigeria",
+      "nrn": "04-4573",
+      "batches": []
+    },
+    {
+      "brand": "Linocillin",
+      "ingredient": "Ampicillin",
+      "strength": null,
+      "manufacturer": "Europharm Laboratories, Eurolink Nigeria Limited, Plot Pl., 7354, Anglo Jos, New Ind. Area, Zarmaganda, Jos, Nigeria",
+      "nrn": "04-4560",
+      "batches": []
+    },
+    {
+      "brand": "Linmoxyn",
+      "ingredient": "Amoxicillin",
+      "strength": "125mg",
+      "manufacturer": "Europharm Laboratories, Eurolink Nigeria Limited, Plot Pl., 7354, Anglo Jos, New Ind. Area, Zarmaganda, Jos, Nigeria",
+      "nrn": "04-4567",
+      "batches": []
+    },
+    {
+      "brand": "Eurogyl",
+      "ingredient": "Metronidazole",
+      "strength": null,
+      "manufacturer": "Europharm Laboratories, Eurolink Nigeria Limited, Plot Pl., 7354, Anglo Jos, New Ind. Area, Zarmaganda, Jos, Nigeria",
+      "nrn": "04-4568",
+      "batches": []
+    },
+    {
+      "brand": "Naflin",
+      "ingredient": "Cough Expectorant",
+      "strength": null,
+      "manufacturer": "Europharm Laboratories, Eurolink Nigeria Limited, Plot Pl., 7354, Anglo Jos, New Ind. Area, Zarmaganda, Jos, Nigeria",
+      "nrn": "04-4558",
+      "batches": []
+    },
+    {
+      "brand": "Natacid",
+      "ingredient": "Magnesium Trisilicate",
+      "strength": null,
+      "manufacturer": "Europharm Laboratories, Eurolink Nigeria Limited, Plot Pl., 7354, Anglo Jos, New Ind. Area, Zarmaganda, Jos, Nigeria",
+      "nrn": "04-5752",
+      "batches": []
+    },
+    {
+      "brand": "Navit-B Syrup",
+      "ingredient": "Vitamin B Complex",
+      "strength": null,
+      "manufacturer": "Europharm Laboratories, Eurolink Nigeria Limited, Plot Pl., 7354, Anglo Jos, New Ind. Area, Zarmaganda, Jos, Nigeria",
+      "nrn": "04-4572",
+      "batches": []
+    },
+    {
+      "brand": "Fountain B-12",
+      "ingredient": "Blood Tonic",
+      "strength": null,
+      "manufacturer": "Europharm Laboratories, Eurolink Nigeria Limited, Plot Pl., 7354, Anglo Jos, New Ind. Area, Zarmaganda, Jos, Nigeria",
+      "nrn": "04-4569",
+      "batches": []
+    },
+    {
+      "brand": "Fountain B-12",
+      "ingredient": "Blood Tonic",
+      "strength": null,
+      "manufacturer": "Europharm Laboratories, Eurolink Nigeria Limited, Plot Pl., 7354, Anglo Jos, New Ind. Area, Zarmaganda, Jos, Nigeria",
+      "nrn": "04-4569",
+      "batches": []
+    },
+    {
+      "brand": "Vitamin-C Syrup",
+      "ingredient": "Vitamin C",
+      "strength": null,
+      "manufacturer": "Europharm Laboratories, Eurolink Nigeria Limited, Plot Pl., 7354, Anglo Jos, New Ind. Area, Zarmaganda, Jos, Nigeria",
+      "nrn": "04-5001",
+      "batches": []
+    },
+    {
+      "brand": "Eurogyl",
+      "ingredient": "Metronidazole",
+      "strength": null,
+      "manufacturer": "Europharm Laboratories, Eurolink Nigeria Limited, Plot Pl., 7354, Anglo Jos, New Ind. Area, Zarmaganda, Jos, Nigeria",
+      "nrn": "04-4563",
+      "batches": []
+    },
+    {
+      "brand": "Eurogyl",
+      "ingredient": "Metronidazole",
+      "strength": null,
+      "manufacturer": "Europharm Laboratories, Eurolink Nigeria Limited, Plot Pl., 7354, Anglo Jos, New Ind. Area, Zarmaganda, Jos, Nigeria",
+      "nrn": "04-4563",
+      "batches": []
+    },
+    {
+      "brand": "Euramol",
+      "ingredient": "Paracetamol",
+      "strength": null,
+      "manufacturer": "Europharm Laboratories, Eurolink Nigeria Limited, Plot Pl., 7354, Anglo Jos, New Ind. Area, Zarmaganda, Jos, Nigeria",
+      "nrn": "04-4564",
+      "batches": []
+    },
+    {
+      "brand": "Euramox",
+      "ingredient": "Mebendazole",
+      "strength": "100mg",
+      "manufacturer": "Europharm Laboratories, Eurolink Nigeria Limited, Plot Pl., 7354, Anglo Jos, New Ind. Area, Zarmaganda, Jos, Nigeria",
+      "nrn": "04-4566",
+      "batches": []
+    },
+    {
+      "brand": "Linotrim",
+      "ingredient": "Cotrimoxazole",
+      "strength": null,
+      "manufacturer": "Europharm Laboratories, Eurolink Nigeria Limited, Plot Pl., 7354, Anglo Jos, New Ind. Area, Zarmaganda, Jos, Nigeria",
+      "nrn": "04-4574",
+      "batches": []
+    },
+    {
+      "brand": "Linoquine",
+      "ingredient": "Chloroquine Phosphate",
+      "strength": "80mg/5ml",
+      "manufacturer": "Europharm Laboratories, Eurolink Nigeria Limited, Plot Pl., 7354, Anglo Jos, New Ind. Area, Zarmaganda, Jos, Nigeria",
+      "nrn": "04-4571",
+      "batches": []
+    },
+    {
+      "brand": "Linmoxyn",
+      "ingredient": "Amoxicillin",
+      "strength": "500mg",
+      "manufacturer": "Europharm Laboratories, Eurolink Nigeria Limited, Plot Pl., 7354, Anglo Jos, New Ind. Area, Zarmaganda, Jos, Nigeria",
+      "nrn": null,
+      "batches": []
+    }
+  ],
+  "summary": "NAFDAC is mopping up nationwide all products made and distributed by Europharm Laboratories, Jos, over marketing authorization violations. Lab tests found Linmoxyn (Amoxicillin) suspension at 13.9% and 18.4% API and Amoxicillin 500mg capsules at 48.3% API.",
+  "appliesToNigeria": true
+}

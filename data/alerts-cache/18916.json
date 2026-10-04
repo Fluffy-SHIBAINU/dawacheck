@@ -1,0 +1,46 @@
+{
+  "id": "023/2025",
+  "wpId": 18916,
+  "url": "https://nafdac.gov.ng/public-alert-no-023-2025-recall-of-multivitamin-supplements-due-to-risk-of-serious-injury-or-death-from-poisoning/",
+  "date": "2025-07-05",
+  "title": "Public Alert No. 023/2025 – Recall of Multivitamin Supplements due to Risk of Serious Injury or Death From Poisoning",
+  "kind": "recall",
+  "products": [
+    {
+      "brand": "Daily Prenatal Multi",
+      "ingredient": "Multivitamin and iron",
+      "strength": null,
+      "manufacturer": "iHerb/ California Gold Nutrition",
+      "nrn": null,
+      "batches": [
+        "2307050A",
+        "2404096A",
+        "2411100A"
+      ]
+    },
+    {
+      "brand": "Ultamins Women's Multivitamin",
+      "ingredient": "Multivitamin and iron",
+      "strength": null,
+      "manufacturer": "iHerb/ California Gold Nutrition",
+      "nrn": null,
+      "batches": [
+        "V0532",
+        "V0533"
+      ]
+    },
+    {
+      "brand": "Ultamins Women's 50+ Multivitamin",
+      "ingredient": "Multivitamin and iron",
+      "strength": null,
+      "manufacturer": "iHerb/ California Gold Nutrition",
+      "nrn": null,
+      "batches": [
+        "V0534",
+        "V0536"
+      ]
+    }
+  ],
+  "summary": "NAFDAC alerts on a US recall of iHerb/California Gold Nutrition iron-containing multivitamins (Daily Prenatal Multi, Ultamins Women's Multivitamin, Ultamins Women's 50+) lacking child-resistant packaging, risking fatal iron poisoning in children. Zonal offices directed to mop up.",
+  "appliesToNigeria": true
+}

@@ -1,0 +1,23 @@
+{
+  "id": "009/2025",
+  "wpId": 17935,
+  "url": "https://nafdac.gov.ng/public-alert-no-09-2025-voluntary-recall-of-zovirax-iv-infusion-by-glaxosmithkline-gsk-limited-due-to-potential-quality-defects/",
+  "date": "2025-04-11",
+  "title": "Public Alert No. 09/2025 – Voluntary Recall of Zovirax IV Infusion by GlaxoSmithKline (GSK) Limited Due to Potential Quality Defects",
+  "kind": "recall",
+  "products": [
+    {
+      "brand": "Zovirax IV Infusion",
+      "ingredient": "Acyclovir",
+      "strength": "250mg",
+      "manufacturer": "GlaxoSmithKline (GSK) Limited",
+      "nrn": null,
+      "batches": [
+        "RN3T",
+        "RP8K"
+      ]
+    }
+  ],
+  "summary": "GSK voluntarily recalled Zovirax IV Infusion 250mg (batch RN3T in Hong Kong) after glass-like particles were found in batch RP8K in Taiwan; both used the same intermediate batch. Particulate contamination can cause phlebitis, pulmonary dysfunction or death. Not listed in NAFDAC d",
+  "appliesToNigeria": false
+}

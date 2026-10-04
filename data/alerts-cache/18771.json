@@ -1,0 +1,50 @@
+{
+  "id": "018/2025",
+  "wpId": 18771,
+  "url": "https://nafdac.gov.ng/public-alert-no-018-2025-alert-on-the-ban-of-dove-hand-and-deodorant-soap-due-to-butylphenyl-methylpropional-bmhca-contamination/",
+  "date": "2025-06-02",
+  "title": "Public Alert No. 018/2025 – Alert on the Ban of Dove Hand and Deodorant Soap due to Butylphenyl Methylpropional (BMHCA) Contamination",
+  "kind": "unregistered",
+  "products": [
+    {
+      "brand": "Dove Exfoliating Hand Soap",
+      "ingredient": null,
+      "strength": "100g",
+      "manufacturer": null,
+      "nrn": null,
+      "batches": []
+    },
+    {
+      "brand": "Dove Deo Go Fresh",
+      "ingredient": null,
+      "strength": "50ml",
+      "manufacturer": null,
+      "nrn": null,
+      "batches": [
+        "9212174"
+      ]
+    },
+    {
+      "brand": "Dove Invisible Dry",
+      "ingredient": null,
+      "strength": "50ml",
+      "manufacturer": null,
+      "nrn": null,
+      "batches": [
+        "9183646"
+      ]
+    },
+    {
+      "brand": "Dove Men + Care Silver Control Spray",
+      "ingredient": null,
+      "strength": "150ml",
+      "manufacturer": null,
+      "nrn": null,
+      "batches": [
+        "62867LD"
+      ]
+    }
+  ],
+  "summary": "NAFDAC relays an EU ban on certain Dove hand soap and deodorant products found to contain BMHCA, a prohibited cosmetic ingredient linked to reproductive harm and skin sensitization. The products are not in the NAFDAC database; soap imports are prohibited in Nigeria.",
+  "appliesToNigeria": true
+}
