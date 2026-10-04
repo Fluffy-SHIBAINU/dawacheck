@@ -9,6 +9,10 @@ import '@fontsource/ibm-plex-mono/600.css';
 import './styles/tokens.css';
 import './styles/app.css';
 import { App } from './App';
+import { getWorker } from './ocr/engine';
+import { prewarmOcrOnFirstVisit } from './ocr/prewarm';
+
+prewarmOcrOnFirstVisit(undefined, getWorker);
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>

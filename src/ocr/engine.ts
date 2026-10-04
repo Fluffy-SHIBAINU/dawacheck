@@ -24,6 +24,10 @@ function coreFile(): string {
 export function getWorker(): Promise<Worker> {
   workerP ??= createWorker('eng', 1, {
     workerPath: `${base()}tesseract/worker.min.js`,
+    // Start the worker from its own same-origin URL, not a blob: URL. A blob worker is not always
+    // served by the service worker, so on a phone that goes offline right after the first visit the
+    // OCR scripts could fail to load. A same-origin worker script is matched by the SW scope.
+    workerBlobURL: false,
     corePath: `${base()}tesseract/${coreFile()}`,
     langPath: `${base()}tesseract/lang`,
     gzip: true,
