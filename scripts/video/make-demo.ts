@@ -12,7 +12,7 @@ const T = 0.4; // crossfade seconds
 type Frame = { kind: 'phone' | 'wide' | 'card'; img?: string; kicker?: string; title: string; sub?: string; weight?: number };
 type Segment = { id: string; say: string; appClip?: string; frames: Frame[]; higgsfield?: string };
 
-export const STORY: Segment[] = [
+const FULL: Segment[] = [
   { id: 'intro', higgsfield: 'H1', say: 'One in ten medicines in low- and middle-income countries is fake or substandard. In rural Nigeria, three in four people buy medicine from a shop with no pharmacist, often with no internet.',
     frames: [
       { kind: 'card', kicker: 'World Health Organization', title: '1 in 10 medical products', sub: 'in low- and middle-income countries is substandard or falsified' },
@@ -56,6 +56,51 @@ export const STORY: Segment[] = [
   { id: 'end', higgsfield: 'H4', say: 'DawaCheck. Check before you take.',
     frames: [{ kind: 'card', kicker: 'dawacheck-smoky.vercel.app', title: 'DawaCheck', sub: 'github.com/Fluffy-SHIBAINU/dawacheck · App screens recorded from the live app' }] },
 ];
+
+
+const pick = (ids: string[]) => ids.map((id) => FULL.find((x) => x.id === id)!);
+
+const TEAM: Segment[] = [
+  { id: 'team-1', say: 'Meet the DawaCheck team: Shawn Yoon, working with Claude Code and a crew of AI agents.',
+    frames: [{ kind: 'card', kicker: 'Team', title: 'Shawn Yoon + Claude Code', sub: 'One founder and a crew of AI agents' }] },
+  { id: 'team-2', say: 'Shawn worked on a seven-year, seven-hundred-million-dollar national project to modernize federal disability case processing.',
+    frames: [{ kind: 'card', kicker: 'Shawn Yoon', title: 'Federal modernization', sub: 'Worked on a 7-year, $700M national project to modernize disability case processing' }] },
+  { id: 'team-3', say: 'He is also an immigrant. When his family first moved to the United States, they could not understand the medicines at a CVS pharmacy.',
+    frames: [{ kind: 'card', kicker: 'Why', title: '\u201cWe couldn\u2019t understand the medicines.\u201d', sub: 'A new immigrant family at a US pharmacy' }] },
+  { id: 'team-4', say: 'It was frustrating, but it did not put their lives at risk. Around the world, people die for lack of medicine information. So he built DawaCheck.',
+    frames: [{ kind: 'card', kicker: 'The problem', title: 'Lives lost to missing information', sub: '1 in 10 medical products in low- and middle-income countries is substandard or falsified (WHO)' }] },
+  { id: 'team-5', say: 'DawaCheck checks a medicine against Nigeria\u2019s official register, with no internet, and answers in Hausa, English or Pidgin.',
+    frames: [{ kind: 'phone', img: '05-green-ha', kicker: 'DawaCheck', title: 'Check a medicine with no internet', sub: 'Answers in Hausa, English and Pidgin' }] },
+  { id: 'team-6', say: 'Next, a standalone device with DawaCheck built in. No phone needed, for families and for medical teams.',
+    frames: [{ kind: 'card', kicker: 'Next', title: 'A DawaCheck device', sub: 'DawaCheck built in, no phone needed, for families and medical teams' }] },
+  { id: 'team-7', say: 'DawaCheck. Check before you take.',
+    frames: [{ kind: 'card', kicker: 'dawacheck-smoky.vercel.app', title: 'DawaCheck', sub: 'Shawn Yoon with Claude Code \u00b7 github.com/Fluffy-SHIBAINU/dawacheck' }] },
+];
+
+const TECH: Segment[] = [
+  { id: 'tech-1', say: 'How DawaCheck works: a nineteen-megabyte installable web app, where every verdict runs on the phone.',
+    frames: [{ kind: 'card', kicker: 'Technical walkthrough', title: 'All on the phone', sub: '19 MB installable web app \u00b7 no GPU, no cloud for a verdict' }] },
+  { id: 'tech-2', say: 'Tesseract OCR, compiled to WebAssembly, reads the box. A parser finds the NAFDAC number, batch, expiry, name and strength.',
+    frames: [{ kind: 'phone', img: '04-scan-reading', kicker: 'On-device OCR', title: 'Tesseract in WebAssembly', sub: 'Number, batch, expiry, name and strength' }] },
+  { id: 'tech-3', say: 'A pure TypeScript verdict engine checks them against 8,922 products and 84 alerts in IndexedDB. It corrects a misread number only when the brand on the box confirms it.',
+    frames: [{ kind: 'phone', img: '06-amber-en', kicker: 'Verdict engine', title: 'Pure TypeScript rules', sub: 'Brand-guarded corrections: a fake number is never fixed into a real one' }] },
+  { id: 'tech-4', say: 'The register comes from NAFDAC\u2019s Greenbook. Claude extracted brands and batch numbers from every alert. ElevenLabs recorded the verdict voices.',
+    frames: [{ kind: 'card', kicker: 'Data and AI', title: 'Greenbook + Claude + ElevenLabs', sub: '8,922 products \u00b7 84 alerts, 307 batch numbers read by Claude \u00b7 voices in 3 languages' }] },
+  { id: 'tech-5', say: 'Online, reports go to Supabase through insert-only rules with daily caps. Aggregate views become community flags, and checksum-verified data packs come down.',
+    frames: [{ kind: 'wide', img: '14-dashboard', kicker: 'Sync and learning', title: 'Supabase, insert-only', sub: 'Daily caps \u00b7 aggregate views \u00b7 sha-256 data packs' }] },
+  { id: 'tech-6', say: 'Built with Claude Code and its agents, and tested: over two hundred unit tests and twenty-two end-to-end tests, including airplane mode and iPhone.',
+    frames: [{ kind: 'card', kicker: 'Built with Claude Code', title: '223 unit \u00b7 22 end-to-end tests', sub: 'Airplane mode, iPhone WebKit, accessibility \u00b7 github.com/Fluffy-SHIBAINU/dawacheck' }] },
+];
+
+const VIDEO = process.argv.find((a) => a.startsWith('--video='))?.split('=')[1] ?? 'draft';
+const STORIES: Record<string, Segment[]> = {
+  draft: FULL,
+  demo: pick(['offline', 'green', 'amber', 'red', 'sync', 'dashboard', 'end']),
+  team: TEAM,
+  tech: TECH,
+};
+export const STORY: Segment[] = STORIES[VIDEO];
+const NAME = VIDEO === 'draft' ? 'dawacheck-demo-draft' : `dawacheck-${VIDEO}`;
 
 const OUT = 'media';
 const dur = (file: string): number => {
@@ -183,8 +228,8 @@ function build(): void {
   const n = clips.length;
   audio.forEach((a, j) => v.push(`[${n + j}:a]aresample=44100,adelay=${Math.round(a.at * 1000)}:all=1[a${j}]`));
   v.push(`${audio.map((_, j) => `[a${j}]`).join('')}amix=inputs=${audio.length}:normalize=0,alimiter=limit=0.95,apad=whole_dur=${total.toFixed(3)}[aout]`);
-  writeFileSync(`${OUT}/filter.txt`, v.join(';\n'));
-  args.push('-filter_complex_script', `${OUT}/filter.txt`, '-map', '[vout]', '-map', '[aout]', '-c:v', 'libx264', '-pix_fmt', 'yuv420p', '-preset', 'medium', '-crf', '20', '-c:a', 'aac', '-b:a', '160k', '-t', total.toFixed(3), '-movflags', '+faststart', `${OUT}/dawacheck-demo-draft.mp4`);
+  writeFileSync(`${OUT}/filter-${VIDEO}.txt`, v.join(';\n'));
+  args.push('-filter_complex_script', `${OUT}/filter-${VIDEO}.txt`, '-map', '[vout]', '-map', '[aout]', '-c:v', 'libx264', '-pix_fmt', 'yuv420p', '-preset', 'medium', '-crf', '20', '-c:a', 'aac', '-b:a', '160k', '-t', total.toFixed(3), '-movflags', '+faststart', `${OUT}/${NAME}.mp4`);
   execFileSync(FF, args, { stdio: 'inherit' });
   // Timeline for the edit list (where each segment starts in the final video).
   const lines: string[] = [];
@@ -195,11 +240,11 @@ function build(): void {
     lines.push(`${new Date(at * 1000).toISOString().slice(14, 19)}  ${s.id}${s.higgsfield ? `  (Higgsfield ${s.higgsfield}: ${hasScene ? 'included' : `drop media/higgsfield/${s.higgsfield}.mp4 to add`})` : ''}`);
     at += segClips.reduce((a, c) => a + c.d, 0) - T * segClips.length;
   }
-  writeFileSync(`${OUT}/timeline.txt`, lines.join('\n') + '\n');
+  writeFileSync(`${OUT}/timeline-${VIDEO}.txt`, lines.join('\n') + '\n');
   console.log(lines.join('\n'));
 }
 
 await narrate();
 await renderFrames();
 build();
-console.log(`done: ${OUT}/dawacheck-demo-draft.mp4 (${dur(`${OUT}/dawacheck-demo-draft.mp4`).toFixed(1)} s)`);
+console.log(`done: ${OUT}/${NAME}.mp4 (${dur(`${OUT}/${NAME}.mp4`).toFixed(1)} s)`);
