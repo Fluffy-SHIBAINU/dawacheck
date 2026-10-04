@@ -11,3 +11,6 @@ coverage
 .DS_Store
 .vercel-deploy
 .vercel
+
+# Local MCP client config (per developer, not part of the app)
+.mcp.json
