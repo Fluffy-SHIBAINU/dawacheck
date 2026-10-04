@@ -1,6 +1,6 @@
 # DawaCheck demo video (3:00)
 
-Record the iPhone screen (Control Centre → Screen Recording) plus a laptop screen recording. Stitch them in any editor. Voiceover lines are below each shot.
+A ready-made draft (real app screens, ElevenLabs narration, the app's own voices) is built by `scripts/video/make-demo.ts`; see `docs/video-higgsfield.md` to rebuild it and to add Higgsfield scenes. To record by hand instead: record the iPhone screen (Control Centre → Screen Recording) plus a laptop screen recording and stitch them in any editor. Voiceover lines are below each shot.
 
 | Time | Shot | Voiceover |
 |---|---|---|

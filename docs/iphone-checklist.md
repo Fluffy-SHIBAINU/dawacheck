@@ -7,6 +7,6 @@
 5. On the laptop, open `https://dawacheck-smoky.vercel.app/#/demo-packs`. Photograph carton 1 with the iPhone: expect green, then tap **Listen** and hear Hausa.
 6. Carton 2: amber (box does not match number). Tap **Report this box**, then **Save report**: expect "Reports waiting: 1".
 7. Carton 3 (not in register): red. Carton 5 (NAFDAC alert): red. Switch the language to Pidgin in Settings to show the red verdict in Pidgin.
-8. Turn Airplane Mode **off**. The app syncs on its own, or tap Settings → Sync now: "Sent 1 reports…".
+8. Turn Airplane Mode **off**. The app syncs on its own, or tap Settings → Sync now: "Reports sent: 1".
 9. On the laptop, open `https://dawacheck-smoky.vercel.app/#/dashboard`: the report appears under its state.
 10. If a photo does not read, use "Number unclear? Draw a box around it", or type the number.

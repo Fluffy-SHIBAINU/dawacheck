@@ -16,7 +16,7 @@ World Bank "Small AI for Development" hackathon, Health track.
 - **Regulator dashboard:** https://dawacheck-smoky.vercel.app/#/dashboard (live from Supabase: reports and checks synced from phones)
 - **Design:** https://claude.ai/artifact/Q392hGkC2QW5h8SNR8HHpv
 - **Pitch deck:** https://claude.ai/artifact/VFmE5yFdgihQEJL9oXrimJ (exports to .pptx or PDF; source text in `docs/pitch.md`)
-- **Demo video script:** `docs/video-script.md`
+- **Demo video:** script in `docs/video-script.md`; a draft built from the live app with `scripts/video/make-demo.ts` (see `docs/video-higgsfield.md`)
 
 ## Why
 

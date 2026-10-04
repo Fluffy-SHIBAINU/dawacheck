@@ -97,7 +97,7 @@ await shot('12-alerts-en');
 await page.goto(`${BASE}/#/`);
 await ctx.setOffline(false);
 await page.evaluate(() => window.dispatchEvent(new Event('online')));
-await page.getByTestId('sync-summary').filter({ hasText: /Sent 1 report/ }).waitFor({ timeout: 60_000 });
+await page.getByTestId('sync-summary').filter({ hasText: /Reports sent: 1/ }).waitFor({ timeout: 60_000 });
 await shot('13-home-en-synced');
 
 const desk = await browser.newContext({ viewport: { width: 1440, height: 810 }, deviceScaleFactor: 2 });
