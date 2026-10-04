@@ -92,11 +92,32 @@ const TECH: Segment[] = [
     frames: [{ kind: 'card', kicker: 'Built with Claude Code', title: '223 unit \u00b7 22 end-to-end tests', sub: 'Airplane mode, iPhone WebKit, accessibility \u00b7 github.com/Fluffy-SHIBAINU/dawacheck' }] },
 ];
 
+const TEAM2: Segment[] = [
+  { id: 'team2-1', say: 'Meet the DawaCheck team: Shawn Yoon, working with Claude Code and a crew of AI agents.',
+    frames: [{ kind: 'card', kicker: 'Meet the team', title: 'Shawn Yoon + Claude Code', sub: 'One founder and a crew of AI agents' }] },
+  { id: 'team2-2', say: 'Shawn worked on a seven-year, seven-hundred-million-dollar national project modernizing U.S. disability case processing.',
+    frames: [{ kind: 'card', kicker: 'Shawn Yoon', title: 'Federal modernization', sub: '7-year, $700M national project: U.S. disability case processing' }] },
+  { id: 'team2-3', say: 'He is also an immigrant. When his family first arrived, they stood in a pharmacy aisle unable to read a single medicine label. Frustrating, but not deadly.',
+    frames: [{ kind: 'card', kicker: 'Why', title: '\u201cWe couldn\u2019t read a single label.\u201d', sub: 'An immigrant family at their first U.S. pharmacy' }] },
+  { id: 'team2-4', say: 'For millions of people, it is deadly. One in ten medicines in low- and middle-income countries is fake or substandard.',
+    frames: [{ kind: 'card', kicker: 'The problem', title: 'For millions, it is deadly', sub: '1 in 10 medicines in low- and middle-income countries is fake or substandard (WHO)' }] },
+  { id: 'team2-5', say: 'So he built DawaCheck. Snap a photo of a medicine box. Your phone checks Nigeria\u2019s official drug register, with no internet, and says the answer out loud, in Hausa, English or Pidgin.',
+    frames: [
+      { kind: 'phone', img: '04-scan-reading', kicker: 'DawaCheck', title: 'Snap the box', sub: 'Read on the phone, no internet', weight: 0.8 },
+      { kind: 'phone', img: '05-green-ha', kicker: 'DawaCheck', title: 'Hear the answer', sub: 'Checked against Nigeria\u2019s NAFDAC register, in Hausa, English or Pidgin', weight: 1.4 },
+    ] },
+  { id: 'team2-6', say: 'Next: a standalone DawaCheck device. No phone needed, for families and clinics.',
+    frames: [{ kind: 'card', kicker: 'Next', title: 'A DawaCheck device', sub: 'Standalone, no phone needed, for families and clinics' }] },
+  { id: 'team2-7', say: 'DawaCheck. Check before you take.',
+    frames: [{ kind: 'card', kicker: 'dawacheck-smoky.vercel.app', title: 'DawaCheck', sub: 'Shawn Yoon with Claude Code \u00b7 github.com/Fluffy-SHIBAINU/dawacheck' }] },
+];
+
 const VIDEO = process.argv.find((a) => a.startsWith('--video='))?.split('=')[1] ?? 'draft';
 const STORIES: Record<string, Segment[]> = {
   draft: FULL,
   demo: pick(['offline', 'green', 'amber', 'red', 'sync', 'dashboard', 'end']),
   team: TEAM,
+  team2: TEAM2,
   tech: TECH,
 };
 export const STORY: Segment[] = STORIES[VIDEO];
