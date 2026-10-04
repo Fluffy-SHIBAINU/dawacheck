@@ -61,3 +61,4 @@
   - Task 24 (sync): create a Supabase project, run `supabase/schema.sql` (now with daily caps) in its SQL editor, add `VITE_SUPABASE_URL`, `VITE_SUPABASE_ANON_KEY`, `SUPABASE_SERVICE_ROLE_KEY`, set `VITE_SYNC_MODE=supabase`, then rerun the loop (check:backend, holdback, publish-packs, deploy).
   - Optional: `ANTHROPIC_API_KEY` for Claude alert extraction (`npm run data:alerts`).
   - iPhone hands-on check (`docs/iphone-checklist.md`), the demo video, sharing the deck, and a GitHub remote for the repo.
+- 20:29 · Task 18 · done · keys added by the user; npm run voice generated 42 ElevenLabs eleven_v3 clips (en, ha, pcm; 2.2 MB, precached)

@@ -869,7 +869,7 @@ console.log(`voice clips generated: ${made}`);
 npm pkg set scripts.voice="tsx scripts/make-voice.ts"
 ```
 
-- [ ] **Step 4: Run tests, then generate the clips**
+- [x] **Step 4: Run tests, then generate the clips**
 
 Run: `npx vitest run tests/unit/voice.test.ts && npm run typecheck`
 Expected: PASS.
@@ -878,7 +878,7 @@ Then run `npm run voice`.
 - With `ELEVENLABS_API_KEY`: 42 mp3 files (about 1–2 MB total). Listen to `public/voice/ha/v_red_notfound.mp3` with `afplay` to sanity-check that it is audible Hausa.
 - Exit code 2 (no key): the app falls back to text. Mark the index entry `BLOCKED: ELEVENLABS_API_KEY for voice clips (code done)`. The user can run `npm run voice` later.
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 git add -A
